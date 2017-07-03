@@ -37,12 +37,13 @@
 \newtheorem{definition}{Définition}
 \newtheorem*{exemples}{Exemples}
 \newtheorem*{exemple}{Exemple}
-\newtheorem*{exercice}{Exercice}
+\newtheorem{exercice}{Exercice}
 \newtheorem*{exercices}{Exercices}
 \newtheorem*{remarque}{Remarque}
 \newtheorem{proprietes}{Propriétés}
 \newtheorem{theoreme}{Théorème}
 \newcommand{\cm}{\mathrm{cm}}
+\newcommand{\km}{\mathrm{km}}
 \newcommand{\mm}{\mathrm{mm}}
 \newcommand{\cd}{\mathrm{cd}}
 \newcommand{\mol}{\mathrm{mol}}
@@ -55,6 +56,7 @@
 \newcommand{\N}{\mathrm{N}}
 \newcommand{\V}{\mathrm{V}}
 \newcommand{\W}{\mathrm{W}}
+
 
 \title{Résumé du cours de Physique Générale}
 \author{Orestis Malaspinas}
@@ -283,8 +285,57 @@ $10^{-24}$&yocto&y&0,000 000 000 000 000 000 000 001&Quadrillionième\\
 \label{table_prefixe}
 \end{table}
 
-\section{Ordres de grandeurs}
+\section{Ordre de grandeur}
+
+Souvent nous pouvons vouloir qu'une estimation rapide d'une quantité ou simplement vouloir rapidement avoir une idée 
+de comment ``marche'' un processus. Pour ce faire plutôt que d'entrer complètement dans tous les détails compliqués des calculs
+il peut être beaucoup plus simple de fonctionner avec des ordres de gradeurs de nos quantité (en gros on arrondit tout à l'entier ou même 
+à la puissance de 10)\footnote{Cela peut être très pratique quand on fait ses courses pour savoir s'il y a une erreur grossière sur le montant qu'on paie.}.
+On a donc un résultat précis ``à la puissance de 10 près''. 
+\begin{exercice}{Volume d'un lac}
+
+ Calculez le volume du lac léman sachant qu'il fait environ $70\km$ de long pour $10\km$ de large et $100\m$ de profondeur.\footnote{Selon le site: \url{http://ge.ch/eau/lac-leman} le volume véritable du lac est de $89$ milliards de mètres cubes. Sa longueur est de $73\km$, sa largeur est de $14\km$ et sa profondeur moyenne est de $150.4\m$.}
+\end{exercice}
+\begin{exercice}{Hauteur d'un bâtiment}
+
+Je souhaite estimer la hauteur d'un bâtiment. Supposons que mes yeux soient à une hauteur de $1.5\m$ du sol. Je souhaite estimer la hauteur d'un bâtiment. La seule information connue est que quand je me place 
+à une distance de d'un écartement de bras d'un arbre (mesurant environ $3\m$ à l'oeil de haut et se truvant à $20$ pas du bâtiment) placé entre moi et le bâtiment, 
+l'arbre cache tout juste le haut du bâtiment.
+\end{exercice}
+
+\begin{exercice}{Epaisseur d'une feuille de papier}
+
+Vous avez à disposition une règle (précise au milimètre) et un livre. 
+Estimez aussi précisément que possible et avec un minimum d'effort
+l'épaisseur d'une feuille du livre.
+\end{exercice}
 
 \section{Analyse dimensionnelle}
+
+Lorsque nous parlons de dimensions d'une quantité, nous nous réferrons souvent au type des unités de la quantité. Une longueur 
+sera représentée par $[L]$\footnote{Une lettre représentant la quantitité entournée de crochets.}, un temps par $[T]$, une masse par $[M]$, etc.
+Cette notation se généralise pour toute quantitée dont les quantités sont des combinaisons de ces unités de base. Ainsi, une surface sera $[L^2]$,
+une fréquence $[1/T]$, une vitesse $[L/T]$, une énergie $[M\cdot L^2/T^2]$, etc.
+
+L'analyse dimensionnelle peut se révéler particulièrement utile pour vérifier si des relations font du sens ou pas. Les lois physiques
+mettent en relation différentes quantités qui doivent être consistante également du point de vue des unités.
+Si nous prenons comme exemple la relation
+\begin{equation}
+ s=x_0+\frac{1}{2}v_0 t^2,
+\end{equation}
+qui décrirait la position d'un objet en mouvement rectiligne uniforme, $s$, qui partirait d'une position $x_0$,
+aurait une vitesse $v_0$ après un temps $t$. Si nous effectuons l'analyse dimensionnelle de cette relation nous avons
+\begin{align}
+ [L]&\stackrel{?}{=}[L]+[L/T]\cdot [T^2],\nonumber\\
+ &\neq[L]+[L\cdot T].
+\end{align}
+On constate donc que cette équation est certainement fausse. On note aussi que le $1/2$ n'ayant pas d'unités a été simplement ignoré dans la relation ci-dessus.
+
+Si le résultat de l'analyse dimensionnelle se révèle inconhérent, nous sommes certains que l'équation est fausse. 
+L'inverse est cependant faux. En effet, une analyse dimensionnelle d'une équation cohérente ne permet pas d'être sûr que l'équation en elle-même est correcte. 
+Par exemple tous les facteurs numériques peuvent être complètement faux. Ou alors certaines quantités peuvent avoir les bonnes unités mais n'avoir aucun sens physique dans
+les cas étudiés.
+
+
 
 \end{document}
