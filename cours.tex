@@ -12,6 +12,8 @@
 \usepackage{amsfonts,bm,amsmath,amssymb,graphicx,amsthm}
 \usepackage{cancel}
 \usepackage{mathtools}
+\usepackage{caption}
+\usepackage{hyperref}
 
 \setlength{\parindent}{0pt}
 
@@ -40,6 +42,19 @@
 \newtheorem*{remarque}{Remarque}
 \newtheorem{proprietes}{Propriétés}
 \newtheorem{theoreme}{Théorème}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cd}{\mathrm{cd}}
+\newcommand{\mol}{\mathrm{mol}}
+\newcommand{\m}{\mathrm{m}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\kg}{\mathrm{kg}}
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\C}{\mathrm{C}}
+\newcommand{\A}{\mathrm{A}}
+\newcommand{\N}{\mathrm{N}}
+\newcommand{\V}{\mathrm{V}}
+\newcommand{\W}{\mathrm{W}}
 
 \title{Résumé du cours de Physique Générale}
 \author{Orestis Malaspinas}
@@ -49,9 +64,13 @@
 
 \chapter{Mesures, incertitudes, et estimations}
 
-Toues les sciences ``naturelles'' sont basées sur l'observation du monde qui nous entoure. 
+Pour celles et ceux qui sont intéressés par plus de détails, vous pouvez vous référer au cours de métrologie de l'EPFL par exemple: \url{http://sb.epfl.ch/page-52191-en.html}
+
+\section{Généralités}
+
+Toues les sciences ``naturelles'' sont basées sur \textit{l'observation} du monde qui nous entoure. 
 Mais malgré le fait qu'on ait l'impression que le processus d'osbervation soit une suite simple:
-observation, expérimentation, obtention de résultats, qu'on explique avec une théorie cela n'est pas vraiment le cas. En fait,
+observation, expérimentation, obtention de résultats, qu'on explique avec une \textit{théorie} (un ensemble de \textit{lois}) cela n'est pas vraiment le cas. En fait,
 de façon proche à ce qui se passe dans les arts, les sciences sont un processus hautement créatif. 
 En effet, lors d'une observation un scientifique ne décrit pas tout ce qu'il voit, 
 mais sélectionne uniquement ce qu'il juge important
@@ -60,10 +79,212 @@ le processus à observer, il convient de créer une expérience permettant de le
 pour pouvoir le décrire. La mesure tient donc une place centrale dans les sciences et se complète parfaitement avec la création de théories
 qui permettent l'explication d'observations. Par ailleurs, toutes les théories ne sont pas le fruit
 d'expériences (ou d'observations) mais ont souvent été le résultat de constructions de l'esprit. 
-Dans ce cas les expériences, viennent confirmer (ou infirmer) les théories.
+Dans ce cas les expériences, viennent confirmer (ou infirmer) les théories. En effet, une théorie physique est
+supposée vraie jusqu'à ce qu'une expérience vienne l'infirmer (on ne peut pas prouver une théorie).
 
-On voit donc que l'expérimentation est particulièrement importante pour tester des théories et s'assurer
-que notre conception de la nature est aussi proche de la réalité que possible.
+Les expériences ont donc deux fonctions principales
+\begin{itemize}
+ \item Collecter des données qui permettront la dérivation de lois physiques.
+ \item Vérifier ou infirmer les lois physiques.
+\end{itemize}
 
+Les lois physiques sont des outils très pratiques permettant la prédiction \textit{quantitative} 
+de phénomènes (et non la ``post-diction'' comme avec les expériences). Il est par exemple possible de prédire très précisément la hauteur à laquelle il faut lancer un satellite 
+pour qu'il se retrouve en orbite géostationnaire (et donc connâitre la quantité de carburant nécessaire par exemple) grâce aux lois de Newton. 
+Ce qui serait certainement beaucoup plus difficile à déterminer expérimentalement, s'il fallait faire des dizaines d'essais jusqu'à ce que ça marche.
+
+Par ailleurs, beaucoup de ``lois'' ont des capacités prédictives mais ne sont pas complètement générales. Par exemple, bien que les lois de Newton 
+marchent très très bien pour notre vie de tous les jours, certaines applications d'usage quotidien ne fonctionneraient pas si on s'en tenait là. 
+En effet, le GPS requiert l'extension des lois de Newton à la relativité générale pour pouvoir fonctionner correctement. En fait
+la gravitation Newtonienne est une approximation de la relativité générale.
+
+Ces approximations sont souvent le résultat de simplifications faites dans la représentation dont ont se fait 
+de processus physiques: les \textit{modèles}. Un modèle est une vision de l'esprit qui permet de réunir plusieurs
+situations qui à première vue peuvent paraître non-semblables ou à simplifier un problème afin de pouvoir le résoudre plus simplement. 
+Par exemple un liquide est composé d'atomes qui se déplacent. Il serait possible (mais complètement infaisable et inutile dans presque tous les cas) 
+d'étudier chaque atome indviduellement pour avoir une descfription très détaillée du mouvement d'un fluide. Néamoins, il est beaucoup plus simple de 
+faire \textit{l'hypothèse} qu'un fluide peut être considéré comme un objet continu.
+
+\section{Mesure et incertitude}
+
+Comme nous venons de le dire les mesures tiennent une place primordiale en physique. Mais toute mesure ne peut être 
+parfaite et contient donc une part d'incertitude. En générale l'incertitude d'une mesure provient 
+de la précision limitée des instruments utilisés. Par exemple, lors de la mesure d'une longueur avec une règle,
+la graduation est en générale faite à chaque millimètre. Il est donc impossible d'être plus précis
+que le millimètre (on pourrait éventuellement dire qu'on est précis à 0.5 millimètres, mais il faudrait pour cela que l'utilisateur de la 
+règle ait de très très très bons yeux, que le fabriquant de la règle ait un processus absolument parfait de graduation, etc).
+Si la longueur, $L$, d'un objet mesuré à la règle est de $10.1\cm$, on peut donner l'information de l'incertitude 
+en ajoutant derrière le sigle $\pm 0.1\cm$ ou
+\begin{equation*}
+ L=10.1\pm0.1\ \cm.
+\end{equation*}
+Cela signifie que la valeur de $L$ est située quelque part entre $10$ et $10.2$ centimètres.
+Une autre façon de mesurer la précision d'une mesure est de donner l'erreur en pourcentage de la mesure effectuée.
+Ici nous aurions que l'erreur est de
+\begin{equation*}
+ \frac{0.1}{10.1}\cdot 100\cong 1\%.
+\end{equation*}
+Cette façon de quantifier l'erreur dépend donc de la valeur de la quantité mesurée (plus la longueur mesurée est grande plus
+le pourcentage sera petit et inversément).
+
+
+Une autre source d'incertitude peut provenir de la nature du phénomène observé. Si nous mesurions aujourd'hui la température 
+à un endroit donné de Genève durant toute la journée nous verrions une cretaine courbe de température. Cette courbe serait certainement
+différente de la courbe du lendemain ou de celle du même jour de l'année d'après. Ces mesures non reproductibles 
+doivent donc faire l'objet d'études statistiques et contiennent des incertitudes de nature très différentes (en plus des erreurs dûes aux mesures
+elles-mêmes).
+
+\subsection{Chiffres significatifs}
+
+Le nombre de chiffres significatifs est le nombre de chiffres d'un résultat dont la valeur est ``sûre''. Le nombre $1.23$ contient trois chiffres 
+significatifs tout comme le nombre $0.0123$ (les zéros ne sont là que pour placer la virgule). La façon dont on donne un résultat
+permet donc d'indiquer avec quelle précision nous connaissons un résultat. Il est souvent tentant d'exprimer un résultat avec un grand nombre de chiffres
+significatifs, mais cela peut s'avérer extrêmement contre productif car cela donne une fausse impression de grande précision d'une mesure.
+Si nous reprenons notre mesure avec la règle de la longueur $L=10.1$. En se donnant un peu de peine on peut facilement se convaincre qu'on a
+pas exactement $10.1$ mais un peu plus disons $10.15$. Même si cela n'est pas vraiment grave dans ce cas, le $5$ est totalement superflu
+car il est complètement impossible de dire si cela est 10.15 ou 10.13 ``à l'oeil''. De façon générale si notre précision avait été de $\pm 1\cm$
+on aurait écrit $L=10$, à $\pm 0.1$ on écrit $10.1$, à $\pm 0.01$ on écrit $10.10$, etc. Par ailleurs, lonrsqu'on combine des valeurs contenant
+des incertitudes il faut également faire attention. Supposons que nous ayons un carré dont le coté fait $10.1\cm$, sa surface est de 
+$10.1^2=102.01$. Hors, la valeur de la surface est incluse entre les deux valeurs extrêmes possibles: $10^2=100$ et $10.2^2=104.04$. Il est 
+donc inutile de garder $0.01$ et on donne la valeur de $102$ pour la surface.
+
+Il est commun d'écrire les nombre en \textit{notation scientifique} ou en puissances de $10$. Le nombre $10'100$ s'écrit $1.01\cdot 10^4$ en notation
+scientifique, le nombre $0.001234=1.234\cdot 10^{-3}$, ... Un des avantages de la notation scientifique, c'est qu'elle permet immédiatement de connaître le nombre de chiffres
+significatifs d'un résultat: il correspnd au nombre de chiffres composant le nombre multiplié par la puissance de $10$.
+
+\section{Unités, Système International}
+
+Toute mesure doit être effectuée par rapport à un ``standard'' ou unités. Cela n'a aucun sens de dire qu'un éléphant pèse 36, si nous ne disons pas
+36 en quelles unités. Pour chaque grandeur de multiple standards ont été créé au cours des années qui sont devenus de plus en plus précis
+avec les avancées technologiques (combien exactement mesure 1m, la durée d'une seconde, etc). 
+Dans cette section nous allon discuter les unités des grandeurs de base  de la physique. Nous verrons en particulier le \textit{Système International} (ou SI).
+
+Les unités sont définies par rapport à des grandeurs ``facilement'' mesurables avec une grade précision et qui ne changent pas (ou très très très peu)
+au cours du temps.
+
+\subsection{Longueur}
+
+Le standard international fût établi par la France dans les années 1790. 
+Pour les unités de longueur est le mètre (abregé $\m$). A l'origine le mètre était 1/10'000'000 de la distance entre l'équateur et un des pôles.
+A partir de cette mesure un étalon en platine fût forgé (c'est quand même plus pratique à utiliser). Puis, en 1889, le mètre a été défini comme la distance entre deux très fines encoche sur une barre d'un alliage platine-irridium. Comme cette façon de définir le mètre n'était pas suffisamment précise pour beaucoup d'applications, en 1960
+le mètre devint $1'650'763.73$ longueur d'onde d'une lumière émise par le gaz krypton-86. En 1983, fût redéfini comme la distance parcourue par la lumière en 1/299'792'458 secondes.
+
+Il existe d'autres unités de longueur, par exemple les britaniques utilisent le pouce  ou inch (1$\mathrm{in.}$ correspond à 0.0254$\m$). Dans ce cours nous nous concentrerons principalement
+sur le système SI.
+
+\subsection{Temps}
+
+La mesure du temps en SI est donnée en secondes (abrégée $\s$). Une seconde a longtemps été définie comme étant $1/(3600\cdot 24)=1/86'000$-ème
+de journée solaire. La vitesse de rotation de la terre se ralentissant légérement d'année en année, il a été nécessaire de raffiner de plus en plus 
+cette définition. A présent une seconde correspond à un processus atomique. Il s'agit du temps nécessaire à 9'192'631'770 de 
+la transitions entre deux états de l'atome de césium 133. 
+
+\subsection{Masse}
+
+Le kilogramme (abrégé $\kg$) est la masse d'un étalon international du kilogramme. En 1795, le kilogramme était la d'un décimètre cube 
+d'eau à une température de $4^\circ\C$. Puis il a été remplacé par un étalon en platine irridé (voir Fig.~\ref{fig_kg}). Il s'agit de la seule unité utilisant encore un étalon, 
+aucune ``grandeur naturelle'' n'ayant pu être utilisée pour définir le kilogramme autrement. Des copies de cet étalon ont été fabriquée et envoyées à
+chaque état qui en ont fait d'autres copies officielles pour contrôler les balances utilisées un peu partout sur les territoires.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/kilogram_replica.jpg}
+\caption{Une réplique de l'étalon international du kilogramme présentée à la cité des sciences et de l'industrie (Vilette), source: \url{https://upload.wikimedia.org/wikipedia/commons/a/ac/Prototype_kilogram_replica.JPG}}
+\label{fig_kg}
+\end{center}
+\end{figure}
+
+\subsection{Température}
+
+La température mesure le degré d'échauffement d'un corps. En SI l'unité de la température est le degré Kelvin (abrégé $\K$).
+Il est défini comme le $1/273.16$-ème de la température du point triple de l'eau (la température où les trois phases, solides, liquides, gazeuse, de l'eau 
+peuvent coexister en équilibre thermodynamique). Cette température se trouve par définition à $273.16^\circ\K$ ou encore à $0.01^\circ\C$.
+Nous verrons un peu plus de détails sur la définition du zéro degrés Kelvin (ou zéro absolu) dans la suite du cours.
+
+\subsection{Courant}
+
+L'intensité du courant électrique est mesurée en Ampères (abrégé $\A$). Un ampère est l'intensité de courant constant qui circulerait 
+dans deux fils conducteurs infinis placés dans le vide, de section négligeable, et placés à une distance d'un mètre l'un de l'autre 
+qui produirait une force de $2\cdot 10^{-7}$ Newton par longueur de mètre. Les autres unités très utiles en électicité, l'ohm (abrégé $\Omega$) et 
+le volt (abrégé $\V$) se déduisent ensuite par les fameuse formules $U=R\cdot I$ ($[\V]=[\Omega]\cdot [\A]$) et $P=U\cdot I$ ($[\W]=[\V]\cdot [\A]$).
+
+\subsection{Quantité de matière}
+
+La quantité de matière se mesure en moles (abrégé $\mol$). Une mole de matière contient autant de particules que 
+$0.012\kg$ contient d'atomes de Carbone 12 soit environ $6.02\cdot 10^{23}$ atomes (on appelle ce nombre, le nombre d'Avogadro ou de Loschmidt). 
+Cette valeur est étonnament constante. Pour
+tout élément du tableau périodique une mole sera le nombre d'atomes d'élément de poids atomique $N$, dans $N$ grammes de matière.
+
+\subsection{Intensité lumineuse}
+
+L'intensité lunineuse est mesurée en candela (abrégé $\cd$). Elle est donnée par l'intensité lumineuse émise par
+une source monochromatique de fréquence de $540\cdot 10^{12}\s^{-1}$ et dont l'intensité énergétique est de 
+$1/683 \W$ par stéradian (équivalent du radian mais sur une sphère).
+
+\subsection{Préfixes du Système International}
+
+Pour exprimer les puissances de 10 du SI, un certain nombre de préfixes ont été définis pour simplifier 
+les notations (voir la Table~\ref{table_prefixe}). Il est relativement aisé de convertir entre les différents préfixes.
+Ainsi $23\cm$ correspondent à $230\mm$ ou $0.23\m$. Pour le calcul de surfaces (ou d'unités prises à une certaine puissance les choses
+se compliquent un tout petit peu. Ainsi le préfixe est complètement attaché à l'unité. Par exemple les unités d'un volume
+se convertissent comme
+\begin{equation}
+ 23\cm^3=23\cdot(10^{-2} m)^3=23\cdot 10^{-6}m^3.
+\end{equation}
+
+\begin{table}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+$10^n$&Préfixe français&Symbole&Nombre décimal&Désignation\\
+\hline\hline
+$10^{24}$&yotta&Y&1 000 000 000 000 000 000 000 000&Quadrillion\\
+\hline
+$10^{21}$&zetta&Z&1 000 000 000 000 000 000 000&Trilliard\\
+\hline
+$10^{18}$&exa&E&1 000 000 000 000 000 000&Trillion\\
+\hline
+$10^{15}$&péta&P&1 000 000 000 000 000&Billiard\\
+\hline
+$10^{12}$&téra&T&1 000 000 000 000&Billion\\
+\hline
+$10^{9}$&giga&G&1 000 000 000&Milliard\\
+\hline
+$10^{6}$&méga&M&1 000 000&Million\\
+\hline
+$10^{3}$&kilo&k&1 000&Millier\\
+\hline
+$10^{2}$&hecto&h&100&Centaine\\
+\hline
+$10^{1}$&déca&da&10&Dizaine\\
+\hline
+$10^{0}$&(aucun)&—&1&Unité\\
+\hline
+$10^{-1}$&déci&d&0,1&Dixième\\
+\hline
+$10^{-2}$&centi&c&0,01&Centième\\
+\hline
+$10^{-3}$&milli&m&0,001&Millième\\
+\hline
+$10^{-6}$&micro&$\mu$&0,000 001&Millionième\\
+\hline
+$10^{-9}$&nano&n&0,000 000 001&Milliardième\\
+\hline
+$10^{-12}$&pico&p&0,000 000 000 001&Billionième\\
+\hline
+$10^{-15}$&femto&f&0,000 000 000 000 001&Billiardième\\
+\hline
+$10^{-18}$&atto&a&0,000 000 000 000 000 001&Trillionième\\
+\hline
+$10^{-21}$&zepto&z&0,000 000 000 000 000 000 001&Trilliardième\\
+\hline
+$10^{-24}$&yocto&y&0,000 000 000 000 000 000 000 001&Quadrillionième\\
+\hline
+\end{tabular}
+\caption{Préfixes du Système international d'unités et noms des nombres correspondants.}
+\label{table_prefixe}
+\end{table}
+
+\section{Ordres de grandeurs}
+
+\section{Analyse dimensionnelle}
 
 \end{document}
