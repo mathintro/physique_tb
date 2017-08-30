@@ -64,6 +64,14 @@
 \begin{document}
 \maketitle
 
+\chapter*{Avertissement}
+
+Cette tentative de polycopié contient certainement un grand nombre d'erreurs étant donné qu'elle est développée 
+en même temps que le cours est donné et qu'elle en est à ses premiers mois de vie. 
+Quand vous trouverez des erreurs n'hésitez pas à me les communiquer
+et ainsi améliorer la qualité de ce polycopié. Toute erreur trouvée concernant de la ``phyique'' (pas les fautes
+d'orthographe donc) seront récompensées par un bonus sur la note des contrôles continus.
+
 \chapter{Mesures, incertitudes, et estimations}
 
 Pour celles et ceux qui sont intéressés par plus de détails, vous pouvez vous référer au cours de métrologie de l'EPFL par exemple: \url{http://sb.epfl.ch/page-52191-en.html}
@@ -160,6 +168,13 @@ Toute mesure doit être effectuée par rapport à un ``standard'' ou unités. Ce
 36 en quelles unités. Pour chaque grandeur de multiple standards ont été créé au cours des années qui sont devenus de plus en plus précis
 avec les avancées technologiques (combien exactement mesure 1m, la durée d'une seconde, etc). 
 Dans cette section nous allon discuter les unités des grandeurs de base  de la physique. Nous verrons en particulier le \textit{Système International} (ou SI).
+
+Ne pas se mettre d'accord sur un système d'unités peut avoir des conséquences catastrophiques. Un exemple récent 
+est la perte du satelliste Mars Climate Orbiter (le coût de la mission était de 330 millions de dollars) 
+qui a explosé alors qu'il essayait de se mettre en orbite autour de Mars,
+car une partie du code informatique récoltant les donnée de la sonde donnait des résultats en unités 
+non-SI alors que la NASA travaillait en SI. Il y a donc eu une très gossière erreur dans le calcul
+de la trajectoire à adopter pour la mise en orbite et le satellite s'est écrasé (plus de détails ici par exemple \url{https://fr.wikipedia.org/wiki/Mars_Climate_Orbiter}).
 
 Les unités sont définies par rapport à des grandeurs ``facilement'' mesurables avec une grade précision et qui ne changent pas (ou très très très peu)
 au cours du temps.
@@ -394,10 +409,67 @@ est complètement subjective, car dépend de notre système nerveux. On constate
 échelle de référence (tout comme il faut le faire pour la mesure de la distance ou du poids ou de tout autre quantité).
 
 La mesure de la température d'un objet se base sur le fait que de nombreuses propriétés
-de la matière peuvent changer avec la température. De façon générale quand on chauffe la matière elle a tendance à occuper un volume plus grand (p. ex. une barre en métal s'allonge lorsqu'on la chauffe). De même les propriétés électriques des conducteurs changent avec la température
+de la matière peuvent changer avec la température. De façon générale quand on chauffe la matière elle a tendance à occuper un volume plus grand (p. ex. une barre en métal s'allonge lorsqu'on la chauffe). De même les propriétés électriques des conducteurs (leur résistance en particulier) changent avec la température. Finalement la ``couleur'' des objets change avec leur température. La lumière blanche émise par les vieilles ampoules à filament
+est obtenue en chauffant un fil en tungstène. 
 
+C'est sur ces principes que sont basés la grande majorité des
+thermomètres utilisés dans la vie de tous les jours. Par 
+exemple, les thermomètres consitués d'un tube en verre gradué 
+rempli d'un liquide (jusque dans les années 1980-90 c'était du mercure, dont l'invention date de 1724, puis c'est devenu de l'alcool). Le liquide se dilate quand il se réchauffe (se contracte quand il se refroidi) et 
+donc la hauteur du liquide dans le tube nous donne la température sur l'échelle graduée (voir Figure~\ref{fig_thermo_liquide} où la hauteur du liquide indique environ $29^\circ$ Celsius). Ces thermomètres sont très utilisés pour mesurer la température corporelle ou la température ambiante.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/Thermometer.JPG}
+\caption{Thermomètre à liquide avec une échelle allant de $-30^\circ$ à $50^\circ$ degrés Celsius. Source: \url{https://upload.wikimedia.org/wikipedia/commons/3/33/Thermometer.JPG}}
+\label{fig_thermo_liquide}
+\end{center}
+\end{figure} 
+Les thermomètres à aiguille (voir Figure~\ref{fig_thermo_aiguille}) sont basés sur la dilatation des solides. 
+En général la dilatation d'un solide quand on le chauffe est très faible pour être facilement
+visible. Il existe néanmoins des techniques pour ``amplifier'' la dilatation. La première est d'avoir un fil de fer enroulé en spirale 
+(la longueur du fil sera donc très longue pour un espace restreint) et l'extrémité centrale de la spirale
+fixée sur un axe. De cette façon en fixant une aiguille sur l'autre extrémité du fil la dilatation se transforme en rotation de 
+l'aiguille et permet la lecture d'une température. Une autre technique consiste à utiliser le fait que différents matérieaux 
+se dilatent plus ou moins quand on les chauffe. En soudant donc deux métaux avec un coefficient de dilatation différent, 
+l'objet obtenu va se tordre. Ce genre de thermomètres sont utilisés dans les bouilloires par exemple pour déclencher 
+l'interrupteur qui arrête le chauffage de l'eau lorsque l'eau bout.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/thermo_c_f.jpg}
+\caption{Thermomètre à aiguille avec une échelle allant de $-50^\circ$ à $50^\circ$ degrés Celsius (bague interne) et de $-60^\circ$ à $120^\circ$ 
+degrés Fahrenheit. Source: \url{https://upload.wikimedia.org/wikipedia/commons/c/c9/Raumthermometer_Fahrenheit\%2BCelsius.jpg}}
+\label{fig_thermo_aiguille}
+\end{center}
+\end{figure} 
+Finalement mentionnons également les thermomètres à infrarouge qui sont basés sur la mesure du rayonnement lumineux (mais pas forcément visible à l'oeil nu)
+émis par tout corps. La ``couleur'' de ce rayonnement dépend de son énergie. Ces thermomètres fonctionnent donc en mesurant 
+l'énergie émise par un corps. Ces thermomètres ont l'avantage de pouvoir mesurer la température à distance (pas besoin d'avoir un contact phyique avec la source) contrairement aux deux sortes de thermomètres décrits précédemment. Ils sont utilisés pour mesurer
+la température émise par les bâtiments (et donc la déperdition d'énergie associée) ou de chats (voir Figure~\ref{fig_thermographie}).
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/mais_infra.png}\quad \includegraphics[width=0.42\textwidth]{figs/Termografia_cat.jpg}
+\caption{Mesure de température de bâtiments bien isolés ou non (gauche) et de chat (droite). Sources: \url{https://commons.wikimedia.org/wiki/File\%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png}, \url{https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg}}
+\label{fig_thermographie}
+\end{center}
+\end{figure} 
 
+\subsection{Les échelles de température}
 
+Nous avons vu ci-dessus comment mesurer une température. Hors nous n'avons pas encore vu comment définir l'échelle 
+avec laquelle comparer ces températures et donc comment \textit{calibrer} les thermomètres. 
+
+Il existe trois échelles de température. L'échelle Celsius (utilisée dans la plupart des pays dans la vie de tous les jours), 
+l'échelle Fahrenheit (utilisée aux USA principalement) et l'échelle Kelvin qui est utilisée pour les travaux scientifiques
+principalement. Historiquement les échelles Celsius et Fahrenheit ont été définies en définissant
+de façon arbitraire deux températures de référence. Ces températures ont comme condition qu'elles doivent être facilement reproductibles
+et ne pas changer avec les conditions athmosphériques. 
+
+Pour l'échelle Celsius, le $0^\circ$ est défini comme la température de fusion de la glace, et le $100^\circ$ comme la température
+d'ébullition de l'eau. Il y a naturellement 100 graduations intermédiaires. Pour l'échelle Fahrenheit, le zéro a été défini comme la température
+atteinte par une mixture frigorifique (un mélange de galce d'eau et de chlorure d'ammonium dont la température se staibilise toute seule)
+et le $96^\circ$ comme la température du corps humain. Plus tard le standard a été changé. Le $32^\circ$ est devenu la température de
+fusion de la glace et le $212^\circ$ la température d'ébullition de l'eau. On peut donc assez facilement convertir les degrés Fahrenheit en 
+degrés Celsius (exerice).
 
 
 
