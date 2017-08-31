@@ -506,18 +506,88 @@ et se contractent quand elles sont refroidies.
 Néanmoins, toutes ne le font pas de la même façon. Dans cette section, nous allons étudier la façon dont 
 nous pouvons décrire l'augmentation (ou diminution) du volume dû à l'augemtation (ou diminution) de la température.
 
-\subsection{La dilatation linéaire}
+\subsection{La dilatation linéique}
 
-Considérons un cylindre de longueur $l_0$ qui est à température $T_0$. 
-Nous souhaitons connaître la longueur $l_1$ du cylindre lorsque la température du cylindre est changée 
-et donnée par $T_1$ (voir la Figure~\ref{fig_rods})
+Considérons un cylindre de longueur $L_0$ qui est à température $T_0$. 
+Nous souhaitons connaître la longueur $L$ du cylindre lorsque la température du cylindre est changée 
+et donnée par $T$ (voir la Figure~\ref{fig_rods})
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.3\textwidth]{figs/rods.pdf}
-\caption{La longueur du cylindre de longueur $l_0$ à température $T_0$ devient de longueur $l_1$ lorsqu'il est 
-amené à température $T_1$.}
+\caption{La longueur du cylindre de longueur $L_0$ à température $T_0$ devient de longueur $L$ lorsqu'il est 
+amené à température $T$.}
 \label{fig_rods}
 \end{center}
-\end{figure} 
+\end{figure}
+Expérimentalement, on a déterminé que la variation de longueur est reliée linéairement à la variation de température
+\begin{equation} 
+\Delta L=\alpha L_0\Delta T,
+\end{equation}
+où $\Delta L=L-L_0$, $\Delta T=T-T_0$, et $\alpha$ est le coefficient de dilatation linéique (qui est constant ici)
+dont les unités sont des $^\circ \C^{-1}$. On voit donc que
+plus le cylindre est long plus sa longueur variera.
+On peut réécrire cette équation pour obtenir 
+la longueur finale du cylindre
+\begin{equation}
+L=L_0+L_0\alpha\Delta T=L_0\left(1+\alpha \Delta T\right).
+\end{equation}
+On constate que pour $\alpha>0$ le cylindre voit sa taille augmenter lorsqu'on le chauffe.
+
+Cette ``loi'' est une bonne approximation pour autant que
+la variation de longueur soit petite (et donc que la 
+variation de température soit petite). En particulier
+le coefficient de dilatation dépend en général de la
+température (voir Figure~\ref{fig_alpha_aciers} pour le coefficient de dilatation linéique de différents types d'acier).
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/alpha_aciers.pdf}
+\caption{Coefficients de dilatation linéique de différents type d'acier en fonction de la température. Source: \url{https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg}}
+\label{fig_alpha_aciers}
+\end{center}
+\end{figure}
+
+\begin{exercice}{Allongement du pont du Mont-Blanc}
+
+Sachant que les température les plus extrêmes enregistrées à Genève ont été de $-25^\circ\C$ et de $40^\circ\C$, de quelle longueur doivent être les joints de dilatation du Mont-Blanc, sachant qu'il est construit en béton ($\alpha_{\mbox{béton}}=10^{-5}$) et qu'à une température de $20^\circ\C$ il mesure $252\m$ de long?
+\end{exercice}
+
+Il est important de noter que pour un liquide ou un gaz 
+la notion de dilatation linéique ne fait pas de sens car lorsqu'elle se trouve dans un de ces états la matière n'a pas de forme précise, contrairement à l'état solide.
+
+\subsection{La dilatation volumique}
+
+La variation du volume d'un matériaux a un comportement très similaire à la dilatation linéique. En fait lorsqu'on varie 
+la température d'un objet dont le volume est de $V_0$ à une température $T_0$, on obtient sa variation de volume par la formule suivante
+\begin{equation}
+\Delta V=\beta V_0\Delta T,
+\end{equation}
+où $\Delta V=V-V_0$ et $\beta$ est le coefficient de dilatation volumique (encore une fois supposé constant). Lorsque le matériaux est dit isotrope (c'est-à-dire qu'il a les même propriétés dans toutes les directions) les coefficient de dilataion volumiques et linaires sont approximativement reliés par
+\begin{equation}
+\beta=3\alpha.
+\end{equation}
+Cette relation n'est pas vérifiée si le matériel n'est pas isotrope.
+
+De façon similaire à ce que nous avons fait pour la dilatation linéique, nous pouvons calculer directement la valeur du volume final après avoir  chauffé un objet de volume $V_0$ d'une quantité $\Delta T$
+\begin{equation}
+V=V_0(1+\beta\Delta T).\label{eq_V_T}
+\end{equation}
+On constate que pour $\beta>0$ le volume va augmenter lorsqu'on chauffe (pour presque tous les méteriaux courant $\beta>0$ sauf pour l'eau qui pour certaines températures voit son coefficient de dilatation devenir négatif, voir Figure\ref{fig_alpha_eau}) alors que pour $\beta<0$ le volume va diminuer lorsqu'on chauffe.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/alpha_eau.pdf}
+\caption{Coefficients de dilatation volumique de l'eau en fonction de la température.}
+\label{fig_alpha_eau}
+\end{center}
+\end{figure}
+
+Cette modification du volume en fonction de la température explique également la modification de la masse volumique (ou densité) lorsqu'un objet voit sa température changer. En effet, la densité, $\rho$ est définie par
+\begin{equation}
+\rho=\frac{m}{V},
+\end{equation}
+où $m$ est la masse de l'ojet. La masse ne changeant pas avec la température (contrairement au volume), en substituant l'équation~\eqref{eq_V_T} dans l'équation ci-dessus, on obtient
+\begin{equation}
+\rho=\frac{m}{V_0(1+\beta\Delta T)},
+\end{equation}
+qui est l'équation reliant la densité à la variation de température d'un objet dont le volume est de $V_0$ à température $T_0$.
 
 \end{document}
