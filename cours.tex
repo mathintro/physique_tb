@@ -521,7 +521,7 @@ amené à température $T$.}
 \end{figure}
 Expérimentalement, on a déterminé que la variation de longueur est reliée linéairement à la variation de température
 \begin{equation} 
-\Delta L=\alpha L_0\Delta T,
+\Delta L=\alpha L_0\Delta T,\label{eq_dl_dt}
 \end{equation}
 où $\Delta L=L-L_0$, $\Delta T=T-T_0$, et $\alpha$ est le coefficient de dilatation linéique (qui est constant ici)
 dont les unités sont des $^\circ \C^{-1}$. On voit donc que
@@ -548,7 +548,7 @@ température (voir Figure~\ref{fig_alpha_aciers} pour le coefficient de dilatati
 
 \begin{exercice}{Allongement du pont du Mont-Blanc}
 
-Sachant que les température les plus extrêmes enregistrées à Genève ont été de $-25^\circ\C$ et de $40^\circ\C$, de quelle longueur doivent être les joints de dilatation du Mont-Blanc, sachant qu'il est construit en béton ($\alpha_{\mbox{béton}}=10^{-5}$) et qu'à une température de $20^\circ\C$ il mesure $252\m$ de long?
+Sachant que les température les plus extrêmes enregistrées à Genève ont été de $-25^\circ\C$ et de $40^\circ\C$, de quelle longueur doivent être les joints de dilatation du Mont-Blanc, sachant qu'il est construit en béton ($\alpha_{\mbox{béton}}=10^{-5}\C^{-1}$) et qu'à une température de $20^\circ\C$ il mesure $252\m$ de long?
 \end{exercice}
 
 Il est important de noter que pour un liquide ou un gaz 
@@ -562,7 +562,7 @@ la température d'un objet dont le volume est de $V_0$ à une température $T_0$
 \Delta V=\beta V_0\Delta T,
 \end{equation}
 où $\Delta V=V-V_0$ et $\beta$ est le coefficient de dilatation volumique (encore une fois supposé constant). Lorsque le matériaux est dit isotrope (c'est-à-dire qu'il a les même propriétés dans toutes les directions) les coefficient de dilatation volumiques et linaires sont approximativement reliés par
-\begin{equation}
+\begin{equation}% TODO FAIRE LE CALCUL
 \beta=3\alpha.
 \end{equation}
 Cette relation n'est pas vérifiée si le matériel n'est pas isotrope.
@@ -589,5 +589,61 @@ où $m$ est la masse de l'objet. La masse ne changeant pas avec la température 
 \rho=\frac{m}{V_0(1+\beta\Delta T)},
 \end{equation}
 qui est l'équation reliant la densité à la variation de température d'un objet dont le volume est de $V_0$ à température $T_0$.
+On constate donc que si $\beta> 0$ la densité augmente avec la température (ce qui explique que l'air chaud a tendance à monter).
+Pour la plupart des matériaux $\beta$ est une grandeur qui dépend de la température, mais qui est toujours positive.
+Une exception à cette ``règle'' est l'eau. En effet, l'eau a la propriété étonnante de voir sont volume augmenter quand on 
+diminue la température ($\beta<0$ entre $0$ et $4$ degrés Celsius). Par ailleurs, autre propriété remarquable, lorsque l'eau se transforme en glace son volume 
+augmente également (cela explique l'explosion des bouteilles remplies dans le congélateur, ou de la tuyauterie dans certaines 
+vieilles constructions pendant l'hiver).
+
+Cette propriété particulière de l'eau est primordiale
+pour la survie des espèces aquatiques pendant l'hiver. 
+Prenons l'exemple d'un lac dont la température est supérieure à $4^\circ\C$. Lorsque la température de l'air diminue  en hiver,
+la surface de l'eau va se mettre en équilibre thermique avec l'air et voir sa température diminuer. Sa densité
+va donc également augmenter jusqu'à ce que sa température atteigne $4^\circ\C$. A cette température la densité de l'eau est maximale. L'eau de la surface va donc avoir tendance à couler
+et créer un courant entre la surface et le fond du lac. Ce courant va refroidir le fond du lac et entraîner l'eau plus chaude du lac vers la surface qui va se refroidir à son tour.
+
+Puis, lorsque la température du lac a atteint les $4$ degrés, 
+la tempértaure de la surface peut commencer à passer sous les $4^\circ\C$. En dessous de $4^\circ\C$ la densité de l'eau commence à augmenter à nouveau. L'eau refroidie en surface aura donc une densité plus faible que l'eau qui se trouve plus en profondeur. Elle restera donc à la surface du lac. 
+Le courant créé précédemment ne sera plus présent. L'eau au fond du lac restera donc plus ``chaude'' beaucoup plus longtemps.
+Finalement, quand la surface de l'eau gèlera, la glace qui a une densité également plus faible que l'eau, restera uniquement en surface.
+Le lac ne gèlera donc pas entièrement car le fond du lac est d'une certaine façon ``isolé'' de la surface (qui est également la source 
+du refroidissement du lac). Évidemment si le froid est trop intense et dure suffisamment longtemps le lac finira par geler quand même
+mais il faudra des conditions particulièrement extrêmes.
+
+Si en revanche l'eau n'avait pas ces propriétés exceptionnelles, l'eau froide continuerait à couler depuis la surface jusqu'au fond du lac
+accélérant fortement son refroidissement. Pire, quand la surface du lac atteindra des températures négatives, la glace coulera
+pour se poser au fond du lac et entraînera la congélation du lac en entier et donc la vie telle que nous la connaissons ne pourrait exister.
+
+\subsection{Contraintes thermiques}
+
+Dans les bâtiments où les routes, la dalle ou les poutres sont en général fixes\footnote{Leur constante de dilatation sera différente du matériaux sur lequel elles sont fixées.} ce qui limite leur possibilité de se dilater/contracter librement lors de changements de température ce qui entraînera l'apparition de contraintes dites thermiques.
+
+Une contrainte est analogue à une pression. Elle correspond à la
+force par unité de surface appliquée sur un objet.
+SI nous considérons un objet qui va s'allonger (ou se contracter) principalement dans une direction, une contrainte $\sigma$ appliquée sur un objet de longueur $L_0$ a pour effet de l'allonger d'une longueur $\Delta L$. De plus, 
+empiriquement on a déterminé que $\sigma$ est proportionnel 
+au rapport $\Delta L/L_0$ et la constante reliant les deux quantité s'appelle le module de Young, $E$, (ou module d'élasticité)
+\begin{equation}
+\sigma=E\frac{\Delta L}{L_0}.
+\end{equation}
+En utilisant l'équation~\eqref{eq_dl_dt} qui relie $\Delta L$ à $\Delta T$, on obtient
+\begin{equation}
+\sigma=\alpha E \Delta T.
+\end{equation}
+On constate donc que la contrainte thermique sur les matériaux est proportionnelle à la variation de température, et dépendante 
+de deux constantes que sont le module de Young et le coefficient de dilatation. Comme pour toutes les lois que nous avons vues dans ce chapitre, celle-ci n'est valable que pour les petites variations de température.
+\begin{exemple}{Rupture du béton par grande chaleur}
+
+Supposons qu'une autoroute est constituée de blocs de béton
+de $10\m$ de long posés côte à côte sans espace entre eux. S'ils ont été posés un jour où la température extérieure est de $10^\circ\C$. Sachant que le module de Young du béton est de $E_{\mbox{béton}}=2\cdot10^{10}\N/\m^2$, 
+son coefficient de dilatation linéique est de $\alpha_{\mbox{béton}}=10^{-5}\C^{-1}$, et sa contrainte de rupture en compression est de $\sigma_{\mbox{max}}=2\cdot 10^7 \N/m^2$, est-ce que le béton 
+va se rompre par un jour de grande chaleur ($40^\circ\C$)?
+\end{exemple}
+
+\section{Lois des gaz et température absolue}
+
+Les relations que nous avons vues 
+
 
 \end{document}
