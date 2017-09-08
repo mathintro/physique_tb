@@ -51,6 +51,7 @@
 \newcommand{\s}{\mathrm{s}}
 \newcommand{\kg}{\mathrm{kg}}
 \newcommand{\K}{\mathrm{K}}
+\newcommand{\J}{\mathrm{J}}
 \newcommand{\C}{\mathrm{C}}
 \newcommand{\A}{\mathrm{A}}
 \newcommand{\N}{\mathrm{N}}
@@ -672,20 +673,19 @@ V\sim\frac{1}{P},\quad \mbox{pour }T\mbox{ constant.}
 \end{equation}
 Une autre façon d'écrire la loi de Boyle est 
 \begin{equation}
-PV= \mbox{cte},\quad \mbox{pour }T\mbox{ constant.}
+PV= \mbox{cte},\quad \mbox{pour }T\mbox{ constant.}\label{eq_loi_boyle}
 \end{equation}
-Cela signifie que si nous doublons le volume d'un gaz, sa pression sera divisée par deux. La loi de Boyle peut se représenter graphiquement comme sur la figure~%TODO
+Cela signifie que si nous doublons le volume d'un gaz, sa pression sera divisée par deux. La loi de Boyle peut se représenter graphiquement comme sur la figure~\ref{fig_boyle}
 où chacune des courbes est la relation entre la pression et le volume pour une température donnée.
 \begin{figure}
 \begin{center}
 \includegraphics[width=0.5\textwidth]{figs/boyle.pdf}
 \caption{Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).}
-\label{fig_kg}
+\label{fig_boyle}
 \end{center}
 \end{figure}
-Une autre façon d'exprimer cette relation est quand si 
-un gaz est à température constante $T_0$ est dans un état d'équilibre avec un volume $V_1$ et
-une pression $P_1$ et qu'il y a un autre état d'équilibre avec volume $V_2$ et pression $P_2$ toujours à température $T_0$ alors l'équation suivante est vérifiée
+Autrement dit si un gaz est à température constante $T$ est dans un état d'équilibre avec un volume $V_1$ et
+une pression $P_1$ et qu'il y a un autre état d'équilibre avec volume $V_2$ et pression $P_2$ toujours à température $T$ alors l'équation suivante est vérifiée
 \begin{equation}
 P_1V_1=P_2V_2.
 \end{equation}
@@ -695,18 +695,29 @@ P_1V_1=P_2V_2.
 Jacques Charles découvrit au $17^\textrm{\`eme}$ siècle 
 qu'à \textit{pression constante le volume d'un gaz est proportionnel à sa température} 
 \begin{equation}
-V\sim T,
+V\sim T,\quad \mbox{pour }P\mbox{ constant.}
 \end{equation}
 ou encore 
 \begin{equation}
-\frac{V}{T}=\mbox{cte}.
+\frac{V}{T}=\mbox{cte},\quad \mbox{pour }P\mbox{ constant.}\label{eq_loi_charles}
 \end{equation}
-Cette constante dépend évidemment du type de gaz, ainsi que
-de la pression. Un exemple pour différents gaz peut être trouvé sur la figure~%TODO.
+Autrement dit si un gaz est à pression constante $P$ est dans un état d'équilibre avec un volume $V_1$ et
+une température $T_1$ et qu'il y a un autre état d'équilibre avec volume $V_2$ et température $T_2$ toujours à pression $P$ alors l'équation suivante est vérifiée
+\begin{equation}
+\frac{V_1}{T_1}=\frac{V_2}{T_2}.
+\end{equation}
+Un exemple pour différents gaz peut être trouvé sur la figure~\ref{fig_charles}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/charles.pdf}
+\caption{Relation entre le volume $V$ et la température $T$ à pression constante pour trois gaz. En traitillés, l'extension de la droite au delà du point de liquéfaction du gaz. Toutes les droites se rejoignent au \textit{zéro absolu}.}
+\label{fig_charles}
+\end{center}
+\end{figure}
 Chacune des droites représente un gaz différent. Les traits-tillés commencent à l'endroit où le gaz se liquéfie 
 (à $0^\circ\C$ pour l'eau, $-183^\circ\C$ pour l'oxygène, ...). 
 Dès lors la loi de Charles n'est plus valable. Néanmoins,
-il est remarquable de constater que toutes ces droites ne vont se couper qu'en un point: lorsque $V=0$. Ce point théorique se trouve à $-273.15^\circ\C$ et s'appelle le
+il est remarquable de constater que si ces droites sont étendues en-dessous du point de liquéfaction elles se coupent toutes en un point (quel que soit le gaz!): lorsque $V=0$. Ce point théorique se trouve à $-273.15^\circ\C$ et s'appelle le
 \textit{zéro absolu}. Le zéro absolu est également le zéro
 de l'échelle de Kelvin qui est utilisée dans la plupart des travaux scientifique. L'intervalle du (degré) Kelvin (noté $\K$) est le même que pour les degrés Celsius on a donc
 \begin{equation}
@@ -717,5 +728,89 @@ A la température de $0\K$ le volume d'un gaz serait nul
 Ce genre d'état n'existe à notre connaissance dans la nature et 
 défierait toutes les lois telles que nous les connaissons.
 
+\subsection{Loi de Gay-Lussac}
 
+Au $19^{\mbox{ème}}$ siècle Joseph Gay-Lussac mis en évidence que \textit{pour un gaz dont le volume est gardé constant, sa pression va varier proportionnellement à sa température}
+\begin{equation}
+P\sim T,\quad \mbox{pour }V\mbox{ constant.}
+\end{equation}
+ou encore 
+\begin{equation}
+\frac{P}{T}=\mbox{cte},\quad \mbox{pour }V\mbox{ constant.}\label{eq_loi_gaylussac}
+\end{equation}
+Autrement dit si un gaz est à volume constant $V$ est dans un état d'équilibre avec une pression $P_1$ et
+une température $T_1$ et qu'il y a un autre état d'équilibre avec pression $P_2$ et température $T_2$ toujours à volume $V$ alors l'équation suivante est vérifiée
+\begin{equation}
+\frac{P_1}{T_1}=\frac{P_2}{T_2}.
+\end{equation}
+
+\subsection{Loi d'Avogadro}
+
+Au $19^{\mbox{ème}}$ siècle Amedeo Avogadro a énoncé que \textit{deux gaz dont la température et la pression sont identiques contiennent exactement le même nombre de molécules}
+\begin{equation}
+\frac{V_1}{n_1}=\frac{V_2}{n_2},
+\end{equation}
+où $V_i$ et $n_i$ ($i=1,2$) sont le volume et le nombre de moles des gaz numérotés 1 et 2.
+Une autre façon d'exprimer cette loi est de dire qu'à pression et température constante 
+le volume $V$ d'un gaz est proportionnel au nombre de moles $n$ qui le constituent
+\begin{equation}
+V\sim n,\quad \mbox{pour $T,P$ constantes}.
+\end{equation}
+
+\subsection{La loi des gaz parfait}
+
+En utilisant les lois de Boyle, Charles et de Gay-Lussac, on peut dériver une loi encore plus générale.
+Commençons par réécrire les trois lois (voir les équations \eqref{eq_loi_boyle}, \eqref{eq_loi_charles}, et \eqref{eq_loi_gaylussac})
+\begin{align}
+PV&=k_T(T),\label{eq_boyle}\\
+\frac{V}{T}&=k_P(P),\label{eq_charles}\\
+\frac{P}{T}&=k_V(V)\label{eq_gaylussac},
+\end{align}
+où $k_T,k_P,k_V$ sont trois ``constantes'' où respectivement on suppose qu'on garde la température, 
+la pression et le volume constants (néanmoins ces constantes ont une valeur différentes pour des valeurs
+différentes de température, pression et volume respectivement). En divisant l'équation~\eqref{eq_boyle}
+par $T$ on obtient 
+\begin{equation}
+\frac{PV}{T}=\frac{k_T(T)}{T}.
+\end{equation}
+Puis en multipliant l'équation~\eqref{eq_charles} par $P$ on obtient
+\begin{equation}
+\frac{PV}{T}=k_P(P)P.
+\end{equation}
+Finalement en multipliant l'équation~\eqref{eq_gaylussac} par $V$ on obtient
+\begin{equation}
+\frac{PV}{T}=k_V(V)V.
+\end{equation}
+Comme les membres de gauche de ces trois équations sont identiques, on voit que
+\begin{equation}
+k_V(V)V=k_P(P)P=\frac{k_T(T)}{T}.
+\end{equation}
+Cette relation doit être vraie pour $T$, $P$ et $V$ quelconques. 
+Ces trois variables étant indépendantes, nous pouvons choisir 
+un $V_0$ pour le membre de gauche de l'égalité ci-dessus. On aura donc
+\begin{equation}
+k_V(V_0)V_0=k_0,
+\end{equation}
+où $k_0$ est une constante. On voit donc que 
+\begin{align}
+k_P(P)P=k_0,\\
+\frac{k_T(T)}{T}=k_0.
+\end{align}
+De façon similaire on peut déduire que $k_V(V)V$ est constant.
+Finalement, il vient que
+\begin{equation}
+\frac{PV}{T}=\mbox{cte}.
+\end{equation}
+Il faut réaliser que par constante, on sous-entend ``qui ne dépend pas de la pression, de la température ou du volume''.
+En revanche, il est certain que le membre de droite de cette équation est dépendant de la quantité de gaz
+que nous considérons. Souvenons-nous donc de la loi d'Avogadro. On a qu'à pression et température constante,
+le volume de gaz est proportionnel au nombre de moles, $n$, dont il est composé. L'équation ci-dessus devient donc
+\begin{equation}
+\frac{PV}{T}\sim n.
+\end{equation}
+Expérimentalement, on a déterminé que la relation est en fait donnée par
+\begin{equation}
+PV=nRT,
+\end{equation}
+où $R=8.314\J/\mol \K$ est la \textit{constante des gaz parfaits} qui est universelle et donc indépendante du type de gaz.
 \end{document}
