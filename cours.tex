@@ -55,8 +55,10 @@
 \newcommand{\C}{\mathrm{C}}
 \newcommand{\A}{\mathrm{A}}
 \newcommand{\N}{\mathrm{N}}
+\renewcommand{\bar}{\mathrm{bar}}
 \newcommand{\V}{\mathrm{V}}
 \newcommand{\W}{\mathrm{W}}
+\newcommand{\Pa}{\mathrm{Pa}}
 
 
 \title{Résumé du cours de Physique Générale}
@@ -403,6 +405,35 @@ sachant qu'une unité de masse atomique a une masse de $1.66\cdot 10^{-27}\kg$ e
 la distance moyenne entre deux molécules.
 \end{exercice}
 
+\subsection{La pression dans les fluides}
+
+Introduisons ici brièvement le concept de pression. Les fluides
+réagissent fortement lorsqu'ils sont soumis à des forces (les liquides se déplacent et les gaz peuvent également se comprimer). 
+La pression est intimement reliée au concept de force. Il s'agit en fait de la force appliquée perpendiculairement sur une surface, $F$, divisée
+par son aire, $A$, (voir la figure~\ref{fig_FA})
+\begin{equation}
+P=\frac{F}{A}.
+\end{equation}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/pression.pdf}
+\caption{Une force $F$ appuyant sur une surface $A$.}
+\label{fig_FA}
+\end{center}
+\end{figure} 
+Les unités SI de la pression sont des Pascals, 
+notés $\Pa$, ou encore des $\N/m^2=\kg/(\m\cdot\s^2)$ (les unités d'une force divisée par une surface).
+
+Un objet au repos dans un fluide subira une pression qui sera la même dans toutes les directions.
+Elle est donnée par le poids de la colonne de fluide se trouvant au  dessus de l'objet divisée la surface de l'objet.
+Une utilisation très courante de la pression est en météorologie où 
+on parle de pression atmosphérique. Elle mesure le poids d'une colonne d'air 
+sur le sol par unité de surface. L'unité utilisée pour la pression en météorologie est le $\bar$.
+La pression atmosphérique au niveau de la mer est en moyenne d'environ $1\ \bar=10^5\ \N/\m^2$.
+
+
+
+
 \section{Les thermomètres}
 
 La température est une mesure de combien un objet est chaud ou froid. La sensation de chaud ou de froid pour un être humain
@@ -642,7 +673,7 @@ son coefficient de dilatation linéique est de $\alpha_{\mbox{béton}}=10^{-5}\C
 va se rompre par un jour de grande chaleur ($40^\circ\C$)?
 \end{exemple}
 
-\section{Lois des gaz et température absolue}
+\section{Lois des gaz et zéro absolu}
 
 Les relations que nous avons vues à la section précédente
 ne sont pas valables pour des gaz. En fait, elles ne sont valables que pour les cas où la pression est constante (c'est pour cela que cette grandeur n'apparaît dans aucune des 
@@ -652,6 +683,8 @@ de la pression constante est assez juste. En revanche pour les
 gaz la pression peut varier de façon très abrupte\footnote{étant donné qu'ils remplissent totalement le récipient qui les contient il est assez simple de changer dramatiquement la pression d'un gaz}. 
 
 Il nous faut donc généraliser les ``lois'' que nous avons vu précédemment en incluant la pression. Nous allons dériver dans cette section une \textit{équation d'état} reliant la masse, le volume, la pression et la température d'un gaz.  
+
+
 
 \subsection{Hypothèses}
 
@@ -812,5 +845,8 @@ Expérimentalement, on a déterminé que la relation est en fait donnée par
 \begin{equation}
 PV=nRT,
 \end{equation}
-où $R=8.314\J/\mol \K$ est la \textit{constante des gaz parfaits} qui est universelle et donc indépendante du type de gaz.
+où $R=8.314\ \J/(\mol\cdot\K)$ est la \textit{constante des gaz parfaits} qui est universelle et donc indépendante du type de gaz.
+
+Il est important de noter que la loi du gaz parfait fait intervenir la température en degrés Kelvin (et non en degrés Celsius ou en Fahrenheit). En effet, si $T$ pouvait devenir négatif, on pourrait se retrouver avec un volume négatif ce qui
+n'aurait aucun sens physique.
 \end{document}
