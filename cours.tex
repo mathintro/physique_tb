@@ -37,6 +37,7 @@
 \newtheorem{definition}{Définition}
 \newtheorem*{exemples}{Exemples}
 \newtheorem*{exemple}{Exemple}
+\newtheorem*{solution}{Solution}
 \newtheorem{exercice}{Exercice}
 \newtheorem*{exercices}{Exercices}
 \newtheorem*{remarque}{Remarque}
@@ -849,4 +850,30 @@ où $R=8.314\ \J/(\mol\cdot\K)$ est la \textit{constante des gaz parfaits} qui e
 
 Il est important de noter que la loi du gaz parfait fait intervenir la température en degrés Kelvin (et non en degrés Celsius ou en Fahrenheit). En effet, si $T$ pouvait devenir négatif, on pourrait se retrouver avec un volume négatif ce qui
 n'aurait aucun sens physique.
+
+\subsection{Limitations}
+
+La loi des gaz parfaits est une approximation des gaz réels qui n'est valable que 
+sous certaines conditions
+\begin{enumerate}
+\item Le gaz doit être dans un état d'équilibre.
+\item Le gaz ne doit pas être trop proche de son point de liquéfaction.
+\item La pression du gaz doit être ``faible'' ($P\leq 1\ \bar$).
+\item Le gaz n'est pas en train de subir une réaction chimique.
+\end{enumerate}
+Néanmoins, sous ces conditions il représente très bien ce qui se passe dans plus ou moins tous les gaz connus.
+
+\begin{exemple}{Volume d'une mole de gaz}
+
+Estimer le volume d'une mole d'un gaz à $T=0^\circ\C$, $P=10^5\ N/\m^2$. 
+\end{exemple}
+\begin{solution}
+En utilisant la loi des gaz parfaits on a
+\begin{align*}
+&10^5\cdot V=1\cdot 8.314\cdot 273,\\
+&V=8.314\cdot 273\cdot 10^{-5},\\
+&V=0.0227\ \m^3.
+\end{align*}
+\end{solution}
+
 \end{document}
