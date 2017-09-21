@@ -77,6 +77,19 @@ Quand vous trouverez des erreurs n'hésitez pas à me les communiquer
 et ainsi améliorer la qualité de ce polycopié. Toute erreur trouvée concernant de la ``physique'' (pas les fautes
 d'orthographe donc) seront récompensées par un bonus sur la note des contrôles continus.
 
+\chapter*{Bibliographie}
+
+Il existe une multitude de bons livres de physique générale à disposition. Ce polycopié est largement inspiré du livre 
+de D. C. Giancoli, \textit{Physics: principles with applications},
+7-th edition, Pearson, 2014. D'autres lectures possibles sont les suivantes:
+\begin{itemize}
+	\item Walker, Halliday \& Resnick, Fundamentals of Physics, Wiley, 2014.
+	\item E. Hecht, Physique, 1999.
+\end{itemize}
+Une partie de la bibliographie que je vous ai donné est en anglais. 
+Il existe des traductions qui sont en principe disponibles à 
+la bibliothèque. 
+
 \chapter{Mesures, incertitudes, et estimations}
 
 Pour celles et ceux qui sont intéressés par plus de détails, vous pouvez vous référer au cours de métrologie de l'EPFL par exemple: \url{http://sb.epfl.ch/page-52191-en.html}
@@ -327,10 +340,17 @@ pour faire $1\m$? A combien de $\mol$ cela correspondrait-il?
 \begin{exercice}{Préfixes SI}
 
 \begin{enumerate}
-\item Exprimer en utilisant les préfixes SI et le moins de chiffre possible :
-\begin{equation}
-3\cdot 10^6\kg,\quad 4\cdot10^{-9}\m,\quad 56\cdot10^{-13}\s,\quad 78\cdot 10^{14} \mathrm{A},\quad 0.56  10  1 K , 912  10  19 mol
-\end{equation}
+\item Exprimez en utilisant les préfixes SI et le moins de chiffre possible les nombres suivants
+\begin{equation*}
+3\cdot 10^6\kg,\quad 4\cdot10^{-9}\m,\quad 56\cdot10^{-13}\s,\quad 78\cdot 10^{14} \mathrm{A},\quad 0.56\cdot 10^1 \mathrm{K} ,\quad 912\cdot10^{19}\mol.
+\end{equation*}
+\item On estime que le cerveau humain peut stocker environ cent mille milliards de bits d’informations.
+\begin{enumerate}
+	\item Écrire ce nombre en forme décimale.
+	\item En notation scientifique.
+	\item Exprimer ce nombre en ajoutant un préfixe au mot bit.
+	\item Sachant qu'un byte correspond à 8bits, combien de bytes cela fait-il?
+\end{enumerate}
 \end{enumerate}
 \end{exercice}
 
@@ -348,8 +368,8 @@ On a donc un résultat précis ``à la puissance de 10 près''.
 \end{exercice}
 \begin{exercice}{Hauteur d'un bâtiment}
 
-Je souhaite estimer la hauteur d'un bâtiment. Supposons que mes yeux soient à une hauteur de $1.5\m$ du sol. Je souhaite estimer la hauteur d'un bâtiment. La seule information connue est que quand je me place 
-à une distance de d'un écartement de bras d'un arbre (mesurant environ $3\m$ à l’œil de haut et se trouvant à $20$ pas du bâtiment) placé entre moi et le bâtiment, 
+Je souhaite estimer la hauteur d'un bâtiment. Supposons que mes yeux soient à une hauteur de $1.5\m$ du sol. La seule information connue est que quand je me place 
+à une distance d'un écartement de bras d'un arbre (mesurant environ $3\m$ de haut et se trouvant à $20$ pas du bâtiment) placé entre moi et le bâtiment, 
 l'arbre cache tout juste le haut du bâtiment.
 \end{exercice}
 
@@ -364,11 +384,14 @@ l'épaisseur d'une feuille du livre.
 
 Lorsque nous parlons de dimensions d'une quantité, nous nous référons souvent au type des unités de la quantité. Une longueur 
 sera représentée par $[L]$\footnote{Une lettre représentant la quantité entourée de crochets.}, un temps par $[T]$, une masse par $[M]$, etc.
-Cette notation se généralise pour toute quantité dont les quantités sont des combinaisons de ces unités de base. Ainsi, une surface sera $[L^2]$,
-une fréquence $[1/T]$, une vitesse $[L/T]$, une énergie $[M\cdot L^2/T^2]$, etc.
+Cette notation se généralise pour toute quantité dont les quantités sont des combinaisons (multiplication ou division) de ces unités de base. Ainsi, une surface sera $[L^2]$,
+une fréquence $[1/T]$, une vitesse $[L/T]$, une énergie $[M\cdot L^2/T^2]$, une force $[M L/T^2]$, etc.
 
 L'analyse dimensionnelle peut se révéler particulièrement utile pour vérifier si des relations font du sens ou pas. Les lois physiques
 mettent en relation différentes quantités qui doivent être consistante également du point de vue des unités.
+On ne peut naturellement pas additionner des quantités qui n'ont pas les mêmes unités. 
+Cela reviendrait à ajouter des éléphants à des lettres, le résultat serait alors peu clair\footnote{Ou alors cela serait 7.}.
+
 Si nous prenons comme exemple la relation
 \begin{equation}
  s=x_0+\frac{1}{2}v_0 t^2,
@@ -379,12 +402,15 @@ aurait une vitesse $v_0$ après un temps $t$. Si nous effectuons l'analyse dimen
  [L]&\stackrel{?}{=}[L]+[L/T]\cdot [T^2],\nonumber\\
  &\neq[L]+[L\cdot T].
 \end{align}
-On constate donc que cette équation est certainement fausse. On note aussi que le $1/2$ n'ayant pas d'unités a été simplement ignoré dans la relation ci-dessus.
+On constate donc que cette équation est certainement fausse. On note aussi que le $1/2$ n'ayant pas d'unités a été simplement ignoré dans la relation ci-dessus,
+car il n'est pas porteur d'unités.
 
 Si le résultat de l'analyse dimensionnelle se révèle incohérent, nous sommes certains que l'équation est fausse. 
 L'inverse est cependant faux. En effet, une analyse dimensionnelle d'une équation cohérente ne permet pas d'être sûr que l'équation en elle-même est correcte. 
 Par exemple tous les facteurs numériques peuvent être complètement faux. Ou alors certaines quantités peuvent avoir les bonnes unités mais n'avoir aucun sens physique dans
 les cas étudiés.
+
+
 
 \begin{exercice}{Analyse dimensionnelle}
 
