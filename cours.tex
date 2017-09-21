@@ -51,6 +51,7 @@
 \newcommand{\m}{\mathrm{m}}
 \newcommand{\s}{\mathrm{s}}
 \newcommand{\kg}{\mathrm{kg}}
+\newcommand{\g}{\mathrm{g}}
 \newcommand{\K}{\mathrm{K}}
 \newcommand{\J}{\mathrm{J}}
 \newcommand{\C}{\mathrm{C}}
@@ -239,7 +240,12 @@ tout élément du tableau périodique une mole sera le nombre d'atomes d'éléme
 
 L'intensité lumineuse est mesurée en candela (abrégé $\cd$). Elle est donnée par l'intensité lumineuse émise par
 une source monochromatique de fréquence de $540\cdot 10^{12}\s^{-1}$ et dont l'intensité énergétique est de 
-$1/683 \W$ par stéradian (équivalent du radian mais sur une sphère).
+$1/683 \W$ par stéradian (équivalent du radian mais sur une sphère). L'intensité lumineuse représente la puissance (la quantité d'énergie 
+par unité de temps) émise par une source par angle solide. 
+
+A titre de comparaison, un candela est environ l'intensité 
+lumineuse émise par une bougie normale. Ou encore, une ampoule led typique 
+à faible consommation électrique (15 Watts) produit environ 10$\cd$.
 
 \subsection{Préfixes du Système International}
 
@@ -304,6 +310,31 @@ $10^{-24}$&yocto&y&0,000 000 000 000 000 000 000 001&Quadrillionième\\
 \label{table_prefixe}
 \end{table}
 
+\begin{exercice}{Conversion d'unités}
+
+\begin{enumerate}
+\item Écrivez en mètres les grandeurs suivantes: $1\cm$, $1.23\cdot 10^6\mu\m$, $72\mathrm{da}\m$.
+\item Ajoutez les grandeurs suivantes $3\mu\g$, $7\mathrm{d}\g$, $120\kg$. Écrivez les en notation scientifique avec 
+trois chiffres significatifs.
+\item Calculez le produit des grandeurs suivantes $8.76\m$, $5.43\mm$, $2.10\mu\m$. Que représente ce produit?
+Écrivez le résultat en $\m^3$ et en $\cm^3$.
+\item Le rayon d'un atome d'oxygène est d'environ $60\mathrm{pm}$. Combien d'atomes posés côte à côte faudrait-il
+pour faire $1\m$? A combien de $\mol$ cela correspondrait-il?
+\item Classez ces grandeurs par ordre croissant $1\mm$, $1\cm$, $1\m$, $1\mathrm{dam}$, $1\mathrm{pm}$, et $1\mathrm{dm}$.
+\end{enumerate}
+\end{exercice}
+
+\begin{exercice}{Préfixes SI}
+
+\begin{enumerate}
+\item Exprimer en utilisant les préfixes SI et le moins de chiffre possible :
+\begin{equation}
+3\cdot 10^6\kg,\quad 4\cdot10^{-9}\m,\quad 56\cdot10^{-13}\s,\quad 78\cdot 10^{14} \mathrm{A},\quad 0.56  10  1 K , 912  10  19 mol
+\end{equation}
+\end{enumerate}
+\end{exercice}
+
+
 \section{Ordre de grandeur}
 
 Souvent nous pouvons vouloir qu'une estimation rapide d'une quantité ou simplement vouloir rapidement avoir une idée 
@@ -354,6 +385,19 @@ Si le résultat de l'analyse dimensionnelle se révèle incohérent, nous sommes
 L'inverse est cependant faux. En effet, une analyse dimensionnelle d'une équation cohérente ne permet pas d'être sûr que l'équation en elle-même est correcte. 
 Par exemple tous les facteurs numériques peuvent être complètement faux. Ou alors certaines quantités peuvent avoir les bonnes unités mais n'avoir aucun sens physique dans
 les cas étudiés.
+
+\begin{exercice}{Analyse dimensionnelle}
+
+Essayez de deviner les relations entre les quantités suivantes à partir de leurs dimensions
+\begin{enumerate}
+\item Distance et vitesse.
+\item Accélération et vitesse.
+\item Distance et accélération.
+\item Énergie et vitesse.
+\item Force et énergie.
+\end{enumerate}
+
+\end{exercice}
 
 \chapter{Température}
 
