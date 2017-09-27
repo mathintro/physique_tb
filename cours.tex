@@ -773,18 +773,19 @@ dans un état où plus rien ne varie dans le temps). De plus, les
 résultats de cette section ne sont valables uniquement que
 lorsque le gaz n'est pas trop dense ou proche de la liquéfaction.
 
-\subsection{Loi de Boyle}
+\subsection{Loi de Boyle-Mariotte}
 
-Robret Boyle a déterminé expérimentalement au $17^\textrm{\`eme}$
+Robret Boyle et Edme Mariotte ont déterminé expérimentalement au $17^\textrm{\`eme}$
 siècle que \textit{lorsqu'on maintient la température d'un gaz constante, on constate que son volume, $V$, varie de façon inversement proportionnelle à sa pression, $P$}
 \begin{equation}
 V\sim\frac{1}{P},\quad \mbox{pour }T\mbox{ constant.}
 \end{equation}
-Une autre façon d'écrire la loi de Boyle est 
+Une autre façon d'écrire la loi de Boyle-Mariotte est 
 \begin{equation}
 PV= \mbox{cte},\quad \mbox{pour }T\mbox{ constant.}\label{eq_loi_boyle}
 \end{equation}
-Cela signifie que si nous doublons le volume d'un gaz, sa pression sera divisée par deux. La loi de Boyle peut se représenter graphiquement comme sur la figure~\ref{fig_boyle}
+Cela signifie que si nous doublons le volume d'un gaz, sa pression sera divisée par deux. La loi de Boyle-Mariotte 
+peut se représenter graphiquement comme sur la figure~\ref{fig_boyle}
 où chacune des courbes est la relation entre la pression et le volume pour une température donnée.
 \begin{figure}
 \begin{center}
@@ -798,6 +799,30 @@ une pression $P_1$ et qu'il y a un autre état d'équilibre avec volume $V_2$ et
 \begin{equation}
 P_1V_1=P_2V_2.
 \end{equation}
+
+\begin{exemple}{Plongée sous-marine}
+
+Lors d'une plongée sous-marine on respire l'air à la pression 
+de la profondeur à laquelle on se trouve\footnote{Enfin cela est vrai 
+si on ne fait pas de la plongée en apnée, où il faut éviter de respirer...}. La pression augmente 
+d'environ un bar (environ $10^5\kg\cdot\m^{-1}\s^{-1}$) par dix mètres de profondeur et donc lors de la remontée la pression 
+va se réduire fortement. Si on a la mauvaise idée de bloquer sa respiration pendant la remontée, le volume d'air dans les poumons va augmenter fortement car 
+\begin{equation*}
+V_2=\frac{P_1}{P_2}V_1,
+\end{equation*}
+où $P_1>P_2$ et donc $V_2>V_1$ (voir la figure \ref{fig_plongee}).
+Cette augmentation de volume peut avoir des effets catastrophiques
+comme la rupture des tissus des poumons. Moralité, n'oubliez pas d'expirer en remontant à la surface lorsque vous faites de la plongée.
+
+\begin{figure}[htp]
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/plongee.pdf}
+\caption{Le volume d'un poumon augmente lorsque le plongeur remonte sans expirer passant de $V_2$ à $V_1$.}
+\label{fig_plongee}
+\end{center}
+\end{figure}
+\end{exemple}
+
 
 \subsection{Loi de Charles}
 
@@ -836,6 +861,16 @@ A la température de $0\K$ le volume d'un gaz serait nul
 (voire même négatif si on arrivait à descendre plus bas).
 Ce genre d'état n'existe à notre connaissance dans la nature et 
 défierait toutes les lois telles que nous les connaissons.
+
+Nous avons déjà vu une version de cette loi précédemment (à l'équation~\eqref{eq_V_T}). Une autre façon d'écrire cette loi est
+\begin{equation}
+V=V_0\left(1+\beta(P)(T-T_0)\right),
+\end{equation}
+où $\beta(P)$\footnote{dans l'équation~\eqref{eq_V_T}, $\beta$ ne dépendait pas de la pression, car nous considérions un solide, et la presion dans un solide est très difficile à faire changer.} est une fonction de la pression et du gaz considéré 
+(en gardant $P$ constant cette valeur ne change pas pour un gaz 
+donné), $V_0$ est le volume 
+à température de référence $T_0$. Lorsque $P\rightarrow 0$,
+$\beta(P)$ devient indépendant du gaz et vaut $1/273.15\ \C^{-1}$.
 
 \subsection{Loi de Gay-Lussac}
 
@@ -970,6 +1005,7 @@ la pression interne du ballon est de $1.064\cdot 10^5\N/m^2=1.05\atm$. Calculer 
 \end{enumerate}
 \end{exercice}
 
+
 \chapter{Chaleur et matière}
 
 Lorsqu'on chauffe une casserole d'eau froide sur la plaque du cuisinière (qui n'est pas à induction), la température de l'eau augmente.. 
@@ -997,7 +1033,9 @@ ce qui contredisait la théorie du fluide calorique (cela voudrait dire qu'une q
 Depuis, la vision que nous avons de la chaleur est celle qui 
 l'identifie à la notion de \textit{travail}. 
 
-\subsection{Brève introduction du travail}
+\subsection{Brève introduction sur le travail}
+
+\subsection{}
 
 
 
