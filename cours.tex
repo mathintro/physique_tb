@@ -973,10 +973,10 @@ sous certaines conditions
 \end{enumerate}
 Néanmoins, sous ces conditions il représente très bien ce qui se passe dans plus ou moins tous les gaz connus.
 
-\begin{exemple}{Volume d'une mole de gaz}
+\begin{exercice}{Volume d'une mole de gaz}
 
 Estimer le volume d'une mole d'un gaz à $T=0^\circ\C$, $P=10^5\ N/\m^2$. Et à $T=20^\circ\C$?
-\end{exemple}
+\end{exercice}
 \begin{solution}
 En utilisant la loi des gaz parfaits on a
 \begin{align*}
@@ -1020,22 +1020,168 @@ est différent de celui de température!). Puis verront les effets
 de la chaleur sur la matière (notamment sur les transitions de phase) et les processus qui permettent de la transférer: 
 la conduction, la convection et la radiation.
 
+\section{Brève introduction sur le travail}
+
+La notion de travail que vous verrez plus tard en plus de détails
+est essentielle en physique. On dit que le \textit{travail}
+effectué par une force constante sur un objet est le produit
+entre la force dans la direction de déplacement (notée $F_\parallel$) de l'objet multipliée par la distance (notée $d$) parcourue par l'objet (pendant que la force est appliquée)
+\begin{equation}
+W=F_\parallel d.
+\end{equation}
+L'unité du travail est le joule (noté $\mathrm{J}=\mathrm{N}\cdot\m$). La notion d'énergie se définit comme \textit{la capacité à effectuer un travail}. Il existe beaucoup de différents types d'énergie (potentielle, électrique, cinétique, ...). 
+
+Celle qui nous intéresse plus particulièrement ici est l'énergie cinétique d'un objet. Elle peut se définir comme
+\begin{equation}
+E_\mathrm{cin}=\frac{1}{2}m v^2,
+\end{equation}
+où $m$ est la masse de l'objet et $v$ sa vitesse.
+L'énergie cinétique maximale d'Usain Bolt lors du $100\m$
+durant lequel il a réalisé le record du monde était de\footnote{Il pesait $94\kg$ et a couru le $100\m$ en $9.6\s$ en atteignant  les $44.7\km/\mathrm{h}$.}
+\begin{equation}
+E_\mathrm{bolt}=\frac{1}{2}\cdot 94\cdot 14.2^2=7.23\mathrm{kJ}.
+\end{equation}
 
 \section{La chaleur comme un transfert d'énergie}
 
 Au 18-ème siècle la chaleur était vue comme un ```fluide''
 qui constituait tout corps chaud et qui pouvait être ``couler''
 vers un corps froid. Ce fluide s'appelait le \textit{calorique}. 
-Au 19-ème siècle on se rendit compte que ce modèle était faux, en particulier s'il existait, ce fluide devait être sans masse. De plus, on montra que tant qu'on produisait du \textit{travail}
+Une des unités de chaleur encore très utilisée aujourd'hui, la calorie, 
+tire son nom de ce concept. Une calorie (noté $\mathrm{cal}$) correspond à la quantité de chaleur nécessaire
+pour chauffer $1\g$ d'un degré $\C$. En général on utilise plutôt la kilo-calorie (notée $\mathrm{kcal}$)
+qui correspond à 1000 calories, ou encore la quantité de chaleur nécessaire pour chauffer
+$1\kg$ d'un degré Celsius. 
+
+Au 19-ème siècle on se rendit compte que le modèle du calorique était faux, en particulier s'il existait, ce fluide devait être sans masse. 
+De plus, on montra que tant qu'on produisait du \textit{travail}
 on pouvait continuer à chauffer des objets et donc potentiellement il existerait une ``infinité'' de calorique
 ce qui contredisait la théorie du fluide calorique (cela voudrait dire qu'une quantité potentiellement infinie de calorique existait en chaque objet). 
 
 Depuis, la vision que nous avons de la chaleur est celle qui 
-l'identifie à la notion de \textit{travail}. 
+l'identifie à la notion de \textit{travail} ou un transfert d'énergie. 
 
-\subsection{Brève introduction sur le travail}
+Une des expériences qui ont montré l'équivalence du travail avec la chaleur a été effectuée par J. P. Joule
+est représentée à la Figure~\ref{fig_joule}. 
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.5\textwidth]{figs/joule.png}
+\caption{Gravure représentant l’installation expérimentale utilisée par J. Joule pour mesurer l’équivalence entre chaleur et travail. 
+La chute du poids (à droite) fait tourner la roue à ailette plongée dans l'eau (à gauche) et la réchauffe par frottement. Source: 
+\url{https://upload.wikimedia.org/wikipedia/commons/c/c3/Joule's_Apparatus_(Harper's_Scan).png}
+}\label{fig_joule}
+\end{center}
+\end{figure}
+Cette expérience montre que l'on transfert l'énergie mécanique d'un poids en énergie contenue dans l'eau en la chauffant. 
+Ce résultat peut s'obtenir en chauffant l'eau directement dans 
+une casserole placée au-dessus d'une flamme.
+J. Joule réalisa beaucoup d'autres expériences qui montrèrent qu'une calorie correspond à une quantité de travail donnée
+\begin{equation}
+4.186\ \mathrm{kJ}=1\ \mathrm{kcal}.
+\end{equation}
 
-\subsection{}
+Si nous reprenons le cas d'Usain Bolt, 
+son énergie cinétique maximale lors du $100\m$ aurait permis de chauffer
+un kilogramme d'eau de $1.73^\circ\C$ (son énergie cinétique était de $7.23\mathrm{kJ}$). 
+Ce même Usain Bolt en train 
+de siroter un verre de champagne bien mérité après sa course
+allongé dans une chaise longue a une énergie cinétique nulle.
+Néanmoins son énergie thermique est non nulle. 
+
+Comme nous avions interprété la température d'un objet comme étant l'agitation désordonnée de toutes ses molécules, 
+nous faisons correspondre l'énergie thermique d'Usain Bolt 
+comme la somme des énergies cinétiques de toutes les molécules 
+le composant.
+
+De ce point de vue le travail effectué par la chute du poids
+(dans l'expérience de Joule) est transformé en énergie thermique en chauffant l'eau,
+augmentant donc l'agitation de ses molécules.
+
+Nous avons donc que la chaleur est \textit{le transfert d'énergie entre deux objet
+car ils ont une différence de température}. L'unité de la chaleur est le joule.
+
+\section{Chaleur massique}
+
+La température d'un objet augmente lorsqu'il gagne de la chaleur. Inversement, 
+sa température diminue lorsqu'il perd de la chaleur. Il nous faut à présent une mesure quantitative 
+de la variation de chaleur en fonction de la variation d'énergie.
+La quantité de chaleur, notée $Q$, nécessaire pour changer la température d'un objet 
+est proportionnelle au changement de température $\Delta T$ et à la masse de l'objet $m$
+et est donnée par
+\begin{equation}
+Q=c m \Delta T,
+\end{equation}
+où $c$ est la chaleur massique (dont les unités sont $[\J/(\kg\cdot\C)]$). 
+La chaleur massique de l'eau est de $c=4.186\cdot 10^3\ [\J/(\kg\cdot\C)]$, étant donné qu'il faut
+$4.186\cdot 10^3\J$ pour chauffer un kilogramme d'eau d'un degré.
+Une petite chaleur massique veut dire que la résistance du matériau à un changement de température
+est faible et vice-versa. 
+
+Lorsque la température d'un objet augmente la chaleur est positive, à l'inverse lorsque la température d'un objet diminue
+la chaleur est négative. Le signe représente la direction 
+de l'échange d'énergie: quand il est positive le flux 
+d'énergie va dans l'objet, à l'inverse quand il est négatif le flux d'énergie sort de l'objet.
+
+\begin{exercice}{Chaleur massique}
+
+Quelle est la quantité de chaleur nécessaire pour chauffer 
+un récipient en marbre de $20\kg$ entre $10^\circ$ et $90^\circ$ (chaleur massique du marbre, $c=860 \J/(\kg\cdot\C)$)?
+Qu'en est-il si le récipient est rempli avec $20\kg$ d'eau?
+\end{exercice}
+
+\section{Notion de système}
+
+Lors des sections précédentes, nous avons considéré des
+objets placés dans un \textit{environnement} (qui est tout
+ce qui n'est pas l'objet lui-même, tout le reste de 
+l'univers). Nous considérons deux sortes de systèmes:
+les systèmes fermés et les systèmes ouverts.
+Dans le premier cas le système n'échange pas de masse
+avec son environnement, mais peut échanger de l'énergie. 
+Dans le second, masse et énergie peuvent être échangées. 
+De plus un système fermé peut être isolé. Dans ce cas il 
+n'échangera pas d'énergie non plus avec son environnement.
+
+Un système isolé n'existe pas en réalité, c'est une pure 
+construction intellectuelle, mais il a l'avantage d'être 
+plus simple à traiter. En particulier, dans un système isolé 
+si différentes parties du systèmes sont à des températures
+différentes, la chaleur va ``s'écouler'' de la partie chaude 
+à la partie froide jusqu'à ce que le système en entier ait 
+la même température (atteigne l'équilibre thermique). 
+L'énergie ne pourra aller nulle part ailleurs et sera donc 
+\textit{conservée} (la quantité d'énergie totale du système
+ne changera pas). 
+
+La conservation de l'énergie peut s'exprimer de façon 
+intuitive par: \textit{tout l'énergie qui rentre dans le 
+système est égale à l'énergie qui en sort}
+\begin{equation}
+Q_\mathrm{gagn\acute ee}=Q_\mathrm{perdue},\quad 
+\mbox{dans un syst\`eme isol\'e}.
+\end{equation}
+De façon plus générale, nous pouvons écrire que si un 
+système isolé est composé de $N$ partie distinctes
+qui ont des températures distinctes $\{T_i\}_{i=1}^N$,
+alors les transferts de chaleur qui vont
+emmener le système vers une température 
+d'équilibre $T_f$ vont s'annuler
+\begin{equation}
+\sum_{i=1}^NQ_i=0.
+\end{equation}
+Chaque $Q_i=mc(T_f-T_i)$ peut être soit positif (si 
+de la chaleur entre dans cette partie du système, $T_i<T_f$) 
+soit négatif (si de la chaleur sort du système, $T_i>T_f$) 
+ce qui permet au bilan de s'annuler.
+
+\begin{exercice}{Tasse de café}
+
+Si nous remplissons une tasse de $80\ \g$ d'un volume de $30 
+\mathrm{ml}$ de café chauffé à $70^\circ\C$. Quel sera 
+la température finale de l'ensemble si nous supposons que le système est isolé?
+\end{exercice}
+
+
 
 
 
