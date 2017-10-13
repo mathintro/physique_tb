@@ -1,0 +1,184 @@
+% Copyright (C)  2016  Orestis Malaspinas.
+%     Permission is granted to copy, distribute and/or modify this document
+%     under the terms of the GNU Free Documentation License, Version 1.3
+%     or any later version published by the Free Software Foundation;
+%     with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+%     A copy of the license can be downloaded from:
+%     https://www.gnu.org/licenses/fdl.html.
+
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{amsfonts,bm,amsmath,amssymb,graphicx,amsthm}
+\usepackage{cancel}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\integer}{\mathbb{Z}}
+\renewcommand{\natural}{\mathbb{N}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\zbar}{\bar{z}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\perm}{\mathrm{perm}}
+\newcommand{\card}{\mathrm{card}}
+\newcommand{\fh}{\hat{f}}
+\newcommand{\gh}{\hat{g}}
+\newcommand{\hh}{\hat{h}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Im}{\mathrm{Im}}
+\newcommand{\pDeriv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pDerivTwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\dDeriv}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\dDerivTwo}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newtheorem{definition}{Définition}
+\newtheorem*{exemples}{Exemples}
+\newtheorem*{exemple}{Exemple}
+\newtheorem*{solution}{Solution}
+\newtheorem{exercice}{Exercice}
+\newtheorem{corrige}{Corrig\'e exercice}
+\newtheorem*{remarque}{Remarque}
+\newtheorem{proprietes}{Propriétés}
+\newtheorem{theoreme}{Théorème}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cd}{\mathrm{cd}}
+\newcommand{\mol}{\mathrm{mol}}
+\newcommand{\m}{\mathrm{m}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\kg}{\mathrm{kg}}
+\newcommand{\g}{\mathrm{g}}
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\J}{\mathrm{J}}
+\newcommand{\C}{\mathrm{C}}
+\newcommand{\oC}{^\circ\C}
+\newcommand{\A}{\mathrm{A}}
+\newcommand{\N}{\mathrm{N}}
+\newcommand{\atm}{\mathrm{atm}}
+\renewcommand{\bar}{\mathrm{bar}}
+\newcommand{\V}{\mathrm{V}}
+\newcommand{\W}{\mathrm{W}}
+\newcommand{\Pa}{\mathrm{Pa}}
+
+
+\title{Exercices sur la température}
+% \author{Orestis Malaspinas}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{exercice}{Dilatation linéique/volumique}
+
+Montrer qu’en première approximation, pour un solide sa dilatation volumique est telle que 
+\begin{equation}
+\beta=3\alpha.
+\end{equation}
+Indication: Écrire que l'allongement dans chaque direction peut s'écrire $L_1=L_0+\Delta L$, avec $\Delta L\ll 1$,
+en déduire la variation
+du volume, puis négliger les termes les plus petits.
+\end{exercice}
+
+\begin{exercice}{Fil de Cuivre}
+
+\begin{enumerate}
+	\item Un fil de cuivre ($\alpha=16.6\cdot 10^{-6}\K^{-1}$) est long de $10\ \m$ à la température de $20\oC$, quelle doit être sa
+température pour qu'il s'allonge de $1\ \cm$ ?.
+	\item La tour Eiffel, qui est en acier ($\alpha=11\cdot 10^{-6}\K^{-1}$), est de hauteur $320\ \m$ à $20\oC$, quelle est sa variation de hauteur
+sur l’intervalle $-20$ à $+35\ \oC$ ?
+\end{enumerate}
+\end{exercice}
+
+\begin{exercice}{Thermomètre}
+
+Un thermomètre à mercure ($\beta=1.8\cdot 10^{-4}$) en quartz est formé par un volume total de $0.400\ \cm^3$ de mercure
+dans un réservoir surmonté par un tube de quartz. Le tube a un diamètre de $0.20\ \mm$.
+On négliger la dilatation volumique du quartz, de combien monte le niveau du mercure
+lorsque la température passe de $10\oC$ à $90\oC$ ?
+\end{exercice}
+
+\begin{exercice}{Débordement}
+
+Un bêcher en Pyrex ($\beta_\mathrm{Pyrex}=9\cdot10^{-6}\K^{-1}$) est rempli jusqu'au bord avec $100\ \cm^3$ d'eau ($\beta_\mathrm{eau}=2\cdot10^{-4}\K^{-1}$) à $10\oC$.
+Quel volume d'eau déborde si la température atteint $50\oC$ ?
+
+Remarque : il faut tenir compte de la dilatation du verre.
+\end{exercice}
+
+\begin{exercice}{Pression des pneus}
+
+On gonfle à $15\oC$ à la pression de $300\ \mathrm{kPa}$ un pneu d’automobile dont le volume intérieur
+(de 15 litres) reste pratiquement constant.
+Après un voyage on constate que la pression est de $320\ \mathrm{kPa}$, quelle est alors la température de l’air à
+l’intérieur du pneu ?
+\end{exercice}
+
+% \section{Corrigé}
+
+% \begin{corrige}
+
+% Soit $V=$ et après dilatation, on a
+% $\Delta L_$
+% : et en dilatation , et ainsi~:
+
+% Si alors on \emph{\textbf{peut négliger le terme 2}} toujours beaucoup\\
+% plus petit que le terme 1~!
+
+% Ainsi
+
+% Mais en dilatation , et , et ainsi~:
+
+% Soit~: et\\
+% \end{corrige}
+
+% Exercice 3
+
+% \begin{enumerate}
+% \def\labelenumi{\alph{enumi})}
+% \item
+%   ,\\
+%   ainsi la température doit être de
+% \item
+%   De à -20°C~ on aura~:
+% \end{enumerate}
+
+% \begin{quote}
+% De à +35°C~ on aura~:
+
+% Et de à +35°C~ on aura~:
+% \end{quote}
+
+% Exercice 4
+
+% Lorsque la température passe de à a variation de volume du mercure est
+% donnée par~:
+
+% Dans le tube de rayon et donc de section ,
+
+% Le liquide montera de la hauteur
+
+% Exercice 5
+
+% Lorsque la température passe de à , la variation de volume\\
+% des 100 cm\textsuperscript{3} d'eau est donnée par~:
+
+% Le bêcher en Pyrex augmente également de volume, son coefficient de
+% dilatation volumique étant donné par~: on aura~:
+
+% Ainsi l'eau déborde de
+
+% Exercice 6
+
+% De la loi des gaz parfaits on a~:
+
+% Ici le volume (de ) reste constant, et la quantité de gaz à l'intérieur
+% est également constante.
+
+% Ainsi~: , d'où °C~
+
+
+\end{document}
