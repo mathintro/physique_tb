@@ -1,8 +1,8 @@
 default:
-	pandoc test.text --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --latex-engine pdflatex -o test.pdf
+	pandoc -s -S -o test.pdf test.text --number-sections --filter=pandoc-numbering --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --template=default.latex --latex-engine pdflatex
 
 latex:
-	pandoc test.text --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --template=default.latex -o test.tex
+	pandoc -s -S -o test.tex test.text --number-sections --filter=pandoc-numbering --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --template=default.latex
 
 epub:
-	pandoc test.text --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos -t epub3 -o test.epub
+	pandoc -s -S -o test.epub test.text --number-sections --filter=pandoc-numbering --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos -t epub3
