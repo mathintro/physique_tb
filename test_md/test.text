@@ -619,17 +619,15 @@ la température à distance (pas besoin d’avoir un contact physique avec
 la source) contrairement aux deux sortes de thermomètres décrits
 précédemment. Ils sont utilisés pour mesurer la température émise par
 les bâtiments (et donc la déperdition d’énergie associée) ou de chats
-(voir Figure {@fig:thermographie}).
+(voir Figure {@fig:thermographie_kot} ou {@fig:thermographie_cat}).
 
 ![Mesure de température de bâtiments bien isolés ou non (gauche) et de
-chat (droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie}
-![Mesure
-de température de bâtiments bien isolés ou non (gauche) et de chat
-(droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie}
+chat (droite). Sources: <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie_kot}
+
+![Mesure de température de bâtiments bien isolés ou non (gauche) et de chat
+(droite). Sources: <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie_cat}
 
 ### Les échelles de température
 
@@ -1023,8 +1021,7 @@ PV=k_T(T),
 $${#eq:boyle}
 l'équation de Charles
 $$
-\frac{V}{T}=k_P(P),
-$${#eq:charles}\\
+\frac{V}{T}=k_P(P),$${#eq:charles}
 et l'équation de Gay-Lussac
 $$
 \frac{P}{T}=k_V(V),
