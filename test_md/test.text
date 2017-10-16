@@ -2,6 +2,8 @@
 author:
 - Orestis Malaspinas
 title: Résumé du cours de Physique Générale
+autoSectionLabels: true
+autoEqnLabels: true
 ---
 
 Avertissement {#avertissement .unnumbered}
@@ -788,7 +790,7 @@ Cette modification du volume en fonction de la température explique
 objet voit sa température changer. En effet, la densité, $\rho$ est
 définie par $$\rho=\frac{m}{V},$$ où $m$ est la masse de l’objet. La
 masse ne changeant pas avec la température (contrairement au volume), en
-substituant l’équation {@eq:V_T} dans l’équation ci-dessus, on
+substituant l’équation @eq:V_T dans l’équation ci-dessus, on
 obtient $$\rho=\frac{m}{V_0(1+\beta\Delta T)},$$ qui est l’équation
 reliant la densité à la variation de température d’un objet dont le
 volume est de $V_0$ à température $T_0$. On constate donc que si
@@ -853,7 +855,7 @@ empiriquement on a déterminé que $\sigma$ est proportionnel au rapport
 $\Delta L/L_0$ et la constante reliant les deux quantité s’appelle le
 module de Young, $E$, (ou module d’élasticité)
 $$\sigma=E\frac{\Delta L}{L_0}.$$ En utilisant
-l’équation {@eq:dl_dt} qui relie $\Delta L$ à $\Delta T$, on
+l’équation @eq:dl_dt qui relie $\Delta L$ à $\Delta T$, on
 obtient $$\sigma=\alpha E \Delta T.$$ On constate donc que la contrainte
 thermique sur les matériaux est proportionnelle à la variation de
 température, et dépendante de deux constantes que sont le module de
@@ -978,7 +980,7 @@ connaissance dans la nature et défierait toutes les lois telles que nous
 les connaissons.
 
 Nous avons déjà vu une version de cette loi précédemment (à
-l’équation {@eq:V_T}). Une autre façon d’écrire cette loi est
+l’équation @eq:V_T). Une autre façon d’écrire cette loi est
 $$V=V_0\left(1+\beta(P)(T-T_0)\right),$$ où $\beta(P)$[^9] est une
 fonction de la pression et du gaz considéré (en gardant $P$ constant
 cette valeur ne change pas pour un gaz donné), $V_0$ est le volume à
@@ -1013,8 +1015,8 @@ $$V\sim n,\quad \mbox{pour $T,P$ constantes}.$$
 
 En utilisant les lois de Boyle, Charles et de Gay-Lussac, on peut
 dériver une loi encore plus générale. Commençons par réécrire les trois
-lois (voir les équations {@eq:loi_boyle},
-{@eq:loi_charles}, et {@eq:loi_gaylussac}):
+lois (voir les équations @eq:loi_boyle,
+@eq:loi_charles, et @eq:loi_gaylussac):
 l'équation de Boyle
 $$
 PV=k_T(T),
@@ -1031,11 +1033,11 @@ sont trois “constantes” où respectivement on suppose qu’on garde la
 température, la pression et le volume constants (néanmoins ces
 constantes ont une valeur différentes pour des valeurs différentes de
 température, pression et volume respectivement). En divisant
-l’équation {@eq:boyle} par $T$ on obtient
+l’équation @eq:boyle par $T$ on obtient
 $$\frac{PV}{T}=\frac{k_T(T)}{T}.$$ Puis en multipliant
-l’équation {@eq:charles} par $P$ on obtient
+l’équation @eq:charles par $P$ on obtient
 $$\frac{PV}{T}=k_P(P)P.$$ Finalement en multipliant
-l’équation {@eq:gaylussac} par $V$ on obtient
+l’équation @eq:gaylussac par $V$ on obtient
 $$\frac{PV}{T}=k_V(V)V.$$ Comme les membres de gauche de ces trois
 équations sont identiques, on voit que
 $$k_V(V)V=k_P(P)P=\frac{k_T(T)}{T}.$$ Cette relation doit être vraie
@@ -1312,7 +1314,7 @@ isolé?
 [^8]: Enfin cela est vrai si on ne fait pas de la plongée en apnée, où
     il faut éviter de respirer...
 
-[^9]: dans l’équation {@eq:V_T}, $\beta$ ne dépendait pas de la
+[^9]: dans l’équation @eq:V_T, $\beta$ ne dépendait pas de la
     pression, car nous considérions un solide, et la presion dans un
     solide est très difficile à faire changer.
 

@@ -8,4 +8,4 @@ epub:
 	pandoc -s -S -o test.epub test.text --number-sections --filter=pandoc-numbering --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos -t epub3
 
 htmlc:
-	pandoc -s -S -o test.html test.text --number-sections --filter=pandoc-numbering  --filter=/home/malaspor/.cabal/bin/pandoc-crossref --mathml
+	pandoc -s -S -o test.html test.text --number-sections --filter=pandoc-numbering  --filter=/home/malaspor/.cabal/bin/pandoc-crossref --mathml -t html5
