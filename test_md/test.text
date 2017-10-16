@@ -237,7 +237,7 @@ les balances utilisées un peu partout sur les territoires.
 
 ![Une réplique de l’étalon international du kilogramme présentée à la
 cité des sciences et de l’industrie (Vilette), source:
-<https://upload.wikimedia.org/wikipedia/commons/a/ac/Prototype_kilogram_replica.JPG>](../figs/kilogram_replica.jpg){#fig:kg}
+<https://upload.wikimedia.org/wikipedia/commons/a/ac/Prototype_kilogram_replica.JPG>](../figs/kilogram_replica.jpg){#fig:kg width=50%}
 
 ### Température
 
@@ -537,7 +537,7 @@ appliquée perpendiculairement sur une surface, $F$, divisée par son
 aire, $A$, (voir la figure {@fig:FA}) $$P=\frac{F}{A}.$$
 
 ![Une force $F$ appuyant sur une surface
-$A$.](../figs/pression.pdf.png){#fig:FA }
+$A$.](../figs/pression.pdf.png){#fig:FA width=50%}
 
 Les unités SI de la pression sont des Pascals, notés ${\mathrm{Pa}}$, ou
 encore des
@@ -587,7 +587,7 @@ mesurer la température corporelle ou la température ambiante.
 
 ![Thermomètre à liquide avec une échelle allant de $-30^\circ$ à
 $50^\circ$ degrés Celsius. Source:
-<https://upload.wikimedia.org/wikipedia/commons/3/33/Thermometer.JPG>](../figs/Thermometer.JPG){#fig:thermo_liquide}
+<https://upload.wikimedia.org/wikipedia/commons/3/33/Thermometer.JPG>](../figs/Thermometer.JPG){#fig:thermo_liquide width=50%}
 
 Les thermomètres à aiguille (voir Figure {@fig:thermo_aiguille}) sont
 basés sur la dilatation des solides. En général la dilatation d’un
@@ -608,7 +608,7 @@ lorsque l’eau bout.
 ![Thermomètre à aiguille avec une échelle allant de $-50^\circ$ à
 $50^\circ$ degrés Celsius (bague interne) et de $-60^\circ$ à
 $120^\circ$ degrés Fahrenheit. Source:
-<https://upload.wikimedia.org/wikipedia/commons/c/c9/Raumthermometer_Fahrenheit%2BCelsius.jpg>](../figs/thermo_c_f.jpg){#fig:thermo_aiguille}
+<https://upload.wikimedia.org/wikipedia/commons/c/c9/Raumthermometer_Fahrenheit%2BCelsius.jpg>](../figs/thermo_c_f.jpg){#fig:thermo_aiguille width=50%}
 
 Finalement mentionnons également les thermomètres à infrarouge qui sont
 basés sur la mesure du rayonnement lumineux (mais pas forcément visible
@@ -619,17 +619,14 @@ la température à distance (pas besoin d’avoir un contact physique avec
 la source) contrairement aux deux sortes de thermomètres décrits
 précédemment. Ils sont utilisés pour mesurer la température émise par
 les bâtiments (et donc la déperdition d’énergie associée) ou de chats
-(voir Figure {@fig:thermographie}).
+(voir Figures {@fig:thermographie_infra} et {@fig:thermographie_cat}).
 
-![Mesure de température de bâtiments bien isolés ou non (gauche) et de
-chat (droite). Sources:
+![Mesure de température de bâtiments bien isolés ou non . Sources:
 <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie}
-![Mesure
-de température de bâtiments bien isolés ou non (gauche) et de chat
-(droite). Sources:
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie_infra width=50%}
+![Mesure de température de chat. Sources:
 <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie}
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie_cat width=50%}
 
 ### Les échelles de température
 
@@ -719,7 +716,7 @@ Figure {@fig:rods})
 
 ![La longueur du cylindre de longueur $L_0$ à température $T_0$ devient
 de longueur $L$ lorsqu’il est amené à température
-$T$.](../figs/rods.pdf){#fig:rods}
+$T$.](../figs/rods.pdf){#fig:rods width=50%}
 
 Expérimentalement, on a déterminé que la variation de longueur est
 reliée linéairement à la variation de température
@@ -741,7 +738,7 @@ coefficient de dilatation linéique de différents types d’acier).
 
 ![Coefficients de dilatation linéique de différents type d’acier en
 fonction de la température. Source:
-<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf.png){#fig:alpha_aciers}
+<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf.png){#fig:alpha_aciers width=50%}
 
 Exercice (Allongement du pont du Mont-Blanc) #
 
@@ -783,7 +780,7 @@ Figure{@fig:alpha_eau}) alors que pour $\beta<0$ le volume va
 diminuer lorsqu’on chauffe.
 
 ![Coefficients de dilatation volumique de l’eau en fonction de la
-température.](../figs/alpha_eau.pdf.png){#fig:alpha_eau}
+température.](../figs/alpha_eau.pdf.png){#fig:alpha_eau width=50%}
 
 Cette modification du volume en fonction de la température explique
 également la modification de la masse volumique (ou densité) lorsqu’un
@@ -917,7 +914,7 @@ graphiquement comme sur la figure {@fig:boyle} où chacune des courbes
 est la relation entre la pression et le volume pour une température
 donnée.
 
-![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf.png){#fig:boyle}
+![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf.png){#fig:boyle width=50%}
 
 Autrement dit si un gaz est à température constante $T$ est dans un état
 d’équilibre avec un volume $V_1$ et une pression $P_1$ et qu’il y a un
@@ -941,7 +938,7 @@ poumons. Moralité, n’oubliez pas d’expirer en remontant à la surface
 lorsque vous faites de la plongée.
 
 ![Le volume d’un poumon augmente lorsque le plongeur remonte sans
-expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf.png){#fig:plongee}
+expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf.png){#fig:plongee width=50%}
 
 ### Loi de Charles
 
@@ -960,7 +957,7 @@ $$\frac{V_1}{T_1}=\frac{V_2}{T_2}.$$ Un exemple pour différents gaz peut
 constante pour trois gaz. En traitillés, l’extension de la droite au
 delà du point de liquéfaction du gaz. Toutes les droites se rejoignent
 au *zéro
-absolu*.](../figs/charles.pdf.png){#fig:charles}
+absolu*.](../figs/charles.pdf.png){#fig:charles width=50%}
 
 Chacune des droites représente un gaz différent. Les traits-tillés
 commencent à l’endroit où le gaz se liquéfie (à $0^\circ{\mathrm{C}}$
@@ -1188,7 +1185,7 @@ Joule pour mesurer l’équivalence entre chaleur et travail. La chute du
 poids (à droite) fait tourner la roue à ailette plongée dans l’eau (à
 gauche) et la réchauffe par frottement. Source:
 <https://upload.wikimedia.org/wikipedia/commons/c/c3/Joule's_Apparatus_(Harper's_Scan).png>
-](../figs/joule.png){#fig:joule}
+](../figs/joule.png){#fig:joule width=50%}
 
 Cette expérience montre que l’on transfert l’énergie mécanique d’un
 poids en énergie contenue dans l’eau en la chauffant. Ce résultat peut
