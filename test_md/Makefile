@@ -1,8 +1,11 @@
 default:
-	pandoc -s test.text  --number-sections --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --latex-engine pdflatex -o test.pdf
+	pandoc -s -S -o test.pdf cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref --template=./default.latex --latex-engine pdflatex
 
 latex:
-	pandoc test.text  --number-sections --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos --template=default.latex -o test.tex
+	pandoc -s -S -o test.tex cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref  --template=./default.latex
 
 epub:
-	pandoc test.text  --number-sections --filter=pandoc-eqnos --filter=pandoc-fignos --filter=pandoc-tablenos -t epub3 -o test.epub
+	pandoc -s -S -o test.epub cours.md --filter=pandoc-numbering  --filter=/home/malaspor/.cabal/bin/pandoc-crossref  -t epub3
+
+htmlc:
+	pandoc -s -S -o test.html cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref --mathml -t html5 

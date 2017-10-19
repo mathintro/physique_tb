@@ -15,6 +15,10 @@ lang: fr
 documentclass: book
 papersize: A4
 cref: false
+pandoc-numbering:
+  - category: exercice
+    listing: Liste des exercices
+urlcolor: blue
 ---
 
 Avertissement {#avertissement .unnumbered}
@@ -340,7 +344,7 @@ $$23{\mathrm{cm}}^3=23\cdot(10^{-2} m)^3=23\cdot 10^{-6}m^3.$$
 
  Table: Préfixes du Système international d’unités et noms des nombres correspondants. {#tbl:prefixe} 
 
-[Conversion d’unités]{}
+Exercice (Conversion d’unités) #
 
 1.  Écrivez en mètres les grandeurs suivantes: $1{\mathrm{cm}}$,
     $1.23\cdot 10^6\mu{\mathrm{m}}$, $72\mathrm{da}{\mathrm{m}}$.
@@ -362,7 +366,7 @@ $$23{\mathrm{cm}}^3=23\cdot(10^{-2} m)^3=23\cdot 10^{-6}m^3.$$
     $1{\mathrm{cm}}$, $1{\mathrm{m}}$, $1\mathrm{dam}$, $1\mathrm{pm}$,
     et $1\mathrm{dm}$.
 
-[Préfixes SI]{}
+Exercice (Préfixes SI) #
 
 1.  Exprimez en utilisant les préfixes SI et le moins de chiffre
     possible les nombres suivants
@@ -391,13 +395,13 @@ fonctionner avec des ordres de grandeurs de nos quantité (en gros on
 arrondit tout à l’entier ou même à la puissance de 10)[^1]. On a donc un
 résultat précis “à la puissance de 10 près”.
 
-[Volume d’un lac]{}
+Exercice (Volume d'un lac) #
 
 Calculez le volume du lac Léman sachant qu’il fait environ
 $70{\mathrm{km}}$ de long pour $10{\mathrm{km}}$ de large et
 $100{\mathrm{m}}$ de profondeur.[^2]
 
-[Hauteur d’un bâtiment]{}
+Exercice (Hauteur d’un bâtiment) #
 
 Je souhaite estimer la hauteur d’un bâtiment. Supposons que mes yeux
 soient à une hauteur de $1.5{\mathrm{m}}$ du sol. La seule information
@@ -406,7 +410,7 @@ d’un arbre (mesurant environ $3{\mathrm{m}}$ de haut et se trouvant à
 $20$ pas du bâtiment) placé entre moi et le bâtiment, l’arbre cache tout
 juste le haut du bâtiment.
 
-[Épaisseur d’une feuille de papier]{}
+Exercice (Épaisseur d’une feuille de papier) #
 
 Vous avez à disposition une règle (précise au millimètre) et un livre.
 Estimez aussi précisément que possible et avec un minimum d’effort
@@ -423,7 +427,7 @@ combinaisons (multiplication ou division) de ces unités de base. Ainsi,
 une surface sera $[L^2]$, une fréquence $[1/T]$, une vitesse $[L/T]$,
 une énergie $[M\cdot L^2/T^2]$, une force $[M L/T^2]$, etc.
 
-[Quantité de grandeur de base]{}
+Exercice (Quantité de grandeur de base) #
 
 Écrivez les 5 types d’unités fondamentales nécessaires à la dérivation
 de toutes les autres.
@@ -455,7 +459,7 @@ tous les facteurs numériques peuvent être complètement faux. Ou alors
 certaines quantités peuvent avoir les bonnes unités mais n’avoir aucun
 sens physique dans les cas étudiés.
 
-[Analyse dimensionnelle]{}
+Exercice (Analyse dimensionnelle) #
 
 Essayez de deviner les relations entre les quantités suivantes à partir
 de leurs dimensions
@@ -521,7 +525,7 @@ volume est très difficile et on ne crée pas de la masse à partir de
 “rien”) alors qu’un gaz aura une densité qui peut varier très fortement
 (on peut assez facilement le comprimer ou le détendre).
 
-[Distance entre deux atomes: liquide]{}
+Exercice (Distance entre deux atomes: liquide) #
 
 Soit un cube d’un mètre de côté rempli de di-azote liquide ($N_2$) dont
 la densité est de $808\ {\mathrm{kg}}/{\mathrm{m}}^3$. La masse atomique
@@ -530,7 +534,7 @@ qu’une unité de masse atomique a une masse de
 $1.66\cdot 10^{-27}{\mathrm{kg}}$ estimez la distance moyenne entre deux
 molécules.
 
-[Distance entre deux atomes: gaz]{}
+Exercice (Distance entre deux atomes: gaz) #
 
 Soit un cube d’un mètre de côté rempli de di-azote gazeux ($N_2$) dont
 la densité est de $1.25\ {\mathrm{kg}}/{\mathrm{m}}^3$ au bord de la mer
@@ -632,17 +636,16 @@ la température à distance (pas besoin d’avoir un contact physique avec
 la source) contrairement aux deux sortes de thermomètres décrits
 précédemment. Ils sont utilisés pour mesurer la température émise par
 les bâtiments (et donc la déperdition d’énergie associée) ou de chats
-(voir Figure {@fig:thermographie}).
+(voir [@Fig:thermographie_kot;@fig:thermographie_cat]).
 
-![Mesure de température de bâtiments bien isolés ou non (gauche) et de
-chat (droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie width=50%}
-![Mesure
-de température de bâtiments bien isolés ou non (gauche) et de chat
-(droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie width=50%}
+<div id="fig:lk">
+![](../figs/mais_infra.png){#fig:thermographie_kot width="50%"}
+![](../figs/Termografia_cat.jpg){#fig:thermographie_cat width=42%}
+
+Mesure de température de bâtiments bien isolés ou non (gauche) ou de chat (droite). Sources <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png> et 
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>
+
+</div>
 
 ### Les échelles de température
 
@@ -670,7 +673,7 @@ $96^\circ$ comme la température du corps humain. Plus tard le standard a
 glace et le $212^\circ$ la température d’ébullition de l’eau. On peut
 donc assez facilement convertir les degrés Fahrenheit en degrés Celsius.
 
-[Conversion de Celsius en Fahrenheit]{}
+Exercice (Conversion de Celsius en Fahrenheit) #
 
 1.  Déterminer la formule pour convertir une température en degrés
     Celsius en degrés Fahrenheit et vice-versa.
@@ -756,7 +759,7 @@ coefficient de dilatation linéique de différents types d’acier).
 fonction de la température. Source:
 <https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf){#fig:alpha_aciers width=50%}
 
-[Allongement du pont du Mont-Blanc]{}
+Exercice (Allongement du pont du Mont-Blanc) #
 
 Sachant que les température les plus extrêmes enregistrées à Genève ont
 été de $-25^\circ{\mathrm{C}}$ et de $40^\circ{\mathrm{C}}$, de quelle
@@ -876,7 +879,7 @@ Young et le coefficient de dilatation. Comme pour toutes les lois que
 nous avons vues dans ce chapitre, celle-ci n’est valable que pour les
 petites variations de température.
 
-[Rupture du béton par grande chaleur]{}
+Exercice (Rupture du béton par grande chaleur) #
 
 Supposons qu’une autoroute est constituée de blocs de béton de
 $10{\mathrm{m}}$ de long posés côte à côte sans espace entre eux. S’ils
@@ -938,7 +941,7 @@ autre état d’équilibre avec volume $V_2$ et pression $P_2$ toujours à
 température $T$ alors l’équation suivante est vérifiée
 $$P_1V_1=P_2V_2.$$
 
-[Plongée sous-marine]{}
+Exemple (Plongée sous-marine) #
 
 Lors d’une plongée sous-marine on respire l’air à la pression de la
 profondeur à laquelle on se trouve[^8]. La pression augmente d’environ
@@ -1096,7 +1099,7 @@ valable que sous certaines conditions
 Néanmoins, sous ces conditions il représente très bien ce qui se passe
 dans plus ou moins tous les gaz connus.
 
-[Volume d’une mole de gaz]{}
+Exercice (Volume d’une mole de gaz) #
 
 Estimer le volume d’une mole d’un gaz à $T=0^\circ{\mathrm{C}}$,
 $P=10^5\ N/{\mathrm{m}}^2$. Et à $T=20^\circ{\mathrm{C}}$?
@@ -1110,7 +1113,7 @@ $$\begin{aligned}
 &V=8.314\cdot 293\cdot 10^{-5},\\
 &V=0.0244\ {\mathrm{m}}^3.\end{aligned}$$
 
-[Gaz parfaits]{}
+Exercice (Gaz parfaits) #
 
 1.  Estimer la masse d’air dans une salle dont les dimensions sont
     $15{\mathrm{m}}\times 10{\mathrm{m}}\times 3{\mathrm{m}}$ à une
@@ -1256,7 +1259,7 @@ négative. Le signe représente la direction de l’échange d’énergie: quand
 il est positive le flux d’énergie va dans l’objet, à l’inverse quand il
 est négatif le flux d’énergie sort de l’objet.
 
-[Chaleur massique]{}
+Exercice (Chaleur massique) #
 
 Quelle est la quantité de chaleur nécessaire pour chauffer un récipient
 en marbre de $20{\mathrm{kg}}$ entre $10^\circ$ et $90^\circ$ (chaleur
@@ -1297,7 +1300,7 @@ peut être soit positif (si de la chaleur entre dans cette partie du
 système, $T_i<T_f$) soit négatif (si de la chaleur sort du système,
 $T_i>T_f$) ce qui permet au bilan de s’annuler.
 
-[Tasse de café]{}
+Exercice (Tasse de café) #
 
 Si nous remplissons une tasse de $80\ {\mathrm{g}}$ d’un volume de $30 
 \mathrm{ml}$ de café chauffé à $70^\circ{\mathrm{C}}$. Quel sera la
