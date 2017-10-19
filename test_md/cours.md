@@ -554,7 +554,7 @@ appliquée perpendiculairement sur une surface, $F$, divisée par son
 aire, $A$, (voir la figure {@fig:FA}) $$P=\frac{F}{A}.$$
 
 ![Une force $F$ appuyant sur une surface
-$A$.](../figs/pression.pdf){#fig:FA  width=50%}
+$A$.](../figs/pression.pdf.png){#fig:FA width=50%}
 
 Les unités SI de la pression sont des Pascals, notés ${\mathrm{Pa}}$, ou
 encore des
@@ -757,7 +757,7 @@ coefficient de dilatation linéique de différents types d’acier).
 
 ![Coefficients de dilatation linéique de différents type d’acier en
 fonction de la température. Source:
-<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf){#fig:alpha_aciers width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf.png){#fig:alpha_aciers width=50%}
 
 Exercice (Allongement du pont du Mont-Blanc) #
 
@@ -799,14 +799,14 @@ Figure{@fig:alpha_eau}) alors que pour $\beta<0$ le volume va
 diminuer lorsqu’on chauffe.
 
 ![Coefficients de dilatation volumique de l’eau en fonction de la
-température.](../figs/alpha_eau.pdf){#fig:alpha_eau width=50%}
+température.](../figs/alpha_eau.pdf.png){#fig:alpha_eau width=50%}
 
 Cette modification du volume en fonction de la température explique
 également la modification de la masse volumique (ou densité) lorsqu’un
 objet voit sa température changer. En effet, la densité, $\rho$ est
 définie par $$\rho=\frac{m}{V},$$ où $m$ est la masse de l’objet. La
 masse ne changeant pas avec la température (contrairement au volume), en
-substituant l’équation {@eq:V_T} dans l’équation ci-dessus, on
+substituant l’équation @eq:V_T dans l’équation ci-dessus, on
 obtient $$\rho=\frac{m}{V_0(1+\beta\Delta T)},$$ qui est l’équation
 reliant la densité à la variation de température d’un objet dont le
 volume est de $V_0$ à température $T_0$. On constate donc que si
@@ -871,7 +871,7 @@ empiriquement on a déterminé que $\sigma$ est proportionnel au rapport
 $\Delta L/L_0$ et la constante reliant les deux quantité s’appelle le
 module de Young, $E$, (ou module d’élasticité)
 $$\sigma=E\frac{\Delta L}{L_0}.$$ En utilisant
-l’équation {@eq:dl_dt} qui relie $\Delta L$ à $\Delta T$, on
+l’équation @eq:dl_dt qui relie $\Delta L$ à $\Delta T$, on
 obtient $$\sigma=\alpha E \Delta T.$$ On constate donc que la contrainte
 thermique sur les matériaux est proportionnelle à la variation de
 température, et dépendante de deux constantes que sont le module de
@@ -933,7 +933,7 @@ graphiquement comme sur la figure {@fig:boyle} où chacune des courbes
 est la relation entre la pression et le volume pour une température
 donnée.
 
-![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf){#fig:boyle width=50%}
+![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf.png){#fig:boyle width=50%}
 
 Autrement dit si un gaz est à température constante $T$ est dans un état
 d’équilibre avec un volume $V_1$ et une pression $P_1$ et qu’il y a un
@@ -957,7 +957,7 @@ poumons. Moralité, n’oubliez pas d’expirer en remontant à la surface
 lorsque vous faites de la plongée.
 
 ![Le volume d’un poumon augmente lorsque le plongeur remonte sans
-expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf){#fig:plongee width=50%}
+expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf.png){#fig:plongee width=50%}
 
 ### Loi de Charles
 
@@ -976,7 +976,7 @@ $$\frac{V_1}{T_1}=\frac{V_2}{T_2}.$$ Un exemple pour différents gaz peut
 constante pour trois gaz. En traitillés, l’extension de la droite au
 delà du point de liquéfaction du gaz. Toutes les droites se rejoignent
 au *zéro
-absolu*.](../figs/charles.pdf){#fig:charles width=50%}
+absolu*.](../figs/charles.pdf.png){#fig:charles width=50%}
 
 Chacune des droites représente un gaz différent. Les traits-tillés
 commencent à l’endroit où le gaz se liquéfie (à $0^\circ{\mathrm{C}}$
@@ -996,7 +996,7 @@ connaissance dans la nature et défierait toutes les lois telles que nous
 les connaissons.
 
 Nous avons déjà vu une version de cette loi précédemment (à
-l’équation {@eq:V_T}). Une autre façon d’écrire cette loi est
+l’équation @eq:V_T). Une autre façon d’écrire cette loi est
 $$V=V_0\left(1+\beta(P)(T-T_0)\right),$$ où $\beta(P)$[^9] est une
 fonction de la pression et du gaz considéré (en gardant $P$ constant
 cette valeur ne change pas pour un gaz donné), $V_0$ est le volume à
@@ -1031,8 +1031,8 @@ $$V\sim n,\quad \mbox{pour $T,P$ constantes}.$$
 
 En utilisant les lois de Boyle, Charles et de Gay-Lussac, on peut
 dériver une loi encore plus générale. Commençons par réécrire les trois
-lois (voir les équations {@eq:loi_boyle},
-{@eq:loi_charles}, et {@eq:loi_gaylussac}):
+lois (voir les équations @eq:loi_boyle,
+@eq:loi_charles, et @eq:loi_gaylussac):
 l'équation de Boyle
 $$
 PV=k_T(T),
@@ -1050,11 +1050,11 @@ sont trois “constantes” où respectivement on suppose qu’on garde la
 température, la pression et le volume constants (néanmoins ces
 constantes ont une valeur différentes pour des valeurs différentes de
 température, pression et volume respectivement). En divisant
-l’équation {@eq:boyle} par $T$ on obtient
+l’équation @eq:boyle par $T$ on obtient
 $$\frac{PV}{T}=\frac{k_T(T)}{T}.$$ Puis en multipliant
-l’équation {@eq:charles} par $P$ on obtient
+l’équation @eq:charles par $P$ on obtient
 $$\frac{PV}{T}=k_P(P)P.$$ Finalement en multipliant
-l’équation {@eq:gaylussac} par $V$ on obtient
+l’équation @eq:gaylussac par $V$ on obtient
 $$\frac{PV}{T}=k_V(V)V.$$ Comme les membres de gauche de ces trois
 équations sont identiques, on voit que
 $$k_V(V)V=k_P(P)P=\frac{k_T(T)}{T}.$$ Cette relation doit être vraie
@@ -1291,7 +1291,7 @@ d’énergie totale du système ne changera pas).
 La conservation de l’énergie peut s’exprimer de façon intuitive par:
 *tout l’énergie qui rentre dans le système est égale à l’énergie qui en
 sort* $$Q_\mathrm{gagn\acute ee}=Q_\mathrm{perdue},\quad 
-\mbox{dans un syst\`eme isol\'e}.$$ De façon plus générale, nous pouvons
+\mbox{dans un système isolé}.$$ De façon plus générale, nous pouvons
 écrire que si un système isolé est composé de $N$ partie distinctes qui
 ont des températures distinctes $\{T_i\}_{i=1}^N$, alors les transferts
 de chaleur qui vont emmener le système vers une température d’équilibre
@@ -1331,7 +1331,7 @@ isolé?
 [^8]: Enfin cela est vrai si on ne fait pas de la plongée en apnée, où
     il faut éviter de respirer...
 
-[^9]: dans l’équation {@eq:V_T}, $\beta$ ne dépendait pas de la
+[^9]: dans l’équation @eq:V_T, $\beta$ ne dépendait pas de la
     pression, car nous considérions un solide, et la presion dans un
     solide est très difficile à faire changer.
 
