@@ -1307,6 +1307,19 @@ Si nous remplissons une tasse de $80\ {\mathrm{g}}$ d’un volume de $30
 température finale de l’ensemble si nous supposons que le système est
 isolé?
 
+Problème (Calorimétrie) #
+
+Imaginez une expérience qui permettrait de mesurer la chaleur spécifique
+d'un nouvel alliage. 
+
+Indications:
+  1. Il faut se comparer à un système dont on connaît la chaleur massique de façon précise.
+  2. Il faut utiliser le principe de conservation de l'énergie.
+
+Application (Bombe calorimétrique) #
+
+
+
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
 
