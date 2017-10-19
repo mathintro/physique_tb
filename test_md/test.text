@@ -2,6 +2,19 @@
 author:
 - Orestis Malaspinas
 title: Résumé du cours de Physique Générale
+autoSectionLabels: true
+autoEqnLabels: true
+eqnPrefix: 
+  - "éq."
+  - "éqs."
+chapters: true
+numberSections: true
+chaptersDepth: 1
+sectionsDepth: 3
+lang: fr
+documentclass: book
+papersize: A4
+cref: false
 ---
 
 Avertissement {#avertissement .unnumbered}
@@ -1024,7 +1037,7 @@ $${#eq:boyle}
 l'équation de Charles
 $$
 \frac{V}{T}=k_P(P),
-$${#eq:charles}\\
+$${#eq:charles}
 et l'équation de Gay-Lussac
 $$
 \frac{P}{T}=k_V(V),
