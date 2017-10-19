@@ -941,7 +941,7 @@ autre état d’équilibre avec volume $V_2$ et pression $P_2$ toujours à
 température $T$ alors l’équation suivante est vérifiée
 $$P_1V_1=P_2V_2.$$
 
-Exemple (Plongée sous-marine) #
+Application (Plongée sous-marine) #
 
 Lors d’une plongée sous-marine on respire l’air à la pression de la
 profondeur à laquelle on se trouve[^8]. La pression augmente d’environ
@@ -1243,7 +1243,7 @@ nous faut à présent une mesure quantitative de la variation de chaleur
 en fonction de la variation d’énergie. La quantité de chaleur, notée
 $Q$, nécessaire pour changer la température d’un objet est
 proportionnelle au changement de température $\Delta T$ et à la masse de
-l’objet $m$ et est donnée par $$Q=c m \Delta T,$$ où $c$ est la chaleur
+l’objet $m$ et est donnée par $$Q=c m \Delta T,$${#eq:chaleur} où $c$ est la chaleur
 massique (dont les unités sont
 $[{\mathrm{J}}/({\mathrm{kg}}\cdot{\mathrm{C}})]$). La chaleur massique
 de l’eau est de
@@ -1310,13 +1310,47 @@ isolé?
 Problème (Calorimétrie) #
 
 Imaginez une expérience qui permettrait de mesurer la chaleur spécifique
-d'un nouvel alliage. 
+d'un nouvel alliage: le calorimètre. 
 
 Indications:
   1. Il faut se comparer à un système dont on connaît la chaleur massique de façon précise.
   2. Il faut utiliser le principe de conservation de l'énergie.
 
 Application (Bombe calorimétrique) #
+
+Une *bombe* calorimétrique est une appareil servant à mesurer l'énergie 
+thermique dégagée au cours de la combustion complète d'un objet combustion[^11] réalisée à volume constant.
+Ce genre d'appareil est par exemple utilisé pour déterminer le nombre de 
+calories contenues dans les aliments. 
+
+Afin de déterminer la chaleur dégagée, il est important que la combustion soit 
+complète et rapide afin de limiter autant que possible les pertes. La *bombe* est en général un cylindre en acier (ou en n'importe quel matériau qui résiste très bien à la pression et qui conduit très bien la chaleur). Le cylindre est rempli d'oxygène (pour favoriser la combustion) et de la substance à analyser. La combustion est déclenchée par un fort courant traversant la dite substance. La *bombe* est placée dans un calorimètre (en général constitué d'eau, d'un agitateur et d'un thermomètre). Puis, on mesure la température du système avant la combustion, puis lorsque le système revient à l'équilibre thermique après la combustion. Avec ces deux températures, la connaissance de la chaleur massique de la bombe et de l'eau, on peut déterminer la chaleur dégagée par la combustion de la substance. On peut ensuite en normalisant par la masse de la substance mesurer le *pouvoir calorique* (mesuré en $\mathrm{J}/\mathrm{g}$).
+
+Chaleur latente
+---------------
+
+Jusqu'ici nous avons discuté le gain d'énergie réalisé lorsque nous avions une phase unique dans notre système. Lorsque nous arrivons à un point où l'énergie thermique d'une substance est suffisamment forte pour casser les liaisons entre les molécules (transition entre solide-liquide ou liquide-gaz), nous avons à faire à une *transition de phase*. Lors d'un changement de phase l'énergie est utilisée pour casser les liaisons intermoléculaires, mais pas pour augmenter la température de la substance. Un exemple de l'évolution de la température en fonction de la chaleur se voit à la @fig:cl. On voit que lorsque que nous avons que de la glace et que nous ajoutons de l'énergie la température augmente, lorsque a glace se transforme en eau, la température ne change plus, alors que la quantité d'énergie augmente, et ainsi de suite.
+
+![Température en fonction de la chaleur ajoutée pour transformer de la glace en vapeur.](../figs/eau_phase.pdf){#fig:cl width=50%}
+
+On constate donc que l'@eq:chaleur ne peut représenter correctement ce qui se passe lors d'une transition de phase, car nous aurions aucun échange de chaleur (comme on peut le voir sur la @fig:cl, $\Delta T=0$, lors des transitions de phase) alors qu'on a injection d'énergie dans le système. Il nous faut donc une autre description. La chaleur pour transformer de la glace en eau s'appelle la *chaleur latente de fusion*, et celle pour transformer l'eau en vapeur s'appelle *chaleur latente de vaporisation*. En fait la chaleur *latente* se réfère à l'énergie relâchée dans le système par la transition inverse (vapeur en eau ou eau en liquide). Cette transformation étant réversible, il faut injecter la même quantité de chaleur pour transformer l'eau en vapeur et la glace en eau d'où "l'abus de langage".
+
+La chaleur à injecter ou qui se dégage lors d'un changement de phase d'une substance est proportionnelle à la masse, $m$, de la substance et est donnée par
+$$
+Q=L\cdot m,
+$${#eq:chaleur_latente}
+où $L=\mbox{cte}$ est la chaleur latente spécifique de la substance pour la fusion (solidification), notée $L_f$, ou la vaporisation (liquéfaction), notée $L_V$. Dans le cas de chaleur dégagée on aura $Q<0$, et dans le cas de chaleur absorbée, on aura $Q>0$.
+
+Nous pouvons maintenant considérer des processus qui vont faire intervenir des transitions de phase. L'échange total de chaleur est maintenant composé de deux sources différentes: l'un lié à la chaleur massique liée à l'augmentation de température ($Q_M$), et l'autre à la chaleur latente spécifique ($Q_L$) liée à la transition de phase
+$$\begin{aligned}
+Q&=Q_L+Q_M\\
+&=m(L+c\Delta T).
+\end{aligned}$$
+
+Exercice (Faire des glaçons) #
+
+Quelle énergie doit fournir votre réfrigérateur pour transformer $1.5\mathrm{kg}$ d'eau à $20^\circ\mathrm{C}$ en glaçon à $-12^\circ\mathrm{C}$ sachant que $c_\mathrm{eau}=4186\mathrm{J}/\mathrm{kg}$, 
+$c_\mathrm{glace}=2100\mathrm{J}/\mathrm{kg}$, et ${L_F}_\mathrm{eau}=3.33\cdot 10^5\mathrm{J}/\mathrm{kg}$?
 
 
 
@@ -1350,3 +1384,7 @@ Application (Bombe calorimétrique) #
 
 [^10]: Il pesait $94{\mathrm{kg}}$ et a couru le $100{\mathrm{m}}$ en
     $9.6{\mathrm{s}}$ en atteignant les $44.7{\mathrm{km}}/\mathrm{h}$.
+
+[^11]: En réalité une *bombe* calorimétrique, peut mesurer l'énergie dégagée
+    par n'importe quelle réaction chimique.
+
