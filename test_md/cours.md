@@ -2,6 +2,23 @@
 author:
 - Orestis Malaspinas
 title: Résumé du cours de Physique Générale
+autoSectionLabels: true
+autoEqnLabels: true
+eqnPrefix: 
+  - "éq."
+  - "éqs."
+chapters: true
+numberSections: true
+chaptersDepth: 1
+sectionsDepth: 3
+lang: fr
+documentclass: book
+papersize: A4
+cref: false
+pandoc-numbering:
+  - category: exercice
+    listing: Liste des exercices
+urlcolor: blue
 ---
 
 Avertissement {#avertissement .unnumbered}
@@ -327,7 +344,7 @@ $$23{\mathrm{cm}}^3=23\cdot(10^{-2} m)^3=23\cdot 10^{-6}m^3.$$
 
  Table: Préfixes du Système international d’unités et noms des nombres correspondants. {#tbl:prefixe} 
 
-[Conversion d’unités]{}
+Exercice (Conversion d’unités) #
 
 1.  Écrivez en mètres les grandeurs suivantes: $1{\mathrm{cm}}$,
     $1.23\cdot 10^6\mu{\mathrm{m}}$, $72\mathrm{da}{\mathrm{m}}$.
@@ -349,7 +366,7 @@ $$23{\mathrm{cm}}^3=23\cdot(10^{-2} m)^3=23\cdot 10^{-6}m^3.$$
     $1{\mathrm{cm}}$, $1{\mathrm{m}}$, $1\mathrm{dam}$, $1\mathrm{pm}$,
     et $1\mathrm{dm}$.
 
-[Préfixes SI]{}
+Exercice (Préfixes SI) #
 
 1.  Exprimez en utilisant les préfixes SI et le moins de chiffre
     possible les nombres suivants
@@ -378,13 +395,13 @@ fonctionner avec des ordres de grandeurs de nos quantité (en gros on
 arrondit tout à l’entier ou même à la puissance de 10)[^1]. On a donc un
 résultat précis “à la puissance de 10 près”.
 
-[Volume d’un lac]{}
+Exercice (Volume d'un lac) #
 
 Calculez le volume du lac Léman sachant qu’il fait environ
 $70{\mathrm{km}}$ de long pour $10{\mathrm{km}}$ de large et
 $100{\mathrm{m}}$ de profondeur.[^2]
 
-[Hauteur d’un bâtiment]{}
+Exercice (Hauteur d’un bâtiment) #
 
 Je souhaite estimer la hauteur d’un bâtiment. Supposons que mes yeux
 soient à une hauteur de $1.5{\mathrm{m}}$ du sol. La seule information
@@ -393,7 +410,7 @@ d’un arbre (mesurant environ $3{\mathrm{m}}$ de haut et se trouvant à
 $20$ pas du bâtiment) placé entre moi et le bâtiment, l’arbre cache tout
 juste le haut du bâtiment.
 
-[Épaisseur d’une feuille de papier]{}
+Exercice (Épaisseur d’une feuille de papier) #
 
 Vous avez à disposition une règle (précise au millimètre) et un livre.
 Estimez aussi précisément que possible et avec un minimum d’effort
@@ -410,7 +427,7 @@ combinaisons (multiplication ou division) de ces unités de base. Ainsi,
 une surface sera $[L^2]$, une fréquence $[1/T]$, une vitesse $[L/T]$,
 une énergie $[M\cdot L^2/T^2]$, une force $[M L/T^2]$, etc.
 
-[Quantité de grandeur de base]{}
+Exercice (Quantité de grandeur de base) #
 
 Écrivez les 5 types d’unités fondamentales nécessaires à la dérivation
 de toutes les autres.
@@ -442,7 +459,7 @@ tous les facteurs numériques peuvent être complètement faux. Ou alors
 certaines quantités peuvent avoir les bonnes unités mais n’avoir aucun
 sens physique dans les cas étudiés.
 
-[Analyse dimensionnelle]{}
+Exercice (Analyse dimensionnelle) #
 
 Essayez de deviner les relations entre les quantités suivantes à partir
 de leurs dimensions
@@ -508,7 +525,7 @@ volume est très difficile et on ne crée pas de la masse à partir de
 “rien”) alors qu’un gaz aura une densité qui peut varier très fortement
 (on peut assez facilement le comprimer ou le détendre).
 
-[Distance entre deux atomes: liquide]{}
+Exercice (Distance entre deux atomes: liquide) #
 
 Soit un cube d’un mètre de côté rempli de di-azote liquide ($N_2$) dont
 la densité est de $808\ {\mathrm{kg}}/{\mathrm{m}}^3$. La masse atomique
@@ -517,7 +534,7 @@ qu’une unité de masse atomique a une masse de
 $1.66\cdot 10^{-27}{\mathrm{kg}}$ estimez la distance moyenne entre deux
 molécules.
 
-[Distance entre deux atomes: gaz]{}
+Exercice (Distance entre deux atomes: gaz) #
 
 Soit un cube d’un mètre de côté rempli de di-azote gazeux ($N_2$) dont
 la densité est de $1.25\ {\mathrm{kg}}/{\mathrm{m}}^3$ au bord de la mer
@@ -537,7 +554,7 @@ appliquée perpendiculairement sur une surface, $F$, divisée par son
 aire, $A$, (voir la figure {@fig:FA}) $$P=\frac{F}{A}.$$
 
 ![Une force $F$ appuyant sur une surface
-$A$.](../figs/pression.pdf){#fig:FA  width=50%}
+$A$.](../figs/pression.pdf.png){#fig:FA width=50%}
 
 Les unités SI de la pression sont des Pascals, notés ${\mathrm{Pa}}$, ou
 encore des
@@ -619,17 +636,16 @@ la température à distance (pas besoin d’avoir un contact physique avec
 la source) contrairement aux deux sortes de thermomètres décrits
 précédemment. Ils sont utilisés pour mesurer la température émise par
 les bâtiments (et donc la déperdition d’énergie associée) ou de chats
-(voir Figure {@fig:thermographie}).
+(voir [@Fig:thermographie_kot;@fig:thermographie_cat]).
 
-![Mesure de température de bâtiments bien isolés ou non (gauche) et de
-chat (droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/mais_infra.png){#fig:thermographie width=50%}
-![Mesure
-de température de bâtiments bien isolés ou non (gauche) et de chat
-(droite). Sources:
-<https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png>,
-<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>](../figs/Termografia_cat.jpg){#fig:thermographie width=50%}
+<div id="fig:lk">
+![](../figs/mais_infra.png){#fig:thermographie_kot width="50%"}
+![](../figs/Termografia_cat.jpg){#fig:thermographie_cat width=42%}
+
+Mesure de température de bâtiments bien isolés ou non (gauche) ou de chat (droite). Sources <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png> et 
+<https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>
+
+</div>
 
 ### Les échelles de température
 
@@ -657,7 +673,7 @@ $96^\circ$ comme la température du corps humain. Plus tard le standard a
 glace et le $212^\circ$ la température d’ébullition de l’eau. On peut
 donc assez facilement convertir les degrés Fahrenheit en degrés Celsius.
 
-[Conversion de Celsius en Fahrenheit]{}
+Exercice (Conversion de Celsius en Fahrenheit) #
 
 1.  Déterminer la formule pour convertir une température en degrés
     Celsius en degrés Fahrenheit et vice-versa.
@@ -741,9 +757,9 @@ coefficient de dilatation linéique de différents types d’acier).
 
 ![Coefficients de dilatation linéique de différents type d’acier en
 fonction de la température. Source:
-<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf){#fig:alpha_aciers width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf.png){#fig:alpha_aciers width=50%}
 
-[Allongement du pont du Mont-Blanc]{}
+Exercice (Allongement du pont du Mont-Blanc) #
 
 Sachant que les température les plus extrêmes enregistrées à Genève ont
 été de $-25^\circ{\mathrm{C}}$ et de $40^\circ{\mathrm{C}}$, de quelle
@@ -783,14 +799,14 @@ Figure{@fig:alpha_eau}) alors que pour $\beta<0$ le volume va
 diminuer lorsqu’on chauffe.
 
 ![Coefficients de dilatation volumique de l’eau en fonction de la
-température.](../figs/alpha_eau.pdf){#fig:alpha_eau width=50%}
+température.](../figs/alpha_eau.pdf.png){#fig:alpha_eau width=50%}
 
 Cette modification du volume en fonction de la température explique
 également la modification de la masse volumique (ou densité) lorsqu’un
 objet voit sa température changer. En effet, la densité, $\rho$ est
 définie par $$\rho=\frac{m}{V},$$ où $m$ est la masse de l’objet. La
 masse ne changeant pas avec la température (contrairement au volume), en
-substituant l’équation {@eq:V_T} dans l’équation ci-dessus, on
+substituant l’équation @eq:V_T dans l’équation ci-dessus, on
 obtient $$\rho=\frac{m}{V_0(1+\beta\Delta T)},$$ qui est l’équation
 reliant la densité à la variation de température d’un objet dont le
 volume est de $V_0$ à température $T_0$. On constate donc que si
@@ -855,7 +871,7 @@ empiriquement on a déterminé que $\sigma$ est proportionnel au rapport
 $\Delta L/L_0$ et la constante reliant les deux quantité s’appelle le
 module de Young, $E$, (ou module d’élasticité)
 $$\sigma=E\frac{\Delta L}{L_0}.$$ En utilisant
-l’équation {@eq:dl_dt} qui relie $\Delta L$ à $\Delta T$, on
+l’équation @eq:dl_dt qui relie $\Delta L$ à $\Delta T$, on
 obtient $$\sigma=\alpha E \Delta T.$$ On constate donc que la contrainte
 thermique sur les matériaux est proportionnelle à la variation de
 température, et dépendante de deux constantes que sont le module de
@@ -863,7 +879,7 @@ Young et le coefficient de dilatation. Comme pour toutes les lois que
 nous avons vues dans ce chapitre, celle-ci n’est valable que pour les
 petites variations de température.
 
-[Rupture du béton par grande chaleur]{}
+Exercice (Rupture du béton par grande chaleur) #
 
 Supposons qu’une autoroute est constituée de blocs de béton de
 $10{\mathrm{m}}$ de long posés côte à côte sans espace entre eux. S’ils
@@ -917,7 +933,7 @@ graphiquement comme sur la figure {@fig:boyle} où chacune des courbes
 est la relation entre la pression et le volume pour une température
 donnée.
 
-![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf){#fig:boyle width=50%}
+![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf.png){#fig:boyle width=50%}
 
 Autrement dit si un gaz est à température constante $T$ est dans un état
 d’équilibre avec un volume $V_1$ et une pression $P_1$ et qu’il y a un
@@ -925,7 +941,7 @@ autre état d’équilibre avec volume $V_2$ et pression $P_2$ toujours à
 température $T$ alors l’équation suivante est vérifiée
 $$P_1V_1=P_2V_2.$$
 
-[Plongée sous-marine]{}
+Application (Plongée sous-marine) #
 
 Lors d’une plongée sous-marine on respire l’air à la pression de la
 profondeur à laquelle on se trouve[^8]. La pression augmente d’environ
@@ -941,7 +957,7 @@ poumons. Moralité, n’oubliez pas d’expirer en remontant à la surface
 lorsque vous faites de la plongée.
 
 ![Le volume d’un poumon augmente lorsque le plongeur remonte sans
-expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf){#fig:plongee width=50%}
+expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf.png){#fig:plongee width=50%}
 
 ### Loi de Charles
 
@@ -960,7 +976,7 @@ $$\frac{V_1}{T_1}=\frac{V_2}{T_2}.$$ Un exemple pour différents gaz peut
 constante pour trois gaz. En traitillés, l’extension de la droite au
 delà du point de liquéfaction du gaz. Toutes les droites se rejoignent
 au *zéro
-absolu*.](../figs/charles.pdf){#fig:charles width=50%}
+absolu*.](../figs/charles.pdf.png){#fig:charles width=50%}
 
 Chacune des droites représente un gaz différent. Les traits-tillés
 commencent à l’endroit où le gaz se liquéfie (à $0^\circ{\mathrm{C}}$
@@ -980,7 +996,7 @@ connaissance dans la nature et défierait toutes les lois telles que nous
 les connaissons.
 
 Nous avons déjà vu une version de cette loi précédemment (à
-l’équation {@eq:V_T}). Une autre façon d’écrire cette loi est
+l’équation @eq:V_T). Une autre façon d’écrire cette loi est
 $$V=V_0\left(1+\beta(P)(T-T_0)\right),$$ où $\beta(P)$[^9] est une
 fonction de la pression et du gaz considéré (en gardant $P$ constant
 cette valeur ne change pas pour un gaz donné), $V_0$ est le volume à
@@ -1015,8 +1031,8 @@ $$V\sim n,\quad \mbox{pour $T,P$ constantes}.$$
 
 En utilisant les lois de Boyle, Charles et de Gay-Lussac, on peut
 dériver une loi encore plus générale. Commençons par réécrire les trois
-lois (voir les équations {@eq:loi_boyle},
-{@eq:loi_charles}, et {@eq:loi_gaylussac}):
+lois (voir les équations @eq:loi_boyle,
+@eq:loi_charles, et @eq:loi_gaylussac):
 l'équation de Boyle
 $$
 PV=k_T(T),
@@ -1024,7 +1040,7 @@ $${#eq:boyle}
 l'équation de Charles
 $$
 \frac{V}{T}=k_P(P),
-$${#eq:charles}\\
+$${#eq:charles}
 et l'équation de Gay-Lussac
 $$
 \frac{P}{T}=k_V(V),
@@ -1034,11 +1050,11 @@ sont trois “constantes” où respectivement on suppose qu’on garde la
 température, la pression et le volume constants (néanmoins ces
 constantes ont une valeur différentes pour des valeurs différentes de
 température, pression et volume respectivement). En divisant
-l’équation {@eq:boyle} par $T$ on obtient
+l’équation @eq:boyle par $T$ on obtient
 $$\frac{PV}{T}=\frac{k_T(T)}{T}.$$ Puis en multipliant
-l’équation {@eq:charles} par $P$ on obtient
+l’équation @eq:charles par $P$ on obtient
 $$\frac{PV}{T}=k_P(P)P.$$ Finalement en multipliant
-l’équation {@eq:gaylussac} par $V$ on obtient
+l’équation @eq:gaylussac par $V$ on obtient
 $$\frac{PV}{T}=k_V(V)V.$$ Comme les membres de gauche de ces trois
 équations sont identiques, on voit que
 $$k_V(V)V=k_P(P)P=\frac{k_T(T)}{T}.$$ Cette relation doit être vraie
@@ -1083,7 +1099,7 @@ valable que sous certaines conditions
 Néanmoins, sous ces conditions il représente très bien ce qui se passe
 dans plus ou moins tous les gaz connus.
 
-[Volume d’une mole de gaz]{}
+Exercice (Volume d’une mole de gaz) #
 
 Estimer le volume d’une mole d’un gaz à $T=0^\circ{\mathrm{C}}$,
 $P=10^5\ N/{\mathrm{m}}^2$. Et à $T=20^\circ{\mathrm{C}}$?
@@ -1097,7 +1113,7 @@ $$\begin{aligned}
 &V=8.314\cdot 293\cdot 10^{-5},\\
 &V=0.0244\ {\mathrm{m}}^3.\end{aligned}$$
 
-[Gaz parfaits]{}
+Exercice (Gaz parfaits) #
 
 1.  Estimer la masse d’air dans une salle dont les dimensions sont
     $15{\mathrm{m}}\times 10{\mathrm{m}}\times 3{\mathrm{m}}$ à une
@@ -1227,7 +1243,7 @@ nous faut à présent une mesure quantitative de la variation de chaleur
 en fonction de la variation d’énergie. La quantité de chaleur, notée
 $Q$, nécessaire pour changer la température d’un objet est
 proportionnelle au changement de température $\Delta T$ et à la masse de
-l’objet $m$ et est donnée par $$Q=c m \Delta T,$$ où $c$ est la chaleur
+l’objet $m$ et est donnée par $$Q=c m \Delta T,$${#eq:chaleur} où $c$ est la chaleur
 massique (dont les unités sont
 $[{\mathrm{J}}/({\mathrm{kg}}\cdot{\mathrm{C}})]$). La chaleur massique
 de l’eau est de
@@ -1243,7 +1259,7 @@ négative. Le signe représente la direction de l’échange d’énergie: quand
 il est positive le flux d’énergie va dans l’objet, à l’inverse quand il
 est négatif le flux d’énergie sort de l’objet.
 
-[Chaleur massique]{}
+Exercice (Chaleur massique) #
 
 Quelle est la quantité de chaleur nécessaire pour chauffer un récipient
 en marbre de $20{\mathrm{kg}}$ entre $10^\circ$ et $90^\circ$ (chaleur
@@ -1275,7 +1291,7 @@ d’énergie totale du système ne changera pas).
 La conservation de l’énergie peut s’exprimer de façon intuitive par:
 *tout l’énergie qui rentre dans le système est égale à l’énergie qui en
 sort* $$Q_\mathrm{gagn\acute ee}=Q_\mathrm{perdue},\quad 
-\mbox{dans un syst\`eme isol\'e}.$$ De façon plus générale, nous pouvons
+\mbox{dans un système isolé}.$$ De façon plus générale, nous pouvons
 écrire que si un système isolé est composé de $N$ partie distinctes qui
 ont des températures distinctes $\{T_i\}_{i=1}^N$, alors les transferts
 de chaleur qui vont emmener le système vers une température d’équilibre
@@ -1284,12 +1300,82 @@ peut être soit positif (si de la chaleur entre dans cette partie du
 système, $T_i<T_f$) soit négatif (si de la chaleur sort du système,
 $T_i>T_f$) ce qui permet au bilan de s’annuler.
 
-[Tasse de café]{}
+Exercice (Tasse de café) #
 
 Si nous remplissons une tasse de $80\ {\mathrm{g}}$ d’un volume de $30 
 \mathrm{ml}$ de café chauffé à $70^\circ{\mathrm{C}}$. Quel sera la
 température finale de l’ensemble si nous supposons que le système est
 isolé?
+
+Problème (Calorimétrie) #
+
+Imaginez une expérience qui permettrait de mesurer la chaleur spécifique
+d'un nouvel alliage: le calorimètre. 
+
+Indications:
+  1. Il faut se comparer à un système dont on connaît la chaleur massique de façon précise.
+  2. Il faut utiliser le principe de conservation de l'énergie.
+
+Application (Bombe calorimétrique) #
+
+Une *bombe* calorimétrique est une appareil servant à mesurer l'énergie 
+thermique dégagée au cours de la combustion complète d'un objet combustion[^11] réalisée à volume constant.
+Ce genre d'appareil est par exemple utilisé pour déterminer le nombre de 
+calories contenues dans les aliments. 
+
+Afin de déterminer la chaleur dégagée, il est important que la combustion soit 
+complète et rapide afin de limiter autant que possible les pertes. La *bombe* est en général un cylindre en acier (ou en n'importe quel matériau qui résiste très bien à la pression et qui conduit très bien la chaleur). Le cylindre est rempli d'oxygène (pour favoriser la combustion) et de la substance à analyser. La combustion est déclenchée par un fort courant traversant la dite substance. La *bombe* est placée dans un calorimètre (en général constitué d'eau, d'un agitateur et d'un thermomètre). Puis, on mesure la température du système avant la combustion, puis lorsque le système revient à l'équilibre thermique après la combustion. Avec ces deux températures, la connaissance de la chaleur massique de la bombe et de l'eau, on peut déterminer la chaleur dégagée par la combustion de la substance. On peut ensuite en normalisant par la masse de la substance mesurer le *pouvoir calorique* (mesuré en $\mathrm{J}/\mathrm{g}$).
+
+Chaleur latente
+---------------
+
+Jusqu'ici nous avons discuté le gain d'énergie réalisé lorsque nous avions une phase unique dans notre système. Lorsque nous arrivons à un point où l'énergie thermique d'une substance est suffisamment forte pour casser les liaisons entre les molécules (transition entre solide-liquide ou liquide-gaz), nous avons à faire à une *transition de phase*. Lors d'un changement de phase l'énergie est utilisée pour casser les liaisons intermoléculaires, mais pas pour augmenter la température de la substance. Un exemple de l'évolution de la température en fonction de la chaleur se voit à la @fig:cl. On voit que lorsque que nous avons que de la glace et que nous ajoutons de l'énergie la température augmente, lorsque a glace se transforme en eau, la température ne change plus, alors que la quantité d'énergie augmente, et ainsi de suite.
+
+![Température en fonction de la chaleur ajoutée pour transformer de la glace en vapeur.](../figs/eau_phase.pdf){#fig:cl width=50%}
+
+On constate donc que l'@eq:chaleur ne peut représenter correctement ce qui se passe lors d'une transition de phase, car nous aurions aucun échange de chaleur (comme on peut le voir sur la @fig:cl, $\Delta T=0$, lors des transitions de phase) alors qu'on a injection d'énergie dans le système. Il nous faut donc une autre description. La chaleur pour transformer de la glace en eau s'appelle la *chaleur latente de fusion*, et celle pour transformer l'eau en vapeur s'appelle *chaleur latente de vaporisation*. En fait la chaleur *latente* se réfère à l'énergie relâchée dans le système par la transition inverse (vapeur en eau ou eau en liquide). Cette transformation étant réversible, il faut injecter la même quantité de chaleur pour transformer l'eau en vapeur et la glace en eau d'où "l'abus de langage".
+
+La chaleur à injecter ou qui se dégage lors d'un changement de phase d'une substance est proportionnelle à la masse, $m$, de la substance et est donnée par
+$$
+Q=L\cdot m,
+$${#eq:chaleur_latente}
+où $L=\mbox{cte}$ est la chaleur latente spécifique de la substance pour la fusion (solidification), notée $L_f$, ou la vaporisation (liquéfaction), notée $L_V$. Dans le cas de chaleur dégagée on aura $Q<0$, et dans le cas de chaleur absorbée, on aura $Q>0$.
+
+Nous pouvons maintenant considérer des processus qui vont faire intervenir des transitions de phase. L'échange total de chaleur est maintenant composé de deux sources différentes: l'un lié à la chaleur massique liée à l'augmentation de température ($Q_M$), et l'autre à la chaleur latente spécifique ($Q_L$) liée à la transition de phase
+$$\begin{aligned}
+Q&=Q_L+Q_M\\
+&=m(L+c\Delta T).
+\end{aligned}$$
+
+Exercice (Faire des glaçons) #
+
+Quelle énergie doit fournir votre réfrigérateur pour transformer $1.5\mathrm{kg}$ d'eau à $20^\circ\mathrm{C}$ en glaçon à $-12^\circ\mathrm{C}$ sachant que $c_\mathrm{eau}=4186\mathrm{J}/\mathrm{kg}$, 
+$c_\mathrm{glace}=2100\mathrm{J}/\mathrm{kg}$, et ${L_F}_\mathrm{eau}=3.33\cdot 10^5\mathrm{J}/\mathrm{kg}$?
+
+Exercice (Graphique de changement de phase) #
+
+Reconstruire approximativement le graphique de la @fig:cl pour des températures allant de $-40^\circ\mathrm{C}$ à $120^\circ\mathrm{C}$,
+sachant que $c_\mathrm{eau}=4186\mathrm{J}/\mathrm{kg}$, 
+$c_\mathrm{glace}=2100\mathrm{J}/\mathrm{kg}$, $c_\mathrm{vaoeur}=2010\mathrm{J}/\mathrm{kg}$, ${L_F}_\mathrm{eau}=3.33\cdot 10^5\mathrm{J}/\mathrm{kg}$, et ${L_F}_\mathrm{eau}=2.26\cdot 10^5\mathrm{J}/\mathrm{kg}$.
+
+Exercice (Faire fondre la glace) #
+
+On mélange $500\ \mathrm{g}$ de glace à $-10^\circ\mathrm{C}$ avec $3\ \mathrm{kg}$ de thé ``froid'' à $20^\circ\mathrm{C}$. Considérer le thé froid comme étant de l'eau.
+
+  1. Quel sera l'état du mélange (solide, solide-liquide, liquide)?
+  2. A quelle température sera la mixture quand il sera à l'équilibre thermique?
+  3. Combien de glace faudrait-il mettre pour que la glace fonde totalement mais que le thé froid soit à exactement zéro degrés?
+
+Finalement, la transformation de liquide en gaz peut se produire même sans atteindre la température d'ébullition du liquide. On parle alors *d'évaporation*. Ce phénomène peut s'observer tous les jours lorsque des flaques d'eau sèchent sur le sol (l'eau s'évapore) sans que la température du sol atteigne les $100^\circ\mathrm{C}$. Comme nous l'avons dit précédemment, pour qu'une substance passe de l'état liquide à l'état gazeux, il est nécessaire de casser les liens entre les molécules de la substance. Cela requiert une certaine quantité d'énergie. Lors de l'évaporation d'un liquide se trouvant sur une surface solide, aucune énergie supplémentaire n'est fournie au système. Afin de garder l'énergie totale du système reste constante cela requiert que le solide se refroidisse. C'est exactement ce qui se passe lorsque nous transpirons. De l'eau passe par les pores de la peau lorsque la température de notre corps s'élève (lors d'une activité physique par exemple). La transpiration en séchant fait à son tour baisser la température de la peau et donc baisse notre température corporelle.
+
+Application (chaudière à condensation) #
+
+Dans une chaudière classique, les pertes thermiques de la chaudière se font principalement par les fumées: en premier lieu, par la température des fumées, qui est plus importante que celle de l'air de combustion, et d'autre part par la vapeur d'eau contenue dans ces fumées. L'eau contenue dans les fumées est issue de la réaction chimique de la combustion qui, si la chaudière est bien réglée, ne produit que de la vapeur d'eau et du gaz carbonique. 
+Lors du refroidissement de la vapeur d'eau, le passage de l'état gazeux à l'état liquide restitue  l'énergie de chaleur latente, qui est perdue si les vapeurs d'eau s'échappent dans l'atmosphère. 
+
+Le rôle de la chaudière à condensation est donc de récupérer une partie de cette énergie, en condensant la vapeur d'eau des fumées d'échappement, et de la transférer à l'eau du circuit de chauffage. On utilise un échangeur condenseur dans lequel circule l'eau de retour chauffage à basse température. En condensant, la vapeur se transforme en eau et libère de la chaleur qui est récupérée par l'échangeur de la chaudière. 
+Cette chaleur est transmise à l'eau avant qu’elle passe dans le corps de la chaudière, où elle sera élevée à plus haute température pour alimenter le circuit de chauffage.
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
@@ -1315,9 +1401,13 @@ isolé?
 [^8]: Enfin cela est vrai si on ne fait pas de la plongée en apnée, où
     il faut éviter de respirer...
 
-[^9]: dans l’équation {@eq:V_T}, $\beta$ ne dépendait pas de la
+[^9]: dans l’équation @eq:V_T, $\beta$ ne dépendait pas de la
     pression, car nous considérions un solide, et la presion dans un
     solide est très difficile à faire changer.
 
 [^10]: Il pesait $94{\mathrm{kg}}$ et a couru le $100{\mathrm{m}}$ en
     $9.6{\mathrm{s}}$ en atteignant les $44.7{\mathrm{km}}/\mathrm{h}$.
+
+[^11]: En réalité une *bombe* calorimétrique, peut mesurer l'énergie dégagée
+    par n'importe quelle réaction chimique.
+

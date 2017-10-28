@@ -6,6 +6,6 @@
 		}
 	],
 	"settings": {
-      "TEXroot": "cours.tex"
+      // "TEXroot": "cours.tex"
   	}
 }
