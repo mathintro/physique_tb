@@ -83,6 +83,37 @@ en déduire la variation
 du volume, puis négliger les termes les plus petits.
 \end{exercice}
 
+\begin{corrige}{Dilatation linéique/volumique}
+Nous pouvons exprimer un volume comme étant $V=L_1\cdot\L_2\cdot\L_3$ où les $L_i$ sont les longueur
+dans chanque direction du solide. Lorsque nous changeons la température du solide nous avons 
+\begin{equation}
+L_i'=L_i+\Delta L_i.
+\end{equation}
+Et donc le volume devient 
+\begin{align}
+V'&=L_1'\cdot L_2'\cdot L_3'=(L_1+\Delta L_1)(L_2+\Delta L_2)(L_3+\Delta L_3),\nonumber\\
+  &=L_1L_2L_3+\Delta L_1 L_2L_3+\Delta L_2 L_3L_1+\Delta L_3 L_1L_2+\Delta L_1 \Delta L_2L_3\nonumber\\
+  &\quad\quad+\Delta L_2 \Delta L_3L_1+\Delta L_3 \Delta L_1L_2+\Delta L_3 \Delta L_1 \Delta L_2,\nonumber\\
+  &\cong L_1L_2L_3+\Delta L_1 L_2L_3+\Delta L_2 L_3L_1+\Delta L_3 L_1L_2,
+\end{align}
+où nous avons négliger les termes $\Delta L_i^2$ et $\Delta L_i^3$ car $\Delta L_i\ll 1$.
+
+On peut réexprimer cette équation 
+\begin{equation}
+V'-V=\Delta L_1 L_2L_3+\Delta L_2 L_3L_1+\Delta L_3 L_1L_2.
+\end{equation}
+Nous savons que la dilatation linéique nous donne $\Delta L_i=\alpha L_i\Delta T$ (ceci est vrai seulement si $\alpha$ est le même dans chaque direction $i$, et donc que le solide est isotrope). On a donc finalement
+\begin{equation}
+\Delta V'=\alpha L_1 L_2L_3\Delta T+\alpha L_1 L_2L_3\Delta T+\alpha L_1 L_2L_3\Delta T=3\alpha V\Delta T.
+\end{equation}
+En identifiant maintenant cette équation avec l'équation de la dilatation volumique vue en cours, il vient
+\begin{equation}
+\Delta V'=3\alpha V\Delta T=\beta V\Delta T.
+\end{equation}
+On voit donc que $\beta=3\alpha$.
+
+\end{corrige}
+
 \begin{exercice}{Fil de Cuivre}
 
 \begin{enumerate}
@@ -93,6 +124,25 @@ sur l’intervalle $-20$ à $+35\ \oC$ ?
 \end{enumerate}
 \end{exercice}
 
+\begin{corrige}{Fil de Cuivre}
+\begin{enumerate}
+	\item 
+\begin{equation}
+\Delta T=\frac{\Delta L}{\alpha_\mathrm{cu}L}=\frac{10^{-2}}{16.6\cdot10^{-6}10}=60.2^\circ\C.
+\end{equation}
+Ainsi la température doit être de $20+60.2=80.2^\circ\C$
+\item De $20\oC$ à $-20\oC$ on a 
+\begin{equation}
+\Delta L=\Delta T \alpha_\mathrm{acier}L=11\cdot10^{-6}\cdot 320\cdot(-40)=-0.141\m.
+\end{equation}
+De $20\oC$ à $35\oC$ on aura
+\begin{equation}
+\Delta L=\Delta T \alpha_\mathrm{acier}L=11\cdot10^{-6}\cdot 320\cdot15=0.0528\m.
+\end{equation}
+Finalement entre $-20\oC$ et $35\oC$ on aura $\Delta L=0.0528-(-0.141)=0.194\m$.
+\end{enumerate}
+\end{corrige}
+
 \begin{exercice}{Thermomètre}
 
 Un thermomètre à mercure ($\beta=1.8\cdot 10^{-4}$) en quartz est formé par un volume total de $0.400\ \cm^3$ de mercure
@@ -100,6 +150,20 @@ dans un réservoir surmonté par un tube de quartz. Le tube a un diamètre de $0
 On négliger la dilatation volumique du quartz, de combien monte le niveau du mercure
 lorsque la température passe de $10\oC$ à $90\oC$ ?
 \end{exercice}
+
+\begin{corrige}{Thermomètre}
+
+Lorsque la température passe de $10\oC$ à $90\oC$, la variation de volume du mercure est donnée par 
+\begin{equation}
+\Delta V=\Delta T \beta_\mathrm{hg}V_\mathrm{hg}=(90-10)\cdot 1.8\cdot 10^{-4}\cdot 400=5.76\mm^3.
+\end{equation}
+Dans le tube de rayon $0.10\mm$ et donc de section $S=\pi 0.1^2=0.0314\mm^2$.
+Le liquide montera donc de la hauteur  
+\begin{equation}
+h=\frac{\Delta V}{S}=\frac{5.76}{0.0314}=183\mm.
+\end{equation}
+
+\end{corrige}
 
 \begin{exercice}{Débordement}
 
@@ -109,6 +173,20 @@ Quel volume d'eau déborde si la température atteint $50\oC$ ?
 Remarque : il faut tenir compte de la dilatation du verre.
 \end{exercice}
 
+\begin{corrige}{Débordement}
+
+Lorsque la température passe de $10\oC$ à $50\oC$, la variation de volume 
+des $100\cm^3$ d'eau est donnée par 
+\begin{equation}
+\Delta V_\mathrm{eau}=\beta_{eau}V_\mathrm{eau}\Delta T=2\cdot 10^{-4}\cdot 100\cdot(50-10)=0.8\cm^3.
+\end{equation}
+Le bêcher en Pyrex augmente également de volume
+\begin{equation}
+\Delta V_\mathrm{pyrex}=\beta_{pyrex}V_\mathrm{pyrex}\Delta T=9\cdot 10^{-6}\cdot 100\cdot(50-10)=0.036\cm^3.
+\end{equation}
+Ainsi l’eau déborde de $\Delta V_\mathrm{eau}-\Delta V_\mathrm{pyrex}=0.764\cm^3$.
+\end{corrige}
+
 \begin{exercice}{Pression des pneus}
 
 On gonfle à $15\oC$ à la pression de $300\ \mathrm{kPa}$ un pneu d’automobile dont le volume intérieur
@@ -117,68 +195,28 @@ Après un voyage on constate que la pression est de $320\ \mathrm{kPa}$, quelle 
 l’intérieur du pneu ?
 \end{exercice}
 
-% \section{Corrigé}
+\begin{corrige}{Pression des pneus}
+    
+La loi des gaz parfaits nous dit
+\begin{equation}
+\frac{p}{T}=\frac{nR}{V}.
+\end{equation}
+Ici le volume $V$ (de 15 litres) reste constant, et la quantité de gaz à l’intérieur $n$ est également constante.
 
-% \begin{corrige}
+Ainsi 
+\begin{equation}
+\frac{p}{T}=cte,
+\end{equation}
+et donc
+\begin{equation}
+\frac{p_1}{T_1}=\frac{p_2}{T_2}.
+\end{equation}
+Finalement,
+\begin{equation}
+T_2=\frac{p_2T_1}{p_1}=\frac{(273+15)\cdot 320\cdot 10^3}{300\cdot 10^3}=307.2^\circ\K=34.2\oC.
+\end{equation}
 
-% Soit $V=$ et après dilatation, on a
-% $\Delta L_$
-% : et en dilatation , et ainsi~:
-
-% Si alors on \emph{\textbf{peut négliger le terme 2}} toujours beaucoup\\
-% plus petit que le terme 1~!
-
-% Ainsi
-
-% Mais en dilatation , et , et ainsi~:
-
-% Soit~: et\\
-% \end{corrige}
-
-% Exercice 3
-
-% \begin{enumerate}
-% \def\labelenumi{\alph{enumi})}
-% \item
-%   ,\\
-%   ainsi la température doit être de
-% \item
-%   De à -20°C~ on aura~:
-% \end{enumerate}
-
-% \begin{quote}
-% De à +35°C~ on aura~:
-
-% Et de à +35°C~ on aura~:
-% \end{quote}
-
-% Exercice 4
-
-% Lorsque la température passe de à a variation de volume du mercure est
-% donnée par~:
-
-% Dans le tube de rayon et donc de section ,
-
-% Le liquide montera de la hauteur
-
-% Exercice 5
-
-% Lorsque la température passe de à , la variation de volume\\
-% des 100 cm\textsuperscript{3} d'eau est donnée par~:
-
-% Le bêcher en Pyrex augmente également de volume, son coefficient de
-% dilatation volumique étant donné par~: on aura~:
-
-% Ainsi l'eau déborde de
-
-% Exercice 6
-
-% De la loi des gaz parfaits on a~:
-
-% Ici le volume (de ) reste constant, et la quantité de gaz à l'intérieur
-% est également constante.
-
-% Ainsi~: , d'où °C~
+\end{corrige}
 
 
 \end{document}
