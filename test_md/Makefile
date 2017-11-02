@@ -1,11 +1,11 @@
 default:
-	pandoc -s -S -o test.pdf cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref --template=./default.latex --latex-engine pdflatex
+	pandoc -s -S -o cours.pdf cours.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)/pandoc-crossref --template=./default.latex --latex-engine pdflatex
 
 latex:
-	pandoc -s -S -o test.tex cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref  --template=./default.latex
+	pandoc -s -S -o cours.tex cours.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)/pandoc-crossref  --template=./default.latex
 
 epub:
-	pandoc -s -S -o test.epub cours.md --filter=pandoc-numbering  --filter=/home/malaspor/.cabal/bin/pandoc-crossref  -t epub3
+	pandoc -s -S -o cours.epub cours.md --filter=pandoc-numbering  --filter=$(PANDOC_CROSSREF)/pandoc-crossref  -t epub3
 
-htmlc:
-	pandoc -s -S -o test.html cours.md --filter=pandoc-numbering --filter=/home/malaspor/.cabal/bin/pandoc-crossref --mathml -t html5 
+html:
+	pandoc -s -S -o cours.html cours.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)/pandoc-crossref --mathml -t html5 
