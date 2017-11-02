@@ -1356,7 +1356,7 @@ Exercice (Graphique de changement de phase) #
 
 Reconstruire approximativement le graphique de la @fig:cl pour des températures allant de $-40^\circ\mathrm{C}$ à $120^\circ\mathrm{C}$,
 sachant que $c_\mathrm{eau}=4186\mathrm{J}/\mathrm{kg}$, 
-$c_\mathrm{glace}=2100\mathrm{J}/\mathrm{kg}$, $c_\mathrm{vaoeur}=2010\mathrm{J}/\mathrm{kg}$, ${L_F}_\mathrm{eau}=3.33\cdot 10^5\mathrm{J}/\mathrm{kg}$, et ${L_F}_\mathrm{eau}=2.26\cdot 10^5\mathrm{J}/\mathrm{kg}$.
+$c_\mathrm{glace}=2100\mathrm{J}/\mathrm{kg}$, $c_\mathrm{vapeur}=2010\mathrm{J}/\mathrm{kg}$, ${L_F}_\mathrm{eau}=3.33\cdot 10^5\mathrm{J}/\mathrm{kg}$, et ${L_F}_\mathrm{eau}=2.26\cdot 10^5\mathrm{J}/\mathrm{kg}$.
 
 Exercice (Faire fondre la glace) #
 
@@ -1375,6 +1375,43 @@ Lors du refroidissement de la vapeur d'eau, le passage de l'état gazeux à l'é
 
 Le rôle de la chaudière à condensation est donc de récupérer une partie de cette énergie, en condensant la vapeur d'eau des fumées d'échappement, et de la transférer à l'eau du circuit de chauffage. On utilise un échangeur condenseur dans lequel circule l'eau de retour chauffage à basse température. En condensant, la vapeur se transforme en eau et libère de la chaleur qui est récupérée par l'échangeur de la chaudière. 
 Cette chaleur est transmise à l'eau avant qu’elle passe dans le corps de la chaudière, où elle sera élevée à plus haute température pour alimenter le circuit de chauffage.
+
+Exemple (Détermination de la chaleur latente) #
+
+La chaleur spécifique du mercure est de $140\ \J/(\kg\cdot \C)$. Lorsque $1\ \kg$ de mercure solide qui est à une température de $-39\oC$ (qui est la température de fusion du mercure) est placé dans un calorimètre de $0.5\ \kg$ en aluminium ($c_{cal}=900\ \J/(\kg\cdot\C)$) rempli avec $1.2\ \kg$ d'eau ($c_{eau}=4186\ \J/(\kg\cdot\C)$) à $20\oC$. La température finale du système est de $16.5\oC$. Quelle est la chaleur latente du mercure?
+
+Solution #
+
+Le calorimètre est un système isolé. On put donc considérer le système calorimètre--eau--mercure comme étant un système isolé. La chaleur perdue par le calorimètre et l'eau sera la chaleur gagnée par l'eau.
+
+La température finale du système étant bien au dessus de la température de fusion du mercure, une transition de phase a donc lieu, ce qui nécessite l'utilisation de l'équation de la chaleur latente (voir @eq:chaleur_latente). De plus il faut utiliser l'équation de la chaleur massique (voir @eq:chaleur) car le système va changer de température. L'échange de chaleur du mercure est donc composé de deux partie. La première est la transition de phase
+$$Q_{L_{hg}}=m_{hg}L_{hg},$$
+puis sont réchauffement jusqu'à de $T_0=-35\oC$ à $T_1=16.5\oC$
+$$\begin{aligned}Q_{c_{hg}}&=c_{hg}m_{hg}(T_1-T_0)\\
+&=1\cdot 140(16.5-(-39))=7770\ \J.
+\end{aligned}$$
+De façon similaire nous pouvons calculer la chaleur perdue par le calorimètre et l'eau qui passe de $T_2=20\oC$ à $T_1$
+$$\begin{aligned}
+Q_{cal}&=m_{cal}c_{cal}(T_2-T_1)\\
+&=0.5\cdot 900(20-16.5)=1575\end{aligned}$$ et 
+$$\begin{aligned}
+Q_{eau}&=m_{eau}c_{eau}(T_2-T_1)\\
+&=1.2\cdot 4186\cdot (20-16.5)=17581\end{aligned}$$.
+
+L'équation de conservation de l'énergie s'écrit donc
+$$\begin{aligned}
+Q_{cal}+Q_{eau}&=Q_{L_{hg}}+Q_{c_{hg}}\\
+17581+1575&=Q_{L_{hg}}+7770\\
+Q_{L_{hg}}&=11386.
+\end{aligned}
+$$
+Il nous reste à présent simplement à résoudre l'équation 
+$$\begin{aligned}
+11386=1\cdot L_{hg},\\
+L_{hg} = 11386.
+\end{aligned}
+$$
+
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir

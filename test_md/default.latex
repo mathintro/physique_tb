@@ -233,6 +233,46 @@ $if(institute)$
 $endif$
 \date{$date$}
 
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\integer}{\mathbb{Z}}
+\renewcommand{\natural}{\mathbb{N}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\zbar}{\bar{z}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\perm}{\mathrm{perm}}
+\newcommand{\card}{\mathrm{card}}
+\newcommand{\fh}{\hat{f}}
+\newcommand{\gh}{\hat{g}}
+\newcommand{\hh}{\hat{h}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Im}{\mathrm{Im}}
+\newcommand{\pDeriv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pDerivTwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\dDeriv}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\dDerivTwo}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cd}{\mathrm{cd}}
+\newcommand{\mol}{\mathrm{mol}}
+\newcommand{\m}{\mathrm{m}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\kg}{\mathrm{kg}}
+\newcommand{\g}{\mathrm{g}}
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\J}{\mathrm{J}}
+\renewcommand{\C}{\mathrm{C}}
+\newcommand{\oC}{^\circ\mathrm{C}}
+\newcommand{\A}{\mathrm{A}}
+\newcommand{\N}{\mathrm{N}}
+\newcommand{\atm}{\mathrm{atm}}
+\renewcommand{\bar}{\mathrm{bar}}
+\newcommand{\V}{\mathrm{V}}
+\newcommand{\W}{\mathrm{W}}
+\newcommand{\kcal}{\mathrm{kcal}}
+\newcommand{\h}{\mathrm{h}}
+\newcommand{\Pa}{\mathrm{Pa}}
+
 \begin{document}
 $if(title)$
 \maketitle
