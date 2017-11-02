@@ -1374,7 +1374,7 @@ On mélange $500\ \mathrm{g}$ de glace à $-10^\circ\mathrm{C}$ avec $3\ \mathrm
 
 Finalement, la transformation de liquide en gaz peut se produire même sans atteindre la température d'ébullition du liquide. On parle alors *d'évaporation*. Ce phénomène peut s'observer tous les jours lorsque des flaques d'eau sèchent sur le sol (l'eau s'évapore) sans que la température du sol atteigne les $100^\circ\mathrm{C}$. Comme nous l'avons dit précédemment, pour qu'une substance passe de l'état liquide à l'état gazeux, il est nécessaire de casser les liens entre les molécules de la substance. Cela requiert une certaine quantité d'énergie. Lors de l'évaporation d'un liquide se trouvant sur une surface solide, aucune énergie supplémentaire n'est fournie au système. Afin de garder l'énergie totale du système reste constante cela requiert que le solide se refroidisse. C'est exactement ce qui se passe lorsque nous transpirons. De l'eau passe par les pores de la peau lorsque la température de notre corps s'élève (lors d'une activité physique par exemple). La transpiration en séchant fait à son tour baisser la température de la peau et donc baisse notre température corporelle.
 
-Le phénomène d'évaporation est dû au fait que les molécules du liquide arrivent à s'échapper du liquide, car leur énergie cinétique est suffisamment élevée. Inversement certaines molécules du gaz peuvent retourner au liquide si elle deviennent suffisamment ``lentes''. L'évaporation a lieu s'il y a une différence entre le nombre de molécules qui s'échappent et celles qui reviennent dans le liquide. L'évaporation s'arrête lorsque le bilan des deux processus est nul. On explique ce phénomène par une différence de pression entre la pression du gaz à la surface (appelée $p_{\mbox{vapeur saturée}}$) et la pression de la vapeur (appelée $p_{\mbox{vapeur}}$). Lorsque $p_{\mbox{vapeur}}<{\mbox{vapeur saturée}}$ l'évaporation peut avoir lieu, lorsque les deux pressions sont égales ont dit que le gaz est saturé et l'évaporation s'arrête. La pression de vapeur saturée augmente avec la température, ce qui explique que les surface sèchent plus facilement avec une température plus élevée.
+Le phénomène d'évaporation est dû au fait que les molécules du liquide arrivent à s'échapper du liquide, car leur énergie cinétique est suffisamment élevée. Inversement certaines molécules du gaz peuvent retourner au liquide si elle deviennent suffisamment ``lentes''. Ce processus s'appelle la *condensation*. L'évaporation a lieu s'il y a une différence entre le nombre de molécules qui s'échappent et celles qui reviennent dans le liquide. L'évaporation s'arrête lorsque le bilan des deux processus est nul. On explique ce phénomène par une différence de pression entre la pression du gaz à la surface (appelée $p_{\mbox{vapeur saturée}}$) et la pression de la vapeur (appelée $p_{\mbox{vapeur}}$). Lorsque $p_{\mbox{vapeur}}<{\mbox{vapeur saturée}}$ l'évaporation peut avoir lieu, lorsque les deux pressions sont égales ont dit que le gaz est saturé et l'évaporation s'arrête. La pression de vapeur saturée augmente avec la température, ce qui explique que les surface sèchent plus facilement avec une température plus élevée.
 
 Application (chaudière à condensation) #
 
@@ -1443,9 +1443,76 @@ La conduction
 
 Imaginons une cuillère en métal qui est placée au dessus d'un briquet. Peut-être avec vous déjà fait l'expérience. Si vous tenez le briquet allumé suffisamment longtemps, vous allez vous brûler les doigts qui tiennent le manche de la cuillère (le même phénomène se produit lorsque vous tenez un briquet allumé trop longtemps). Vous avez donc chauffé le manche de la cuillère sans qu'il soit directement en contact avec la source de chaleur. Dans le cas des métaux, ce transfert de chaleur est effectué par les électrons qui sont libres. 
 
-Dans le cas d'un isolant les molécules chauffées vont voir leur énergie cinétique augmenter. Ces molécules qui bougeront plus rapidement, vont à leur tour rentrer en collision avec leur voisines qui sont plus froide et donc bougent moins rapidement et leur transférer de l'énergie cinétique (et donc augmenter leur température). Se processus se poursuit ainsi de proche en proche jusqu'à ce que la température soit homogène dans tout le corps.
+Dans le cas d'un non-métal les molécules chauffées vont voir leur énergie cinétique augmenter. Ces molécules qui bougeront plus rapidement, vont à leur tour rentrer en collision avec leur voisines qui sont plus froide et donc bougent moins rapidement et leur transférer de l'énergie cinétique (et donc augmenter leur température). Se processus se poursuit ainsi de proche en proche. De façon générale les bon conducteurs d’électricité sont de bons conducteurs de chaleur.
 
+La conduction nécessite un milieu où les molécules sont proches pour pouvoir fonctionner (elles doivent pouvoir s'agiter mutuellement au travers de collisions). C'est donc un moyen de transport de la température qui n'est pas du tout efficace pour un gaz où la distance entre molécules est trop grande.
 
+L'énergie thermique $\Delta Q$ transférée pendant un certain temps $\Delta t$, appelée puissance thermique, $P_\mathrm{th}$, est mesurée en Watt $[\W]=[\J/\s]$. Si nous considérons un objet ayant une section $A$, une longueur $L$, une température à ses extrémité, $T_1$ et $T_2$, et une *conductivité thermique*, $k$ (dont les unités sont $[\W/(\m\cdot\K)]$), la puissance entre les deux extrémités de l'objet (voir la @fig:transfer_bar) $$\frac{\Delta Q}{\Delta t}=-k A \frac{T_2-T_1}{L}.$${#eq:ptherm} Par convention la chaleur s'écoule du chaud vers le froid. Dans l'exemple de la @fig:transfer_bar la puissance thermique sera positive ($T_2-T_1<0$).
+
+![Illustration du transfert de chaleur dans une barre de longueur $L$, de surface $A$, et dont les extrémités ont une température $T_1$ et $T_2$.](../figs/transfert_bar.pdf){#fig:transfer_bar width=50%}
+
+La conductivité est considérée comme une constante qui ne dépend que du matériau. Comme nous l'avons mentionné précédemment, les métaux ont tendance à avoir une conductivité thermique plus élevée (on dit qu'ils sont *conducteurs*[^12]) que celle des non-métaux[^14] (ils sont dit *isolants*[^13]). Maintenant vous pouvez expliquer pourquoi vous avez moins froid aux pieds lorsque vous recouvrez le sol de la salle de bain avec un tapis.
+
+Exemple (Perte de chaleur au travers d'une vitre) #
+
+Dans les maisons une des sources majeurs de pertes thermiques sont au travers des fenêtres. Calculez le transfert de chaleur au travers d'une fenêtre en verre ($k_{\mbox{verre}}=0.84\ \W/(\m\cdot \K)$) de $2\ \m\times 2\ m$ de surface et de $2\ \mm$ d'épaisseur, si la température extérieure est de $15\oC$ et intérieure de $16\oC$.
+
+Solution #
+
+Ici, nous avons $A=2\cdot 2=4\ \m^2$, $L=2\cdot 10 ^{-3}\ \m$, $T_2=15\oC$, et $T_1=16\oC$. En utilisant l'@eq:ptherm, on a
+$$P_\mathrm{th}=-k A\frac{T_2-T_1}{L}=-0.84\cdot 4\frac{(15-16)}{2\cdot 10^{-3}}=1680\ \W.$$
+
+Augmenter l'épaisseur du verre va améliorer l’isolation de la fenêtre, mais pas aussi bien que rajouter une couche d'air entre deux plaques de verre. En effet, la conductivité thermique de l'air étant beaucoup plus faible que celle du verre, il augmente l'isolation thermique de façon beaucoup plus remarquable.
+
+De même nos habits ne nous réchauffent pas. Ils ne servent qu'à maintenir l'air captif proche de notre peau. L'air étant un très bon isolant il nous protège très bien du froid, tant qu'il reste à l'intérieur des vêtements.
+
+### Conduction au travers de différents matériaux
+
+Imaginons une paroi composée de deux matériaux différents (numérotés 1 et 2), dont les conductivités thermiques sont $k_1$ et $k_2$, leur épaisseur est de $L_1$, et leur surface est $A$ (voir la @fig:multi). La température à gauche de la paroi est $T_1$ et la température est $T_2$ à droite.
+
+![Une paroi constituée de deux matériaux dont la conductivité thermique est $k_1$, et $k_2$, la longueur est $L_1$ et $L_2$, la surface est $A$ et dont la partie gauche est à température $T_1$ et la partie droite à température $T_2$.](../figs/multi.pdf){#fig:multi width=50%}
+
+Nous avons que pour chacune des parois la puissance thermique est de
+$$\begin{aligned}
+P_1&=k_1A\frac{T_1-T_3}{L_1},\\
+P_2&=k_2A\frac{T_3-T_2}{L_2}.
+\end{aligned}
+$$
+
+Lorsque nous sommes en régime stationnaire, les températures, ainsi que les puissances thermiques ne varient plus. On peut donc écrire $P_1=P_2=P$.
+On a donc que 
+$$\begin{aligned}
+P&=k_1A\frac{T_1-T_3}{L_1},\\
+P&=k_2A\frac{T_3-T_2}{L_2}.
+\end{aligned}
+$$
+De ce système nous pouvons isoler $T_3$, et il vient
+$$
+\begin{aligned}
+T_3&=-\frac{PL_1}{k_1A}+T_1,\\
+T_3&=\frac{PL_2}{k_2A}+T_2.
+\end{aligned}
+$$
+On obtient finalement
+$$P\left(\frac{L_1}{k_1 A}+\frac{L_2}{k_2 A}\right)=T_1-T_2.$$
+En définissant la *résistivité thermique* $R_i\equiv \frac{L_i}{k_i A}$, on peut réécrire cette équation comme
+$$P(R_1+R_2)=T_1-T_2,$$
+ou 
+$$P=\frac{T_1-T_2}{R_1+R_2}.$$
+On voit que les résistivités thermiques des matériaux s'additionnent, comme le font les résistances dans les circuits électriques (que nous verront plus tard).
+
+Cette équation peut se généraliser avec $N$ matériaux différents et devient
+$$P\left(\sum_{i=1}^NR_i\right)=T_1-T_2,$$
+ou 
+$$P=\frac{T_1-T_2}{\left(\sum_{i=1}^NR_i\right)}.$$
+
+Exercice (Double vitrage) #
+
+Soit une fenêtre en double vitrage avec deux plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $3\ \mm$ entre les deux. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
+
+Exercice (Triple vitrage) #
+
+Soit une fenêtre en triple vitrage avec trois plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $2\ \mm$ entre chacune des plaques. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
@@ -1482,3 +1549,8 @@ Dans le cas d'un isolant les molécules chauffées vont voir leur énergie ciné
 [^11]: En réalité une *bombe* calorimétrique, peut mesurer l'énergie dégagée
     par n'importe quelle réaction chimique.
 
+[^12]: La conductivité thermique du cuivre est de $k_{\mbox{cuivre}}=380\ \W/(\m\cdot \K)$, de l'aluminium est de $k_{\mbox{alu}}=200\ \W/( \m\cdot \K)$, et de l'argent est de $k_{\mbox{argent}}=320\ \W/(\m\cdot \K)$ par exemple.
+
+[^13]: La conductivité thermique du béton est de $k_{\mbox{béton}}=0.84\ \W/(\m\cdot \K)$, du polyuréthane est de $k_{\mbox{poly}}=0.024\ \W/(\m\cdot \K)$, et de l'air est de $k_{\mbox{air}}=0.023\ \W/(\m\cdot \K)$ par exemple.
+
+[^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
