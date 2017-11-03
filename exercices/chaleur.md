@@ -97,7 +97,7 @@ $$m=\frac{Q_\mathrm{eff}}{42\cdot 10^6}=5180\ \kg.$$ -->
 
 Exercice #
 
-Une couche de glace ($\rho=917\ \kg/\m^3$) de $1\ \mm$ d’épaisseur recouvre les $0.85\ \m^2$ du pare-brise d’une voiture (on suppose que le pare-brise est totalement plat). La température de l’air et de la glace ($L=)est de zéro degré.
+Une couche de glace ($\rho=917\ \kg/\m^3$) de $1\ \mm$ d’épaisseur recouvre les $0.85\ \m^2$ du pare-brise d’une voiture (on suppose que le pare-brise est totalement plat). La température de l’air et de la glace ($L=3.3\cdot 10^5\ \J/\kg$) est de zéro degré.
 Quelle devrait être alors la puissance d’une résistance chauffante qui permet de faire fondre toute cette glace en 3 minutes?
 
 <!-- Solution #
@@ -106,7 +106,7 @@ Le volume de la glace sur le pare-brise est de
 $$V=0.85\cdot10^{-3}\ \m^3$$. La densité de la glace étant de $\rho=917\ \kg/\m^3$, sa masse est de 
 $$m=V\rho=0.85\cdot10^{-3}\cdot 917\cong0.78\ \kg.$$
 Afin de transformer toute l'eau en glace il faut utiliser l'équation pour la chaleur latente uniquement
-$$Q=m\cdot L_{F_\mathrm{glace}}=0.68\cdot 3.3\cdot 10^5=2.57\cdot 10^5\ \J$$.
+$$Q=m\cdot L_{F_\mathrm{glace}}=0.78\cdot 3.3\cdot 10^5=2.57\cdot 10^5\ \J$$.
 Afin de faire fondre la glace en $t=3\cdot 60=180\ \s$, il faudrait donc une puissance de
 $$P=\frac{Q}{t}=\frac{2.57\cdot  10^5}{180}=1430\ \W$$. -->
 
