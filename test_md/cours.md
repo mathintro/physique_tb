@@ -1425,6 +1425,42 @@ L_{hg} = 11386.
 \end{aligned}
 $$
 
+### Puissance et rendement
+
+Nous avons vu que lorsque nous transférons de la chaleur d'un objet à un autre, nous transférons de l'énergie thermique.
+Une quantité qui peut être très intéressante à étudier est la puissance, $P$, qui est définie comme la variation d'énergie d'un corps,
+ $\Delta E$, sur un temps donné, $\Delta t$,
+$$
+P=\frac{\Delta E}{\Delta t}=\frac{Q}{\Delta t}.
+$$
+Les unités de la puissance sont des Watt, $[\W]=[\J/\s]$. La puissance mesure le taux (``la vitesse'') auquel 
+l'énergie est transférée d'un objet à un autre.
+
+Exemple (Chauffer de l'eau) #
+
+On  cherche à élever de $10\oC$ la température de $150\ \g$ d’eau ($c=4186$).  
+Combien de temps devra-t-on attendre si l’on peut chauffer cette eau avec un corps de chauffe de puissance $50\ \W$ ? 
+
+Solution #
+
+L'énergie thermique nécessaire pour chauffer notre esut est de $$Q=cm\Delta T=4186\cdot 0.15\cdot 10=6279\ \J$$.
+La puissance nécessaire pour chauffer cette quantité d'eau pendant un intervale de temps $\Delta t$ est de 
+$$P=\frac{Q}{\Delta t}\Leftrightarrow \Delta t=\frac{Q}{P}$$
+et donc il vient
+$$\Delta t=\frac{6269}{50}\cong 126\ \s.$$
+
+Il est également commun que les transfert de chaleur ne se fassent pas de façon parfaite. En fait il est quasiment impossible de 
+transférer de l'énergie sans pertes. Nous définissons le rapport entre l'énergie utile (qui est effectivement utilisée
+pour chauffer un corps) et l'énergie produite comme le rendement $\eta$,
+$$ \eta=\frac{E_\mathrm{utile}}{E_\mathrm{produite}}.$$
+
+Exercices (Chauffer de l'eau avec des pertes) #
+
+On  cherche à élever de $10\oC$ la température de $150\ \g$ d’eau ($c=4186$).  
+Combien de temps devra-t-on attendre si l’on peut chauffer cette eau avec un corps de chauffe de puissance $50\ \W$,
+si son rendement n'est que de $80\%$ ? 
+
+
 Transfert de chaleur
 ====================
 
