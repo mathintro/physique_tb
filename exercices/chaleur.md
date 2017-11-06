@@ -89,10 +89,10 @@ Solution #
 Les 24 ménages consomment une masse d'eau de 
 $$m=24\cdot100\cdot365\cong 8.67\cdot 10^5\ \kg$$ 
 par an. Pour faire passer l'eau de $15\oC$ à $65\oC$, il faut donc une quantité de chaleur de 
-$$Q=m c_\mathrm{eau}\Delta T=8.67\cdot 10^5\cdot 4186\cdot 50\cong 1.83\cdot 10^{11}.$$
+$$Q=m c_\mathrm{eau}\Delta T=8.67\cdot 10^5\cdot 4186\cdot 50\cong 1.83\cdot 10^{11}\ \J.$$
 
 Comme le rendement de la chaudière est de $0.75$, il faut que l'énergie de chauffage produite par la chaudière soit en réalité de 
-$$Q_\mathrm{eff}=\frac{Q}{0.75}=\frac{1.83\cdot 10^{11}}{0.75}=2.44\cdot 10^{11}$$. On a donc que la masse de mazout à utiliser est de 
+$$Q_\mathrm{eff}=\frac{Q}{0.75}=\frac{1.83\cdot 10^{11}}{0.75}=2.44\cdot 10^{11}\ \J.$$ On a donc que la masse de mazout à utiliser est de 
 $$m=\frac{Q_\mathrm{eff}}{42\cdot 10^6}=5180\ \kg.$$
 
 Exercice #
@@ -116,32 +116,32 @@ Exercice #
 On enclenche le corps de chauffe de $1200\ \W$ d’une bouilloire contenant 1 litre d'eau à la  température de $15\oC$. 
 
 1. Quel est le temps nécessaire pour atteindre la température d’ébullition de $95 \oC$ ?
-2. Au bout de combien de temps $1\ \dl$ d’eau se sera-t-il évaporé ($L=2.3\cdot 10^6\ \J/\kg$)?
+2. Au bout de combien de temps $1\ \mathrm{dl}$ d’eau se sera-t-il évaporé ($L=2.3\cdot 10^6\ \J/\kg$)?
 
 Solution #
 
 1. La température doit s'élever de $\Delta T=95-15=80\oC$. On a besoin de 
-$$Q=m_\mathrm{eau}c_\mathrm{eau}\Delta T=1\cdot 4186\cdot 80\cong3.34\cdot 10^5.$$ Le temps nécessaire est donc de 
+$$Q=m_\mathrm{eau}c_\mathrm{eau}\Delta T=1\cdot 4186\cdot 80\cong3.34\cdot 10^5\ \J.$$ Le temps nécessaire est donc de 
 $$t=\frac{Q}{P}=\frac{3.34\cdot 10^5}{1200}\cong 279\ \s.$$
-2. Pour évaporer $0.1\ \l$ d'eau il faut 
-$$Q=m_\mathrm{eau}\cdot L_{E_{eau}}=0.1\cdot 2.3\cdot 10^6=2.5\cdot 10^5.$$
+2. Pour évaporer $0.1\ \mathrm{l}$ d'eau il faut 
+$$Q=m_\mathrm{eau}\cdot L_{E_{eau}}=0.1\cdot 2.3\cdot 10^6=2.5\cdot 10^5\ \J.$$
 Le temps nécessaire est alors de 
 $$t=\frac{Q}{P}=\frac{2.5\cdot10^5}{1200}\cong192\ \s.$$
 
 Exercice #
 
-Un artisan met $500\ \g$ de plomb à $20 \oC$ dans un récipient qu’il place sur une source de chaleur (température de fusion de $327\oC$ et chaleur latente de $2.5\cdot 10^5\ \J/\kg$). Il constate qu’après 1 minute et 30 secondes le plomb est entièrement fondu.
+Un artisan met $500\ \g$ de plomb à $20 \oC$ dans un récipient qu’il place sur une source de chaleur (température de fusion de $327\oC$ et chaleur latente de $2.5\cdot 10^4\ \J/\kg$). Il constate qu’après 1 minute et 30 secondes le plomb est entièrement fondu.
 Quel est la puissance de chauffe de la source de chaleur ?
 
 Soliution #
 
 Il faut dans un premier temps arriver au point de fusion du plomb, et donc apporter une chaleur de 
-$$Q_c=m_\mathrm{pb} c_\mathrm{pb}\Delta T=0.5\cdot 130\cdot 307\cong 2\cdot 10^4.$$
+$$Q_c=m_\mathrm{pb} c_\mathrm{pb}\Delta T=0.5\cdot 130\cdot 307\cong 2\cdot 10^4\ \J.$$
 Puis afin de faire fondre le plomb il faut rajouter
-$$Q_l=m_\mathrm{pb} L_\mathrm{pb}=0.5\cdot 2.5\cdot 10^5\cdot \cong 1.25\cdot 10^4.$$
+$$Q_l=m_\mathrm{pb} L_\mathrm{pb}=0.5\cdot 2.5\cdot 10^4\cdot \cong 1.25\cdot 10^4\ \J.$$
 L'énergie totale nécessaire est donc de
 $$
-Q=Q_c+Q_l=3.25\cdot 10^4.$$
+Q=Q_c+Q_l=3.25\cdot 10^4\ \J.$$
 La puissance de chauffe de la source de chaleur doit donc être de 
 $$
 P=\frac{Q}{t}=\frac{3.25\cdot10^4}{90}\cong360\ \W.
