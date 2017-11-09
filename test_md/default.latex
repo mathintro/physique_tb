@@ -271,6 +271,7 @@ $endif$
 \newcommand{\W}{\mathrm{W}}
 \newcommand{\kW}{\mathrm{kW}}
 \newcommand{\dl}{\mathrm{dl}}
+\newcommand{\dm}{\mathrm{dm}}
 \newcommand{\kcal}{\mathrm{kcal}}
 \newcommand{\h}{\mathrm{h}}
 \newcommand{\Pa}{\mathrm{Pa}}
