@@ -1130,6 +1130,15 @@ Exercice (Gaz parfaits) #
 3.  Le ballon flotte-t-il? Quelle devrait être la pression du ballon
     pour que l’hélium ait la même densité que l’air?
 
+
+Questions # 
+
+1. Si un système $A$ est en équilibre thermique avec un système $B$, mais le système $B$ n'est pas en équilibre thermique avec le système $C$. Que pouvez-vous dire sur les températures de $A$, $B$, et $C$?
+2. Lorsqu'un thermomètre au mercure à $0\oC$ est placé dans un bac d'eau chaude, le mercure va-t-il monter? Descendre? Descendre et monter? Expliquer pourquoi.
+3. Une bouteille en verre peut se rompre si une de ses parties est chauffée de façon très rapide. Expliquez pourquoi. Est-ce que le même phénomène se produirait si on refroidissait?
+4. Expliquez l'augmentation de la température d'un gaz lorsqu'il est comprimé et son refroidissement lorsqu'il est détendu à l'aide de la derscription moléculaire des fluides.
+5. Est-il possible de faire bouillir de l'eau à $20\oC$? Expliquer.
+
 Chaleur et matière
 ==================
 
@@ -1460,6 +1469,14 @@ On  cherche à élever de $10\oC$ la température de $150\ \g$ d’eau ($c=4186$
 Combien de temps devra-t-on attendre si l’on peut chauffer cette eau avec un corps de chauffe de puissance $50\ \W$,
 si son rendement n'est que de $80\%$ ? 
 
+Questions # 
+
+1. Que va-t-il arriver au liquide contenu dans un pot quand il est secoué très vigoureusement?
+2. Quand deux objets, un chaud et un froid, sont mis en contact. Est-ce que la température est échangée entre les deux? Est-ce que le changement de température des deux objet sera égal?
+3. La chaleur massique de l'eau est assez élevée. Expliquez pourquoi cela en fait un bon liquide pour les systèmes de chauffage?
+4. Les brûlures dues à la vapeur à $100\oC$ sont-elles plus, autant ou moins graves que celles dues à de l'eau à $100\oC$? Expliquer pourquoi.
+5. Est-ce qu'un ventilateur électrique va en lui même refroidir l'air? Si oui pourquoi? Si non pourquoi? Si non pourquoi l'utiliser?
+
 
 Transfert de chaleur
 ====================
@@ -1605,7 +1622,7 @@ Vous avez sûrement déjà remarqué que les surfaces noires chauffent beaucoup 
 De ce que nous venons décrire sur l'absorption et l'émission, nous pouvons déduire que les objets émettent des radiations mais en même temps en absorbent. Le taux d'énergie émise (ou absorbée) par un objet est donc le bilan entre le taux d'énergie émis et celui absorbée, $P_\mathrm{net}$
 $$P_\mathrm{net}=P_\mathrm{emis}-P_\mathrm{absorb}.$$ 
 Étant donné qu'un objet en équilibre thermique avec son environnement n'échange pas d'énergie avec celui-ci et que nous avons dit plus haut qu'un objet émet toujours de l'énergie par radiation, il est nécessaire que l'énergie absorbée soit la même que celle qui est émise. On peut donc de façon raisonnable penser que le taux d'énergie net est donné par
-$$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4),$$ 
+$$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4),$${#eq:stefan_boltzmann}
 avec $T_2$ la température de l'environnement, $T_1$ la température de l'objet, et $\epsilon$ son émissivité. On voit donc que si $T_1>T_2$ l'énergie est transférée dans son environnement par l'objet, alors que si $T_2<T_1$, l'énergie est transférée à l'objet par son environnement.
 
 Question (Le feu) #
@@ -1646,7 +1663,21 @@ $$\begin{aligned}
 \Delta T_1&=12\ \oC,\\
 \Delta T_2&=1.72\ \oC.
 \end{aligned}$$
-On voit donc que la théière avec une grande émissivité se refroidit beaucoup plus vite que celle avec une faible émissivité.
+On voit donc que la théière avec une grande émissivité se refroidit beaucoup plus vite que celle avec une faible émissivité (si on ne considère que la radiation).
+
+La formule de la radiation ne peut pas être appliquée telle quelle au soleil. En effet, tout le raisonnement que nous avons fait jusqu'à maintenant suppose que nous avons une température de l'environnement (le $T_2$ de tout à l'heure) qui est uniforme. Hors pour un objet sur terre, le soleil est en gros un objet ponctuel et on est donc très loin de ``l'environnement à température uniforme''. Une infime partie des rayonnement solaires atteignent la terre, dont la puissance est d'environ $1350\ \W/\m^2$ quand les rayons arrivent perpendiculairement à la surface (c'est la constante solaire). De plus l'atmosphère absorbe une partie de l'énergie (ou la reflète dans l'espace). Ainsi lors d'une belle journée environ $1000\ \W/\m^2$ atteignent la surface. Ce nombre correspond au terme $\sigma T^4$ de l'@eq:stefan_boltzmann. Il faut encore néanmoins prendre en compte *la surface apparente* de l'objet $A_\mathrm{apparente}$. En effet, les rayons du soleil pouvant ne pas arriver de façon perpendiculaire à la surface (en général ils ne le sont pas...) on doit remplacer $A$ par 
+$$A_\mathrm{apparente}=A\cdot \cos\theta,$$
+où $\theta$ est l'angle entre la surface et la direction des rayons du soleil. Finalement la puissance absorbée par un objet exposé au soleil est de 
+$$P=1000\epsilon A \cos\theta,$$ 
+lors d'une journée ensoleillée. Cette formule explique l'existence des saisons. Quand l'angle $\theta$ s'éloigne de $\theta=0$, l'énergie absorbée devient de plus en plus petite. Les rayons du soleil étant très loin d'être perpendiculaires en hiver et plus proche de la perpendicularité en été. Les différences de températures ne sont donc pas du tout reliées à la distance entre le soleil et la terre, mais uniquement à l'angle entre la terre et celui-ci[^15].
+
+Exemple (Bronzage) #
+
+Quelle est l'énergie absorbée par une personne allongée sur le sol si les rayons du soleil font un angle de $30^\circ$ avec le sol. On suppose que $1000\ \W/\m^2$ arrivent à la surface de la terre et qu'une demi-personne a une surface de $1.7/2=0.85\ \m^2$ et a une émissivité $\epsilon=0.7$.
+
+Solution #
+
+Comme $\theta=30^\circ$ il faut commencer à transformer cette valeur en radians $\theta=30\cdot \pi/180=0.52\ \mathrm{rad}$ pour pouvoir en calculer le cosinus. On a donc que $$P=1000\epsilon A\cos\theta=1000\cdot 0.7\cdot 0.85\cos\theta\cong 515\ \W.$$
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
@@ -1687,3 +1718,5 @@ On voit donc que la théière avec une grande émissivité se refroidit beaucoup
 [^13]: La conductivité thermique du béton est de $k_{\mbox{béton}}=0.84\ \W/(\m\cdot \K)$, du polyuréthane est de $k_{\mbox{poly}}=0.024\ \W/(\m\cdot \K)$, et de l'air est de $k_{\mbox{air}}=0.023\ \W/(\m\cdot \K)$ par exemple.
 
 [^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
+
+[^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.
