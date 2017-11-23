@@ -263,6 +263,7 @@ $endif$
 \newcommand{\J}{\mathrm{J}}
 \renewcommand{\C}{\mathrm{C}}
 \newcommand{\oC}{^\circ\mathrm{C}}
+\newcommand{\oK}{^\circ\mathrm{K}}
 \newcommand{\A}{\mathrm{A}}
 \newcommand{\N}{\mathrm{N}}
 \newcommand{\atm}{\mathrm{atm}}
