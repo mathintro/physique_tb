@@ -1130,6 +1130,15 @@ Exercice (Gaz parfaits) #
 3.  Le ballon flotte-t-il? Quelle devrait être la pression du ballon
     pour que l’hélium ait la même densité que l’air?
 
+
+Questions # 
+
+1. Si un système $A$ est en équilibre thermique avec un système $B$, mais le système $B$ n'est pas en équilibre thermique avec le système $C$. Que pouvez-vous dire sur les températures de $A$, $B$, et $C$?
+2. Lorsqu'un thermomètre au mercure à $0\oC$ est placé dans un bac d'eau chaude, le mercure va-t-il monter? Descendre? Descendre et monter? Expliquer pourquoi.
+3. Une bouteille en verre peut se rompre si une de ses parties est chauffée de façon très rapide. Expliquez pourquoi. Est-ce que le même phénomène se produirait si on refroidissait?
+4. Expliquez l'augmentation de la température d'un gaz lorsqu'il est comprimé et son refroidissement lorsqu'il est détendu à l'aide de la derscription moléculaire des fluides.
+5. Est-il possible de faire bouillir de l'eau à $20\oC$? Expliquer.
+
 Chaleur et matière
 ==================
 
@@ -1454,11 +1463,19 @@ transférer de l'énergie sans pertes. Nous définissons le rapport entre l'éne
 pour chauffer un corps) et l'énergie produite comme le rendement $\eta$,
 $$ \eta=\frac{E_\mathrm{utile}}{E_\mathrm{produite}}.$$
 
-Exercices (Chauffer de l'eau avec des pertes) #
+Exercice (Chauffer de l'eau avec des pertes) #
 
 On  cherche à élever de $10\oC$ la température de $150\ \g$ d’eau ($c=4186$).  
 Combien de temps devra-t-on attendre si l’on peut chauffer cette eau avec un corps de chauffe de puissance $50\ \W$,
 si son rendement n'est que de $80\%$ ? 
+
+Questions # 
+
+1. Que va-t-il arriver au liquide contenu dans un pot quand il est secoué très vigoureusement?
+2. Quand deux objets, un chaud et un froid, sont mis en contact. Est-ce que la température est échangée entre les deux? Est-ce que le changement de température des deux objet sera égal?
+3. La chaleur massique de l'eau est assez élevée. Expliquez pourquoi cela en fait un bon liquide pour les systèmes de chauffage?
+4. Les brûlures dues à la vapeur à $100\oC$ sont-elles plus, autant ou moins graves que celles dues à de l'eau à $100\oC$? Expliquer pourquoi.
+5. Est-ce qu'un ventilateur électrique va en lui même refroidir l'air? Si oui pourquoi? Si non pourquoi? Si non pourquoi l'utiliser?
 
 
 Transfert de chaleur
@@ -1475,7 +1492,7 @@ Il y a trois moyens par lesquels la chaleur peut être propagée:
 Nous allons maintenant discuter ces trois modes de transmission de la chaleur.
 
 La conduction
-------------
+-------------
 
 Imaginons une cuillère en métal qui est placée au dessus d'un briquet. Peut-être avec vous déjà fait l'expérience. Si vous tenez le briquet allumé suffisamment longtemps, vous allez vous brûler les doigts qui tiennent le manche de la cuillère (le même phénomène se produit lorsque vous tenez un briquet allumé trop longtemps). Vous avez donc chauffé le manche de la cuillère sans qu'il soit directement en contact avec la source de chaleur. Dans le cas des métaux, ce transfert de chaleur est effectué par les électrons qui sont libres. 
 
@@ -1550,6 +1567,152 @@ Exercice (Triple vitrage) #
 
 Soit une fenêtre en triple vitrage avec trois plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $2\ \mm$ entre chacune des plaques. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
 
+La convection
+-------------
+
+De façon générale à part pour les métaux qui conduisent bien la chaleur il existe des moyens beaucoup plus efficaces de transférer l'énergie. Pour les fluides en particulier la *convection* est beaucoup plus efficace que la conduction. La *convection* est le processus par lequel la chaleur est transférée en déplaçant physiquement les molécules d'un fluide (pour la conduction le transfert se fait par collisions successives et déplacements très limités des molécules). La convection permet donc de transférer la chaleur sur des distances beaucoup plus grandes et surtout beaucoup plus vite.
+
+On en distingue deux types principaux de convection: la convection *forcée* et la convection *naturelle*. Dans le cas de la convection forcée le déplacement de masses de fluide est le résultat de contraintes extérieures au système.
+
+Illustration (Air conditionné) #
+
+L'air conditionnée fonctionne sur le principe de la convection forcée. L'air est d'abord refroidi dans l'appareil, puis à l'aide d'un ventilateur, l'air froid est envoyé dans la pièce à refroidir améliorant le mélange entre air chaud et air froid.
+
+Dans le cas de la convection naturelle, le mouvement du fluide se fait naturellement, sans avoir recours à un système externe pour le mettre en mouvement.
+
+Illustration (Radiateur) #
+
+Lorsque l'eau chaude arrive dans le radiateur elle chauffe le métal du radiateur qui à son tour chauffe l'air à sa surface. Cet air se réchauffe et se dilate donc (loi des gaz parfaits) et donc sa densité diminue. Cet air va donc monter et ainsi déplacer avec lui l'air chaud. L'air froid se trouvant un peu plus loin va prendre la place de l'air chaud qui est monté. Il sera à ton tour réchauffé et montera. On voit apparaître un courant de convection naturel. 
+
+La convection est le principal biais par lequel la chaleur est transportée lorsque nous avons à faire à des fluides. C'est la raison pour laquelle nous fermons nos fenêtres pour ``garder la chaleur à l'intérieur'', que nous portons des habits, etc. 
+
+L'énergie thermique $\Delta Q$ transférée par convection pendant un certain temps $\Delta t$ (la puissance thermique $P_\mathrm{conv}$) pour un objet de surface $A$ et dont la différence de température $\Delta T$ avec son environnement (voir la @fig:convection) est de
+$$P_\mathrm{conv}=\frac{\Delta Q}{\Delta t}=q\cdot A\cdot \Delta T=q\cdot A\cdot (T_2-T_1),$$
+où $q$ est la constante de convection dont les unités sont $[\W/(\m^2\cdot \K)]$ et qui dépend de la forme et de l'orientation de la surface $A$ (à titre d'exemple $q=7.1\ \W/(\m^2\cdot \K)$ pour un humain nu). 
+
+![Schéma d'un courant de convection naturel au dessus d'une plaque de surface $A$ à température $T_1$ et un environnement à température $T_2$.](../figs/convection_power.pdf){#fig:convection width=50%}
+
+Illustration (Puissance convectée par un humain) #
+ 
+En moyenne la surface d'un humain est de $A=1.7\ \m^2$. Si nous supposons qu'un humain standard est nu à une température de zéro degrés, la puissance dissipée est de 
+$$P_\mathrm{conv}=q\cdot A\cdot \Delta T=7.1\cdot 1.7\cdot 37=446\ \W$$
+On voit que pour garder sa température corporelle constante un humain devrait pouvoir fournir environ $500\ W$ de puissance thermique. Or on estime qu'un corps humain au repos produit environ $100\ \W$. On voit donc qu'un humain nu dans le froid à zéro degré perd environ $400$ joules par seconde d'énergie thermique. Sa chaleur massique étant d'environ $3500 \J/(\kg\cdot \K)$, un humain de $70\ \kg$ verra sa température baisser de 
+$$\Delta T=\frac{Q}{m\cdot c}=\frac{400}{70\cdot 3500}=1.7\cdot 10^{-3}\ \oC,$$
+par seconde soit environ $0.1\oC$ par minute. Il faut donc environ $20$ minutes pour tomber en hypothermie ($35\oC$). En réalité ce temps est un peu plus élevé. En effet, la chaleur produite à l'intérieur du corps est transférée (également par convection, en grande partie via le sang) à la peau. Une des mesures de défense du corps contre le froid est de contracter les vaisseaux sanguins les plus proches de la peau et ainsi empêcher un refroidissement trop rapide.
+
+Exercice (Transport de chaleur jusqu'à la peau) #
+
+En supposant que la température de la peau est de $34\oC$, que la température à l'intérieur du corps est de $37\oC$ et que l'épaisseur des tissus est de $4\ \cm$, estimer le taux auquel la chaleur est transmise à la peau par conduction ($k=0.2\ \J/(\s\cdot m\cdot \C$) si la surface d'un humain est de $1.7\ \m^2$. On estime qu'un humain faisant un effort de faible intensité produit $230\ \W$ d'énergie thermique devant être dissipée. Comment expliquez-vous la différence mesurée? Si la transmission de chaleur se faisait uniquement par conduction quelle serait l'augmentation de température par heure du corps humain?
+
+Exercice (Transport de chaleur jusqu'à la peau: le retour) #
+
+A l'aide de l’exercice précédent estimer la valeur de la constante de convection, $q$, à l'intérieur du corps humain.
+
+La radiation
+------------
+
+Les deux méthodes de transport de la chaleur que nous venons de voir, la conduction et la convection requièrent toutes deux de la matière pour transférer de la chaleur. Hors, dans votre vie de tous les jours vous avez pu vous rendre compte que ce n'est pas forcément nécessaire. En effet, lorsque vous vous mettez au soleil vous vous rendez compte assez vite que vous avez chaud. Hors le soleil se trouve très éloigné de la terre et se trouve dans le vide (ou presque) intersidéral. Cela démontre qu'il faut un autre processus pour transférer la chaleur qui ne requiert pas de matière. Cette forme de transfert d'énergie s'appelle la *radiation*. La radiation est essentiellement de la lumière (des ondes électromagnétiques) qui contient différentes longueur d'ondes, visibles ou invisibles à l’œil nu. 
+
+Expérimentalement, on s'est rendu compte que l'énergie radiée par des objets était proportionnelle à $T^4$, ainsi qu'à la surface $A$ de l'objet. La puissance émise par radiation peut se calculer par
+$$P_\mathrm{rad}=\epsilon\sigma A T^4,$$
+où $\sigma=5.67\cdot 10^{-8}\ \W/(\m^2\cdot \K^4)$ est la constante de Stefan-Boltzmann, et $\epsilon\in[0,1]$ est l'émissivité qui est caractéristique de la surface qui émet la radiation. Les surfaces noires (du charbon par exemple) ont des émissivités proches de $1$, alors que les surfaces brillantes (un miroir par exemple) ont des émissivités proches de $0$. De même des surfaces rugueuses ont tendance à avoir des émissivité plus grandes que celles qui sont très polies.
+
+Vous avez sûrement déjà remarqué que les surfaces noires chauffent beaucoup plus vite que les surface brillantes. En effet, les objets ayant ont haute émissivité absorbent également très bien l'énergie et vice-versa. Les objets avec une basse émissivité réfléchissent très bien les radiations.
+
+De ce que nous venons décrire sur l'absorption et l'émission, nous pouvons déduire que les objets émettent des radiations mais en même temps en absorbent. Le taux d'énergie émise (ou absorbée) par un objet est donc le bilan entre le taux d'énergie émis et celui absorbée, $P_\mathrm{net}$
+$$P_\mathrm{net}=P_\mathrm{emis}-P_\mathrm{absorb}.$$ 
+Étant donné qu'un objet en équilibre thermique avec son environnement n'échange pas d'énergie avec celui-ci et que nous avons dit plus haut qu'un objet émet toujours de l'énergie par radiation, il est nécessaire que l'énergie absorbée soit la même que celle qui est émise. On peut donc de façon raisonnable penser que le taux d'énergie net est donné par
+$$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4),$${#eq:stefan_boltzmann}
+avec $T_2$ la température de l'environnement, $T_1$ la température de l'objet, et $\epsilon$ son émissivité. On voit donc que si $T_1>T_2$ l'énergie est transférée dans son environnement par l'objet, alors que si $T_2<T_1$, l'énergie est transférée à l'objet par son environnement.
+
+Question (Le feu) #
+
+Comment est-ce que la chaleur du feu est transmise? Par conduction, convection, ou radiation? Justifiez votre réponse.
+
+Exemple (Refroidissement par radiation) #
+
+Soit un athlète assis dans un vestiaire dont les murs sombres sont à une température de $15\oC$. Estimer sa perte d'énergie par radiation en supposant que la température de la peau est de $34\oC$ et que $\epsilon=0.7$ et que la surface du corps est de $1.7\ \m^2$.
+
+Solution #
+
+N'oubliez pas que la température doit être transformée en degrés Kelvin. On a que 
+$$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4)=0.7\cdot 5.67\cdot 10^{-8}\cdot 1.7(307^4-288^4)=135\ \W.$$
+Notez que la puissance émise est largement supérieure à une vieille ampoule à incandescence. Néanmoins un humain ne brille pas dans la nuit. Pourquoi?
+
+Une personne au repos produit environ $100\ \W$ d'énergie thermique. On constate avec l'exemple précédent que cette énergie ne suffit pas à couvrir les pertes par radiation du corps ce qui aura pour effet de faire baisser la température du corps et donc d'induire une sensation de froid et une réaction (en général désagréable) du corps pour compenser. Il faut noter que dans l'exemple ci-dessus, nous n'avons absolument pas pris en compte la température de l'air de la pièce, mais uniquement celle des murs. On en déduit donc que même si la température dans la pièce est tout à fait agréable (de l'ordre de $25\oC$ par exemple) une personne peut avoir froid si les murs sont froids. 
+
+Exemple (Théières) #
+
+Soient deux théières contenant chacune $0.75\ \l$ de thé à $95\oC$. L'une a une émissivité $\epsilon_1=0.7$ et l'autre de $\epsilon_2=0.1$. Supposez également que les théières sont de forme cubique et d'un volume de $1\ \l$ et sont posées sur une table.
+La température de la pièce est de $20\oC$ et supposer également que le seul phénomène de transfert de chaleur est la radiation.
+
+1. Estimer le taux de chaleur perdue par chaque théière.
+2. Estimer la température de chacune des théières après $30$ minutes (ignorer la masse de la théière).
+
+Solution #
+
+1. Une des surface d'un cube de volume d'un litre est de $0.1\ \m$. Comme seulement $5$ faces du cube son visibles, nous avons $$A=5\cdot 0.1^2=0.05\ \m^2.$$ La perte de chaleur par radiation pour les théière est donc de $$P=\sigma\epsilon(T_1^4-T_2^4)=\epsilon\cdot 5.67\cdot10^{-8}\cdot0.05(368^4-293^4)=30\epsilon.$$ Pour les théière avec respectivement $\epsilon_1=0.7$ et $\epsilon_2=0.1$ on a donc
+$$\begin{aligned}
+P_1&=21\ \W,\\
+P_2&=3\ \W.
+\end{aligned}$$
+2. Comme nous ignorons la masse des théières, il nous suffit de considérer la masse d'eau, $m=0.75\ \kg$. On a donc avec la définition de la puissance $$P=\frac{\Delta Q}{\Delta t}=\frac{mc\Delta T}{\Delta t}.$$ Nous connaissons maintenant $P$ pour chaque théière ainsi que $m=0.75\ \kg$, $c=4186\ \J/(\kg\cdot \K)$, et $\Delta t=30\ \mathrm{min}=30\cdot60=1800\ \s$. On résout donc l'équation ci-dessus pour $\Delta T$ et on a donc
+$$\Delta T=\frac{P\Delta t}{m c}=\frac{30\epsilon\cdot 1800}{0.75\cdot 4186}=17.2\epsilon.$$
+Pour chacune des théières on aura donc
+$$\begin{aligned}
+\Delta T_1&=12\ \oC,\\
+\Delta T_2&=1.72\ \oC.
+\end{aligned}$$
+On voit donc que la théière avec une grande émissivité se refroidit beaucoup plus vite que celle avec une faible émissivité (si on ne considère que la radiation).
+
+La formule de la radiation ne peut pas être appliquée telle quelle au soleil. En effet, tout le raisonnement que nous avons fait jusqu'à maintenant suppose que nous avons une température de l'environnement (le $T_2$ de tout à l'heure) qui est uniforme. Hors pour un objet sur terre, le soleil est en gros un objet ponctuel et on est donc très loin de ``l'environnement à température uniforme''. Une infime partie des rayonnement solaires atteignent la terre, dont la puissance est d'environ $1350\ \W/\m^2$ quand les rayons arrivent perpendiculairement à la surface (c'est la constante solaire). De plus l'atmosphère absorbe une partie de l'énergie (ou la reflète dans l'espace). Ainsi lors d'une belle journée environ $1000\ \W/\m^2$ atteignent la surface. Ce nombre correspond au terme $\sigma T^4$ de l'@eq:stefan_boltzmann. Il faut encore néanmoins prendre en compte *la surface apparente* de l'objet $A_\mathrm{apparente}$. En effet, les rayons du soleil pouvant ne pas arriver de façon perpendiculaire à la surface (en général ils ne le sont pas...) on doit remplacer $A$ par 
+$$A_\mathrm{apparente}=A\cdot \cos\theta,$$
+où $\theta$ est l'angle entre la surface et la direction des rayons du soleil. Finalement la puissance absorbée par un objet exposé au soleil est de 
+$$P=1000\epsilon A \cos\theta,$$ 
+lors d'une journée ensoleillée. Cette formule explique l'existence des saisons. Quand l'angle $\theta$ s'éloigne de $\theta=0$, l'énergie absorbée devient de plus en plus petite. Les rayons du soleil étant très loin d'être perpendiculaires en hiver et plus proche de la perpendicularité en été. Les différences de températures ne sont donc pas du tout reliées à la distance entre le soleil et la terre, mais uniquement à l'angle entre la terre et celui-ci[^15].
+
+Exemple (Bronzage) #
+
+Quelle est l'énergie absorbée par une personne allongée sur le sol si les rayons du soleil font un angle de $30^\circ$ avec le sol. On suppose que $1000\ \W/\m^2$ arrivent à la surface de la terre et qu'une demi-personne a une surface de $1.7/2=0.85\ \m^2$ et a une émissivité $\epsilon=0.7$.
+
+Solution #
+
+Comme $\theta=30^\circ$ il faut commencer à transformer cette valeur en radians $\theta=30\cdot \pi/180=0.52\ \mathrm{rad}$ pour pouvoir en calculer le cosinus. On a donc que $$P=1000\epsilon A\cos\theta=1000\cdot 0.7\cdot 0.85\cos\theta\cong 515\ \W.$$
+
+### Le corps noir
+
+La couleur des objets est due à la lumière qu'ils réfléchissent ou émettent. En effet, les rayons de lumière se comportent des ondes (de façon analogue au comportement des ondes sonores par exemple). En particulier, la couleur d'un objet est reliée à la longueur d'onde de la lumière qu'il émet. Dans le spectre de la lumière visible, les *grandes* longueurs d'ondes sont de couleur rouges, les courtes bleues en passant par le jaune et le vert. 
+
+Quand on chauffe beaucoup un objet métallique, on voit qu'il rougit d'abord puis devient de couleur blanche quand il est vraiment très très très chaud (on dit qu'il est *chauffé à blanc*). Néanmoins, l'objet n'est pas repeint en cours de route. Par ailleurs, quand il est refroidi il reprend sa couleur d'origine sa couleur ``d'origine'' n'est donc par modifiée par la chaleur. 
+
+Question (Qu'est-ce qui change?) #
+
+Le rayonnement émis par un objet n'est rien d'autre que de la lumière. Et la longueur d'onde de la lumière émise dépend de la température de l'objet. En fait la lumière émise (on parle d'onde électromagnétique) par un corps non réfléchissant en équilibre thermique avec son environnement est appelé *rayonnement du corps noir*. Sur la @fig:corps_noir, on voit la puissance lumineuse émise par angle solide en fonction de la longueur d'onde pour des sources qui sont à trois températures différentes. On voit que plus la température est basse plus le pic d'émission se déplace vers de grande longueur d'ondes. C'est ce pic qui donne leur couleur aux ``corps noirs''. Plus une longueur d'onde est émise fortement plus elle sera visible. Un fer rouge est chauffé à environ $1000\oK$, d'après le spectre du corps noir de la @fig:corps_noir, le pic ne devrait pas être visible à l’œil nu. 
+
+Question (Pourquoi voyons nous le fer prendre une couleur rouge quand nous le chauffons?) #
+
+En fait, bien que nous ne voyions pas le pic d'émission maximale, l'énergie des rayons de lumière (d'énergie plus basse que le pic) est suffisante pour que l’œil humain puisse le voir.
+
+![La radiance émise par angle solide en fonction de la longueur d'onde pour des températures de $3000\oK$, $4000\oK$, et $5000\oK$. Source:
+<https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg>](../figs/Black_body.pdf){#fig:corps_noir width=70%}
+
+Pour avoir une meilleure idée des ordres de grandeurs des différentes longueurs d'ondes émises par des ``corps noirs'' à différentes températures, il faut se référer à la @fig:corps_noir_longueurs. Sur cette figure, on constate que les grandes longueurs d'ondes (ou basses fréquences) correspondent à des couleurs plutôt oranges-rouges, alors que les très petites longueurs d'ondes correspondent à du blanc. Au milieu se trouvent tout le spectre visible allant du rouge au blanc en passant par le jaune, verts, bleu et violet et rose. 
+
+![Ordres de grandeur des longueurs d'ondes et couleurs associées, source:
+<https://upload.wikimedia.org/wikipedia/commons/c/cf/EM_Spectrum_Properties_edit.svg>](../figs/Spectrum_Properties.pdf){#fig:corps_noir_longueurs width=70%}
+
+C'est cette propriété du rayonnement du corps noir qui est utilisée par les thermomètres infra-rouges pour connaître la température d'objet qui nous entourent (voir la @fig:thermographie_kot et la @fig:thermographie_cat). 
+
+### L'effet de serre
+
+La terre est chauffée par le rayonnement du soleil. Si la terre ne possédait pas d’atmosphère elle rayonnerait l'énergie reçue dans l'espace comme un corps noir. Hors, comme la terre possède une atmosphère cela ne se passe pas tout à fait comme ça. A la façon d'une serre, l'atmosphère terrestre d'une part nous protège de certaines longueurs d'ondes émises par le soleil (les micro-ondes et toutes les longueurs d'ondes plus courtes que l'ultra-violet). Une partie de ces ondes sont directement réfléchies dans l'espace (environ $30\%$) par les nuages blancs, les parties claires de la surface de la terre, ... On appelle la mesure de cette effet de ``miroir'' *l'albédo*. Tout ce qui n'est pas réfléchi est absorbé par l'atmosphère (environ $20\%$) et par la surface de la terre (environ $50\%$).
+
+La partie absorbée par la surface est restituée à l'atmosphère, soit par convection, soit par radiation (des infra-rouges principalement) de type ``corps noir''. C'est ce rayonnement qui est en partie réabsorbé par l'atmosphère par des gaz dit *à effet de serre*. 
+
+L'atmosphère réchauffée directement par le soleil et indirectement par le sol, réémet cette chaleur par rayonnement soit dans l'espace, soit directement à la surface contribuant à empêcher son refroidissement par radiation. 
+
+Ce système très complexe d'échange d'énergie conduit (hors contribution des activités humaine) la surface de la terre à avoir une température d'environ $15\oC$. Sans les gaz à effet de serre naturellement présents dans l'atmosphère (vapeur d'eau, gaz carbonique, ozone, et méthane principalement) et à albédo constant la température de la terre serait d'environ $-18\oC$. Hors à cette température toute la surface de la terre serait gelée et réfléchirait beaucoup plus les rayonnements du soleil et conduirait à un refroidissement encore plus prononcé (environ $-50\oC$).
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
@@ -1590,3 +1753,5 @@ Soit une fenêtre en triple vitrage avec trois plaque de verre de $2\ \mm$ d'ép
 [^13]: La conductivité thermique du béton est de $k_{\mbox{béton}}=0.84\ \W/(\m\cdot \K)$, du polyuréthane est de $k_{\mbox{poly}}=0.024\ \W/(\m\cdot \K)$, et de l'air est de $k_{\mbox{air}}=0.023\ \W/(\m\cdot \K)$ par exemple.
 
 [^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
+
+[^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.

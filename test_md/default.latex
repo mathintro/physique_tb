@@ -263,6 +263,7 @@ $endif$
 \newcommand{\J}{\mathrm{J}}
 \renewcommand{\C}{\mathrm{C}}
 \newcommand{\oC}{^\circ\mathrm{C}}
+\newcommand{\oK}{^\circ\mathrm{K}}
 \newcommand{\A}{\mathrm{A}}
 \newcommand{\N}{\mathrm{N}}
 \newcommand{\atm}{\mathrm{atm}}
@@ -271,6 +272,7 @@ $endif$
 \newcommand{\W}{\mathrm{W}}
 \newcommand{\kW}{\mathrm{kW}}
 \newcommand{\dl}{\mathrm{dl}}
+\newcommand{\dm}{\mathrm{dm}}
 \newcommand{\kcal}{\mathrm{kcal}}
 \newcommand{\h}{\mathrm{h}}
 \newcommand{\Pa}{\mathrm{Pa}}
