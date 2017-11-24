@@ -93,7 +93,7 @@ $$Q=m c_\mathrm{eau}\Delta T=8.67\cdot 10^5\cdot 4186\cdot 50\cong 1.83\cdot 10^
 
 Comme le rendement de la chaudière est de $0.75$, il faut que l'énergie de chauffage produite par la chaudière soit en réalité de 
 $$Q_\mathrm{eff}=\frac{Q}{0.75}=\frac{1.83\cdot 10^{11}}{0.75}=2.44\cdot 10^{11}$$. On a donc que la masse de mazout à utiliser est de 
-$$m=\frac{Q_\mathrm{eff}}{42\cdot 10^6}=5180\ \kg.$$
+$$m=\frac{Q_\mathrm{eff}}{42\cdot 10^6}=5820\ \kg.$$
 
 Exercice #
 
