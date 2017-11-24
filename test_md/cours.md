@@ -229,6 +229,16 @@ utilisent le pouce ou inch (1$\mathrm{in.}$ correspond à
 0.0254${\mathrm{m}}$). Dans ce cours nous nous concentrerons
 principalement sur le système SI.
 
+A titre de comparaison la @fig:imperial montre les relations entre les 
+différentes unités de longueur qui existaient dans l'empire britannique. 
+On y voit un très grand nombre d'unités différentes reliées entre elles par des relations
+plus ou moins compliquées. La page wikipedia 
+<https://fr.wikipedia.org/wiki/Unit%C3%A9s_de_mesure_anglo-saxonnes> contient les unités anglosaxonnes
+pour des surfaces et des volumes également.
+
+![Différentes unités de longueur anglosaxonnes et les relations entre elles. Source:
+<https://upload.wikimedia.org/wikipedia/commons/c/c8/English_length_units_graph.png>](../figs/English_length_units_graph.png){#fig:imperial width=50%}
+
 ### Temps
 
 La mesure du temps en SI est donnée en secondes (abrégée
