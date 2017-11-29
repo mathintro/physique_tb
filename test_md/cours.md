@@ -19,53 +19,8 @@ pandoc-numbering:
   - category: exercice
     listing: Liste des exercices
 urlcolor: blue
-<!-- corrige: false -->
+corrige: false
 ---
-
-\newcommand{\real}{\mathbb{R}}
-\newcommand{\integer}{\mathbb{Z}}
-\renewcommand{\natural}{\mathbb{N}}
-\newcommand{\complex}{\mathbb{C}}
-\newcommand{\zbar}{\bar{z}}
-\newcommand{\dd}{\mathrm{d}}
-\newcommand{\perm}{\mathrm{perm}}
-\newcommand{\card}{\mathrm{card}}
-\newcommand{\fh}{\hat{f}}
-\newcommand{\gh}{\hat{g}}
-\newcommand{\hh}{\hat{h}}
-\renewcommand{\Re}{\mathrm{Re}}
-\renewcommand{\Im}{\mathrm{Im}}
-\newcommand{\pDeriv}[2]{\frac{\partial #1}{\partial #2}}
-\newcommand{\pDerivTwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
-\newcommand{\dDeriv}[2]{\frac{\dd #1}{\dd #2}}
-\newcommand{\dDerivTwo}[2]{\frac{\dd^2 #1}{\dd #2^2}}
-\newcommand{\cm}{\mathrm{cm}}
-\newcommand{\km}{\mathrm{km}}
-\newcommand{\mm}{\mathrm{mm}}
-\newcommand{\cd}{\mathrm{cd}}
-\newcommand{\mol}{\mathrm{mol}}
-\newcommand{\m}{\mathrm{m}}
-\renewcommand{\l}{\mathrm{l}}
-\newcommand{\s}{\mathrm{s}}
-\newcommand{\kg}{\mathrm{kg}}
-\newcommand{\g}{\mathrm{g}}
-\newcommand{\K}{\mathrm{K}}
-\newcommand{\J}{\mathrm{J}}
-\renewcommand{\C}{\mathrm{C}}
-\newcommand{\oC}{^\circ\mathrm{C}}
-\newcommand{\oK}{^\circ\mathrm{K}}
-\newcommand{\A}{\mathrm{A}}
-\newcommand{\N}{\mathrm{N}}
-\newcommand{\atm}{\mathrm{atm}}
-\renewcommand{\bar}{\mathrm{bar}}
-\newcommand{\V}{\mathrm{V}}
-\newcommand{\W}{\mathrm{W}}
-\newcommand{\kW}{\mathrm{kW}}
-\newcommand{\dl}{\mathrm{dl}}
-\newcommand{\dm}{\mathrm{dm}}
-\newcommand{\kcal}{\mathrm{kcal}}
-\newcommand{\h}{\mathrm{h}}
-\newcommand{\Pa}{\mathrm{Pa}}
 
 Avertissement {#avertissement .unnumbered}
 =============
@@ -1627,11 +1582,8 @@ Exercice (Cylindre en aluminium) #
 
 Une extrémité d'un cylindre en aluminium ($k=200 \W/(\m\cdot \oC$)) de $33\ \cm$ de long et d'un diamètre de $2\ \cm$ est maintenu à $460\oC$ et l'autre extrémité est plongée dans de l'eau à $22\ \oC$. Calculer le taux de conduction de chaleur dans le cylindre. 
 
-<!-- 
-Le taux d'énergie transmise est de 
-$$P=k A\frac{T_1-T_2}{L}=200\cdot\pi\cdot 0.01^2\cdot \frac{460-22}{0.33}=83\ \W.$$
--->
-
+\comment{Le taux d'énergie transmise est de}
+$\comment{P=k A\frac{T_1-T_2}{L}=200\cdot\pi\cdot 0.01^2\cdot \frac{460-22}{0.33}=83\ \W.}$
 
 La convection
 -------------
