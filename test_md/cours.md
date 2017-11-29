@@ -19,7 +19,53 @@ pandoc-numbering:
   - category: exercice
     listing: Liste des exercices
 urlcolor: blue
+<!-- corrige: false -->
 ---
+
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\integer}{\mathbb{Z}}
+\renewcommand{\natural}{\mathbb{N}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\zbar}{\bar{z}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\perm}{\mathrm{perm}}
+\newcommand{\card}{\mathrm{card}}
+\newcommand{\fh}{\hat{f}}
+\newcommand{\gh}{\hat{g}}
+\newcommand{\hh}{\hat{h}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Im}{\mathrm{Im}}
+\newcommand{\pDeriv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pDerivTwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\dDeriv}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\dDerivTwo}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cd}{\mathrm{cd}}
+\newcommand{\mol}{\mathrm{mol}}
+\newcommand{\m}{\mathrm{m}}
+\renewcommand{\l}{\mathrm{l}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\kg}{\mathrm{kg}}
+\newcommand{\g}{\mathrm{g}}
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\J}{\mathrm{J}}
+\renewcommand{\C}{\mathrm{C}}
+\newcommand{\oC}{^\circ\mathrm{C}}
+\newcommand{\oK}{^\circ\mathrm{K}}
+\newcommand{\A}{\mathrm{A}}
+\newcommand{\N}{\mathrm{N}}
+\newcommand{\atm}{\mathrm{atm}}
+\renewcommand{\bar}{\mathrm{bar}}
+\newcommand{\V}{\mathrm{V}}
+\newcommand{\W}{\mathrm{W}}
+\newcommand{\kW}{\mathrm{kW}}
+\newcommand{\dl}{\mathrm{dl}}
+\newcommand{\dm}{\mathrm{dm}}
+\newcommand{\kcal}{\mathrm{kcal}}
+\newcommand{\h}{\mathrm{h}}
+\newcommand{\Pa}{\mathrm{Pa}}
 
 Avertissement {#avertissement .unnumbered}
 =============
@@ -1571,11 +1617,21 @@ $$P=\frac{T_1-T_2}{\left(\sum_{i=1}^NR_i\right)}.$$
 
 Exercice (Double vitrage) #
 
-Soit une fenêtre en double vitrage avec deux plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $3\ \mm$ entre les deux. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
+Soit une fenêtre en double vitrage avec deux plaque de verre de $2\ \mm$ d'épaisseur ($k_{\mbox{verre}}=0.84\ \W/(\m\cdot \K)$) et une couche d'air de $3\ \mm$ entre les deux ($k_{\mbox{air}}=0.026\ \W/(\m\cdot \K)$). Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
 
 Exercice (Triple vitrage) #
 
 Soit une fenêtre en triple vitrage avec trois plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $2\ \mm$ entre chacune des plaques. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
+
+Exercice (Cylindre en aluminium) #
+
+Une extrémité d'un cylindre en aluminium ($k=200 \W/(\m\cdot \oC$)) de $33\ \cm$ de long et d'un diamètre de $2\ \cm$ est maintenu à $460\oC$ et l'autre extrémité est plongée dans de l'eau à $22\ \oC$. Calculer le taux de conduction de chaleur dans le cylindre. 
+
+<!-- 
+Le taux d'énergie transmise est de 
+$$P=k A\frac{T_1-T_2}{L}=200\cdot\pi\cdot 0.01^2\cdot \frac{460-22}{0.33}=83\ \W.$$
+-->
+
 
 La convection
 -------------
@@ -1689,6 +1745,11 @@ Solution #
 
 Comme $\theta=30^\circ$ il faut commencer à transformer cette valeur en radians $\theta=30\cdot \pi/180=0.52\ \mathrm{rad}$ pour pouvoir en calculer le cosinus. On a donc que $$P=1000\epsilon A\cos\theta=1000\cdot 0.7\cdot 0.85\cos\theta\cong 515\ \W.$$
 
+Exercice (Sphère en tungstène) #
+
+Quelle est la puissance radiée par une sphère en tungstène ($\epsilon=0.35$)
+de rayon $r=22\ \cm$ $ une température de $25\ \oC$? Si la sphère se trouve dans une pièce dont les murs sont à $-5\ \oC$ quel est le taux d'énergie net sortant de la sphère?
+
 ### Le corps noir
 
 La couleur des objets est due à la lumière qu'ils réfléchissent ou émettent. En effet, les rayons de lumière se comportent des ondes (de façon analogue au comportement des ondes sonores par exemple). En particulier, la couleur d'un objet est reliée à la longueur d'onde de la lumière qu'il émet. Dans le spectre de la lumière visible, les *grandes* longueurs d'ondes sont de couleur rouges, les courtes bleues en passant par le jaune et le vert. 
@@ -1697,7 +1758,8 @@ Quand on chauffe beaucoup un objet métallique, on voit qu'il rougit d'abord pui
 
 Question (Qu'est-ce qui change?) #
 
-Le rayonnement émis par un objet n'est rien d'autre que de la lumière. Et la longueur d'onde de la lumière émise dépend de la température de l'objet. En fait la lumière émise (on parle d'onde électromagnétique) par un corps non réfléchissant en équilibre thermique avec son environnement est appelé *rayonnement du corps noir*. Sur la @fig:corps_noir, on voit la puissance lumineuse émise par angle solide en fonction de la longueur d'onde pour des sources qui sont à trois températures différentes. On voit que plus la température est basse plus le pic d'émission se déplace vers de grande longueur d'ondes. C'est ce pic qui donne leur couleur aux ``corps noirs''. Plus une longueur d'onde est émise fortement plus elle sera visible. Un fer rouge est chauffé à environ $1000\oK$, d'après le spectre du corps noir de la @fig:corps_noir, le pic ne devrait pas être visible à l’œil nu. 
+Le rayonnement émis par un objet n'est rien d'autre que de la lumière. Et la longueur d'onde de la lumière émise dépend de la température de l'objet. En fait la lumière émise (on parle d'onde électromagnétique) par un corps non réfléchissant en équilibre thermique avec son environnement est appelé *rayonnement du corps noir*. Sur la @fig:corps_noir, 
+on voit la puissance lumineuse émise par angle solide en fonction de la longueur d'onde pour des sources qui sont à trois températures différentes. On voit que plus la température est basse plus le pic d'émission se déplace vers de grande longueur d'ondes. C'est ce pic qui donne leur couleur aux ``corps noirs''. Plus une longueur d'onde est émise fortement plus elle sera visible. Un fer rouge est chauffé à environ $1000\oK$, d'après le spectre du corps noir de la @fig:corps_noir, le pic ne devrait pas être visible à l’œil nu. 
 
 Question (Pourquoi voyons nous le fer prendre une couleur rouge quand nous le chauffons?) #
 
@@ -1713,6 +1775,11 @@ Pour avoir une meilleure idée des ordres de grandeurs des différentes longueur
 
 C'est cette propriété du rayonnement du corps noir qui est utilisée par les thermomètres infra-rouges pour connaître la température d'objet qui nous entourent (voir la @fig:thermographie_kot et la @fig:thermographie_cat). 
 
+La puissance thermique émise sur toute les longueur d'ondes est très similaire à ce que nous avons vu à la section précédente
+$$P_\mathrm{rad}=\sigma A T^4.$$
+Nous avons donc que la puissance radiée par un corps noir est celle du cas général avec $\epsilon=1$. Par comparaison le corps noir (qui historiquement a été décrit plus tôt) nous appelons *corps gris* tout corps radiant de l'énergie $\epsilon<1$.
+
+
 ### L'effet de serre
 
 La terre est chauffée par le rayonnement du soleil. Si la terre ne possédait pas d’atmosphère elle rayonnerait l'énergie reçue dans l'espace comme un corps noir. Hors, comme la terre possède une atmosphère cela ne se passe pas tout à fait comme ça. A la façon d'une serre, l'atmosphère terrestre d'une part nous protège de certaines longueurs d'ondes émises par le soleil (les micro-ondes et toutes les longueurs d'ondes plus courtes que l'ultra-violet). Une partie de ces ondes sont directement réfléchies dans l'espace (environ $30\%$) par les nuages blancs, les parties claires de la surface de la terre, ... On appelle la mesure de cette effet de ``miroir'' *l'albédo*. Tout ce qui n'est pas réfléchi est absorbé par l'atmosphère (environ $20\%$) et par la surface de la terre (environ $50\%$).
@@ -1722,6 +1789,23 @@ La partie absorbée par la surface est restituée à l'atmosphère, soit par con
 L'atmosphère réchauffée directement par le soleil et indirectement par le sol, réémet cette chaleur par rayonnement soit dans l'espace, soit directement à la surface contribuant à empêcher son refroidissement par radiation. 
 
 Ce système très complexe d'échange d'énergie conduit (hors contribution des activités humaine) la surface de la terre à avoir une température d'environ $15\oC$. Sans les gaz à effet de serre naturellement présents dans l'atmosphère (vapeur d'eau, gaz carbonique, ozone, et méthane principalement) et à albédo constant la température de la terre serait d'environ $-18\oC$. Hors à cette température toute la surface de la terre serait gelée et réfléchirait beaucoup plus les rayonnements du soleil et conduirait à un refroidissement encore plus prononcé (environ $-50\oC$).
+
+Questions #
+
+1. Pourquoi les thermomètres sont toujours placés à l'ombre pour mesurer la température de l'air?
+2. Les pertes de chaleur au travers de fenêtres fermées passent principalement par 
+    - Les vitres.
+    - Le cadre (en particulier s'il est en métal).
+    - Les interstices.
+Expliquer pour ces trois par quel est le mécanisme des pertes.
+De quelles pertes d'épais rideaux pourraient protéger?
+3. La terre se refroidit plus vite pendant la nuit lorsque le ciel est dégagé. Pourquoi?
+4. Expliquer pourquoi les villes se situant proches d'océans ont des températures moins extrêmes durant l'année que des villes situées aux mêmes latitudes mais se trouvant à l'intérieur des terres.
+5. Un bout de bois posé au soleil absorbe plus de chaleur qu'un bout de métal brillant. Néanmoins le bout de métal semble plus chaud au toucher. Pourquoi?
+
+Problème #
+
+Tenter de concevoir un thermos en minimisant le plus possible les échanges de chaleur avec le monde extérieur afin qu'il garde les liquides le plus possible au chaud (au froid).
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
