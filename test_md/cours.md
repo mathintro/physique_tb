@@ -1760,6 +1760,38 @@ Problème #
 Tenter de concevoir un thermos en minimisant le plus possible les échanges de chaleur avec le monde extérieur afin qu'il garde les liquides le plus possible au chaud (au froid).
 
 
+Statique
+========
+
+Avant d'entrer à proprement parler dans ce chapitre, nous devons voir quelques notions mathématiques (ou les rappeler). 
+
+Vecteurs
+--------
+
+Jusqu'ici dans le cours, nous avons vu des grandeurs appelées *scalaires*, c'est-à-dire des nombres, tels que la température, $T$, le temps, $t$, la masse, $m$, ... Nous pouvons représenter ces nombres sur une droite infinie: les nombres réels. Nous pouvons les comparer (dire lequel est plus grand que l'autre), les additionner, les soustraire, les multiplier, les diviser, ...
+
+Pour ce chapitre, nous allons devoir étendre ce concept de *scalaires* pour pouvoir décrire des concepts plus complexes. 
+
+### Motivation
+
+Prenons l'exemple de la carte de la @fig:depl_vec. Si nous nous déplaçons à vol d'oiseau et ne connaissons que la distance parcourue, disons $60\ \km$, et un point de départ, ici G'nèèèève (de Dieu). Nous avons une infinités de destinations possibles (tous les point du cercle noir). Si en revanche nous ajoutons à la distance parcourue une direction (la direction de la flèche noire), nous avons une destination unique. Nous définissons le déplacement comme étant la combinaison de ces deux informations: une direction et une longueur (de façon plus formelle la longueur est appelée *module*). Si ne nous déplacions pas en ligne droite, nous ne pourrions pas décrire notre trajet en fonction du déplacement uniquement. En effet, le déplacement d'un objet tel que nous le définissons ici ne prend pas du tout en compte le chemin effectivement parcouru (le trait rouge sur la @fig:depl_vec), mais uniquement le point de départ et d'arrivée.
+
+![L'ensemble des destinations possibles si nous n'avions que le dép comme information (cercle noir), la position finale avec la distance et la direction de déplacement.](../figs/deplacement_vecteur.pdf){#fig:depl_vec width=70%}
+
+### Les vecteurs
+
+Le déplacement est un *vecteur*, noté $\vec{s}$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec{s}||$. Le même déplacement $\vec{s}$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec{s}_d$ vers la droite, puis en un déplacement vers le haut $\vec{s}_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
+$$\vec{s}=\vec{s}_d+\vec{s}_h=\vec{s}_h+\vec{s}_d.$$
+
+![La décomposition du vecteur $\vec{s}$ en bleu en deux déplacements $\vec{s}_d$ et $\vec{s}_h$.](../figs/vecteur.pdf){#fig:vec width=30%}
+
+Géométriquement, la somme de deux vecteurs se représente toujours ainsi. Il s'agit de mettre bout à bout les flèches les représentant. On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs).
+
+![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](../figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
+
+
+
+
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
 
