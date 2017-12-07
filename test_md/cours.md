@@ -1778,19 +1778,57 @@ Prenons l'exemple de la carte de la @fig:depl_vec. Si nous nous déplaçons à v
 
 ![L'ensemble des destinations possibles si nous n'avions que le dép comme information (cercle noir), la position finale avec la distance et la direction de déplacement.](../figs/deplacement_vecteur.pdf){#fig:depl_vec width=70%}
 
-### Les vecteurs
+### L'arithmétique des vecteurs
 
 Le déplacement est un *vecteur*, noté $\vec{s}$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec{s}||$. Le même déplacement $\vec{s}$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec{s}_d$ vers la droite, puis en un déplacement vers le haut $\vec{s}_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
 $$\vec{s}=\vec{s}_d+\vec{s}_h=\vec{s}_h+\vec{s}_d.$$
 
 ![La décomposition du vecteur $\vec{s}$ en bleu en deux déplacements $\vec{s}_d$ et $\vec{s}_h$.](../figs/vecteur.pdf){#fig:vec width=30%}
 
-Géométriquement, la somme de deux vecteurs se représente toujours ainsi. Il s'agit de mettre bout à bout les flèches les représentant. On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs).
+Géométriquement, la somme de deux vecteurs se représente toujours ainsi. Il s'agit de mettre bout à bout les flèches les représentant. On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. 
 
 ![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](../figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
 
+Un cas particulier d'addition de vecteur est l'addition de vecteurs parallèles et antiparallèles. Dans le cas parallèle les vecteurs, $\vec{s}_1$ et $\vec{s}_2$ ont la même direction. Le vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2$ aura donc la même direction que $\vec{s}_1$ et $\vec{s}_2$ et sa norme sera la somme des normes de $\vec{s}_1$ et $\vec{s}_2$ (voir la @fig:somme_vec_para). 
 
+![La somme de deux vecteurs parallèles. ](../figs/somme_vecteurs_para.pdf){#fig:somme_vec_para width=30%}
 
+Dans le cas anti-parallèle les vecteurs $\vec{s}_1$ et $\vec{s}_2$ les vecteurs pointent dans des directions opposées. Le vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2$ aura donc soit la direction de $\vec{s}_1$ soit celle de $\vec{s}_2$ et sa norme sera la différence des normes de $\vec{s}_1$ et $\vec{s}_2$ (voir la @fig:somme_vec_anti_para).
+
+![La somme de deux vecteurs anti-parallèles. ](../figs/somme_vecteurs_antipara.pdf){#fig:somme_vec_anti_para width=30%}
+
+De façon très similaire à ce que nous faisons pour les scalaires (les nombres entiers, les rationnels et les réels) nous pouvons définir l'opposé d'un vecteur $\vec{s}$ et le noter $-\vec{s}$. Comme pour les scalaires, nous aimerions que le vecteur $-\vec{s}$ soit ``l'inverse'' du vecteur $\vec{s}$ pour l'addition. On aimerait donc que la la somme $\vec{s}+(-\vec{s})=\vec{0}$. En d'autres termes, le départ départ de $\vec{s}$ soir le même que le point d'arrivée après la somme (voir la @fig:somme_vec_anti_para_zero). 
+
+![La somme de deux vecteurs anti-parallèles de même longueur. ](../figs/somme_vecteurs_antipara_zero.pdf){#fig:somme_vec_anti_para_zero width=30%}
+
+Une autre façon d'écrire cette somme est de faire comme pour les scalaires:
+$$\vec{s}+(-\vec{s})=\vec{s}-\vec{s}=\vec{0}.$$
+Cette façon de faire nous permet de définir la soustraction de deux vecteurs,
+$\vec{s}_1$ et $\vec{s}_2$ 
+$$\vec{s}_1-\vec{s}_2=\vec{s}_1+(-\vec{s}_2).$$
+Comme on peut le voir sur la @fig:soustraction_vecteurs la soustraction de deux vecteurs consiste, en fait, à d'abord prendre prendre l'inverse du vecteur soustrait, $-\vec{s}_2$ et de l'ajouter au premier vecteur.
+
+![La soustraction de deux vecteurs. ](../figs/soustraction_vecteurs.pdf){#fig:soustraction_vecteurs width=30%}
+
+Comme l'addition de deux vecteur est commutative, la soustraction peut également s'écrire dans un ordre différent (attention elle n'est pas commutative)
+$$\vec{s}_3=\vec{s}_1-\vec{s}_2=\vec{s}_1+(-\vec{s}_2)=-\vec{s}_2+\vec{s}_1.$$
+
+Un autre opération primordiale pour les vecteur est le produit avec un scalaire. Si nous avons un nombre $\alpha$, et un vecteur $\vec{s}_1$, nous pouvons définir le produit 
+$$\vec{s}_2=\alpha\cdot\vec{s}_1.$$
+Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec{s}_1$ proportionnellement à $\alpha$, mais d'en laisser la direction inchangée (voir la @fig:vecteur_produit la ligne du haut): le vecteur $\vec{s}_2$ est parallèle avec le vecteur $\vec{s}_1$. Lorsque $\alpha<0$ on change toujours la norme proportionnellement à $\alpha$, mais on change également la direction du vecteur (voir la @fig:vecteur_produit la ligne du bas): le vecteur $\vec{s}_2$ est anti-parallèle avec le vecteur $\vec{s}_1$. Il y a deux cas particuliers:
+
+1. Lorsque $\alpha=1$, le vecteur $\vec{s}_2=1\cdot\vec{s}_1=\vec{s}_1$, et donc le vecteur $\vec{s}_1$ est inchangé.
+2. Lorsque $\alpha=-1$, le vecteur $\vec{s}_2=-1\cdot\vec{s}_1=-\vec{s}_1$, t donc le vecteur $\vec{s}_2$ est le vecteur *opposé* à $\vec{s}_1$.
+
+![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](../figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
+
+Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec{s}_1$, $\vec{s}_2$ deux vecteurs 
+$$\begin{aligned}
+\alpha_1\cdot(\vec{s}_1+\vec{s}_2)=\alpha_1\cdot\vec{s}_1+\alpha_1\cdot\vec{s}_2,\\
+(\alpha_1+\alpha_2)\cdot\vec{s}_1=\alpha_1\cdot\vec{s}_1+\alpha_2\cdot\vec{s}_1.\end{aligned}$$
+Pour la deuxième propriété on peut voir un exemple sur la @fig:
+
+![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec{s}_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit width=70%}
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
