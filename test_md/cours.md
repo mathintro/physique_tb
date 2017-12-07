@@ -1866,9 +1866,63 @@ $$\begin{aligned}
 w_x&=u_x+v_x,\\
 w_y&=u_y+v_y.
 \end{aligned}$$
-Nous pouvons assez facilement nous en convaincre à l'aide de la @fig:composantes_add
+Nous pouvons assez facilement nous en convaincre à l'aide de la @fig:composantes_add.
+De façon similaire, nous pouvons calculer le produit entre un scalaire et un vecteur. 
+Nous avons que $\vec{u}=\alpha\cdot \vec{v}$ est donné par
+$$\begin{aligned}
+u_x&=\alpha\cdot v_x,\\
+u_y&=\alpha\cdot v_y.
+\end{aligned}$$
 
 ![La somme de deux vecteurs $\vec{u}$ et $\vec{v}$ en composantes.](../figs/somme_composantes.pdf){#fig:composantes_add width=70%}
+
+La notation pour la plus compact pour noter les composantes d'un vecteur 
+$$\vec{s}=(s_x,s_y).$$
+Avec la représentaiton en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec{s}||$ à l'aide du théorème de Pythagore
+$$s=\sqrt{s_x^2+s_y^2}.$$
+
+Exercice (Opérations sur les vecteurs) #
+
+1. Dessiner le vecteur $\vec{v}=(2,3)$.
+2. Additioner les vecteur $\vec{u}=(2,3)$ et $\vec{v}=(1,3)$, d'abord 
+à l'aide d'un dessin, puis avec les règles vues précédemment.
+3. Calculer la longueur de la somme trouvée précédemment $\vec{w}=\vec{u}+\vec{v}$.
+4. Cacluler l'angle $\theta$ pour $\vec{w}$.
+5. Calculer 
+$$\alpha\cdot\vec{u}+\beta\cdot\vec{v},$$
+avec $\alpha=2$ et $\beta=-1/2$.
+
+On peut également représenter un vecteur de façon différente. En utilisant l'angle $\theta$ et la longueur $s$. On appelle cette représentation en coordonnée polaires. 
+
+### Le produit scalaire
+
+Jusqu'ici nous avons vu comment additionner les vecteurs et les multiplier par des scalaires. Nous n'avons cependant pas encore vu un moyen pour les multiplier entre eux.
+Une façon de définir un tel produit, est le *produit scalaire*. Le produit scalaire entre deux vecteur $\vec{u}$ et $\vec{v}$ se calcule comme
+$$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos(\theta).$$
+Le produit scalaire s'interprète donc comme le produit entre la norme de $\vec{u}$ 
+et la projection de $\vec{v}$ sur $\vec{u}$ (et vice cersa). Les propriétés du cosinus nous disent que 
+si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) 
+le produit scalaire est nul. En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles).
+
+De cette définition, il est aisé de voir que le produit scalaire est commutatif
+$$\vec{u}\cdot\vec{v}=||\vec{v}||\cdot||\vec{u}||\cdot\cos(\theta)=\vec{v}\cdot\vec{u}.$$
+
+Exercice (Propriétés du produit scalaire) #
+
+Montrer que le produit scalaire a les propriétés suivantes. Soient $\vec{u}$, 
+$\vec{v}$, et $\vec{w}$ trois vecteurs et soit $\alpha$ un scalaire:
+$$\begin{aligned}
+\vec{u}\cdot(\vec{v}+\vec{w})=\vec{u}\cdot\vec{v}+\vec{u}\cdot\vec{w},\\
+\alpha(\vec{u}\cdot\vec{v})=(\alpha\vec{u})\cdot\vec{v}=\vec{u}\cdot(\alpha\vec{v}).
+\end{aligned}$$
+
+Il est important de noter que le produit scalaire prend deux vecteurs et les transforme en un scalaire (un nombre). 
+
+
+
+
+
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
