@@ -1783,9 +1783,16 @@ Prenons l'exemple de la carte de la @fig:depl_vec. Si nous nous déplaçons à v
 Le déplacement est un *vecteur*, noté $\vec{s}$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec{s}||$. Le même déplacement $\vec{s}$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec{s}_d$ vers la droite, puis en un déplacement vers le haut $\vec{s}_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
 $$\vec{s}=\vec{s}_d+\vec{s}_h=\vec{s}_h+\vec{s}_d.$$
 
-![La décomposition du vecteur $\vec{s}$ en bleu en deux déplacements $\vec{s}_d$ et $\vec{s}_h$.](../figs/vecteur.pdf){#fig:vec width=30%}
+![La décomposition du vecteur $\vec{s}$ en bleu en deux déplacements $\vec{s}_d$ et $\vec{s}_h$. De façon plus générale toute somme de vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2.$](../figs/vecteur.pdf){#fig:vec width=30%}
 
-Géométriquement, la somme de deux vecteurs se représente toujours ainsi. Il s'agit de mettre bout à bout les flèches les représentant. On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. 
+Géométriquement, la somme de deux vecteurs se représente toujours ainsi pour deux vecteurs quelconques 
+$$\vec{s}_3=\vec{s}_1+\vec{s}_2.$$ 
+La somme se représente en mettant bout à bout le vecteur $\vec{s}_1$ puis le vecteur $\vec{s}_2$. Cette représentation nous montre que la relation entre les normes est la suivante
+$$||\vec{s}_3||\leq||\vec{s}_1||+||\vec{s}_2||.$$ 
+En d'autres termes la somme des longueurs de $\vec{s}_1$ et $\vec{s}_2$ 
+et plus petite ou égale la longueur de la somme de $\vec{s}_1$ et $\vec{s}_2$.
+On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). On constate d'ailleurs sur cette même figue que la longueur 
+Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur.
 
 ![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](../figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
 
@@ -1826,9 +1833,42 @@ Une propriété du produit d'un vecteur avec un scalaire est qu'elle est défini
 $$\begin{aligned}
 \alpha_1\cdot(\vec{s}_1+\vec{s}_2)=\alpha_1\cdot\vec{s}_1+\alpha_1\cdot\vec{s}_2,\\
 (\alpha_1+\alpha_2)\cdot\vec{s}_1=\alpha_1\cdot\vec{s}_1+\alpha_2\cdot\vec{s}_1.\end{aligned}$$
-Pour la deuxième propriété on peut voir un exemple sur la @fig:
+Pour la deuxième propriété on peut voir un exemple sur la @fig:vecteur_produit_distr. 
 
-![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec{s}_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit width=70%}
+![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec{s}_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit_distr width=70%}
+
+Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur unitaire*. Le vecteur unitaire d'un vecteur $\vec{s}$ se définit par
+$$\vec{n}=\frac{\vec{s}}{||\vec{s}||}.$$
+Ce vecteur comme son nom l'indique a une longueur (norme) de un
+$$||\vec{n}||=\left|\left|\frac{\vec{s}}{||\vec{s}||}\right|\right|=\frac{||\vec{s}||}{||\vec{s}||}=1,$$
+et la même direction que $\vec{s}$.
+
+### Systèmes de coordonnées
+
+Depuis le début de ce chapitre nous avons vu des règles très générales pour représenter les vecteurs et en faire des sommes et des multiplications avec des scalaires. Il nous reste à trouver un moyen de les représenter numériquement. 
+
+Le moyen le plus commun de se représenter un vecteur dans le plan est de passer par les coordonnées *cartésiennes* (voir la @fig:cartesiennes).
+
+![Le vecteur $\vec{s}$ est décomposé en deux parties $\vec{s}_x$, et $\vec{s}_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
+
+Le vecteur est $\vec{s}$ est donné par
+$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ La norme des composantes de $\vec{s}_x$ et $\vec{s}_y$ peut se calculer à l'aide de la trigonométrie. On a donc
+$$\begin{aligned}
+s_x&=||\vec{s}_x||=||\vec{s}||\cos(\theta),\\
+s_y&=||\vec{s}_y||=||\vec{s}||\sin(\theta),
+\end{aligned}$$
+où $\theta$ est l'angle entre l'axe horizontal et le vecteur $\vec{s}$
+et où on note les *coordonnées* cartésiennes de $\vec{s}$, $s_x$ et $s_y$.
+Le vecteur $\vec{s}$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical[^16].
+
+Maintenant que nous avons défini les composantes $s_x$ et $s_y$, nous pouvons additionner les vecteurs en coordonnées cartésiennes. Soient deux vecteurs $\vec{u}$ et $\vec{v}$, et dont la somme est $\vec{w}=\vec{u}+\vec{v}$, les coordonnées de $\vec{w}$ sont données par
+$$\begin{aligned}
+w_x&=u_x+v_x,\\
+w_y&=u_y+v_y.
+\end{aligned}$$
+Nous pouvons assez facilement nous en convaincre à l'aide de la @fig:composantes_add
+
+![La somme de deux vecteurs $\vec{u}$ et $\vec{v}$ en composantes.](../figs/somme_composantes.pdf){#fig:composantes_add width=70%}
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
@@ -1871,3 +1911,5 @@ Pour la deuxième propriété on peut voir un exemple sur la @fig:
 [^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
 
 [^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.
+
+[^16]: En utilisant les vecteurs unitaires $\vec{s}_x$ et $\vec{s}_y$ peuvent d'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement.
