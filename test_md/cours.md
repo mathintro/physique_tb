@@ -1900,7 +1900,11 @@ Jusqu'ici nous avons vu comment additionner les vecteurs et les multiplier par d
 Une façon de définir un tel produit, est le *produit scalaire*. Le produit scalaire entre deux vecteur $\vec{u}$ et $\vec{v}$ se calcule comme
 $$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos(\theta).$$
 Le produit scalaire s'interprète donc comme le produit entre la norme de $\vec{u}$ 
-et la projection de $\vec{v}$ sur $\vec{u}$ (et vice cersa). Les propriétés du cosinus nous disent que 
+et la projection de $\vec{v}$ sur $\vec{u}$ et vice cersa (voir la @fig:prduit_scalaire). 
+
+![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$.](../figs/scalar_prod.pdf){#fig:produit_scalaire width=70%}
+
+Les propriétés du cosinus nous disent que 
 si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) 
 le produit scalaire est nul. En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles).
 
