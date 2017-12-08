@@ -25,18 +25,26 @@ Série d'exercices {#chaleur .unnumbered}
 
 Exercice #
 
-Les extrémités d’une tige de cuivre de $100\ \cm$ de longueur et de diamètre $2\ \cm$ sont
+Les extrémités d’une tige de cuivre ($k=400\ \W/(m\cdot \oK)$) de $100\ \cm$ de longueur et de diamètre $2\ \cm$ sont
 maintenues aux températures respectives de $100 \oC$ et de $0\oC$. On attend qu’une situation
 stationnaire soit atteinte. (La face latérale de la tige est isolée)
 
 1. Calculer la puissance thermique passant dans la tige.
 2. Quelle est la température en un point situé à $20\ \cm$ de l’extrémité chaude?
 
-<!-- Solution # -->
+Solution #
+
+1. On a que 
+$$P=\frac{\Delta Q}{\Delta t}=k\cdot A\cdot \frac{\Delta T}{L}=\frac{400\cdot (10^{-2})^2\cdot 100}{1}\cong 12.5\ \W.$$
+2. Avec la même formule que tout à l'heure on peut avoir
+$$P=k\cdot A\cdot \frac{T_c-T}{L_1},$$
+où $L_1=0.2$, $T_c=100^\oC$ et l'inconnue est $T$. Il vient donc que la température à $20\ \cm$ 
+du bord chaud est de 
+$$T=T_c-\frac{L_1P}{k\cdot A}=80\oC.$$
 
 Exercice #
 
-Une boîte en Sagex de forme cubique de $40\ \cm$ de côté et d'épaisseur de parois de $4\ \cm$ est
+Une boîte en Sagex ($k=4\cdot 10^{-3}\ \W/()\m\cdot \oK$) de forme cubique de $40\ \cm$ de côté et d'épaisseur de parois de $4\ \cm$ est
 utilisée pour conserver des aliments au frais, elle contient un mélange d’eau et de glace
 (à zéro degré !)
 
@@ -44,6 +52,18 @@ utilisée pour conserver des aliments au frais, elle contient un mélange d’ea
 de Sagex, si cette boîte est soumise à une température de $25 \oC$ sur ses faces
 extérieures.
 2. Calculer la quantité de glace qui fond chaque heure.
+
+Solution #
+
+1. Afin de pouvoir calculer la puissance échangée il faut d'abord calculer la surface de la boîte. Une façon de faire est d'évaluer la surface moyenne pour chacune des faces. On a donc 
+$$A_\mathrm{face}=\frac{0.4^2+0.32^2}{2}=0.13\ \m^2.$$
+La sirface totale de la boîte est donc $A=6\cdot A_\mathrm{face}=0.78\ \m^2$. 
+Les autres valeurs étant données on a
+$$P=k\cdot A \frac{\Delta T}{L}=4\cdot 10^{-4}\cdot 0.78\cdot \frac{25}{0.04}\cong 19\ \W.$$
+2. Connaissant la puissance au travers de la paroi, on peut d;terminer l-;nergie perdue pendant une heure
+$$\Delta Q=P\cdot\Delta t=19\cdot\cdot 3600=68400\ \J.$$
+Cette quantité d'énergie permet de faire fondre (en utilisant la formule pour la chaleur latente)
+$$m=\frac{\Delta Q}{L}=\frac{68400}{3\cdot 10^5}\cong 0.2\ \kg.$$
 
 Exercice #
 
