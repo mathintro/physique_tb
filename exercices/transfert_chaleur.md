@@ -1,7 +1,7 @@
 ---
 # author:
 # - Orestis Malaspinas
-title: Exercices sur la chaleur
+title: Exercices sur le transfert de chaleur
 autoSectionLabels: true
 autoEqnLabels: true
 eqnPrefix: 
@@ -115,8 +115,15 @@ sur des sphères centrées sur le soleil.
 
 Exercice #
 
-Le rayonnement solaire reçu par la Terre vaut $1360\ \W\cdot\m^{-2}$, c’est la *constante solaire*.
+Le rayonnement solaire reçu par la Terre ($R_T=6.37\cdot 10^6\ \m$) vaut $E=1360\ \W\cdot\m^{-2}$, c’est la *constante solaire*.
 
-Sachant qu’à l’équilibre thermique, l’énergie reçue par la Terre doit être rayonnée dans
-l’espace, calculez la température moyenne de la Terre, en supposant que celle-ci rayonne
-comme un corps noir.
+Sachant qu’à l’équilibre thermique, l’énergie reçue par la Terre doit être rayonnée dans l’espace, calculez la température moyenne de la Terre, en supposant que celle-ci rayonne comme un corps noir.
+
+Solution #
+
+La surface apparente de la terre vue du soleil est un disque de rayon $R_T$. On a donc que la puissance totale reçue est de
+$$P=E\cdot \pi\cdot R_T^2=1360\cdot \pi\cdot(6.36\cdot10^6)^2\cong1.73\cdot 10^{17}\ \W.$$
+Étant donné que la terre est en équilibre thermique (sa température n'augmente pas) et qu'elle rayonne comme un corps noir, on a
+$$P=\sigma T^4 A_T.$$
+En résolvant cette équation pour $T$, on a
+$$T=\left(\frac{P}{\sigma A_T}\right)^{1/4}=\left(\frac{1.73\cdot10^{17}}{4\pi\cdot(6.37\cdot10^6)^2\cdot 5.67\cdot 10^{-8}}\right)^{1/4}\cong 278\oK\cong 5\oC.$$
