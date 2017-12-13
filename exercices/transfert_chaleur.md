@@ -38,7 +38,7 @@ Solution #
 $$P=\frac{\Delta Q}{\Delta t}=k\cdot A\cdot \frac{\Delta T}{L}=\frac{400\cdot (10^{-2})^2\cdot 100}{1}\cong 12.5\ \W.$$
 2. Avec la même formule que tout à l'heure on peut avoir
 $$P=k\cdot A\cdot \frac{T_c-T}{L_1},$$
-où $L_1=0.2$, $T_c=100^\oC$ et l'inconnue est $T$. Il vient donc que la température à $20\ \cm$ 
+où $L_1=0.2$, $T_c=100\oC$ et l'inconnue est $T$. Il vient donc que la température à $20\ \cm$ 
 du bord chaud est de 
 $$T=T_c-\frac{L_1P}{k\cdot A}=80\oC.$$
 
@@ -57,24 +57,36 @@ Solution #
 
 1. Afin de pouvoir calculer la puissance échangée il faut d'abord calculer la surface de la boîte. Une façon de faire est d'évaluer la surface moyenne pour chacune des faces. On a donc 
 $$A_\mathrm{face}=\frac{0.4^2+0.32^2}{2}=0.13\ \m^2.$$
-La sirface totale de la boîte est donc $A=6\cdot A_\mathrm{face}=0.78\ \m^2$. 
+La surface totale de la boîte est donc $A=6\cdot A_\mathrm{face}=0.78\ \m^2$. 
 Les autres valeurs étant données on a
 $$P=k\cdot A \frac{\Delta T}{L}=4\cdot 10^{-4}\cdot 0.78\cdot \frac{25}{0.04}\cong 19\ \W.$$
-2. Connaissant la puissance au travers de la paroi, on peut d;terminer l-;nergie perdue pendant une heure
+2. Connaissant la puissance au travers de la paroi, on peut déterminer l'énergie perdue pendant une heure
 $$\Delta Q=P\cdot\Delta t=19\cdot\cdot 3600=68400\ \J.$$
 Cette quantité d'énergie permet de faire fondre (en utilisant la formule pour la chaleur latente)
 $$m=\frac{\Delta Q}{L}=\frac{68400}{3\cdot 10^5}\cong 0.2\ \kg.$$
 
 Exercice #
 
-Deux tiges de cuivre et d’aluminium de $50\ \cm$ de long et de $2\ \cm$ de diamètre chacune sont
+Deux tiges de cuivre et d’aluminium ($k_\mathrm{cu}=400\ \W/(m\cdot \oK)$, $k_\mathrm{alu}=240\ \W/(m\cdot \oK)$) de $50\ \cm$ de long et de $2\ \cm$ de diamètre chacune sont
 mises en contact bout à bout.
-L’autre extrémité de la tige de cuivre est maintenue à la température de $100 \oC$ et l’autre
-extrémité de la tige d’aluminium est maintenue à la température de $0\oC$.
+L’autre extrémité de la tige de cuivre est maintenue à la température de $T_1=100 \oC$ et l’autre
+extrémité de la tige d’aluminium est maintenue à la température de $T_2=0\oC$.
 On attend qu’une situation stationnaire soit atteinte. (Les faces latérales des tiges sont isolées)
 
 1. Quelle est la température à la jonction des tiges?
 2. Calculer la puissance thermique passant dans les tiges.
+
+Solution #
+
+1. Soit $T_3$ la température à la jonction entre les tiges. En régime stationnaire, on a que $P_\mathrm{cu}=P_\mathrm{alu}$ et il vient
+$$k_\mathrm{cu} A \frac{T_1-T_3}{L}=k_\mathrm{alu} A \frac{T_3-T_2}{L}$$
+En résolvant pour $T_3$ on obtient
+$$T_3=\frac{k_\mathrm{cu}T_1+k_\mathrm{alu}T_2}{k_\mathrm{cu}+k_\mathrm{alu}}=\frac{400\cdot100+240\cdot0}{400+240}=62.5\oC.$$
+
+2. On peut donc calculer à présent soit la puissance dissipée dans la tige en cuivre ou celle en aluminium. Pour la tige en cuivre on a
+$$P_\mathrm{cu}=k_\mathrm{cu} A \frac{T_1-T_3}{L}=400\cdot \pi\cdot0.01^2\frac{100-62.5}{0.5}\cong 9.4\ \W,$$
+et on peut vérifier que pour la tige en aluminium on a
+$$P_\mathrm{alu}=k_\mathrm{alu} A \frac{T_3-T_2}{L}=240\cdot \pi\cdot0.01^2\frac{62.5-0}{0.5}\cong 9.4\ \W.$$
 
 Exercice #
 
@@ -86,6 +98,8 @@ paroi intérieure à $65\oC$ et extérieure supposée à $15\oC$ d’un mètre d
 si la paroi est d’épaisseur de $1.5\ \mm$?
 3. Que faut-il alors faire si l’on veut transmettre l’énergie thermique de chauffage de
 l’eau chaude à l’air (radiateur à eau chaude)?
+
+Solution # 
 
 Exercice #
 
