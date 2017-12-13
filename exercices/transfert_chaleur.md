@@ -90,16 +90,18 @@ $$P_\mathrm{alu}=k_\mathrm{alu} A \frac{T_3-T_2}{L}=240\cdot \pi\cdot0.01^2\frac
 
 Exercice #
 
-1. Quel est la puissance thermique transférée à l’air *par convection* d’un mètre de tuyau
-d’eau chaude de diamètre $16\ \mm$, si le tuyau est à $65\oC$ et l’air à $15\oC$.
-Le coefficient de convection $q=10\ \W\cdot\m^{-2}\cdot\K$.
+1. Quel est la puissance thermique transférée à l’air *par convection* d’un mètre de tuyau d’eau chaude de diamètre $16\ \mm$, si le tuyau est à $65\oC$ et l’air à $15\oC$. Le coefficient de convection $q=10\ \W\cdot\m^{-2}\cdot\K$.
 2. Quelle serait la puissance thermique transférée maximale par conduction entre la
-paroi intérieure à $65\oC$ et extérieure supposée à $15\oC$ d’un mètre de ce tuyau d’acier,
-si la paroi est d’épaisseur de $1.5\ \mm$?
-3. Que faut-il alors faire si l’on veut transmettre l’énergie thermique de chauffage de
-l’eau chaude à l’air (radiateur à eau chaude)?
+paroi intérieure à $65\oC$ et extérieure supposée à $15\oC$ d’un mètre de ce tuyau d’acier ($k=55\ \W/(m\cdot \oK)$), si la paroi est d’épaisseur de $1.5\ \mm$?
+3. Que faut-il alors faire si l’on veut transmettre l’énergie thermique de chauffage de l’eau chaude à l’air (radiateur à eau chaude)?
 
 Solution # 
+
+1. On sait du cours que la puissance dissipée par convection est donnée par
+$$P_\mathrm{conv}=qA\Delta T=10\cdot 2\pi\cdot 0.008\cdot 1\cdot(65-15)=25.1\ \W.$$
+2. Pour la puissance par conduction on a
+$$P_\mathrm{cond}=k A \frac{T_2-T_1}{L}=55\cdot 2\pi\cdot 0.008\cdot 1\cdot\frac{65-15}{0.0015}\cong 9.2\cdot 10^4\ \W.$$
+3. Pour augmenter le transfert d'énergie thermique de l'eau chaude à l'air il faut augmenter la surface permettant la convection.
 
 Exercice #
 
