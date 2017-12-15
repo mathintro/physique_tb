@@ -133,7 +133,7 @@ Exercice #
 Un artisan met $500\ \g$ de plomb à $20 \oC$ dans un récipient qu’il place sur une source de chaleur (température de fusion de $327\oC$ et chaleur latente de $2.5\cdot 10^4\ \J/\kg$). Il constate qu’après 1 minute et 30 secondes le plomb est entièrement fondu.
 Quel est la puissance de chauffe de la source de chaleur ?
 
-Soliution #
+Solution #
 
 Il faut dans un premier temps arriver au point de fusion du plomb, et donc apporter une chaleur de 
 $$Q_c=m_\mathrm{pb} c_\mathrm{pb}\Delta T=0.5\cdot 130\cdot 307\cong 2\cdot 10^4\ \J.$$
