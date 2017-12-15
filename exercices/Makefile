@@ -1,11 +1,13 @@
+FILE=transfert_chaleur
+
 default:
-	pandoc -s -S -o chaleur.pdf chaleur.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --template=../test_md/default.latex --latex-engine pdflatex
+	pandoc -s -o $(FILE).pdf $(FILE).md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --template=../test_md/default.latex --pdf-engine pdflatex
 
 latex:
-	pandoc -s -S -o chaleur.tex chaleur.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref  --template=./default.latex
+	pandoc -s -smart -o $(FILE).tex $(FILE).md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref  --template=./default.latex
 
 epub:
-	pandoc -s -S -o chaleur.epub chaleur.md --filter=pandoc-numbering  --filter=$(PANDOC_CROSSREF)pandoc-crossref  -t epub3
+	pandoc -s -smart -o $(FILE).epub $(FILE).md --filter=pandoc-numbering  --filter=$(PANDOC_CROSSREF)pandoc-crossref  -t epub3
 
 html:
-	pandoc -s -S -o chaleur.html chaleur.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --mathml -t html5 
+	pandoc -s -smart -o $(FILE).html $(FILE).md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --mathml -t html5 
