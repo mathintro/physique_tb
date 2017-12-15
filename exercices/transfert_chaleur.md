@@ -35,7 +35,7 @@ stationnaire soit atteinte. (La face latérale de la tige est isolée)
 Solution #
 
 1. On a que 
-$$P=\frac{\Delta Q}{\Delta t}=k\cdot A\cdot \frac{\Delta T}{L}=\frac{400\cdot (10^{-2})^2\cdot 100}{1}\cong 12.5\ \W.$$
+$$P=\frac{\Delta Q}{\Delta t}=k\cdot A\cdot \frac{\Delta T}{L}=\frac{400\cdot \pi\cdot (10^{-2})^2\cdot 100}{1}\cong 12.5\ \W.$$
 2. Avec la même formule que tout à l'heure on peut avoir
 $$P=k\cdot A\cdot \frac{T_c-T}{L_1},$$
 où $L_1=0.2$, $T_c=100\oC$ et l'inconnue est $T$. Il vient donc que la température à $20\ \cm$ 
@@ -44,14 +44,14 @@ $$T=T_c-\frac{L_1P}{k\cdot A}=80\oC.$$
 
 Exercice #
 
-Une boîte en Sagex ($k=4\cdot 10^{-3}\ \W/()\m\cdot \oK$) de forme cubique de $40\ \cm$ de côté et d'épaisseur de parois de $4\ \cm$ est
+Une boîte en Sagex ($k=4\cdot 10^{-2}\ \W/(\m\cdot \oK)$) de forme cubique de $40\ \cm$ de côté et d'épaisseur de parois de $4\ \cm$ est
 utilisée pour conserver des aliments au frais, elle contient un mélange d’eau et de glace
 (à zéro degré !)
 
 1. Calculer la puissance thermique entrant dans la glacière, au travers des parois
 de Sagex, si cette boîte est soumise à une température de $25 \oC$ sur ses faces
 extérieures.
-2. Calculer la quantité de glace qui fond chaque heure.
+2. Calculer la quantité de glace qui fond chaque heure ($L=3\cdot 10^5\ \J/\kg$).
 
 Solution #
 
@@ -59,9 +59,9 @@ Solution #
 $$A_\mathrm{face}=\frac{0.4^2+0.32^2}{2}=0.13\ \m^2.$$
 La surface totale de la boîte est donc $A=6\cdot A_\mathrm{face}=0.78\ \m^2$. 
 Les autres valeurs étant données on a
-$$P=k\cdot A \frac{\Delta T}{L}=4\cdot 10^{-4}\cdot 0.78\cdot \frac{25}{0.04}\cong 19\ \W.$$
+$$P=k\cdot A \frac{\Delta T}{L}=4\cdot 10^{-2}\cdot 0.78\cdot \frac{25}{0.004}\cong 19\ \W.$$
 2. Connaissant la puissance au travers de la paroi, on peut déterminer l'énergie perdue pendant une heure
-$$\Delta Q=P\cdot\Delta t=19\cdot\cdot 3600=68400\ \J.$$
+$$\Delta Q=P\cdot\Delta t=19\cdot 3600=68400\ \J.$$
 Cette quantité d'énergie permet de faire fondre (en utilisant la formule pour la chaleur latente)
 $$m=\frac{\Delta Q}{L}=\frac{68400}{3\cdot 10^5}\cong 0.2\ \kg.$$
 
@@ -108,10 +108,16 @@ Exercice #
 Le soleil est une sphère de rayon $6.95\cdot 10^8\ \m$. La température de son atmosphère (photosphère)
 est de $5780\oK$.
 
-1. Calculer la puissance rayonnée par le soleil qui rayonne comme un corps noir.
-2. Calculer le flux surfacique ou constante solaire ( $\W\cdot m^{-2}$ ) au niveau de la Terre,
+Calculer la puissance rayonnée par le soleil qui rayonne comme un corps noir.
+<!-- 2. Calculer le flux surfacique ou constante solaire ( $\W\cdot m^{-2}$ ) au niveau de la Terre,
 sachant que la puissance solaire se conserve et se trouve retrouve donc intégralement
-sur des sphères centrées sur le soleil.
+sur des sphères centrées sur le soleil. -->
+
+Solution #
+
+Le soleil étant considéré comme une sphère on a que sa surface est de $A=4\pi R^2=6.1\cdot 10^{18}\ \m^2$.
+La puissance est donc
+$$P=\sigma T^4 A=5.67\cdot 10^{-8}\cdot 5780^4\cdot 6.1\cdot 10^{18}=3.86\cdot 10^{26}\ \W.$$
 
 Exercice #
 

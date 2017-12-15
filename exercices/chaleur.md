@@ -124,9 +124,9 @@ Solution #
 $$Q=m_\mathrm{eau}c_\mathrm{eau}\Delta T=1\cdot 4186\cdot 80\cong3.34\cdot 10^5\ \J.$$ Le temps nécessaire est donc de 
 $$t=\frac{Q}{P}=\frac{3.34\cdot 10^5}{1200}\cong 279\ \s.$$
 2. Pour évaporer $0.1\ \mathrm{l}$ d'eau il faut 
-$$Q=m_\mathrm{eau}\cdot L_{E_{eau}}=0.1\cdot 2.3\cdot 10^6=2.5\cdot 10^5\ \J.$$
+$$Q=m_\mathrm{eau}\cdot L_{E_{eau}}=0.1\cdot 2.3\cdot 10^6=2.3\cdot 10^5\ \J.$$
 Le temps nécessaire est alors de 
-$$t=\frac{Q}{P}=\frac{2.5\cdot10^5}{1200}\cong192\ \s.$$
+$$t=\frac{Q}{P}=\frac{2.3\cdot10^5}{1200}\cong192\ \s.$$
 
 Exercice #
 
