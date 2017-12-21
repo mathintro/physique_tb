@@ -1700,7 +1700,7 @@ Comme $\theta=30^\circ$ il faut commencer à transformer cette valeur en radians
 Exercice (Sphère en tungstène) #
 
 Quelle est la puissance radiée par une sphère en tungstène ($\epsilon=0.35$)
-de rayon $r=22\ \cm$ $ une température de $25\ \oC$? Si la sphère se trouve dans une pièce dont les murs sont à $-5\ \oC$ quel est le taux d'énergie net sortant de la sphère?
+de rayon $r=22\ \cm$ à une température de $25\ \oC$? Si la sphère se trouve dans une pièce dont les murs sont à $-5\ \oC$ quel est le taux d'énergie net sortant de la sphère?
 
 ### Le corps noir
 
