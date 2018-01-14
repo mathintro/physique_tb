@@ -1841,7 +1841,11 @@ Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur u
 $$\vec{n}=\frac{\vec{s}}{||\vec{s}||}.$$
 Ce vecteur comme son nom l'indique a une longueur (norme) de un
 $$||\vec{n}||=\left|\left|\frac{\vec{s}}{||\vec{s}||}\right|\right|=\frac{||\vec{s}||}{||\vec{s}||}=1,$$
-et la même direction que $\vec{s}$.
+et la même direction que $\vec{s}$. Deux vecteurs unitaires particuliers sont 
+$$\vec{e}_x=(1,0),\quad \vec{e}_y=(0,1).$${#eq:vec_e}
+Ils sont alignés sur l'axe horizontal et vertical respectivement et sont de longueur $1$ (voir @fig:vec_e).
+
+![Les vecteurs unitaires $\vec{e}_x$ et $\vec{e}_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
 
 ### Systèmes de coordonnées
 
@@ -1852,14 +1856,16 @@ Le moyen le plus commun de se représenter un vecteur dans le plan est de passer
 ![Le vecteur $\vec{s}$ est décomposé en deux parties $\vec{s}_x$, et $\vec{s}_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
 
 Le vecteur est $\vec{s}$ est donné par
-$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ La norme des composantes de $\vec{s}_x$ et $\vec{s}_y$ peut se calculer à l'aide de la trigonométrie. On a donc
+$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ En utilisant les vecteurs unitaires, $\vec{e}_x$ et $\vec{e}_y$, les vecteurs $\vec{s}_x$ et $\vec{s}_y$ peuvent s'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
+
+La norme des composantes de $\vec{s}_x$ et $\vec{s}_y$ peut se calculer à l'aide de la trigonométrie. On a donc
 $$\begin{aligned}
 s_x&=||\vec{s}_x||=||\vec{s}||\cos(\theta),\\
 s_y&=||\vec{s}_y||=||\vec{s}||\sin(\theta),
 \end{aligned}$$
 où $\theta$ est l'angle entre l'axe horizontal et le vecteur $\vec{s}$
 et où on note les *coordonnées* cartésiennes de $\vec{s}$, $s_x$ et $s_y$.
-Le vecteur $\vec{s}$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical[^16].
+Le vecteur $\vec{s}$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical.
 
 Maintenant que nous avons défini les composantes $s_x$ et $s_y$, nous pouvons additionner les vecteurs en coordonnées cartésiennes. Soient deux vecteurs $\vec{u}$ et $\vec{v}$, et dont la somme est $\vec{w}=\vec{u}+\vec{v}$, les coordonnées de $\vec{w}$ sont données par
 $$\begin{aligned}
@@ -1878,16 +1884,16 @@ u_y&=\alpha\cdot v_y.
 
 La notation pour la plus compact pour noter les composantes d'un vecteur 
 $$\vec{s}=(s_x,s_y).$$
-Avec la représentaiton en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec{s}||$ à l'aide du théorème de Pythagore
+Avec la représentation en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec{s}||$ à l'aide du théorème de Pythagore
 $$s=\sqrt{s_x^2+s_y^2}.$$
 
 Exercice (Opérations sur les vecteurs) #
 
 1. Dessiner le vecteur $\vec{v}=(2,3)$.
-2. Additioner les vecteur $\vec{u}=(2,3)$ et $\vec{v}=(1,3)$, d'abord 
+2. Additionner les vecteur $\vec{u}=(2,3)$ et $\vec{v}=(1,3)$, d'abord 
 à l'aide d'un dessin, puis avec les règles vues précédemment.
 3. Calculer la longueur de la somme trouvée précédemment $\vec{w}=\vec{u}+\vec{v}$.
-4. Cacluler l'angle $\theta$ pour $\vec{w}$.
+4. Calculer l'angle $\theta$ pour $\vec{w}$.
 5. Calculer 
 $$\alpha\cdot\vec{u}+\beta\cdot\vec{v},$$
 avec $\alpha=2$ et $\beta=-1/2$.
@@ -1900,13 +1906,21 @@ Jusqu'ici nous avons vu comment additionner les vecteurs et les multiplier par d
 Une façon de définir un tel produit, est le *produit scalaire*. Le produit scalaire entre deux vecteur $\vec{u}$ et $\vec{v}$ se calcule comme
 $$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos(\theta).$$
 Le produit scalaire s'interprète donc comme le produit entre la norme de $\vec{u}$ 
-et la projection de $\vec{v}$ sur $\vec{u}$ et vice cersa (voir la @fig:prduit_scalaire). 
+et la projection de $\vec{v}$ sur $\vec{u}$ et vice versa (voir la @fig:produit_scalaire). 
 
-![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$.](../figs/scalar_prod.pdf){#fig:produit_scalaire width=70%}
+![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$.](../figs/scalar_prod.pdf){#fig:produit_scalaire width=40%}
 
 Les propriétés du cosinus nous disent que 
-si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) 
-le produit scalaire est nul. En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles).
+si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) le produit scalaire est nul
+$$\vec{u}\cdot\vec{v}=||u||\cdot ||v||\cdot\cos\left(\pi/2\right)=0.$$
+Ces vecteurs sont dit orthogonaux ou normaux (voir @fig:scalaire_orthogonal).
+Les vecteurs $\vec{e}_x$ et $\vec{e}_y$ sont orthogonaux
+$$\vec{e}_x\cdot\vec{e}_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0.$$ 
+
+![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$
+pour des vecteurs orthogonaux.](../figs/scalaire_orthgonal.pdf){#fig:scalaire_orthogonal width=40%}
+
+En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles).
 
 De cette définition, il est aisé de voir que le produit scalaire est commutatif
 $$\vec{u}\cdot\vec{v}=||\vec{v}||\cdot||\vec{u}||\cdot\cos(\theta)=\vec{v}\cdot\vec{u}.$$
@@ -1969,5 +1983,3 @@ Il est important de noter que le produit scalaire prend deux vecteurs et les tra
 [^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
 
 [^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.
-
-[^16]: En utilisant les vecteurs unitaires $\vec{s}_x$ et $\vec{s}_y$ peuvent d'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement.
