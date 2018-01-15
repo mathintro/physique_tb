@@ -1788,9 +1788,9 @@ $$\vec{s}=\vec{s}_d+\vec{s}_h=\vec{s}_h+\vec{s}_d.$$
 Géométriquement, la somme de deux vecteurs se représente toujours ainsi pour deux vecteurs quelconques 
 $$\vec{s}_3=\vec{s}_1+\vec{s}_2.$$ 
 La somme se représente en mettant bout à bout le vecteur $\vec{s}_1$ puis le vecteur $\vec{s}_2$. Cette représentation nous montre que la relation entre les normes est la suivante
-$$||\vec{s}_3||\leq||\vec{s}_1||+||\vec{s}_2||.$$ 
+$$||\vec{s}_3||=||\vec{s}_1+\vec{s}_2||\leq||\vec{s}_1||+||\vec{s}_2||.$$ 
 En d'autres termes la somme des longueurs de $\vec{s}_1$ et $\vec{s}_2$ 
-et plus petite ou égale la longueur de la somme de $\vec{s}_1$ et $\vec{s}_2$.
+et plus petite ou égale la longueur de la somme de $\vec{s}_1$ et $\vec{s}_2$[^16].
 On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). On constate d'ailleurs sur cette même figue que la longueur 
 Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur.
 
@@ -1841,11 +1841,8 @@ Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur u
 $$\vec{n}=\frac{\vec{s}}{||\vec{s}||}.$$
 Ce vecteur comme son nom l'indique a une longueur (norme) de un
 $$||\vec{n}||=\left|\left|\frac{\vec{s}}{||\vec{s}||}\right|\right|=\frac{||\vec{s}||}{||\vec{s}||}=1,$$
-et la même direction que $\vec{s}$. Deux vecteurs unitaires particuliers sont 
-$$\vec{e}_x=(1,0),\quad \vec{e}_y=(0,1).$${#eq:vec_e}
-Ils sont alignés sur l'axe horizontal et vertical respectivement et sont de longueur $1$ (voir @fig:vec_e).
-
-![Les vecteurs unitaires $\vec{e}_x$ et $\vec{e}_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
+et la même direction que $\vec{s}$. Le vecteur $\vec{s}$ peut donc s'écrire à l'aide du vecteur unitaire $\vec{n}$ comme
+$$\vec{s}=||\vec{s}||\cdot \vec{n}.$$
 
 ### Systèmes de coordonnées
 
@@ -1856,13 +1853,20 @@ Le moyen le plus commun de se représenter un vecteur dans le plan est de passer
 ![Le vecteur $\vec{s}$ est décomposé en deux parties $\vec{s}_x$, et $\vec{s}_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
 
 Le vecteur est $\vec{s}$ est donné par
-$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ En utilisant les vecteurs unitaires, $\vec{e}_x$ et $\vec{e}_y$, les vecteurs $\vec{s}_x$ et $\vec{s}_y$ peuvent s'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
+$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ 
+En définissant deux vecteurs unitaires particuliers qui sont alignés avec
+l'axe horizontal et vertical respectivement (voir @fig:vec_e)
+$$\vec{e}_x=(1,0),\quad \vec{e}_y=(0,1).$${#eq:vec_e}
+
+![Les vecteurs unitaires $\vec{e}_x$ et $\vec{e}_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
+
+En utilisant les vecteurs unitaires, $\vec{e}_x$ et $\vec{e}_y$, les vecteurs $\vec{s}_x$ et $\vec{s}_y$ peuvent s'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
 
 La norme des composantes de $\vec{s}_x$ et $\vec{s}_y$ peut se calculer à l'aide de la trigonométrie. On a donc
 $$\begin{aligned}
 s_x&=||\vec{s}_x||=||\vec{s}||\cos(\theta),\\
 s_y&=||\vec{s}_y||=||\vec{s}||\sin(\theta),
-\end{aligned}$$
+\end{aligned}$${#eq:coord_pol}
 où $\theta$ est l'angle entre l'axe horizontal et le vecteur $\vec{s}$
 et où on note les *coordonnées* cartésiennes de $\vec{s}$, $s_x$ et $s_y$.
 Le vecteur $\vec{s}$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical.
@@ -1889,7 +1893,7 @@ $$s=\sqrt{s_x^2+s_y^2}.$$
 
 Exercice (Opérations sur les vecteurs) #
 
-1. Dessiner le vecteur $\vec{v}=(2,3)$.
+1. Dessiner le vecteur $\vec{v}=(2,3)$ dans le système de coordonnées cartésien.
 2. Additionner les vecteur $\vec{u}=(2,3)$ et $\vec{v}=(1,3)$, d'abord 
 à l'aide d'un dessin, puis avec les règles vues précédemment.
 3. Calculer la longueur de la somme trouvée précédemment $\vec{w}=\vec{u}+\vec{v}$.
@@ -1898,7 +1902,12 @@ Exercice (Opérations sur les vecteurs) #
 $$\alpha\cdot\vec{u}+\beta\cdot\vec{v},$$
 avec $\alpha=2$ et $\beta=-1/2$.
 
-On peut également représenter un vecteur de façon différente. En utilisant l'angle $\theta$ et la longueur $s$. On appelle cette représentation en coordonnée polaires. 
+De l'@eq:coord_pol, on voit qu'on pourrait aussi utiliser un autre système de coordonnées. En utilisant le couple formé par l'angle $\theta$ et la longueur $s$. On appelle cette représentation les coordonnée polaires (voir la @fig:composantes_pol). 
+
+Exercice (Changement de coordonnées) #
+
+Soit un vecteur $\vec{s}$ dont les coordonnées cartésiennes sont 
+$\vec{s}=(s_x,s_y)$. Ecrire la transformation qu'il faut effectuer pour avoir les coordonnées polaires $\vec{s}=(s,\theta)_\mathrm{polaires}$. Calculer $\theta$ et $s$ pour les vecteurs $\vec{s}=(1,1)$ et $\vec{s}=(-1,1)$ en coordonnées cartésiennes.
 
 ### Le produit scalaire
 
@@ -1912,15 +1921,18 @@ et la projection de $\vec{v}$ sur $\vec{u}$ et vice versa (voir la @fig:produit_
 
 Les propriétés du cosinus nous disent que 
 si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) le produit scalaire est nul
-$$\vec{u}\cdot\vec{v}=||u||\cdot ||v||\cdot\cos\left(\pi/2\right)=0.$$
+$$\vec{u}\cdot\vec{v}=||\vec u||\cdot ||\vec v||\cdot\cos\left(\pi/2\right)=0.$$
 Ces vecteurs sont dit orthogonaux ou normaux (voir @fig:scalaire_orthogonal).
 Les vecteurs $\vec{e}_x$ et $\vec{e}_y$ sont orthogonaux
-$$\vec{e}_x\cdot\vec{e}_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0.$$ 
+$$\vec{e}_x\cdot\vec{e}_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0=0.$$ 
 
 ![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$
 pour des vecteurs orthogonaux.](../figs/scalaire_orthgonal.pdf){#fig:scalaire_orthogonal width=40%}
 
-En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles).
+En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles)
+$$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos{0}=||\vec u||\cdot||\vec v||\cdot1=||\vec u||\cdot||\vec v||.$$
+Un cas particulier est le produit scalaire d'un vecteur $\vec{v}$ avec lui-même
+$$\vec{v}\cdot\vec{v}=||\vec v||\cdot ||\vec v||\cdot\cos{0}=||\vec v||^2.$$
 
 De cette définition, il est aisé de voir que le produit scalaire est commutatif
 $$\vec{u}\cdot\vec{v}=||\vec{v}||\cdot||\vec{u}||\cdot\cos(\theta)=\vec{v}\cdot\vec{u}.$$
@@ -1983,3 +1995,5 @@ Il est important de noter que le produit scalaire prend deux vecteurs et les tra
 [^14]: Un contre exemple est le diamant qui conduit très mal le courant, mais très bien la chaleur.
 
 [^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.
+
+[^16]: La norme est l'équivalent de la valeur absolue pour les scalaires. 
