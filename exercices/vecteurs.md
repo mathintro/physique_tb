@@ -51,42 +51,18 @@ $$\begin{aligned}
 \overrightarrow{AC}=\overrightarrow{AO}+\overrightarrow{OC}.
 \end{aligned}$$
 2. Calculer la projection de $\overrightarrow{OB}$ sur l'axe horizontal.
-3. Cacluler la longueur de $\overrightarrow{OB}$.
+3. Calculer la longueur de $\overrightarrow{OB}$.
 4. Calculer l'angle entre $\overrightarrow{OB}$ et l'axe horizontal. Quelles sont les coordonnées polaires de $\overrightarrow{OB}$?
 
 <!-- Solution # -->
 
 Exercice #
 
-Soient les vecteurs $\vec{a}=(1,1)$, $\vec{b}=(2,3)$, et $c=(-1,2)$.
+Soient les vecteurs $\vec{a}=(1,1)$, $\vec{b}=(2,3)$, et $\vec c=(-1,2)$.
 
 1. Calculer les normes de $\vec{a}$, $\vec{b}$, et $\vec{c}$.
-2. Cacluler la norme de $\vec{d}=\vec{a}+\vec{b}+\vec{c}$.
-3. Cacluler le produit scalaire de $\vec{d}$ avec lui même et prendre la racine carrée du résultat.
+2. Calculer la norme de $\vec{d}=\vec{a}+\vec{b}+\vec{c}$.
+3. Calculer le produit scalaire de $\vec{d}$ avec lui même et prendre la racine carrée du résultat.
 4. Soient les vecteur $\vec{f}$ et $\vec{g}$ dont les normes sont respectivement $1$ et $2$ formant un angle de $45^\circ$ entre eux. Quel est leur produit scalaire?
 
 <!-- Solution # -->
-
-
-Exercice #
-
-
-<!-- Solution # -->
-
-
-Exercice #
-
-
-<!-- Solution # -->
-
-
-Exercice #
-
-<!-- Solution # -->
-
-
-Exercice #
-
-
-<!-- Solution # -->
-
