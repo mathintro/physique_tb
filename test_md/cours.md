@@ -1110,6 +1110,8 @@ valable que sous certaines conditions
 Néanmoins, sous ces conditions il représente très bien ce qui se passe
 dans plus ou moins tous les gaz connus.
 
+---
+
 Exercice (Volume d’une mole de gaz) #
 
 Estimer le volume d’une mole d’un gaz à $T=0^\circ{\mathrm{C}}$,
@@ -1123,6 +1125,10 @@ $$\begin{aligned}
 &10^5\cdot V=1\cdot 8.314\cdot 293,\\
 &V=8.314\cdot 293\cdot 10^{-5},\\
 &V=0.0244\ {\mathrm{m}}^3.\end{aligned}$$
+
+---
+
+---
 
 Exercice (Gaz parfaits) #
 
@@ -1141,6 +1147,9 @@ Exercice (Gaz parfaits) #
 3.  Le ballon flotte-t-il? Quelle devrait être la pression du ballon
     pour que l’hélium ait la même densité que l’air?
 
+---
+
+---
 
 Questions # 
 
@@ -1149,6 +1158,8 @@ Questions #
 3. Une bouteille en verre peut se rompre si une de ses parties est chauffée de façon très rapide. Expliquez pourquoi. Est-ce que le même phénomène se produirait si on refroidissait?
 4. Expliquez l'augmentation de la température d'un gaz lorsqu'il est comprimé et son refroidissement lorsqu'il est détendu à l'aide de la derscription moléculaire des fluides.
 5. Est-il possible de faire bouillir de l'eau à $20\oC$? Expliquer.
+
+---
 
 Chaleur et matière
 ==================
@@ -1409,6 +1420,8 @@ Cette chaleur est transmise à l'eau avant qu’elle passe dans le corps de la c
 Le phénomène d'ébullition s'explique également par des différences de pression. Lorsque nous chauffons un liquide nous savons que sa pression de vapeur, $p_{\mbox{vapeur}}$, augmente. Lorsque cette pression devient égal à la pression à l'extérieur, $p_{\mbox{extérieure}}$, l'ébullition peut avoir lieu.
 Ce comportement explique la raison pour laquelle la température d'ébullition de l'eau (par exemple) change avec l'altitude. Au niveau de la mer, la température d'ébullition de l'eau est de $100\oC$, alors qu'à une pression de $0.2\ \mathrm{atm}$ elle n'est que de $60\oC$.
 
+---
+
 Exemple (Détermination de la chaleur latente) #
 
 La chaleur spécifique du mercure est de $140\ \J/(\kg\cdot \C)$. Lorsque $1\ \kg$ de mercure solide qui est à une température de $-39\oC$ (qui est la température de fusion du mercure) est placé dans un calorimètre de $0.5\ \kg$ en aluminium ($c_{cal}=900\ \J/(\kg\cdot\C)$) rempli avec $1.2\ \kg$ d'eau ($c_{eau}=4186\ \J/(\kg\cdot\C)$) à $20\oC$. La température finale du système est de $16.5\oC$. Quelle est la chaleur latente du mercure?
@@ -1445,6 +1458,8 @@ L_{hg} = 11386.
 \end{aligned}
 $$
 
+---
+
 ### Puissance et rendement
 
 Nous avons vu que lorsque nous transférons de la chaleur d'un objet à un autre, nous transférons de l'énergie thermique.
@@ -1455,6 +1470,8 @@ P=\frac{\Delta E}{\Delta t}=\frac{Q}{\Delta t}.
 $$
 Les unités de la puissance sont des Watt, $[\W]=[\J/\s]$. La puissance mesure le taux (``la vitesse'') auquel 
 l'énergie est transférée d'un objet à un autre.
+
+---
 
 Exemple (Chauffer de l'eau) #
 
@@ -1469,16 +1486,24 @@ $$P=\frac{Q}{\Delta t}\Leftrightarrow \Delta t=\frac{Q}{P}$$
 et donc il vient
 $$\Delta t=\frac{6269}{50}\cong 126\ \s.$$
 
+---
+
 Il est également commun que les transfert de chaleur ne se fassent pas de façon parfaite. En fait il est quasiment impossible de 
 transférer de l'énergie sans pertes. Nous définissons le rapport entre l'énergie utile (qui est effectivement utilisée
 pour chauffer un corps) et l'énergie produite comme le rendement $\eta$,
 $$ \eta=\frac{E_\mathrm{utile}}{E_\mathrm{produite}}.$$
+
+---
 
 Exercice (Chauffer de l'eau avec des pertes) #
 
 On  cherche à élever de $10\oC$ la température de $150\ \g$ d’eau ($c=4186$).  
 Combien de temps devra-t-on attendre si l’on peut chauffer cette eau avec un corps de chauffe de puissance $50\ \W$,
 si son rendement n'est que de $80\%$ ? 
+
+---
+
+---
 
 Questions # 
 
@@ -1487,6 +1512,8 @@ Questions #
 3. La chaleur massique de l'eau est assez élevée. Expliquez pourquoi cela en fait un bon liquide pour les systèmes de chauffage?
 4. Les brûlures dues à la vapeur à $100\oC$ sont-elles plus, autant ou moins graves que celles dues à de l'eau à $100\oC$? Expliquer pourquoi.
 5. Est-ce qu'un ventilateur électrique va en lui même refroidir l'air? Si oui pourquoi? Si non pourquoi? Si non pourquoi l'utiliser?
+
+---
 
 
 Transfert de chaleur
@@ -1517,6 +1544,8 @@ L'énergie thermique $\Delta Q$ transférée pendant un certain temps $\Delta t$
 
 La conductivité est considérée comme une constante qui ne dépend que du matériau. Comme nous l'avons mentionné précédemment, les métaux ont tendance à avoir une conductivité thermique plus élevée (on dit qu'ils sont *conducteurs*[^12]) que celle des non-métaux[^14] (ils sont dit *isolants*[^13]). Maintenant vous pouvez expliquer pourquoi vous avez moins froid aux pieds lorsque vous recouvrez le sol de la salle de bain avec un tapis.
 
+---
+
 Exemple (Perte de chaleur au travers d'une vitre) #
 
 Dans les maisons une des sources majeurs de pertes thermiques sont au travers des fenêtres. Calculez le transfert de chaleur au travers d'une fenêtre en verre ($k_{\mbox{verre}}=0.84\ \W/(\m\cdot \K)$) de $2\ \m\times 2\ m$ de surface et de $2\ \mm$ d'épaisseur, si la température extérieure est de $15\oC$ et intérieure de $16\oC$.
@@ -1525,6 +1554,8 @@ Solution #
 
 Ici, nous avons $A=2\cdot 2=4\ \m^2$, $L=2\cdot 10 ^{-3}\ \m$, $T_2=15\oC$, et $T_1=16\oC$. En utilisant l'@eq:ptherm, on a
 $$P_\mathrm{th}=-k A\frac{T_2-T_1}{L}=-0.84\cdot 4\frac{(15-16)}{2\cdot 10^{-3}}=1680\ \W.$$
+
+---
 
 Augmenter l'épaisseur du verre va améliorer l’isolation de la fenêtre, mais pas aussi bien que rajouter une couche d'air entre deux plaques de verre. En effet, la conductivité thermique de l'air étant beaucoup plus faible que celle du verre, il augmente l'isolation thermique de façon beaucoup plus remarquable.
 
@@ -1570,13 +1601,23 @@ $$P\left(\sum_{i=1}^NR_i\right)=T_1-T_2,$$
 ou 
 $$P=\frac{T_1-T_2}{\left(\sum_{i=1}^NR_i\right)}.$$
 
+---
+
 Exercice (Double vitrage) #
 
 Soit une fenêtre en double vitrage avec deux plaque de verre de $2\ \mm$ d'épaisseur ($k_{\mbox{verre}}=0.84\ \W/(\m\cdot \K)$) et une couche d'air de $3\ \mm$ entre les deux ($k_{\mbox{air}}=0.026\ \W/(\m\cdot \K)$). Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
 
+---
+
+---
+
 Exercice (Triple vitrage) #
 
 Soit une fenêtre en triple vitrage avec trois plaque de verre de $2\ \mm$ d'épaisseur et une couche d'air de $2\ \mm$ entre chacune des plaques. Quelle est la puissance thermique perdue si la température à la température externe est de $15\oC$ et la température interne de $16\oC$?
+
+---
+
+---
 
 Exercice (Cylindre en aluminium) #
 
@@ -1584,6 +1625,8 @@ Une extrémité d'un cylindre en aluminium ($k=200 \W/(\m\cdot \oC$)) de $33\ \c
 
 \comment{Le taux d'énergie transmise est de}
 $\comment{P=k A\frac{T_1-T_2}{L}=200\cdot\pi\cdot 0.01^2\cdot \frac{460-22}{0.33}=83\ \W.}$
+
+---
 
 La convection
 -------------
@@ -1618,13 +1661,21 @@ On voit que pour garder sa température corporelle constante un humain devrait p
 $$\Delta T=\frac{Q}{m\cdot c}=\frac{400}{70\cdot 3500}=1.7\cdot 10^{-3}\ \oC,$$
 par seconde soit environ $0.1\oC$ par minute. Il faut donc environ $20$ minutes pour tomber en hypothermie ($35\oC$). En réalité ce temps est un peu plus élevé. En effet, la chaleur produite à l'intérieur du corps est transférée (également par convection, en grande partie via le sang) à la peau. Une des mesures de défense du corps contre le froid est de contracter les vaisseaux sanguins les plus proches de la peau et ainsi empêcher un refroidissement trop rapide.
 
+---
+
 Exercice (Transport de chaleur jusqu'à la peau) #
 
 En supposant que la température de la peau est de $34\oC$, que la température à l'intérieur du corps est de $37\oC$ et que l'épaisseur des tissus est de $4\ \cm$, estimer le taux auquel la chaleur est transmise à la peau par conduction ($k=0.2\ \J/(\s\cdot m\cdot \C$) si la surface d'un humain est de $1.7\ \m^2$. On estime qu'un humain faisant un effort de faible intensité produit $230\ \W$ d'énergie thermique devant être dissipée. Comment expliquez-vous la différence mesurée? Si la transmission de chaleur se faisait uniquement par conduction quelle serait l'augmentation de température par heure du corps humain?
 
+---
+
+---
+
 Exercice (Transport de chaleur jusqu'à la peau: le retour) #
 
 A l'aide de l’exercice précédent estimer la valeur de la constante de convection, $q$, à l'intérieur du corps humain.
+
+---
 
 La radiation
 ------------
@@ -1643,9 +1694,15 @@ $$P_\mathrm{net}=P_\mathrm{emis}-P_\mathrm{absorb}.$$
 $$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4),$${#eq:stefan_boltzmann}
 avec $T_2$ la température de l'environnement, $T_1$ la température de l'objet, et $\epsilon$ son émissivité. On voit donc que si $T_1>T_2$ l'énergie est transférée dans son environnement par l'objet, alors que si $T_2<T_1$, l'énergie est transférée à l'objet par son environnement.
 
+---
+
 Question (Le feu) #
 
 Comment est-ce que la chaleur du feu est transmise? Par conduction, convection, ou radiation? Justifiez votre réponse.
+
+---
+
+---
 
 Exemple (Refroidissement par radiation) #
 
@@ -1657,7 +1714,11 @@ N'oubliez pas que la température doit être transformée en degrés Kelvin. On 
 $$P_\mathrm{net}=\epsilon\sigma A(T_1^4-T_2^4)=0.7\cdot 5.67\cdot 10^{-8}\cdot 1.7(307^4-288^4)=135\ \W.$$
 Notez que la puissance émise est largement supérieure à une vieille ampoule à incandescence. Néanmoins un humain ne brille pas dans la nuit. Pourquoi?
 
+---
+
 Une personne au repos produit environ $100\ \W$ d'énergie thermique. On constate avec l'exemple précédent que cette énergie ne suffit pas à couvrir les pertes par radiation du corps ce qui aura pour effet de faire baisser la température du corps et donc d'induire une sensation de froid et une réaction (en général désagréable) du corps pour compenser. Il faut noter que dans l'exemple ci-dessus, nous n'avons absolument pas pris en compte la température de l'air de la pièce, mais uniquement celle des murs. On en déduit donc que même si la température dans la pièce est tout à fait agréable (de l'ordre de $25\oC$ par exemple) une personne peut avoir froid si les murs sont froids. 
+
+---
 
 Exemple (Théières) #
 
@@ -1683,11 +1744,15 @@ $$\begin{aligned}
 \end{aligned}$$
 On voit donc que la théière avec une grande émissivité se refroidit beaucoup plus vite que celle avec une faible émissivité (si on ne considère que la radiation).
 
+---
+
 La formule de la radiation ne peut pas être appliquée telle quelle au soleil. En effet, tout le raisonnement que nous avons fait jusqu'à maintenant suppose que nous avons une température de l'environnement (le $T_2$ de tout à l'heure) qui est uniforme. Hors pour un objet sur terre, le soleil est en gros un objet ponctuel et on est donc très loin de ``l'environnement à température uniforme''. Une infime partie des rayonnement solaires atteignent la terre, dont la puissance est d'environ $1350\ \W/\m^2$ quand les rayons arrivent perpendiculairement à la surface (c'est la constante solaire). De plus l'atmosphère absorbe une partie de l'énergie (ou la reflète dans l'espace). Ainsi lors d'une belle journée environ $1000\ \W/\m^2$ atteignent la surface. Ce nombre correspond au terme $\sigma T^4$ de l'@eq:stefan_boltzmann. Il faut encore néanmoins prendre en compte *la surface apparente* de l'objet $A_\mathrm{apparente}$. En effet, les rayons du soleil pouvant ne pas arriver de façon perpendiculaire à la surface (en général ils ne le sont pas...) on doit remplacer $A$ par 
 $$A_\mathrm{apparente}=A\cdot \cos\theta,$$
 où $\theta$ est l'angle entre la surface et la direction des rayons du soleil. Finalement la puissance absorbée par un objet exposé au soleil est de 
 $$P=1000\epsilon A \cos\theta,$$ 
 lors d'une journée ensoleillée. Cette formule explique l'existence des saisons. Quand l'angle $\theta$ s'éloigne de $\theta=0$, l'énergie absorbée devient de plus en plus petite. Les rayons du soleil étant très loin d'être perpendiculaires en hiver et plus proche de la perpendicularité en été. Les différences de températures ne sont donc pas du tout reliées à la distance entre le soleil et la terre, mais uniquement à l'angle entre la terre et celui-ci[^15].
+
+---
 
 Exemple (Bronzage) #
 
@@ -1697,16 +1762,24 @@ Solution #
 
 Comme $\theta=30^\circ$ il faut commencer à transformer cette valeur en radians $\theta=30\cdot \pi/180=0.52\ \mathrm{rad}$ pour pouvoir en calculer le cosinus. On a donc que $$P=1000\epsilon A\cos\theta=1000\cdot 0.7\cdot 0.85\cos\theta\cong 515\ \W.$$
 
+---
+
+---
+
 Exercice (Sphère en tungstène) #
 
 Quelle est la puissance radiée par une sphère en tungstène ($\epsilon=0.35$)
 de rayon $r=22\ \cm$ à une température de $25\ \oC$? Si la sphère se trouve dans une pièce dont les murs sont à $-5\ \oC$ quel est le taux d'énergie net sortant de la sphère?
+
+---
 
 ### Le corps noir
 
 La couleur des objets est due à la lumière qu'ils réfléchissent ou émettent. En effet, les rayons de lumière se comportent des ondes (de façon analogue au comportement des ondes sonores par exemple). En particulier, la couleur d'un objet est reliée à la longueur d'onde de la lumière qu'il émet. Dans le spectre de la lumière visible, les *grandes* longueurs d'ondes sont de couleur rouges, les courtes bleues en passant par le jaune et le vert. 
 
 Quand on chauffe beaucoup un objet métallique, on voit qu'il rougit d'abord puis devient de couleur blanche quand il est vraiment très très très chaud (on dit qu'il est *chauffé à blanc*). Néanmoins, l'objet n'est pas repeint en cours de route. Par ailleurs, quand il est refroidi il reprend sa couleur d'origine sa couleur ``d'origine'' n'est donc par modifiée par la chaleur. 
+
+---
 
 Question (Qu'est-ce qui change?) #
 
@@ -1716,6 +1789,8 @@ on voit la puissance lumineuse émise par angle solide en fonction de la longueu
 Question (Pourquoi voyons nous le fer prendre une couleur rouge quand nous le chauffons?) #
 
 En fait, bien que nous ne voyions pas le pic d'émission maximale, l'énergie des rayons de lumière (d'énergie plus basse que le pic) est suffisante pour que l’œil humain puisse le voir.
+
+---
 
 ![La radiance émise par angle solide en fonction de la longueur d'onde pour des températures de $3000\oK$, $4000\oK$, et $5000\oK$. Source:
 <https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg>](../figs/Black_body.pdf){#fig:corps_noir width=70%}
@@ -1742,6 +1817,8 @@ L'atmosphère réchauffée directement par le soleil et indirectement par le sol
 
 Ce système très complexe d'échange d'énergie conduit (hors contribution des activités humaine) la surface de la terre à avoir une température d'environ $15\oC$. Sans les gaz à effet de serre naturellement présents dans l'atmosphère (vapeur d'eau, gaz carbonique, ozone, et méthane principalement) et à albédo constant la température de la terre serait d'environ $-18\oC$. Hors à cette température toute la surface de la terre serait gelée et réfléchirait beaucoup plus les rayonnements du soleil et conduirait à un refroidissement encore plus prononcé (environ $-50\oC$).
 
+---
+
 Questions #
 
 1. Pourquoi les thermomètres sont toujours placés à l'ombre pour mesurer la température de l'air?
@@ -1755,9 +1832,15 @@ De quelles pertes d'épais rideaux pourraient protéger?
 4. Expliquer pourquoi les villes se situant proches d'océans ont des températures moins extrêmes durant l'année que des villes situées aux mêmes latitudes mais se trouvant à l'intérieur des terres.
 5. Un bout de bois posé au soleil absorbe plus de chaleur qu'un bout de métal brillant. Néanmoins le bout de métal semble plus chaud au toucher. Pourquoi?
 
+---
+
+---
+
 Problème #
 
 Tenter de concevoir un thermos en minimisant le plus possible les échanges de chaleur avec le monde extérieur afin qu'il garde les liquides le plus possible au chaud (au froid).
+
+---
 
 
 Statique
@@ -1891,6 +1974,8 @@ $$\vec{s}=(s_x,s_y).$$
 Avec la représentation en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec{s}||$ à l'aide du théorème de Pythagore
 $$s=\sqrt{s_x^2+s_y^2}.$$
 
+---
+
 Exercice (Opérations sur les vecteurs) #
 
 1. Dessiner le vecteur $\vec{v}=(2,3)$ dans le système de coordonnées cartésien.
@@ -1902,12 +1987,18 @@ Exercice (Opérations sur les vecteurs) #
 $$\alpha\cdot\vec{u}+\beta\cdot\vec{v},$$
 avec $\alpha=2$ et $\beta=-1/2$.
 
+---
+
 De l'@eq:coord_pol, on voit qu'on pourrait aussi utiliser un autre système de coordonnées. En utilisant le couple formé par l'angle $\theta$ et la longueur $s$. On appelle cette représentation les coordonnée polaires (voir la @fig:composantes_pol). 
+
+---
 
 Exercice (Changement de coordonnées) #
 
 Soit un vecteur $\vec{s}$ dont les coordonnées cartésiennes sont 
 $\vec{s}=(s_x,s_y)$. Ecrire la transformation qu'il faut effectuer pour avoir les coordonnées polaires $\vec{s}=(s,\theta)_\mathrm{polaires}$. Calculer $\theta$ et $s$ pour les vecteurs $\vec{s}=(1,1)$ et $\vec{s}=(-1,1)$ en coordonnées cartésiennes.
+
+---
 
 ### Le produit scalaire
 
@@ -1937,6 +2028,8 @@ $$\vec{v}\cdot\vec{v}=||\vec v||\cdot ||\vec v||\cdot\cos{0}=||\vec v||^2.$$
 De cette définition, il est aisé de voir que le produit scalaire est commutatif
 $$\vec{u}\cdot\vec{v}=||\vec{v}||\cdot||\vec{u}||\cdot\cos(\theta)=\vec{v}\cdot\vec{u}.$$
 
+---
+
 Exercice (Propriétés du produit scalaire) #
 
 Montrer que le produit scalaire a les propriétés suivantes. Soient $\vec{u}$, 
@@ -1946,6 +2039,8 @@ $$\begin{aligned}
 \alpha(\vec{u}\cdot\vec{v})=(\alpha\vec{u})\cdot\vec{v}=\vec{u}\cdot(\alpha\vec{v}).
 \end{aligned}$$
 
+---
+
 Il est important de noter que le produit scalaire prend deux vecteurs et les transforme en un scalaire (un nombre). 
 
 
@@ -1954,13 +2049,70 @@ La force
 
 Le concept de *force* est intimement lié avec le concept de mouvement. Pourquoi un objet en mouvement change de direction? Pourquoi un objet accélère ou décélère? Pourquoi un objet arrêté se met en mouvement?
 
-Intuitivement, une force est tout traction ou poussée exercée sur un objet. Quand vous faites vos courses et que vous mettez en mouvement votre chariot en le poussant, vous exercez une force dessus. Pour le mettre en mouvement vous devez combattre la *force de frottement* (une force dite de *contact*, car elle agit lors du contact de deux objet: ici le chariot et le sol). Quand vous soulevez votre pack de 6 bières du sol également. Cette fois vous devez compensez la *force de gravité* (qui n'est pas une force de contact).
+Intuitivement, une force est toute traction ou poussée exercée sur un objet. Quand vous faites vos courses et que vous mettez en mouvement votre chariot en le poussant, vous exercez une force dessus. Pour le mettre en mouvement vous devez combattre la *force de frottement* (une force dite de *contact*, car elle agit lors du contact de deux objet: ici le chariot et le sol). Quand vous soulevez votre pack de 6 bières du sol également. Cette fois vous devez compenser la *force de gravité* (qui n'est pas une force de contact).
+
+Une force se mesure à l'aide d'un *dynamomètre* et ses unités sont les Newtons, notés $$[N]=[\kg\cdot\m/\s^2].$$
 
 De façon générale, lorsque vous devez mettre en mouvement un objet, vous faites passer sa vitesse de zéro à une vitesse non-nulle: vous produisez une accélération. De même lorsqu'un objet est en mouvement et que vous essayez de changer sa vitesse, que ce soit en *norme* ou en *direction*, vous devez à nouveau lui appliquer une force. Le fait que la modification de la vitesse (l'accélération) ait une norme et une direction, nous montre que la force est une quantité *vectorielle*. Nous pourrons donc utiliser toutes les méthodes de calcul vues au chapitre précédent.
 
+En général il n'y a pas qu'une seule force qui peut s'appliquer sur un objet. 
+Sur la @fig:box_force on a une situation *statique*. Une boîte est posée sur le sol et ne bouge pas. Comme vous avez pu vous en rendre compte dans votre vie de tous les jours, soulever ou porter une boîte (même légère) vous demande un certain effort, car elle pèse un certain *poids* (une force l'attire vers le sol). Lorsque la boîte est posée sur le sol, elle n'a pas soudainement perdu son poids et la force l'attirant vers le sol existe toujours. Le fait qu'elle ne bouge pas est dû au fait que le sol exerce une force égale en norme et opposée en direction sur la boîte. La somme des deux forces étant nulle, la boîte ne subit aucune accélération.
+
+![Un système composé du sol et d'une boîte. La boîte exerce une force $\vec F$ sur le sol, le sol exerce la *même* force sur la boîte mais en direction opposée.](../figs/box_force.pdf){#fig:box_force width=40%}
+
+Il y a deux concepts fondamentaux de ce que nous venons de discuter. Le premier est que plusieurs forces peuvent s'exercer sur un objet. La force *nette* s'appliquant ou force *résultante*, $\vec{F}_\mathrm{res}$ n'est autre que la somme de toutes ces forces. Si un objet subit l'action de $N$ forces, $\vec F_1$, $\vec F_2$, ..., $\vec F_N$, alors la force résultante s'écrira $$\vec F_\mathrm{res}=\vec F_1+\vec F_2+...+\vec F_N$$.
+
 De ce que nous venons de discuter, nous déduisons qu'une force est présente que lorsqu'on *modifie* la vitesse d'un objet, en d'autres termes qu'on modifie son *accélération*. Il est important de noter que cette modification est une quantité *vectorielle* et qu'on peut modifier non seulement la norme, mais également la direction de la vitesse.
 
-Dans ce chapitre nous nous intéressons à la *statique*. Les objets sont tous par définition dans un état *d'équilibre* et la somme de toutes les forces agissant sur un objet sont *nulles*. 
+Cette constatation est la première loi de Newton, ou loi d'inertie, qui peut s'énoncer ainsi:
+
+*Tout corps reste immobile ou conserve un mouvement rectiligne uniforme, tant que la somme des forces agissant sur lui sont nulles.*
+
+En d'autres termes $$\vec{F}_1+\vec{F}_2+...\vec{F}_N=\sum_{i=0}^N\vec{F}_i=0.$$
+
+---
+
+Question # 
+
+Lorsque vous êtes dans le bus et que soudainement le chauffeur freine, vous êtes projetés vers l'avant. Quelle force est responsable de cette projection?
+
+---
+
+Dans ce chapitre nous nous intéressons à la *statique*. Les objets sont tous par définition dans un état *d'équilibre* et la somme de toutes les forces agissant sur un objet seront *nulles*. En d'autres terme la force résultante est toujours nulle
+$$\vec F_\mathrm{res}=0.$$ 
+
+---
+
+Exemple (Tirer sur une corde) #
+
+Soient deux personnes tirant sur une corde (voir @fig:corde). La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu applique une force $\vec F_1$ lorsque le système est à l'équilibre. Écrire la relation entre la force $\vec F_1$ et la force $\vec F_2$. Si la force $\vec F_1=(10,0)\ \N$, quelle sera la force $\vec F_2$?
+
+Solution #
+
+Comme la force comme le système est à l'équilibre cela signifie que la force résultante est nulle. On a donc 
+$$\vec F_\mathrm{ref}=\vec F_1+\vec F_2=0.$$
+On en déduit que 
+$$\vec F_1=-\vec F_2.$$
+
+![La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu la force $\vec F_1$.](../figs/corde.pdf){#fig:corde width=40%}
+
+---
+
+La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force appliqués sur lui, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre.
+
+![Les force $\vec F_1$ et $\vec F_2$ ($\vec F_1=-\vec F_2$) sont appliquées sur la même boîte rectangulaire. La le cas du haut rien ne se passe, car les forces s'annulent. Dans le deuxième cas, la boîte va se mettre à tourner sur elle même (même si elle n'aura pas de mouvement de translation).](../figs/point_action.pdf){#fig:point_action width=60%}
+
+<!-- De plus chaque objet est considéré comme étant uniquement un point (il n'a pas de surface ou de volume). Cette approche a le grand avantage de simplifier les phénomènes physiques. En effet, lorsqu'un objet a une certaine étendue, l'effet d'une force est double. D'une part il va avoir un effet sur la *translation* de l'objet dans l'espace, mais de plus il va le faire tourner sur lui-même. -->
+
+---
+
+Exercice (Tirer sur la corde: Plus on est de fous plus on rit) #
+
+Soit la situation comme dans la @fig:corde_3. La norme des trois forces vaut respectivement $F_1=500\ \N$, $F_1=707\ \N$, et $F_3=966\ \N$. La situation est-elle en équilibre?
+
+![Trois personnes tirent sur trois cordes qui sont attachées entre elles.](../figs/corde_3.pdf){#fig:corde_3 width=40%}
+
+---
 
 
 
