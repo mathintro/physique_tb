@@ -1949,6 +1949,19 @@ $$\begin{aligned}
 Il est important de noter que le produit scalaire prend deux vecteurs et les transforme en un scalaire (un nombre). 
 
 
+La force
+--------
+
+Le concept de *force* est intimement lié avec le concept de mouvement. Pourquoi un objet en mouvement change de direction? Pourquoi un objet accélère ou décélère? Pourquoi un objet arrêté se met en mouvement?
+
+Intuitivement, une force est tout traction ou poussée exercée sur un objet. Quand vous faites vos courses et que vous mettez en mouvement votre chariot en le poussant, vous exercez une force dessus. Pour le mettre en mouvement vous devez combattre la *force de frottement* (une force dite de *contact*, car elle agit lors du contact de deux objet: ici le chariot et le sol). Quand vous soulevez votre pack de 6 bières du sol également. Cette fois vous devez compensez la *force de gravité* (qui n'est pas une force de contact).
+
+De façon générale, lorsque vous devez mettre en mouvement un objet, vous faites passer sa vitesse de zéro à une vitesse non-nulle: vous produisez une accélération. De même lorsqu'un objet est en mouvement et que vous essayez de changer sa vitesse, que ce soit en *norme* ou en *direction*, vous devez à nouveau lui appliquer une force. Le fait que la modification de la vitesse (l'accélération) ait une norme et une direction, nous montre que la force est une quantité *vectorielle*. Nous pourrons donc utiliser toutes les méthodes de calcul vues au chapitre précédent.
+
+De ce que nous venons de discuter, nous déduisons qu'une force est présente que lorsqu'on *modifie* la vitesse d'un objet, en d'autres termes qu'on modifie son *accélération*. Il est important de noter que cette modification est une quantité *vectorielle* et qu'on peut modifier non seulement la norme, mais également la direction de la vitesse.
+
+Dans ce chapitre nous nous intéressons à la *statique*. Les objets sont tous par définition dans un état *d'équilibre* et la somme de toutes les forces agissant sur un objet sont *nulles*. 
+
 
 
 
