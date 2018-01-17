@@ -2098,26 +2098,64 @@ $$\vec F_1=-\vec F_2.$$
 
 ---
 
-La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force appliqués sur lui, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre.
+La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force qui y sont appliqués, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre. L'équilibre dépend donc du point d'application des forces.
 
 ![Les force $\vec F_1$ et $\vec F_2$ ($\vec F_1=-\vec F_2$) sont appliquées sur la même boîte rectangulaire. La le cas du haut rien ne se passe, car les forces s'annulent. Dans le deuxième cas, la boîte va se mettre à tourner sur elle même (même si elle n'aura pas de mouvement de translation).](../figs/point_action.pdf){#fig:point_action width=60%}
 
-<!-- De plus chaque objet est considéré comme étant uniquement un point (il n'a pas de surface ou de volume). Cette approche a le grand avantage de simplifier les phénomènes physiques. En effet, lorsqu'un objet a une certaine étendue, l'effet d'une force est double. D'une part il va avoir un effet sur la *translation* de l'objet dans l'espace, mais de plus il va le faire tourner sur lui-même. -->
+Afin de déterminer si nous avons une situation d'équilibre il est utile définir la *ligne d'action* d'une force. La ligne d'action d'une force est la droite qui a la même direction que le vecteur de la force et qui passe par le point d'application de la force. Une illustration se trouve sur la @fig:ligne_action, où on voit les lignes d'actions pour les forces $\vec F_1$ et $\vec F_2$ (traitillés rouges et vers respectivement) dans le cas où elles sont alignées (haut) et où elles ne le sont pas (bas). Comme discuté précédemment lorsque les lignes d'action sont alignées, l'état d'équilibre est atteint et la boîte ne bougera pas. Dans le cas où les lignes d'action ne sont pas alignées, la boîte se mettra à tourner.
+
+![Les force $\vec F_1$ et $\vec F_2$ et leurs lignes d'action respectivement en traitillés rouge et en vert.](../figs/ligne_daction.pdf){#fig:ligne_action width=60%}
+
+On constate donc que pour se trouver dans un état d'équilibre, un système doit avoir non seulement des vecteurs de forces opposés, mais également agissant sur la même ligne d'action.
+
+Afin de simplifier, nous considérons ici les objet comme n'étant que des *points matériels*. Comme les objets n'ont aucune étendue (ils sont de taille nulle), la condition d'équilibre s'écrit beaucoup plus simplement
+$$\sum_{i=1}^N\vec F_i=\vec 0,$$
+où $\vec F_i$ pour $i=1..N$ est l'ensemble des forces agissant sur le point matériel.
+En d'autre termes, la force résultante sur le point doit être nulle.
 
 ---
 
-Exercice (Tirer sur la corde: Plus on est de fous plus on rit) #
+Exemple (Tirer sur la corde: Plus on est de fous plus on rit) #
 
 Soit la situation comme dans la @fig:corde_3. La norme des trois forces vaut respectivement $F_1=500\ \N$, $F_1=707\ \N$, et $F_3=966\ \N$. La situation est-elle en équilibre?
 
 ![Trois personnes tirent sur trois cordes qui sont attachées entre elles.](../figs/corde_3.pdf){#fig:corde_3 width=40%}
 
+Solution #
+
+Pour savoir si le système est à l'équilibre il faut savoir si la somme des trois force est nulle. Pour ce faire, on décompose les forces selon leur composantes cartésiennes
+$$
+\begin{aligned}
+\vec F_1&=F_1\cdot\left(\cos(45^\circ),\sin(45^\circ)\right)=F_1\cdot\left(\cos(\pi/4),\sin(\pi/4)\right)=(354,354)\ \N \\
+\vec F_2&=F_2\cdot\left(\cos(120^\circ),\sin(120^\circ)\right)=F_2\cdot\left(\cos(2\pi/3),\sin(2\pi/3)\right)=(-354,612)\ \N \\
+\vec F_3&=F_3\cdot\left(\cos(270^\circ),\sin(270^\circ)\right)=F_3\cdot\left(\cos(3\pi/2),\sin(3\pi/2)\right)=(0,-966)\ \N  \\
+\end{aligned}
+$$
+On peut à présent calculer la force résultante
+$$\vec{F}_\mathrm{res}=\vec F_1+\vec F_2+\vec F_3=(354-354+0,354+612-966)=(0,0)\ \N.$$
+On a donc que le système est en équilibre car la force résultante est nulle.
+
 ---
 
+Un exercice comme le précédent, est en général une simplification d'un situation bien plus complexe. On peut imaginer la situation comme sur la @fig:caisse, où il s'agit de calculer la force que doivent appliquer les deux masses sur les côtés sur leur corde respective pour que la caisse soit à l'équilibre, sachant que la caisse exercice une force de $800\ \N$.
 
+![Deux poids sont attachés à deux cordes, qui sont reliées à une troisième portant une boîte.](../figs/caisse.pdf){#fig:caisse width=40%}
 
+Pour résoudre cette exercice il faut se rendre compte que la force se transmet le long des cordes. On a donc que le système peut se mettre dans une situation équivalente à celle de la @fig:corde_3. On a les trois forces qui s'appliquent à l'endroit où se rencontrent les trois cordes: au point $C$. On peut se ramener à la situation de la @fig:caisse_2.
 
+![On peut ignorer tous les détails de notre problème et simplement ramener toutes les forces au points $C$.](../figs/caisse_2.pdf){#fig:caisse_2 width=40%}
 
+Notre système est à l'équilibre si 
+$$\vec F_{CA}+\vec F_{CB}+\vec F_{CD}=0.$$
+Nous pouvons donc écrire
+$$
+\begin{aligned}
+&F_{CA}\cdot(\cos(130^\circ),\sin(130^\circ))+F_{CB}\cdot(\cos(30^\circ),\sin(30^\circ))+(0,-800)=0,\\
+&F_{CA}\cdot(-0.643,0.866)+F_{CB}\cdot(0.766,0.5)+(0,-800)=0.
+\end{aligned}
+$$
+En résolvant ce système de deux équations à deux inconnues, on obtient
+$$F_{CA}\cong522\ \N,\quad F_{CB}\cong 704\ \N.$$
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
