@@ -1991,6 +1991,8 @@ avec $\alpha=2$ et $\beta=-1/2$.
 
 De l'@eq:coord_pol, on voit qu'on pourrait aussi utiliser un autre système de coordonnées. En utilisant le couple formé par l'angle $\theta$ et la longueur $s$. On appelle cette représentation les coordonnée polaires (voir la @fig:composantes_pol). 
 
+![Le vecteur $\vec{s}$ peut être représenté selon ses composantes cartésiennes, $s_x$ et $s_y$ ou selon ses coordonnées polaires, $s$ et $\theta$.](../figs/composantes_pol.pdf){#fig:composantes_pol width=40%}
+
 ---
 
 Exercice (Changement de coordonnées) #
@@ -2098,7 +2100,7 @@ $$\vec F_1=-\vec F_2.$$
 
 ---
 
-La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force qui y sont appliqués, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre. L'équilibre dépend donc du point d'application des forces.
+La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force qui y sont appliqués, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:point_action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre. L'équilibre dépend donc du point d'application des forces.
 
 ![Les force $\vec F_1$ et $\vec F_2$ ($\vec F_1=-\vec F_2$) sont appliquées sur la même boîte rectangulaire. La le cas du haut rien ne se passe, car les forces s'annulent. Dans le deuxième cas, la boîte va se mettre à tourner sur elle même (même si elle n'aura pas de mouvement de translation).](../figs/point_action.pdf){#fig:point_action width=60%}
 
