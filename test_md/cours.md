@@ -1863,69 +1863,69 @@ Prenons l'exemple de la carte de la @fig:depl_vec. Si nous nous déplaçons à v
 
 ### L'arithmétique des vecteurs
 
-Le déplacement est un *vecteur*, noté $\vec{s}$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec{s}||$. Le même déplacement $\vec{s}$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec{s}_d$ vers la droite, puis en un déplacement vers le haut $\vec{s}_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
-$$\vec{s}=\vec{s}_d+\vec{s}_h=\vec{s}_h+\vec{s}_d.$$
+Le déplacement est un *vecteur*, noté $\vec s$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec s||$. Le même déplacement $\vec s$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec s_d$ vers la droite, puis en un déplacement vers le haut $\vec s_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
+$$\vec s=\vec s_d+\vec s_h=\vec s_h+\vec s_d.$$
 
-![La décomposition du vecteur $\vec{s}$ en bleu en deux déplacements $\vec{s}_d$ et $\vec{s}_h$. De façon plus générale toute somme de vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2.$](../figs/vecteur.pdf){#fig:vec width=30%}
+![La décomposition du vecteur $\vec s$ en bleu en deux déplacements $\vec s_d$ et $\vec s_h$. De façon plus générale toute somme de vecteur $\vec s_3=\vec s_1+\vec s_2.$](../figs/vecteur.pdf){#fig:vec width=30%}
 
 Géométriquement, la somme de deux vecteurs se représente toujours ainsi pour deux vecteurs quelconques 
-$$\vec{s}_3=\vec{s}_1+\vec{s}_2.$$ 
-La somme se représente en mettant bout à bout le vecteur $\vec{s}_1$ puis le vecteur $\vec{s}_2$. Cette représentation nous montre que la relation entre les normes est la suivante
-$$||\vec{s}_3||=||\vec{s}_1+\vec{s}_2||\leq||\vec{s}_1||+||\vec{s}_2||.$$ 
-En d'autres termes la somme des longueurs de $\vec{s}_1$ et $\vec{s}_2$ 
-et plus petite ou égale la longueur de la somme de $\vec{s}_1$ et $\vec{s}_2$[^16].
+$$\vec s_3=\vec s_1+\vec s_2.$$ 
+La somme se représente en mettant bout à bout le vecteur $\vec s_1$ puis le vecteur $\vec s_2$. Cette représentation nous montre que la relation entre les normes est la suivante
+$$||\vec s_3||=||\vec s_1+\vec s_2||\leq||\vec s_1||+||\vec s_2||.$$ 
+En d'autres termes la somme des longueurs de $\vec s_1$ et $\vec s_2$ 
+et plus petite ou égale la longueur de la somme de $\vec s_1$ et $\vec s_2$[^16].
 On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). On constate d'ailleurs sur cette même figue que la longueur 
 Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur.
 
 ![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](../figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
 
-Un cas particulier d'addition de vecteur est l'addition de vecteurs parallèles et antiparallèles. Dans le cas parallèle les vecteurs, $\vec{s}_1$ et $\vec{s}_2$ ont la même direction. Le vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2$ aura donc la même direction que $\vec{s}_1$ et $\vec{s}_2$ et sa norme sera la somme des normes de $\vec{s}_1$ et $\vec{s}_2$ (voir la @fig:somme_vec_para). 
+Un cas particulier d'addition de vecteur est l'addition de vecteurs parallèles et antiparallèles. Dans le cas parallèle les vecteurs, $\vec s_1$ et $\vec s_2$ ont la même direction. Le vecteur $\vec s_3=\vec s_1+\vec s_2$ aura donc la même direction que $\vec s_1$ et $\vec s_2$ et sa norme sera la somme des normes de $\vec s_1$ et $\vec s_2$ (voir la @fig:somme_vec_para). 
 
 ![La somme de deux vecteurs parallèles. ](../figs/somme_vecteurs_para.pdf){#fig:somme_vec_para width=30%}
 
-Dans le cas anti-parallèle les vecteurs $\vec{s}_1$ et $\vec{s}_2$ les vecteurs pointent dans des directions opposées. Le vecteur $\vec{s}_3=\vec{s}_1+\vec{s}_2$ aura donc soit la direction de $\vec{s}_1$ soit celle de $\vec{s}_2$ et sa norme sera la différence des normes de $\vec{s}_1$ et $\vec{s}_2$ (voir la @fig:somme_vec_anti_para).
+Dans le cas anti-parallèle les vecteurs $\vec s_1$ et $\vec s_2$ les vecteurs pointent dans des directions opposées. Le vecteur $\vec s_3=\vec s_1+\vec s_2$ aura donc soit la direction de $\vec s_1$ soit celle de $\vec s_2$ et sa norme sera la différence des normes de $\vec s_1$ et $\vec s_2$ (voir la @fig:somme_vec_anti_para).
 
 ![La somme de deux vecteurs anti-parallèles. ](../figs/somme_vecteurs_antipara.pdf){#fig:somme_vec_anti_para width=30%}
 
-De façon très similaire à ce que nous faisons pour les scalaires (les nombres entiers, les rationnels et les réels) nous pouvons définir l'opposé d'un vecteur $\vec{s}$ et le noter $-\vec{s}$. Comme pour les scalaires, nous aimerions que le vecteur $-\vec{s}$ soit ``l'inverse'' du vecteur $\vec{s}$ pour l'addition. On aimerait donc que la la somme $\vec{s}+(-\vec{s})=\vec{0}$. En d'autres termes, le départ départ de $\vec{s}$ soir le même que le point d'arrivée après la somme (voir la @fig:somme_vec_anti_para_zero). 
+De façon très similaire à ce que nous faisons pour les scalaires (les nombres entiers, les rationnels et les réels) nous pouvons définir l'opposé d'un vecteur $\vec s$ et le noter $-\vec s$. Comme pour les scalaires, nous aimerions que le vecteur $-\vec s$ soit ``l'inverse'' du vecteur $\vec s$ pour l'addition. On aimerait donc que la la somme $\vec s+(-\vec s)=\vec{0}$. En d'autres termes, le départ départ de $\vec s$ soir le même que le point d'arrivée après la somme (voir la @fig:somme_vec_anti_para_zero). 
 
 ![La somme de deux vecteurs anti-parallèles de même longueur. ](../figs/somme_vecteurs_antipara_zero.pdf){#fig:somme_vec_anti_para_zero width=30%}
 
 Une autre façon d'écrire cette somme est de faire comme pour les scalaires:
-$$\vec{s}+(-\vec{s})=\vec{s}-\vec{s}=\vec{0}.$$
+$$\vec s+(-\vec s)=\vec s-\vec s=\vec{0}.$$
 Cette façon de faire nous permet de définir la soustraction de deux vecteurs,
-$\vec{s}_1$ et $\vec{s}_2$ 
-$$\vec{s}_1-\vec{s}_2=\vec{s}_1+(-\vec{s}_2).$$
-Comme on peut le voir sur la @fig:soustraction_vecteurs la soustraction de deux vecteurs consiste, en fait, à d'abord prendre prendre l'inverse du vecteur soustrait, $-\vec{s}_2$ et de l'ajouter au premier vecteur.
+$\vec s_1$ et $\vec s_2$ 
+$$\vec s_1-\vec s_2=\vec s_1+(-\vec s_2).$$
+Comme on peut le voir sur la @fig:soustraction_vecteurs la soustraction de deux vecteurs consiste, en fait, à d'abord prendre prendre l'inverse du vecteur soustrait, $-\vec s_2$ et de l'ajouter au premier vecteur.
 
 ![La soustraction de deux vecteurs. ](../figs/soustraction_vecteurs.pdf){#fig:soustraction_vecteurs width=30%}
 
 Comme l'addition de deux vecteur est commutative, la soustraction peut également s'écrire dans un ordre différent (attention elle n'est pas commutative)
-$$\vec{s}_3=\vec{s}_1-\vec{s}_2=\vec{s}_1+(-\vec{s}_2)=-\vec{s}_2+\vec{s}_1.$$
+$$\vec s_3=\vec s_1-\vec s_2=\vec s_1+(-\vec s_2)=-\vec s_2+\vec s_1.$$
 
-Un autre opération primordiale pour les vecteur est le produit avec un scalaire. Si nous avons un nombre $\alpha$, et un vecteur $\vec{s}_1$, nous pouvons définir le produit 
-$$\vec{s}_2=\alpha\cdot\vec{s}_1.$$
-Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec{s}_1$ proportionnellement à $\alpha$, mais d'en laisser la direction inchangée (voir la @fig:vecteur_produit la ligne du haut): le vecteur $\vec{s}_2$ est parallèle avec le vecteur $\vec{s}_1$. Lorsque $\alpha<0$ on change toujours la norme proportionnellement à $\alpha$, mais on change également la direction du vecteur (voir la @fig:vecteur_produit la ligne du bas): le vecteur $\vec{s}_2$ est anti-parallèle avec le vecteur $\vec{s}_1$. Il y a deux cas particuliers:
+Un autre opération primordiale pour les vecteur est le produit avec un scalaire. Si nous avons un nombre $\alpha$, et un vecteur $\vec s_1$, nous pouvons définir le produit 
+$$\vec s_2=\alpha\cdot\vec s_1.$$
+Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec s_1$ proportionnellement à $\alpha$, mais d'en laisser la direction inchangée (voir la @fig:vecteur_produit la ligne du haut): le vecteur $\vec s_2$ est parallèle avec le vecteur $\vec s_1$. Lorsque $\alpha<0$ on change toujours la norme proportionnellement à $\alpha$, mais on change également la direction du vecteur (voir la @fig:vecteur_produit la ligne du bas): le vecteur $\vec s_2$ est anti-parallèle avec le vecteur $\vec s_1$. Il y a deux cas particuliers:
 
-1. Lorsque $\alpha=1$, le vecteur $\vec{s}_2=1\cdot\vec{s}_1=\vec{s}_1$, et donc le vecteur $\vec{s}_1$ est inchangé.
-2. Lorsque $\alpha=-1$, le vecteur $\vec{s}_2=-1\cdot\vec{s}_1=-\vec{s}_1$, t donc le vecteur $\vec{s}_2$ est le vecteur *opposé* à $\vec{s}_1$.
+1. Lorsque $\alpha=1$, le vecteur $\vec s_2=1\cdot\vec s_1=\vec s_1$, et donc le vecteur $\vec s_1$ est inchangé.
+2. Lorsque $\alpha=-1$, le vecteur $\vec s_2=-1\cdot\vec s_1=-\vec s_1$, t donc le vecteur $\vec s_2$ est le vecteur *opposé* à $\vec s_1$.
 
 ![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](../figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
 
-Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec{s}_1$, $\vec{s}_2$ deux vecteurs 
+Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec s_1$, $\vec s_2$ deux vecteurs 
 $$\begin{aligned}
-\alpha_1\cdot(\vec{s}_1+\vec{s}_2)=\alpha_1\cdot\vec{s}_1+\alpha_1\cdot\vec{s}_2,\\
-(\alpha_1+\alpha_2)\cdot\vec{s}_1=\alpha_1\cdot\vec{s}_1+\alpha_2\cdot\vec{s}_1.\end{aligned}$$
+\alpha_1\cdot(\vec s_1+\vec s_2)=\alpha_1\cdot\vec s_1+\alpha_1\cdot\vec s_2,\\
+(\alpha_1+\alpha_2)\cdot\vec s_1=\alpha_1\cdot\vec s_1+\alpha_2\cdot\vec s_1.\end{aligned}$$
 Pour la deuxième propriété on peut voir un exemple sur la @fig:vecteur_produit_distr. 
 
-![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec{s}_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit_distr width=70%}
+![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec s_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit_distr width=70%}
 
-Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur unitaire*. Le vecteur unitaire d'un vecteur $\vec{s}$ se définit par
-$$\vec{n}=\frac{\vec{s}}{||\vec{s}||}.$$
+Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur unitaire*. Le vecteur unitaire d'un vecteur $\vec s$ se définit par
+$$\vec{n}=\frac{\vec s}{||\vec s||}.$$
 Ce vecteur comme son nom l'indique a une longueur (norme) de un
-$$||\vec{n}||=\left|\left|\frac{\vec{s}}{||\vec{s}||}\right|\right|=\frac{||\vec{s}||}{||\vec{s}||}=1,$$
-et la même direction que $\vec{s}$. Le vecteur $\vec{s}$ peut donc s'écrire à l'aide du vecteur unitaire $\vec{n}$ comme
-$$\vec{s}=||\vec{s}||\cdot \vec{n}.$$
+$$||\vec{n}||=\left|\left|\frac{\vec s}{||\vec s||}\right|\right|=\frac{||\vec s||}{||\vec s||}=1,$$
+et la même direction que $\vec s$. Le vecteur $\vec s$ peut donc s'écrire à l'aide du vecteur unitaire $\vec{n}$ comme
+$$\vec s=||\vec s||\cdot \vec{n}.$$
 
 ### Systèmes de coordonnées
 
@@ -1933,26 +1933,26 @@ Depuis le début de ce chapitre nous avons vu des règles très générales pour
 
 Le moyen le plus commun de se représenter un vecteur dans le plan est de passer par les coordonnées *cartésiennes* (voir la @fig:cartesiennes).
 
-![Le vecteur $\vec{s}$ est décomposé en deux parties $\vec{s}_x$, et $\vec{s}_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
+![Le vecteur $\vec s$ est décomposé en deux parties $\vec s_x$, et $\vec s_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
 
-Le vecteur est $\vec{s}$ est donné par
-$$\vec{s}=\vec{s}_x+\vec{s}_y.$$ 
+Le vecteur est $\vec s$ est donné par
+$$\vec s=\vec s_x+\vec s_y.$$ 
 En définissant deux vecteurs unitaires particuliers qui sont alignés avec
 l'axe horizontal et vertical respectivement (voir @fig:vec_e)
-$$\vec{e}_x=(1,0),\quad \vec{e}_y=(0,1).$${#eq:vec_e}
+$$\vec e_x=\vectwo{1}{0},\quad \vec e_y=\vectwo{0}{1}.$${#eq:vec_e}
 
-![Les vecteurs unitaires $\vec{e}_x$ et $\vec{e}_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
+![Les vecteurs unitaires $\vec e_x$ et $\vec e_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
 
-En utilisant les vecteurs unitaires, $\vec{e}_x$ et $\vec{e}_y$, les vecteurs $\vec{s}_x$ et $\vec{s}_y$ peuvent s'écrire $\vec{s}_x=\vec{e}_x\cdot s_x$ et $\vec{s}_y=\vec{e}_y\cdot s_y$, où $\vec{e}_x$ et $\vec{e}_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
+En utilisant les vecteurs unitaires, $\vec e_x$ et $\vec e_y$, les vecteurs $\vec s_x$ et $\vec s_y$ peuvent s'écrire $\vec s_x=\vec e_x\cdot s_x$ et $\vec s_y=\vec e_y\cdot s_y$, où $\vec e_x$ et $\vec e_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
 
-La norme des composantes de $\vec{s}_x$ et $\vec{s}_y$ peut se calculer à l'aide de la trigonométrie. On a donc
+La norme des composantes de $\vec s_x$ et $\vec s_y$ peut se calculer à l'aide de la trigonométrie. On a donc
 $$\begin{aligned}
-s_x&=||\vec{s}_x||=||\vec{s}||\cos(\theta),\\
-s_y&=||\vec{s}_y||=||\vec{s}||\sin(\theta),
+s_x&=||\vec s_x||=||\vec s||\cos(\theta),\\
+s_y&=||\vec s_y||=||\vec s||\sin(\theta),
 \end{aligned}$${#eq:coord_pol}
-où $\theta$ est l'angle entre l'axe horizontal et le vecteur $\vec{s}$
-et où on note les *coordonnées* cartésiennes de $\vec{s}$, $s_x$ et $s_y$.
-Le vecteur $\vec{s}$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical.
+où $\theta$ est l'angle entre l'axe horizontal et le vecteur $\vec s$
+et où on note les *coordonnées* cartésiennes de $\vec s$, $s_x$ et $s_y$.
+Le vecteur $\vec s$ peut donc se représenter uniquement avec ces deux nombres $s_x$ et $s_y$ sous entendu que la première coordonnée est le long de l'axe horizontal et la seconde selon l'axe vertical.
 
 Maintenant que nous avons défini les composantes $s_x$ et $s_y$, nous pouvons additionner les vecteurs en coordonnées cartésiennes. Soient deux vecteurs $\vec{u}$ et $\vec{v}$, et dont la somme est $\vec{w}=\vec{u}+\vec{v}$, les coordonnées de $\vec{w}$ sont données par
 $$\begin{aligned}
@@ -1970,16 +1970,16 @@ u_y&=\alpha\cdot v_y.
 ![La somme de deux vecteurs $\vec{u}$ et $\vec{v}$ en composantes.](../figs/somme_composantes.pdf){#fig:composantes_add width=70%}
 
 La notation pour la plus compact pour noter les composantes d'un vecteur 
-$$\vec{s}=(s_x,s_y).$$
-Avec la représentation en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec{s}||$ à l'aide du théorème de Pythagore
+$$\vec s=\vectwo{s_x}{s_y}.$$
+Avec la représentation en composantes cartésiennes, il est aisé de calculer la longueur d'un vecteur $s=||\vec s||$ à l'aide du théorème de Pythagore
 $$s=\sqrt{s_x^2+s_y^2}.$$
 
 ---
 
 Exercice (Opérations sur les vecteurs) #
 
-1. Dessiner le vecteur $\vec{v}=(2,3)$ dans le système de coordonnées cartésien.
-2. Additionner les vecteur $\vec{u}=(2,3)$ et $\vec{v}=(1,3)$, d'abord 
+1. Dessiner le vecteur $\vec{v}=\vectwo{2}{3}$ dans le système de coordonnées cartésien.
+2. Additionner les vecteur $\vec{u}=\vectwo{2}{3}$ et $\vec{v}=\vectwo{1}{3}$, d'abord 
 à l'aide d'un dessin, puis avec les règles vues précédemment.
 3. Calculer la longueur de la somme trouvée précédemment $\vec{w}=\vec{u}+\vec{v}$.
 4. Calculer l'angle $\theta$ pour $\vec{w}$.
@@ -1991,14 +1991,15 @@ avec $\alpha=2$ et $\beta=-1/2$.
 
 De l'@eq:coord_pol, on voit qu'on pourrait aussi utiliser un autre système de coordonnées. En utilisant le couple formé par l'angle $\theta$ et la longueur $s$. On appelle cette représentation les coordonnée polaires (voir la @fig:composantes_pol). 
 
-![Le vecteur $\vec{s}$ peut être représenté selon ses composantes cartésiennes, $s_x$ et $s_y$ ou selon ses coordonnées polaires, $s$ et $\theta$.](../figs/composantes_pol.pdf){#fig:composantes_pol width=40%}
+![Le vecteur $\vec s$ peut être représenté selon ses composantes cartésiennes, $s_x$ et $s_y$ ou selon ses coordonnées polaires, $s$ et $\theta$.](../figs/composantes_pol.pdf){#fig:composantes_pol width=40%}
 
 ---
 
 Exercice (Changement de coordonnées) #
 
-Soit un vecteur $\vec{s}$ dont les coordonnées cartésiennes sont 
-$\vec{s}=(s_x,s_y)$. Ecrire la transformation qu'il faut effectuer pour avoir les coordonnées polaires $\vec{s}=(s,\theta)_\mathrm{polaires}$. Calculer $\theta$ et $s$ pour les vecteurs $\vec{s}=(1,1)$ et $\vec{s}=(-1,1)$ en coordonnées cartésiennes.
+Soit un vecteur $\vec s$ dont les coordonnées cartésiennes sont 
+$$\vec s=\vectwo{s_x}{s_y}.$$ 
+Ecrire la transformation qu'il faut effectuer pour avoir les coordonnées polaires $\vec s=\vectwo{s}{\theta}_\mathrm{polaires}$. Calculer $\theta$ et $s$ pour les vecteurs $\vec s=\vectwo{1}{1}$ et $\vec s=\vectwo{-1}{1}$ en coordonnées cartésiennes.
 
 ---
 
@@ -2016,8 +2017,8 @@ Les propriétés du cosinus nous disent que
 si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) le produit scalaire est nul
 $$\vec{u}\cdot\vec{v}=||\vec u||\cdot ||\vec v||\cdot\cos\left(\pi/2\right)=0.$$
 Ces vecteurs sont dit orthogonaux ou normaux (voir @fig:scalaire_orthogonal).
-Les vecteurs $\vec{e}_x$ et $\vec{e}_y$ sont orthogonaux
-$$\vec{e}_x\cdot\vec{e}_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0=0.$$ 
+Les vecteurs $\vec e_x$ et $\vec e_y$ sont orthogonaux
+$$\vec e_x\cdot\vec e_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0=0.$$ 
 
 ![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$
 pour des vecteurs orthogonaux.](../figs/scalaire_orthgonal.pdf){#fig:scalaire_orthogonal width=40%}
@@ -2053,7 +2054,7 @@ Le concept de *force* est intimement lié avec le concept de mouvement. Pourquoi
 
 Intuitivement, une force est toute traction ou poussée exercée sur un objet. Quand vous faites vos courses et que vous mettez en mouvement votre chariot en le poussant, vous exercez une force dessus. Pour le mettre en mouvement vous devez combattre la *force de frottement* (une force dite de *contact*, car elle agit lors du contact de deux objet: ici le chariot et le sol). Quand vous soulevez votre pack de 6 bières du sol également. Cette fois vous devez compenser la *force de gravité* (qui n'est pas une force de contact).
 
-Une force se mesure à l'aide d'un *dynamomètre* et ses unités sont les Newtons, notés $$[N]=[\kg\cdot\m/\s^2].$$
+Une force se mesure à l'aide d'un *dynamomètre* et ses unités sont les Newtons, notés $[\N]$.
 
 De façon générale, lorsque vous devez mettre en mouvement un objet, vous faites passer sa vitesse de zéro à une vitesse non-nulle: vous produisez une accélération. De même lorsqu'un objet est en mouvement et que vous essayez de changer sa vitesse, que ce soit en *norme* ou en *direction*, vous devez à nouveau lui appliquer une force. Le fait que la modification de la vitesse (l'accélération) ait une norme et une direction, nous montre que la force est une quantité *vectorielle*. Nous pourrons donc utiliser toutes les méthodes de calcul vues au chapitre précédent.
 
@@ -2087,7 +2088,7 @@ $$\vec F_\mathrm{res}=0.$$
 
 Exemple (Tirer sur une corde) #
 
-Soient deux personnes tirant sur une corde (voir @fig:corde). La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu applique une force $\vec F_1$ lorsque le système est à l'équilibre. Écrire la relation entre la force $\vec F_1$ et la force $\vec F_2$. Si la force $\vec F_1=(10,0)\ \N$, quelle sera la force $\vec F_2$?
+Soient deux personnes tirant sur une corde (voir @fig:corde). La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu applique une force $\vec F_1$ lorsque le système est à l'équilibre. Écrire la relation entre la force $\vec F_1$ et la force $\vec F_2$. Si la force $\vec F_1=\vectwo{10}{0}\ \N$, quelle sera la force $\vec F_2$?
 
 Solution #
 
@@ -2128,13 +2129,13 @@ Solution #
 Pour savoir si le système est à l'équilibre il faut savoir si la somme des trois force est nulle. Pour ce faire, on décompose les forces selon leur composantes cartésiennes
 $$
 \begin{aligned}
-\vec F_1&=F_1\cdot\left(\cos(45^\circ),\sin(45^\circ)\right)=F_1\cdot\left(\cos(\pi/4),\sin(\pi/4)\right)=(354,354)\ \N \\
-\vec F_2&=F_2\cdot\left(\cos(120^\circ),\sin(120^\circ)\right)=F_2\cdot\left(\cos(2\pi/3),\sin(2\pi/3)\right)=(-354,612)\ \N \\
-\vec F_3&=F_3\cdot\left(\cos(270^\circ),\sin(270^\circ)\right)=F_3\cdot\left(\cos(3\pi/2),\sin(3\pi/2)\right)=(0,-966)\ \N  \\
+\vec F_1&=F_1\cdot\vectwo{\cos(45^\circ)}{\sin(45^\circ)}=F_1\cdot\vectwo{\cos(\pi/4)}{\sin(\pi/4)}=\vectwo{354}{354}\ \N \\
+\vec F_2&=F_2\cdot\vectwo{\cos(120^\circ)}{\sin(120^\circ)}=F_2\cdot\vectwo{\cos(2\pi/3)}{\sin(2\pi/3)}=\vectwo{-354}{612}\ \N \\
+\vec F_3&=F_3\cdot\vectwo{\cos(270^\circ)}{\sin(270^\circ)}=F_3\cdot\vectwo{\cos(3\pi/2)}{\sin(3\pi/2)}=\vectwo{0}{-966}\ \N  \\
 \end{aligned}
 $$
 On peut à présent calculer la force résultante
-$$\vec{F}_\mathrm{res}=\vec F_1+\vec F_2+\vec F_3=(354-354+0,354+612-966)=(0,0)\ \N.$$
+$$\vec{F}_\mathrm{res}=\vec F_1+\vec F_2+\vec F_3=\vectwo{354-354+0}{354+612-966}=\vectwo{0}{0}\ \N.$$
 On a donc que le système est en équilibre car la force résultante est nulle.
 
 ---
@@ -2152,8 +2153,8 @@ $$\vec F_{CA}+\vec F_{CB}+\vec F_{CD}=0.$$
 Nous pouvons donc écrire
 $$
 \begin{aligned}
-&F_{CA}\cdot(\cos(130^\circ),\sin(130^\circ))+F_{CB}\cdot(\cos(30^\circ),\sin(30^\circ))+(0,-800)=0,\\
-&F_{CA}\cdot(-0.643,0.866)+F_{CB}\cdot(0.766,0.5)+(0,-800)=0.
+&F_{CA}\cdot\vectwo{\cos(130^\circ)}{\sin(130^\circ)}+F_{CB}\cdot\vectwo{\cos(30^\circ)}{\sin(30^\circ)}+\vectwo{0}{-800}=0,\\
+&F_{CA}\cdot\vectwo{-0.643}{0.866}+F_{CB}\cdot\vectwo{0.766}{0.5}+\vectwo{0}{-800}=0.
 \end{aligned}
 $$
 En résolvant ce système de deux équations à deux inconnues, on obtient
@@ -2179,7 +2180,7 @@ Une voiture a une plus grande inertie qu'un balle de tennis de table: essayez de
 avec un raquette de ping-pong en tapant dessus, la voiture risque de ne pas bouger beaucoup. La masse de la voiture
 est donc beaucoup plus élevée que celle de la balle.
 
-Il est très important de ne pas confondre les conepts de *masse* et de *poids*. 
+Il est très important de ne pas confondre les concepts de *masse* et de *poids*. 
 Comme nous venons de le discuter la masse est la quantité d'inertie d'un objet. Le poids est 
 la *force* exercée par la gravité sur l'objet. Afin d'illustrer la différence, prenons l'exemple des astronaute qui
 ont marché sur la lune. Vous avez sans doute tou·te·s vu·e·s la vidéo où ils font des sauts de plusieurs mètres de long
@@ -2192,7 +2193,7 @@ six fois plus faible que sur la terre.
 La deuxième loi de Newton
 -------------------------
 
-La première loi de Newton nous dit qu'en absence de force reésultante sur un objet, il restera au repos s'il était au repos,
+La première loi de Newton nous dit qu'en absence de force résultante sur un objet, il restera au repos s'il était au repos,
 ou s'il était en mouvement il continuera son mouvement avec la même vitesse en ligne droite.
 En revanche, cela ne nous dit rien sur ce qui se passe quand une force est exercée sur l'objet.
 
@@ -2203,7 +2204,7 @@ Il est très important de réaliser qu'une accélération, notée $\vec a$, est 
 $$\vec a=\frac{\Delta \vec v}{\Delta t},$$
 où $\Delta \vec v=\vec v(t+\Delta t)-\vec(t)$ et $\Delta t$ est un intervalle de temps (voir la @fig:acc).
 
-![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Ell est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et sdeux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=40%}
+![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Elle est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et deux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=40%}
 
 Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (je vous le promets), il y a une accélération non nulle, car la vitesse a changé de direction au cours du temps. On peut en déduire qu'une force est appliquée sur l'objet.
 
@@ -2217,7 +2218,41 @@ On répète l'expérience en applicant une force $\vec F_2=2\cdot \vec F_1$, $\v
 
 ![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](../figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
 
-Les résultats obtenus se trouvent sur la @fig:acc_exp
+Les résultats qu'on obtiendrait sont schématisés sur la @fig:acc_res. On voit que l'accélération est proportionnelle à la force: quand on double la force, on double l'accélération, quand on triple la force, on triple l'accélération, ... Il nous manque encore la constante de proportionnalité. Comme nous l'avons discuté tout à l'heure la masse entre également en jeu. Quand on applique la même force sur deux objets, le plus léger accélérera plus que le plus lourd. Newton énonça sa deuxième loi comme suit:
+
+*L'accélération d'un objet est proportionnelle à la force résultante qui lui est appliquée et inversement proportionnelle à sa masse. La direction de l'accélération est la direction de la force.*
+
+On peut écrire cette loi sous forme mathématique comme
+$$\vec a=\frac{\vec F_\mathrm{res}}{m}=\frac{\sum_{i=1}^N\vec F_i}{m},$$
+où $\vec a$ est le vecteur accélération, $\vec F_\mathrm{res}$ la force résultante appliquée sur l'objet de masse $m$. On peut également écrire cette relation sous la forme plus familière en multipliant des deux côtés par $m$
+$$\vec F_\mathrm{res}=m\cdot \vec a.$$
+
+Si nous voulons l'écrire en composantes et en deux dimensions, l'équation ci-dessus devient
+$$\vectwo{F_{x,\mathrm{res}}}{F_{y,\mathrm{res}}}=\vectwo{m\cdot a_x}{m\cdot a_y},$$
+ou encore
+$$\begin{aligned}
+F_{x,\mathrm{res}}&=m\cdot a_x,\\
+F_{y,\mathrm{res}}&=m\cdot a_y.
+\end{aligned}$$
+L'accélération ayant des unités de $[\m/\s^2]$ et la masse des $[\kg]$, les unités de la force sont $[\N]=[\kg\cdot\m/\s^2]$. On a donc qu'un Newton est la force qu'il faut appliquer sur un objet d'un kilogramme pour l'accélérer d'un mètre par seconde au carré.
+
+Exemple (Ordres de grandeur) #
+
+Quelle est la force requise pour accélérer une voiture de $1000\ \kg$ à $5\ \m/\s^2$ et une balle de $100\ \g$ à la même accélération.
+
+Solution (Ordres de grandeur) #
+
+De la seconde loi de Newton, on a que
+$$\vec F_\mathrm{res}=m\cdot\vec a.$$
+Comme la force agit dans la direction du mouvement, on peut considérer le problème comme unidimensionnel et donc ne s'intéresser qu'aux normes des vecteurs ci-dessus. Cette équation se réécrit donc
+$$F_\mathrm{res}=m\cdot a.$$
+Nous connaissaons dans les deux cas $a=5\ \m/s^2$ et $m_\mathrm{voiture}=1000\ \kg$ et $m_{balle}=0.1\ \kg$. On a donc
+$$
+\begin{aligned}
+F_\mathrm{voiture}&=1000\cdot 5=5000\ \N,\\
+F_\mathrm{balle}&=0.1\cdot 5=0.5\ \N.
+\end{aligned}
+$$
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
@@ -2245,7 +2280,7 @@ Les résultats obtenus se trouvent sur la @fig:acc_exp
     il faut éviter de respirer...
 
 [^9]: dans l’équation @eq:V_T, $\beta$ ne dépendait pas de la
-    pression, car nous considérions un solide, et la presion dans un
+    pression, car nous considérions un solide, et la pression dans un
     solide est très difficile à faire changer.
 
 [^10]: Il pesait $94{\mathrm{kg}}$ et a couru le $100{\mathrm{m}}$ en
