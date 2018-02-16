@@ -1843,8 +1843,8 @@ Tenter de concevoir un thermos en minimisant le plus possible les échanges de c
 ---
 
 
-Statique
-========
+Statique du point matériel
+==========================
 
 Avant d'entrer à proprement parler dans ce chapitre, nous devons voir quelques notions mathématiques (ou les rappeler). 
 
@@ -2046,8 +2046,8 @@ $$\begin{aligned}
 Il est important de noter que le produit scalaire prend deux vecteurs et les transforme en un scalaire (un nombre). 
 
 
-La force
---------
+La force et la première loi de Newton
+-------------------------------------
 
 Le concept de *force* est intimement lié avec le concept de mouvement. Pourquoi un objet en mouvement change de direction? Pourquoi un objet accélère ou décélère? Pourquoi un objet arrêté se met en mouvement?
 
@@ -2158,6 +2158,59 @@ $$
 $$
 En résolvant ce système de deux équations à deux inconnues, on obtient
 $$F_{CA}\cong522\ \N,\quad F_{CB}\cong 704\ \N.$$
+
+Statique du corps rigide
+========================
+
+La masse
+--------
+
+Pour la suite du chapitre il est important de définir le concept de *masse*. 
+La masse d'un objet peut être vue comme la "quantité de matière" qu'il contient. 
+Cette définition, bien que facilement compréhensible, n'est pas très précise. 
+
+En fait la masse peut être vue comme un mesure de *l'inertie* d'un objet. C'est-à-dire que plus la masse d'un objet sera grande, plus la force nécessaire
+pour changer sa vitesse (lui donner une certaine accélération) sera grande. Quand l'objet est au repose il sera difficile de le mettre en mouvement.
+A l'inverse, plus sa vitesse sera grande, plus il sera difficile de l'arrêter. 
+
+Comme vous le savez sans doute, la masse est mesurée en kilogrammes, ou $\kg$, en SI. 
+
+Une voiture a une plus grande inertie qu'un balle de tennis de table: essayez de mettre en mouvement une voiture 
+avec un raquette de ping-pong en tapant dessus, la voiture risque de ne pas bouger beaucoup. La masse de la voiture
+est donc beaucoup plus élevée que celle de la balle.
+
+Il est très important de ne pas confondre les conepts de *masse* et de *poids*. 
+Comme nous venons de le discuter la masse est la quantité d'inertie d'un objet. Le poids est 
+la *force* exercée par la gravité sur l'objet. Afin d'illustrer la différence, prenons l'exemple des astronaute qui
+ont marché sur la lune. Vous avez sans doute tou·te·s vu·e·s la vidéo où ils font des sauts de plusieurs mètres de long
+en portant une combinaison dont la masse est de près de $100\ \kg$ apparemment sans effort. Cela serait totalement impossible
+sur terre. Leur masse est pourtant la même sur terre ou sur la lune. La différence se situe au niveau de la force qu'exercent 
+la lune ou la terre sur un astronaute. En fait sur la lune la force gravitationnelle exercée sur un objet (son poids) est environ
+six fois plus faible que sur la terre.
+
+
+La deuxième loi de Newton
+-------------------------
+
+La première loi de Newton nous dit qu'en absence de force reésultante sur un objet, il restera au repos s'il était au repos,
+ou s'il était en mouvement il continuera son mouvement avec la même vitesse en ligne droite.
+En revanche, cela ne nous dit rien sur ce qui se passe quand une force est exercée sur l'objet.
+
+A l'inverse, une force résultante exercée sur un objet va modifier sa vitesse dans la direction de la force: si la force est dans la direction du mouvement 
+elle va changer la norme de la vitesse, si elle est perpendiculaire au mouvement elle va modifier uniquement sa direction.
+Comme un changement de vitesse est une accélération, nous pouvons dire que l'effet d'une force sur un objet est de causer une accélération.
+Il est très important de réaliser qu'une accélération, notée $\vec a$, est une quantité vectorielle et n'est pas uniquement la modification de la norme de la vitesse, mais représente toute modification du vecteur vitesse au cours du temps
+$$\vec a=\frac{\Delta \vec v}{\Delta t},$$
+où $\Delta \vec v=\vec v(t+\Delta t)-\vec(t)$ et $\Delta t$ est un intervalle de temps (voir la @fig:acc).
+
+![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Ell est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et sdeux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=40%}
+
+Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (je vous le promets), il y a une accélération non nulle, car la vitesse a changé de direction au cours du temps. On peut en déduire qu'une force est appliquée sur l'objet.
+
+Maintenant que nous savons que force et accélération sont des quantités reliées entre elles. Nous devons encore déterminer comment. 
+
+Imaginons l'expérience suivante. Soit un chariot à roulettes posé sur un plan horizontal. 
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
