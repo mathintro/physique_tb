@@ -7,18 +7,27 @@ addons:
     - texlive-latex-recommended lmodern texlive-fonts-recommended texlive-latex-extra
       texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-french
 install:
-  - wget https://github.com/jgm/pandoc/releases/download/2.0.6/pandoc-2.0.6-1-amd64.deb
-  - sudo dpkg -i pandoc-2.0.6-1-amd64.deb
-  - wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.0.1/linux-ghc80-pandoc20.tar.gz
-  - mkdir pandoc-crossref
-  - cd pandoc-crossref
-  - mv ../linux-ghc80-pandoc20.tar.gz .
-  - tar xzvf linux-ghc80-pandoc20.tar.gz
-  - cd ..
-  - export PATH=`pwd`/pandoc-crossref:$PATH
-  - sudo pip install -U pip panflute pandocfilters  pandoc-numbering
+- wget https://github.com/jgm/pandoc/releases/download/2.0.6/pandoc-2.0.6-1-amd64.deb
+- sudo dpkg -i pandoc-2.0.6-1-amd64.deb
+- wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.0.1/linux-ghc80-pandoc20.tar.gz
+- mkdir pandoc-crossref
+- cd pandoc-crossref
+- mv ../linux-ghc80-pandoc20.tar.gz .
+- tar xzvf linux-ghc80-pandoc20.tar.gz
+- cd ..
+- export PATH=`pwd`/pandoc-crossref:$PATH
+- sudo pip install -U pip panflute pandocfilters  pandoc-numbering
 cache:
-  - pip
+- pip
 script:
-  - cd test_md
-  - make
+- cd test_md
+- make
+deploy:
+  provider: releases
+  api_key:
+    secure: Y6NtKAWlNCUtibt/Vtjx07j1v/XqdqMrL7P0fNNx+ERrZ3l2LBk1lFr1NDx8mSyL3E0gHpobxCB1k7juNj9aIQyveCuMgWerReLRP3PaQAULfBq9SigmWP9zBC7rA5gCOCnUJVaMQ4K8Go+1s30SvOLv8hj/hR/j+F608NLPepMuin1f+WrmwZbzxfc86lpk3659J7N6PN+iP8Vuq3XGXKV3nGPNUUvuggvhQ/TecHfgQ/kwkoXqEvJrfY5kzUi99ox4RppnXVcFCTTWpY08BS1BOIGW0iM5c0BZ1Qr4w/8sdWV8gqGUhxuF1u6fCAbz473sTeV0/Z0GRJAr7RfJaye6aj0RZdMM//CS2ljGzAgn+f7Rot5/amIHIrAm/NZihLEXWOaIPaGVkCHGP1NE0YkjbdvkWpePFmZrP/45DDSh7vIgdzySPb5wdgCnpyfbuJRa2sMDe/opUpqutFZUP53TJ35PcIWa7JMQBtxV4ygXGCQHMm8YeD9XoNd+cAqFvYG/NpQ+5eDj2Htma9p5JZXeMf0I4MoFyc/pl98oZduOoP3DKyhgjJk8xBjgmiUcjJilaH0AMMwtTtPWJhKLIZHo7kYX7svSbCwZFWhmSqaCYdJwStg/xebVEdUwG9MasLi6geygZ6Y4xGcV7J0RvfbrBma+E9stN4AhS9bb1v8=
+  file: test_md/cours.pdf
+  skip_cleanup: true
+  on:
+    repo: mathintro/physique_tb
+    branch: test_md

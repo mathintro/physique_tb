@@ -1,4 +1,4 @@
-FILE=transfert_chaleur
+FILE=statique
 
 default:
 	pandoc -s -o $(FILE).pdf $(FILE).md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --template=../test_md/default.latex --pdf-engine pdflatex
