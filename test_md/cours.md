@@ -2209,7 +2209,15 @@ Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (j
 
 Maintenant que nous savons que force et accélération sont des quantités reliées entre elles. Nous devons encore déterminer comment. 
 
-Imaginons l'expérience suivante. Soit un chariot à roulettes posé sur un plan horizontal. 
+Imaginons l'expérience suivante. Soit un chariot à roulettes posé sur un plan horizontal (négligeons les frottement). On tire le chariot avec une force horizontale et contante $\vec F_1$. On calcule son accélération en mesurant le temps, $t_1$, qu'il faut au chariot pour atteindre une certaine vitesse $\vec v$ (voir la @fig:acc_exp)
+$$
+\vec a_1=\frac{\vec v }{t_1}.
+$$
+On répète l'expérience en applicant une force $\vec F_2=2\cdot \vec F_1$, $\vec F_3=3\cdot \vec F_1$, etc.
+
+![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](../figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
+
+Les résultats obtenus se trouvent sur la @fig:acc_exp
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
