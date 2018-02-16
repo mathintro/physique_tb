@@ -1,0 +1,24 @@
+sudo: false
+os: linux
+language: haskell
+addons:
+  apt:
+    packages:
+    - texlive-latex-recommended lmodern texlive-fonts-recommended texlive-latex-extra
+      texlive-fonts-extra dvipng texlive-latex-recommended texlive-lang-french
+install:
+  - wget https://github.com/jgm/pandoc/releases/download/2.0.6/pandoc-2.0.6-1-amd64.deb
+  - sudo dpkg -i pandoc-2.0.6-1-amd64.deb
+  - wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.0.1/linux-ghc80-pandoc20.tar.gz
+  - mkdir pandoc-crossref
+  - cd pandoc-crossref
+  - mv ../linux-ghc80-pandoc20.tar.gz .
+  - tar xzvf linux-ghc80-pandoc20.tar.gz
+  - cd ..
+  - export PATH=`pwd`/pandoc-crossref:$PATH
+  - sudo pip install -U pip panflute pandocfilters  pandoc-numbering
+cache:
+  - pip
+script:
+  - cd test_md
+  - make
