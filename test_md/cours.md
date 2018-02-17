@@ -2204,7 +2204,7 @@ Il est très important de réaliser qu'une accélération, notée $\vec a$, est 
 $$\vec a=\frac{\Delta \vec v}{\Delta t},$$
 où $\Delta \vec v=\vec v(t+\Delta t)-\vec(t)$ et $\Delta t$ est un intervalle de temps (voir la @fig:acc).
 
-![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Elle est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et deux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=40%}
+![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Elle est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et deux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=60%}
 
 Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (je vous le promets), il y a une accélération non nulle, car la vitesse a changé de direction au cours du temps. On peut en déduire qu'une force est appliquée sur l'objet.
 
@@ -2253,6 +2253,20 @@ F_\mathrm{voiture}&=1000\cdot 5=5000\ \N,\\
 F_\mathrm{balle}&=0.1\cdot 5=0.5\ \N.
 \end{aligned}
 $$
+
+
+Exemple (Force pour arrêter une voiture) #
+
+Soit une voiture de $1000\ \kg$ qui roule à $72\ \km/\h$. Conducteur freine pendant $5\ \s$ avec une force constante pour l'arrêter. 
+Calculer la force nécessaire pour arrêter la voiture. Quelle est l'énergie et la puissance qui est dissipée (en chaleur) par les freins? 
+
+Solution (Force pour arrêter une voiture) #
+
+La voiture roule à une vitesse de $v=72\ \km/h=20\ \m/\s$. La voiture passe de $20\ \m/\s$ à $0\ \m/\s$ en $5\ \s$, c'est-à-dire que son accélération est de
+$$a=\frac{0-20}{5}=4\ \m/\s^2.$$
+La force est donc de 
+\begin{align}
+\end{align}
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
