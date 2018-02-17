@@ -31,4 +31,3 @@ deploy:
   skip_cleanup: true
   on:
     repo: mathintro/physique_tb
-    branch: test_md
