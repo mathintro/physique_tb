@@ -2210,11 +2210,11 @@ Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (j
 
 Maintenant que nous savons que force et accélération sont des quantités reliées entre elles. Nous devons encore déterminer comment. 
 
-Imaginons l'expérience suivante. Soit un chariot à roulettes posé sur un plan horizontal (négligeons les frottement). On tire le chariot avec une force horizontale et contante $\vec F_1$. On calcule son accélération en mesurant le temps, $t_1$, qu'il faut au chariot pour atteindre une certaine vitesse $\vec v$ (voir la @fig:acc_exp)
+Imaginons l'expérience suivante. Soit un chariot à roulettes posé sur un plan horizontal (négligeons les frottement). On tire le chariot avec une force horizontale et constante $\vec F_1$. On calcule son accélération en mesurant le temps, $t_1$, qu'il faut au chariot pour atteindre une certaine vitesse $\vec v$ (voir la @fig:acc_exp)
 $$
 \vec a_1=\frac{\vec v }{t_1}.
 $$
-On répète l'expérience en applicant une force $\vec F_2=2\cdot \vec F_1$, $\vec F_3=3\cdot \vec F_1$, etc.
+On répète l'expérience en appliquant une force $\vec F_2=2\cdot \vec F_1$, $\vec F_3=3\cdot \vec F_1$, etc.
 
 ![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](../figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
 
@@ -2236,6 +2236,8 @@ F_{y,\mathrm{res}}&=m\cdot a_y.
 \end{aligned}$$
 L'accélération ayant des unités de $[\m/\s^2]$ et la masse des $[\kg]$, les unités de la force sont $[\N]=[\kg\cdot\m/\s^2]$. On a donc qu'un Newton est la force qu'il faut appliquer sur un objet d'un kilogramme pour l'accélérer d'un mètre par seconde au carré.
 
+---
+
 Exemple (Ordres de grandeur) #
 
 Quelle est la force requise pour accélérer une voiture de $1000\ \kg$ à $5\ \m/\s^2$ et une balle de $100\ \g$ à la même accélération.
@@ -2254,19 +2256,54 @@ F_\mathrm{balle}&=0.1\cdot 5=0.5\ \N.
 \end{aligned}
 $$
 
+---
+
+---
 
 Exemple (Force pour arrêter une voiture) #
 
 Soit une voiture de $1000\ \kg$ qui roule à $72\ \km/\h$. Conducteur freine pendant $5\ \s$ avec une force constante pour l'arrêter. 
-Calculer la force nécessaire pour arrêter la voiture. Quelle est l'énergie et la puissance qui est dissipée (en chaleur) par les freins? 
+Calculer la force nécessaire pour arrêter la voiture.
 
 Solution (Force pour arrêter une voiture) #
 
+La force est dans la même direction que le mouvement de la voiture. On peut donc considérer le problème comme unidimensionnel. 
+
 La voiture roule à une vitesse de $v=72\ \km/h=20\ \m/\s$. La voiture passe de $20\ \m/\s$ à $0\ \m/\s$ en $5\ \s$, c'est-à-dire que son accélération est de
-$$a=\frac{0-20}{5}=4\ \m/\s^2.$$
+$$a=\frac{0-20}{5}=-4\ \m/\s^2.$$
 La force est donc de 
-\begin{align}
-\end{align}
+$$F=m\cdot a=1000\cdot (-4)=-4000\ \N.$$
+La force est négative, car elle est dans le sens opposé au mouvement de la voiture.
+
+---
+
+---
+
+La troisième loi de Newton 
+--------------------------
+
+Une force qu'on ressent toujours dans notre vie de tous les jours est la force de gravitation. Dans ce cas là, l'accélération est l'accélération gravitationnelle, notée $\vec g$ dont la norme à la surface de la terre est de $9.81\ \m/\s^2$ et qui est toujours dirigée vers le centre de la terre. Bien que cette force soit toujours présente, nous ne ressentons pas d'accélération lorsque nous sommes par exemples assis sur une chaise. 
+
+---
+
+Question # 
+
+Que se passe-t-il donc?
+
+---
+
+En fait la chaise exerce une force égale en norme et opposée en direction à la force de gravité. Elle exerce une réaction à la force que nous appliquons sur la chaise à cause de la gravité.
+
+Ce comportement se généralise à toute force, même lorsqu'une accélération est présente. Lorsqu'on plante un clou avec un marteau. La force que le marteau applique sur le clou, le marteau ressent une force égale en norme et opposée en direction appliquée par le clou.
+
+Ce comportement a été décrit par Newton dans sa troisième loi:
+
+*Lorsqu'un objet exerce une force sur un second objet, le second objet exerce une force égale en norme et de opposée en direction sur le premier.*
+
+Si les objets sont notés $A$ et $B$, on a que la force de $A$ sur $B$, notée $\vec F_{AB}$ et celle de $B$ sur $A$, $\vec F_{BA}$ sont reliées par la relation
+$$\vec F_{AB}=-\vec F_{BA}.$$
+
+Cette loi peut sembler contre intuitive dans un premier temps, mais en fait vous pouvez l'observer tous les jours. Lorsque vous appuyez sur une table avec votre main, vous voyez votre main se déformer, car la table exerce une force sur votre main. Plus vous appuierez fort, plus la déformation sera grande.
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
