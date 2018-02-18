@@ -2220,8 +2220,7 @@ On répète l'expérience en appliquant une force $\vec F_2=2\cdot \vec F_1$, $\
 
 Les résultats qu'on obtiendrait sont schématisés sur la @fig:acc_res. On voit que l'accélération est proportionnelle à la force: quand on double la force, on double l'accélération, quand on triple la force, on triple l'accélération, ... 
 
-![L'accélération est proportionnelle à la force.](../figs/acceleration_res.pdf){#fig:acc_res width=40%}
-
+![L'accélération en fonction de la force. On voit qu'il y a une relation de proportionnalité entre les deux.](../figs/acceleration_res.pdf){#fig:acc_res width=40%}
 
 Il nous manque encore la constante de proportionnalité. Comme nous l'avons discuté tout à l'heure la masse entre également en jeu. Quand on applique la même force sur deux objets, le plus léger accélérera plus que le plus lourd. Newton énonça sa deuxième loi comme suit:
 
@@ -2308,7 +2307,74 @@ Ce comportement a été décrit par Newton dans sa troisième loi:
 Si les objets sont notés $A$ et $B$, on a que la force de $A$ sur $B$, notée $\vec F_{AB}$ et celle de $B$ sur $A$, $\vec F_{BA}$ sont reliées par la relation
 $$\vec F_{AB}=-\vec F_{BA}.$$
 
+La troisième loi de Newton est aussi connue sous le nom du principe *d'action-réaction*.
+
 Cette loi peut sembler contre intuitive dans un premier temps, mais en fait vous pouvez l'observer tous les jours. Lorsque vous appuyez sur une table avec votre main, vous voyez votre main se déformer, car la table exerce une force sur votre main. Plus vous appuierez fort, plus la déformation sera grande.
+
+---	
+
+Question #
+
+Lors d'un saut en chute libre, la force de gravité de la terre (qui est responsable de la chute libre) et la force de l'homme sur la terre sont égales et opposées. Dès lors, pourquoi est-ce l'homme qui tombe et non la terre qui se rapproche de l'homme?
+
+---
+
+En fait bien que la force soit égale et opposée, les objets, et en particulier leur masse, sont différents. Dans le cas de la chute libre, un homme pèse environ $80\ \kg$, alors que la terre a une masse d'environ $6\cdot 10^{24}\ \kg$. La force de gravité se calcule comme
+$$\vec F_g=m\cdot \vec g,$$
+où $\vec g$ est le vecteur d'accélération gravitationnelle, avec la norme de $\vec g$ de la terre qui est de 
+$$g=9.81\ \m/\s^2.$$
+On a donc que la norme de force gravitationnelle que ressent un humain en chute libre sur terre est de 
+$$F_g=80\cdot 9.81\cong 800\ \N.$$
+Cette force est égale et opposée à celle que ressent la terre. On peut donc calculer l'accélération résultant de cette force sur la terre
+$$a_\mathrm{terre}=\frac{F_g}{m_\mathrm{terre}}=\frac{800}{6\cdot 10^{24}}\cong 1.3\cdot 10^{-22}\ \m/\s^2.$$
+L'accélération de la terre est donc tellement faible qu'elle est complètement imperceptible.
+
+Il existe beaucoup d'exemple où ce principe "d'action-réaction" est très utile. 
+
+Une application très spectaculaire est la propulsion des fusées. Lors de son décollage les moteurs de la fusée éjectent une grande quantité de gaz: ils leur appliquent une force verticale dirigée vers l'arrière de la fusée (voir la @fig:rocket). Les gaz en contre-partie exercent une force dirigée vers l'avant fusée. C'est cette force qui est responsable de la propulsion de la fusée, et non une éventuelle force que la fusée exercerait sur le sol ou sur l’atmosphère (via les gaz éjectés). Ce processus est tout à fait similaire à ce qui se passe quand un ballon se dégonfle.
+
+![Illustration de l'éjection de gaz d'une fusée qui est propulsée par la force de réaction des gaz sur la fusée. La force de la fusée sur les gaz $\vec F_{FG}$ vers l'arrière et la force de réaction des gaz sur la fusée $\vec F_{GF}$.](../figs/rocket.pdf){#fig:rocket width=40%}
+
+Lorsque nous nous déplaçons à pieds c'est également la troisième loi de Newton qui fait que nous avançons. Avec nos pieds nous poussons sur le sol vers l'arrière. En réaction le sol pousse vers l'avant sur nos pieds, causant une accélération nette vers l'avant (voir la@fig:marche).
+
+![Illustration de la marche à pieds. Nos pieds exercent une force vers sur le sol dirigée vers l'arrière (en bleu), $\vec F_{PS}$. Le sol exerce, lui une force vers l'avant sur nos pieds (en rouge), $\vec F_{SP}$ ce qui fait que nous sommes propulsés vers l'avant.](../figs/marche.pdf){#fig:marche width=30%}
+
+Le même principe s'applique à plus ou moins tous les modes de propulsion: le patin à glaces, la voiture, etc. Il est donc très important de se souvenir de quel objet est originaire la force et à quel objet elle s'applique. Comme noté précédemment une force s'appliquant d'un objet $A$ sur un objet $B$ sera noté $F_{AB}$.
+
+Reprenons l'exemple de la marche. D'après la troisième loi de Newton $\vec F_{PS}=-\vec F_{SP}$. Hors on sait que 
+$$\vec F_\mathrm{res}=\sum_i \vec F_i.$$ 
+On aurait tendance à dire que la force résultante sur le marcheur est 
+$$\vec F_{PS}+\vec F_{SP}=0.$$ 
+Ce raisonnement est évidemment faux (on sait d'expérience que lorsque nous marchons nous avançons...). EN fait pour calculer la force résultante sur un objet, il faut faire la somme des force agissant *sur* l'objet et ne pas compter celles qu'il applique sur d'autres. Dans le cas du marcheur, on a donc que 
+$$\vec F_\mathrm{res}=\vec F_{SP}.$$
+
+---
+
+Problème (Pousser un tonneau) #
+
+Soit un tonneau posé sur le sol. On aimerait savoir quelle force une personne doit appliquer sur le tonneau pour le déplacer en le poussant (voir @fig:tonneau)?
+
+1. Écrire toutes les forces en présence, avec l'origine et la cible de chaque force.
+2. Calculer le bilan des forces agissant sur chaque objet.
+3. Déterminer la force minimale à appliquer pour mettre en mouvement le tonneau.
+
+![Schéma d'une personne poussant un tonneau.](../figs/tonneau.pdf){#fig:tonneau width=30%}
+
+---
+
+---
+
+Question  (Accident) #
+
+Un gros camion entre en collision frontale avec une petite voiture de sport. 
+
+1. Quelle est la voiture qui va ressentir la plus grande force?
+2. Quelle est la voiture qui va ressentir la plus grande accélération?
+3. Quelle est la loi de Newton qui va nous aider à trouver la réponse à cette question?
+
+---
+
+
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
