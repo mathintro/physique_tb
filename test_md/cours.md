@@ -2218,7 +2218,12 @@ On répète l'expérience en appliquant une force $\vec F_2=2\cdot \vec F_1$, $\
 
 ![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](../figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
 
-Les résultats qu'on obtiendrait sont schématisés sur la @fig:acc_res. On voit que l'accélération est proportionnelle à la force: quand on double la force, on double l'accélération, quand on triple la force, on triple l'accélération, ... Il nous manque encore la constante de proportionnalité. Comme nous l'avons discuté tout à l'heure la masse entre également en jeu. Quand on applique la même force sur deux objets, le plus léger accélérera plus que le plus lourd. Newton énonça sa deuxième loi comme suit:
+Les résultats qu'on obtiendrait sont schématisés sur la @fig:acc_res. On voit que l'accélération est proportionnelle à la force: quand on double la force, on double l'accélération, quand on triple la force, on triple l'accélération, ... 
+
+![L'accélération est proportionnelle à la force.](../figs/acceleration_res.pdf){#fig:acc_res width=40%}
+
+
+Il nous manque encore la constante de proportionnalité. Comme nous l'avons discuté tout à l'heure la masse entre également en jeu. Quand on applique la même force sur deux objets, le plus léger accélérera plus que le plus lourd. Newton énonça sa deuxième loi comme suit:
 
 *L'accélération d'un objet est proportionnelle à la force résultante qui lui est appliquée et inversement proportionnelle à sa masse. La direction de l'accélération est la direction de la force.*
 
