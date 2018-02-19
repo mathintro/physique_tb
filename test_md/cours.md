@@ -2296,7 +2296,7 @@ Que se passe-t-il donc?
 
 ---
 
-En fait la chaise exerce une force égale en norme et opposée en direction à la force de gravité. Elle exerce une réaction à la force que nous appliquons sur la chaise à cause de la gravité.
+Notre corps est soumis à la gravité. Il transmet cette force à la chaise sur laquelle nous sommes assis. En réaction, la chaise exerce une force égale en norme et opposée en direction à la force de gravité. 
 
 Ce comportement se généralise à toute force, même lorsqu'une accélération est présente. Lorsqu'on plante un clou avec un marteau. La force que le marteau applique sur le clou, le marteau ressent une force égale en norme et opposée en direction appliquée par le clou.
 
@@ -2373,6 +2373,91 @@ Un gros camion entre en collision frontale avec une petite voiture de sport.
 3. Quelle est la loi de Newton qui va nous aider à trouver la réponse à cette question?
 
 ---
+
+Applications des lois de Newton
+-------------------------------
+
+Dans cette section, nous allons mettre en pratique les lois de Newton que nous venons de voir.
+
+---
+
+Exemple (La boite) #exemple:boite
+
+Soit une boîte de masse $m=1\ \kg$ posée sur une table et ne bougeant pas. 
+
+1. Déterminer son poids et calculer la force exercée sur la boîte par la table.
+2. On appuie sur la table avec une force de $10\ \N$. Quelle est la force exercée par la table sur la boîte?
+3. On tire avec une force de $5\ \N$ en direction verticale sur la boîte. Quelle est la force exercée par la table sur la boîte?
+4. On tire avec une force de $20\ \N$ en direction verticale sur la boîte. Quelle est la force exercée par la table sur la boîte?
+5. Quelle est l'accélération de la boîte dans la situation 4?
+
+Solution (La boite) #
+
+Sur la @fig:boite_exo on voit un schéma pour les parties 1 à 4. 
+
+![Schéma des quatre situation de l'@exemple:boite.](../figs/boite_exo.pdf){#fig:boite_exo width=30%}
+
+1. La masse de la boîte étant de $1\ \kg$, on a que son poids est de 
+$$F_g=1\cdot (-9.8)=- 9.8\ \N.$$
+Comme la boîte ne subit pas d'accélération, on en déduit que la force résultante agissant sur elle
+$$F_g+F_t=0\Leftrightarrow F_g=-F_t,$$
+où $F_t$ est la force de la table sur la boîte. On a donc que 
+$$F_t=9.8\ \N.$$
+2. On applique une force externe, $F_e=-10\ \N$ sur la boîte. La boîte ne bougeant toujours, on en déduit que la force résultante doit rester nulle
+$$
+\begin{aligned}
+0&=F_g+F_t+F_e,\\
+F_t&=-F_e-F_g,\\
+F_t&=10+9.8=19.8.
+\end{aligned}
+$$
+La boîte apparaît donc plus lourde à la table. Coïncidence? Je ne crois pas.
+3. Lorsqu'on tire la boîte vers le haut avec une force de $F_e=5\ N$, on ne tire pas assez fort pour soulever la boîte. Elle va donc rester en contact avec la table.
+La boîte ne bougeant toujours pas, la force résultante sur la boîte doit être nulle
+$$
+\begin{aligned}
+0&=F_g+F_t+F_e,\\
+F_t&=-F_e-F_g,\\
+F_t&=-5+9.8=4.8.
+\end{aligned}
+$$
+La boîte apparaît donc plus légère à la table. Coïncidence? Je ne crois pas.
+4. Cette fois la force appliquée à la boîte est plus élevée que son poids. Ainsi, on va pouvoir soulever la boîte. La table n'exercera plus aucune force sur la boîte.
+5. Lorsqu'on tire la boîte vers le haut avec une force de $F_e=20\ N$, on ne tire pas assez fort pour soulever la boîte. On aura donc une force résultante non nulle.
+Cette force sera de
+$$
+\begin{aligned}
+F_\mathrm{res}&=F_g+F_e,\\
+F_\mathrm{res}&=-9.8+20=10.2\ \N.
+\end{aligned}
+$$
+On peut dès lors calculer l'accélération de la boîte grâce à la deuxième loi de Newton
+$$
+\begin{aligned}
+F_\mathrm{res}&=m\cdot a,\\
+a&=\frac{F_\mathrm{res}}{m}=\frac{10.2}{1}=10.2\ \frac{\m}{\s^2}.
+\end{aligned}
+$$
+
+---
+
+---
+
+Exercice (Changement de poids dans un ascenseur) #
+
+Une personne se trouve dans un ascenseur à l'arrêt. Elle est debout sur une balance indiquant qu'elle pèse $70\ \kg$.
+L'ascenseur démarre et commence à monter avec une accélération constante de $2\ \m/s^2$ pendant une seconde puis continue à vitesse constante. 
+
+1. Faire un croquis de la situation avec les forces présentes.
+2. Quelle est le poids de la personne pendant la phase d'accélération? (Qu'indique la balance?)
+3. Qu'indique la balance après la phase d'accélération, lorsque l'ascenseur va à une vitesse de $2\ \m/\s$?
+
+---
+
+Jusqu'ici, nous ne nous sommes intéressés principalement qu'à des problèmes unidimensionnels impliquant 
+les lois de Newton. 
+
+
 
 
 
