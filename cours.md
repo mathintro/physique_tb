@@ -238,7 +238,7 @@ plus ou moins compliquées. La page wikipedia
 pour des surfaces et des volumes également.
 
 ![Différentes unités de longueur anglosaxonnes et les relations entre elles. Source:
-<https://upload.wikimedia.org/wikipedia/commons/c/c8/English_length_units_graph.png>](../figs/English_length_units_graph.png){#fig:imperial width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/c/c8/English_length_units_graph.png>](figs/English_length_units_graph.png){#fig:imperial width=50%}
 
 ### Temps
 
@@ -265,7 +265,7 @@ les balances utilisées un peu partout sur les territoires.
 
 ![Une réplique de l’étalon international du kilogramme présentée à la
 cité des sciences et de l’industrie (Vilette), source:
-<https://upload.wikimedia.org/wikipedia/commons/a/ac/Prototype_kilogram_replica.JPG>](../figs/kilogram_replica.jpg){#fig:kg width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/a/ac/Prototype_kilogram_replica.JPG>](figs/kilogram_replica.jpg){#fig:kg width=50%}
 
 ### Température
 
@@ -565,7 +565,7 @@ appliquée perpendiculairement sur une surface, $F$, divisée par son
 aire, $A$, (voir la figure {@fig:FA}) $$P=\frac{F}{A}.$$
 
 ![Une force $F$ appuyant sur une surface
-$A$.](../figs/pression.pdf.png){#fig:FA width=50%}
+$A$.](figs/pression.pdf.png){#fig:FA width=50%}
 
 Les unités SI de la pression sont des Pascals, notés ${\mathrm{Pa}}$, ou
 encore des
@@ -615,7 +615,7 @@ mesurer la température corporelle ou la température ambiante.
 
 ![Thermomètre à liquide avec une échelle allant de $-30^\circ$ à
 $50^\circ$ degrés Celsius. Source:
-<https://upload.wikimedia.org/wikipedia/commons/3/33/Thermometer.JPG>](../figs/Thermometer.JPG){#fig:thermo_liquide width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/3/33/Thermometer.JPG>](figs/Thermometer.JPG){#fig:thermo_liquide width=50%}
 
 Les thermomètres à aiguille (voir Figure {@fig:thermo_aiguille}) sont
 basés sur la dilatation des solides. En général la dilatation d’un
@@ -636,7 +636,7 @@ lorsque l’eau bout.
 ![Thermomètre à aiguille avec une échelle allant de $-50^\circ$ à
 $50^\circ$ degrés Celsius (bague interne) et de $-60^\circ$ à
 $120^\circ$ degrés Fahrenheit. Source:
-<https://upload.wikimedia.org/wikipedia/commons/c/c9/Raumthermometer_Fahrenheit%2BCelsius.jpg>](../figs/thermo_c_f.jpg){#fig:thermo_aiguille width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/c/c9/Raumthermometer_Fahrenheit%2BCelsius.jpg>](figs/thermo_c_f.jpg){#fig:thermo_aiguille width=50%}
 
 Finalement mentionnons également les thermomètres à infrarouge qui sont
 basés sur la mesure du rayonnement lumineux (mais pas forcément visible
@@ -650,8 +650,8 @@ les bâtiments (et donc la déperdition d’énergie associée) ou de chats
 (voir [@Fig:thermographie_kot;@fig:thermographie_cat]).
 
 <div id="fig:lk">
-![](../figs/mais_infra.png){#fig:thermographie_kot width="50%"}
-![](../figs/Termografia_cat.jpg){#fig:thermographie_cat width=42%}
+![](figs/mais_infra.png){#fig:thermographie_kot width="50%"}
+![](figs/Termografia_cat.jpg){#fig:thermographie_cat width=42%}
 
 Mesure de température de bâtiments bien isolés ou non (gauche) ou de chat (droite). Sources <https://commons.wikimedia.org/wiki/File%3APassivhaus_thermogram_gedaemmt_ungedaemmt.png> et 
 <https://upload.wikimedia.org/wikipedia/commons/8/8e/Termografia_kot.jpg>
@@ -746,7 +746,7 @@ Figure {@fig:rods})
 
 ![La longueur du cylindre de longueur $L_0$ à température $T_0$ devient
 de longueur $L$ lorsqu’il est amené à température
-$T$.](../figs/rods.pdf){#fig:rods width=50%}
+$T$.](figs/rods.pdf){#fig:rods width=50%}
 
 Expérimentalement, on a déterminé que la variation de longueur est
 reliée linéairement à la variation de température
@@ -768,7 +768,7 @@ coefficient de dilatation linéique de différents types d’acier).
 
 ![Coefficients de dilatation linéique de différents type d’acier en
 fonction de la température. Source:
-<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](../figs/alpha_aciers.pdf.png){#fig:alpha_aciers width=50%}
+<https://upload.wikimedia.org/wikipedia/commons/b/b2/Coefficient_dilatation_lineique_aciers.svg>](figs/alpha_aciers.pdf.png){#fig:alpha_aciers width=50%}
 
 Exercice (Allongement du pont du Mont-Blanc) #
 
@@ -810,7 +810,7 @@ Figure{@fig:alpha_eau}) alors que pour $\beta<0$ le volume va
 diminuer lorsqu’on chauffe.
 
 ![Coefficients de dilatation volumique de l’eau en fonction de la
-température.](../figs/alpha_eau.pdf.png){#fig:alpha_eau width=50%}
+température.](figs/alpha_eau.pdf.png){#fig:alpha_eau width=50%}
 
 Cette modification du volume en fonction de la température explique
 également la modification de la masse volumique (ou densité) lorsqu’un
@@ -944,7 +944,7 @@ graphiquement comme sur la figure {@fig:boyle} où chacune des courbes
 est la relation entre la pression et le volume pour une température
 donnée.
 
-![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](../figs/boyle.pdf.png){#fig:boyle width=50%}
+![Relation entre la pressions $P$ et le volume $V$ pour quatre températures différentes ($T_0$, $T_1$, $T_2$, et $T_3$).](figs/boyle.pdf.png){#fig:boyle width=50%}
 
 Autrement dit si un gaz est à température constante $T$ est dans un état
 d’équilibre avec un volume $V_1$ et une pression $P_1$ et qu’il y a un
@@ -968,7 +968,7 @@ poumons. Moralité, n’oubliez pas d’expirer en remontant à la surface
 lorsque vous faites de la plongée.
 
 ![Le volume d’un poumon augmente lorsque le plongeur remonte sans
-expirer passant de $V_2$ à $V_1$.](../figs/plongee.pdf.png){#fig:plongee width=50%}
+expirer passant de $V_2$ à $V_1$.](figs/plongee.pdf.png){#fig:plongee width=50%}
 
 ### Loi de Charles
 
@@ -987,7 +987,7 @@ $$\frac{V_1}{T_1}=\frac{V_2}{T_2}.$$ Un exemple pour différents gaz peut
 constante pour trois gaz. En traitillés, l’extension de la droite au
 delà du point de liquéfaction du gaz. Toutes les droites se rejoignent
 au *zéro
-absolu*.](../figs/charles.pdf.png){#fig:charles width=50%}
+absolu*.](figs/charles.pdf.png){#fig:charles width=50%}
 
 Chacune des droites représente un gaz différent. Les traits-tillés
 commencent à l’endroit où le gaz se liquéfie (à $0^\circ{\mathrm{C}}$
@@ -1235,7 +1235,7 @@ Joule pour mesurer l’équivalence entre chaleur et travail. La chute du
 poids (à droite) fait tourner la roue à ailette plongée dans l’eau (à
 gauche) et la réchauffe par frottement. Source:
 <https://upload.wikimedia.org/wikipedia/commons/c/c3/Joule's_Apparatus_(Harper's_Scan).png>
-](../figs/joule.png){#fig:joule width=50%}
+](figs/joule.png){#fig:joule width=50%}
 
 Cette expérience montre que l’on transfert l’énergie mécanique d’un
 poids en énergie contenue dans l’eau en la chauffant. Ce résultat peut
@@ -1362,11 +1362,11 @@ Chaleur latente
 
 Jusqu'ici nous avons discuté le gain d'énergie réalisé lorsque nous avions une phase unique dans notre système. Lorsque nous arrivons à un point où l'énergie thermique d'une substance est suffisamment forte pour casser les liaisons entre les molécules (transition entre solide-liquide ou liquide-gaz), nous avons à faire à une *transition de phase* (voir la @fig:transition). 
 
-![Schéma de transition de phase. Source: <https://upload.wikimedia.org/wikipedia/commons/f/f6/Etats_matiere-fr.svg>.](../figs/Etats_matiere.pdf){#fig:transition width=60%}
+![Schéma de transition de phase. Source: <https://upload.wikimedia.org/wikipedia/commons/f/f6/Etats_matiere-fr.svg>.](figs/Etats_matiere.pdf){#fig:transition width=60%}
 
 Lors d'un changement de phase l'énergie est utilisée pour casser les liaisons intermoléculaires, mais pas pour augmenter la température de la substance. Un exemple de l'évolution de la température en fonction de la chaleur se voit à la @fig:cl. On voit que lorsque que nous avons que de la glace et que nous ajoutons de l'énergie la température augmente, lorsque a glace se transforme en eau, la température ne change plus, alors que la quantité d'énergie augmente, et ainsi de suite.
 
-![Température en fonction de la chaleur ajoutée pour transformer de la glace en vapeur.](../figs/eau_phase.pdf){#fig:cl width=50%}
+![Température en fonction de la chaleur ajoutée pour transformer de la glace en vapeur.](figs/eau_phase.pdf){#fig:cl width=50%}
 
 On constate donc que l'@eq:chaleur ne peut représenter correctement ce qui se passe lors d'une transition de phase, car nous aurions aucun échange de chaleur (comme on peut le voir sur la @fig:cl, $\Delta T=0$, lors des transitions de phase) alors qu'on a injection d'énergie dans le système. Il nous faut donc une autre description. La chaleur pour transformer de la glace en eau s'appelle la *chaleur latente de fusion*, et celle pour transformer l'eau en vapeur s'appelle *chaleur latente de vaporisation*. En fait la chaleur *latente* se réfère à l'énergie relâchée dans le système par la transition inverse (vapeur en eau ou eau en liquide). Cette transformation étant réversible, il faut injecter la même quantité de chaleur pour transformer l'eau en vapeur et la glace en eau d'où "l'abus de langage".
 
@@ -1540,7 +1540,7 @@ La conduction nécessite un milieu où les molécules sont proches pour pouvoir 
 
 L'énergie thermique $\Delta Q$ transférée pendant un certain temps $\Delta t$, appelée puissance thermique, $P_\mathrm{th}$, est mesurée en Watt $[\W]=[\J/\s]$. Si nous considérons un objet ayant une section $A$, une longueur $L$, une température à ses extrémité, $T_1$ et $T_2$, et une *conductivité thermique*, $k$ (dont les unités sont $[\W/(\m\cdot\K)]$), la puissance entre les deux extrémités de l'objet (voir la @fig:transfer_bar) $$\frac{\Delta Q}{\Delta t}=-k A \frac{T_2-T_1}{L}.$${#eq:ptherm} Par convention la chaleur s'écoule du chaud vers le froid. Dans l'exemple de la @fig:transfer_bar la puissance thermique sera positive ($T_2-T_1<0$).
 
-![Illustration du transfert de chaleur dans une barre de longueur $L$, de surface $A$, et dont les extrémités ont une température $T_1$ et $T_2$.](../figs/transfert_bar.pdf){#fig:transfer_bar width=50%}
+![Illustration du transfert de chaleur dans une barre de longueur $L$, de surface $A$, et dont les extrémités ont une température $T_1$ et $T_2$.](figs/transfert_bar.pdf){#fig:transfer_bar width=50%}
 
 La conductivité est considérée comme une constante qui ne dépend que du matériau. Comme nous l'avons mentionné précédemment, les métaux ont tendance à avoir une conductivité thermique plus élevée (on dit qu'ils sont *conducteurs*[^12]) que celle des non-métaux[^14] (ils sont dit *isolants*[^13]). Maintenant vous pouvez expliquer pourquoi vous avez moins froid aux pieds lorsque vous recouvrez le sol de la salle de bain avec un tapis.
 
@@ -1565,7 +1565,7 @@ De même nos habits ne nous réchauffent pas. Ils ne servent qu'à maintenir l'a
 
 Imaginons une paroi composée de deux matériaux différents (numérotés 1 et 2), dont les conductivités thermiques sont $k_1$ et $k_2$, leur épaisseur est de $L_1$, et leur surface est $A$ (voir la @fig:multi). La température à gauche de la paroi est $T_1$ et la température est $T_2$ à droite.
 
-![Une paroi constituée de deux matériaux dont la conductivité thermique est $k_1$, et $k_2$, la longueur est $L_1$ et $L_2$, la surface est $A$ et dont la partie gauche est à température $T_1$ et la partie droite à température $T_2$.](../figs/multi.pdf){#fig:multi width=50%}
+![Une paroi constituée de deux matériaux dont la conductivité thermique est $k_1$, et $k_2$, la longueur est $L_1$ et $L_2$, la surface est $A$ et dont la partie gauche est à température $T_1$ et la partie droite à température $T_2$.](figs/multi.pdf){#fig:multi width=50%}
 
 Nous avons que pour chacune des parois la puissance thermique est de
 $$\begin{aligned}
@@ -1651,7 +1651,7 @@ L'énergie thermique $\Delta Q$ transférée par convection pendant un certain t
 $$P_\mathrm{conv}=\frac{\Delta Q}{\Delta t}=q\cdot A\cdot \Delta T=q\cdot A\cdot (T_2-T_1),$$
 où $q$ est la constante de convection dont les unités sont $[\W/(\m^2\cdot \K)]$ et qui dépend de la forme et de l'orientation de la surface $A$ (à titre d'exemple $q=7.1\ \W/(\m^2\cdot \K)$ pour un humain nu). 
 
-![Schéma d'un courant de convection naturel au dessus d'une plaque de surface $A$ à température $T_1$ et un environnement à température $T_2$.](../figs/convection_power.pdf){#fig:convection width=50%}
+![Schéma d'un courant de convection naturel au dessus d'une plaque de surface $A$ à température $T_1$ et un environnement à température $T_2$.](figs/convection_power.pdf){#fig:convection width=50%}
 
 Illustration (Puissance convectée par un humain) #
  
@@ -1793,12 +1793,12 @@ En fait, bien que nous ne voyions pas le pic d'émission maximale, l'énergie de
 ---
 
 ![La radiance émise par angle solide en fonction de la longueur d'onde pour des températures de $3000\oK$, $4000\oK$, et $5000\oK$. Source:
-<https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg>](../figs/Black_body.pdf){#fig:corps_noir width=70%}
+<https://upload.wikimedia.org/wikipedia/commons/1/19/Black_body.svg>](figs/Black_body.pdf){#fig:corps_noir width=70%}
 
 Pour avoir une meilleure idée des ordres de grandeurs des différentes longueurs d'ondes émises par des ``corps noirs'' à différentes températures, il faut se référer à la @fig:corps_noir_longueurs. Sur cette figure, on constate que les grandes longueurs d'ondes (ou basses fréquences) correspondent à des couleurs plutôt oranges-rouges, alors que les très petites longueurs d'ondes correspondent à du blanc. Au milieu se trouvent tout le spectre visible allant du rouge au blanc en passant par le jaune, verts, bleu et violet et rose. 
 
 ![Ordres de grandeur des longueurs d'ondes et couleurs associées, source:
-<https://upload.wikimedia.org/wikipedia/commons/c/cf/EM_Spectrum_Properties_edit.svg>](../figs/Spectrum_Properties.pdf){#fig:corps_noir_longueurs width=70%}
+<https://upload.wikimedia.org/wikipedia/commons/c/cf/EM_Spectrum_Properties_edit.svg>](figs/Spectrum_Properties.pdf){#fig:corps_noir_longueurs width=70%}
 
 C'est cette propriété du rayonnement du corps noir qui est utilisée par les thermomètres infra-rouges pour connaître la température d'objet qui nous entourent (voir la @fig:thermographie_kot et la @fig:thermographie_cat). 
 
@@ -1859,14 +1859,14 @@ Pour ce chapitre, nous allons devoir étendre ce concept de *scalaires* pour pou
 
 Prenons l'exemple de la carte de la @fig:depl_vec. Si nous nous déplaçons à vol d'oiseau et ne connaissons que la distance parcourue, disons $60\ \km$, et un point de départ, ici G'nèèèève (de Dieu). Nous avons une infinités de destinations possibles (tous les point du cercle noir). Si en revanche nous ajoutons à la distance parcourue une direction (la direction de la flèche noire), nous avons une destination unique. Nous définissons le déplacement comme étant la combinaison de ces deux informations: une direction et une longueur (de façon plus formelle la longueur est appelée *module*). Si ne nous déplacions pas en ligne droite, nous ne pourrions pas décrire notre trajet en fonction du déplacement uniquement. En effet, le déplacement d'un objet tel que nous le définissons ici ne prend pas du tout en compte le chemin effectivement parcouru (le trait rouge sur la @fig:depl_vec), mais uniquement le point de départ et d'arrivée.
 
-![L'ensemble des destinations possibles si nous n'avions que le dép comme information (cercle noir), la position finale avec la distance et la direction de déplacement.](../figs/deplacement_vecteur.pdf){#fig:depl_vec width=70%}
+![L'ensemble des destinations possibles si nous n'avions que le dép comme information (cercle noir), la position finale avec la distance et la direction de déplacement.](figs/deplacement_vecteur.pdf){#fig:depl_vec width=70%}
 
 ### L'arithmétique des vecteurs
 
 Le déplacement est un *vecteur*, noté $\vec s$. Il est représenté par une flèche (voir @fig:depl_vec) dont la longueur, norme ou module, est noté $||\vec s||$. Le même déplacement $\vec s$ peut être décomposé en deux autres déplacements (voir la @fig:vec): d'abord en un déplacement $\vec s_d$ vers la droite, puis en un déplacement vers le haut $\vec s_h$. Il faut noter que cette décomposition peut s'effectuer dans un ordre différent: d'abord vers le haut puis vers la droite. Cette suite de déplacements définit l'addition de deux vecteurs
 $$\vec s=\vec s_d+\vec s_h=\vec s_h+\vec s_d.$$
 
-![La décomposition du vecteur $\vec s$ en bleu en deux déplacements $\vec s_d$ et $\vec s_h$. De façon plus générale toute somme de vecteur $\vec s_3=\vec s_1+\vec s_2.$](../figs/vecteur.pdf){#fig:vec width=30%}
+![La décomposition du vecteur $\vec s$ en bleu en deux déplacements $\vec s_d$ et $\vec s_h$. De façon plus générale toute somme de vecteur $\vec s_3=\vec s_1+\vec s_2.$](figs/vecteur.pdf){#fig:vec width=30%}
 
 Géométriquement, la somme de deux vecteurs se représente toujours ainsi pour deux vecteurs quelconques 
 $$\vec s_3=\vec s_1+\vec s_2.$$ 
@@ -1877,19 +1877,19 @@ et plus petite ou égale la longueur de la somme de $\vec s_1$ et $\vec s_2$[^16
 On peut ainsi décomposer un déplacement en un nombre arbitraire de déplacements intermédiaires (voir la @fig:somme_vec). Il faut noter que l'ordre dans lequel la somme est effectuée n'a pas d'importance. On dit que la somme est *commutative* (comme pour les scalaires d'ailleurs). On constate d'ailleurs sur cette même figue que la longueur 
 Une propriété de la somme de deux vecteurs qui est très importante c'est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur.
 
-![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](../figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
+![La somme de quatre vecteurs. En partant du point $P_i$ on arrive toujours au point $P_f$ peu importe l'ordre dans lequel nous effectuons la somme.](figs/somme_vecteurs.pdf){#fig:somme_vec width=30%}
 
 Un cas particulier d'addition de vecteur est l'addition de vecteurs parallèles et antiparallèles. Dans le cas parallèle les vecteurs, $\vec s_1$ et $\vec s_2$ ont la même direction. Le vecteur $\vec s_3=\vec s_1+\vec s_2$ aura donc la même direction que $\vec s_1$ et $\vec s_2$ et sa norme sera la somme des normes de $\vec s_1$ et $\vec s_2$ (voir la @fig:somme_vec_para). 
 
-![La somme de deux vecteurs parallèles. ](../figs/somme_vecteurs_para.pdf){#fig:somme_vec_para width=30%}
+![La somme de deux vecteurs parallèles. ](figs/somme_vecteurs_para.pdf){#fig:somme_vec_para width=30%}
 
 Dans le cas anti-parallèle les vecteurs $\vec s_1$ et $\vec s_2$ les vecteurs pointent dans des directions opposées. Le vecteur $\vec s_3=\vec s_1+\vec s_2$ aura donc soit la direction de $\vec s_1$ soit celle de $\vec s_2$ et sa norme sera la différence des normes de $\vec s_1$ et $\vec s_2$ (voir la @fig:somme_vec_anti_para).
 
-![La somme de deux vecteurs anti-parallèles. ](../figs/somme_vecteurs_antipara.pdf){#fig:somme_vec_anti_para width=30%}
+![La somme de deux vecteurs anti-parallèles. ](figs/somme_vecteurs_antipara.pdf){#fig:somme_vec_anti_para width=30%}
 
 De façon très similaire à ce que nous faisons pour les scalaires (les nombres entiers, les rationnels et les réels) nous pouvons définir l'opposé d'un vecteur $\vec s$ et le noter $-\vec s$. Comme pour les scalaires, nous aimerions que le vecteur $-\vec s$ soit ``l'inverse'' du vecteur $\vec s$ pour l'addition. On aimerait donc que la la somme $\vec s+(-\vec s)=\vec{0}$. En d'autres termes, le départ départ de $\vec s$ soir le même que le point d'arrivée après la somme (voir la @fig:somme_vec_anti_para_zero). 
 
-![La somme de deux vecteurs anti-parallèles de même longueur. ](../figs/somme_vecteurs_antipara_zero.pdf){#fig:somme_vec_anti_para_zero width=30%}
+![La somme de deux vecteurs anti-parallèles de même longueur. ](figs/somme_vecteurs_antipara_zero.pdf){#fig:somme_vec_anti_para_zero width=30%}
 
 Une autre façon d'écrire cette somme est de faire comme pour les scalaires:
 $$\vec s+(-\vec s)=\vec s-\vec s=\vec{0}.$$
@@ -1898,7 +1898,7 @@ $\vec s_1$ et $\vec s_2$
 $$\vec s_1-\vec s_2=\vec s_1+(-\vec s_2).$$
 Comme on peut le voir sur la @fig:soustraction_vecteurs la soustraction de deux vecteurs consiste, en fait, à d'abord prendre prendre l'inverse du vecteur soustrait, $-\vec s_2$ et de l'ajouter au premier vecteur.
 
-![La soustraction de deux vecteurs. ](../figs/soustraction_vecteurs.pdf){#fig:soustraction_vecteurs width=30%}
+![La soustraction de deux vecteurs. ](figs/soustraction_vecteurs.pdf){#fig:soustraction_vecteurs width=30%}
 
 Comme l'addition de deux vecteur est commutative, la soustraction peut également s'écrire dans un ordre différent (attention elle n'est pas commutative)
 $$\vec s_3=\vec s_1-\vec s_2=\vec s_1+(-\vec s_2)=-\vec s_2+\vec s_1.$$
@@ -1910,7 +1910,7 @@ Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec
 1. Lorsque $\alpha=1$, le vecteur $\vec s_2=1\cdot\vec s_1=\vec s_1$, et donc le vecteur $\vec s_1$ est inchangé.
 2. Lorsque $\alpha=-1$, le vecteur $\vec s_2=-1\cdot\vec s_1=-\vec s_1$, t donc le vecteur $\vec s_2$ est le vecteur *opposé* à $\vec s_1$.
 
-![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](../figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
+![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
 
 Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec s_1$, $\vec s_2$ deux vecteurs 
 $$\begin{aligned}
@@ -1918,7 +1918,7 @@ $$\begin{aligned}
 (\alpha_1+\alpha_2)\cdot\vec s_1=\alpha_1\cdot\vec s_1+\alpha_2\cdot\vec s_1.\end{aligned}$$
 Pour la deuxième propriété on peut voir un exemple sur la @fig:vecteur_produit_distr. 
 
-![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec s_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](../figs/produit_vecteur_distr.pdf){#fig:vecteur_produit_distr width=70%}
+![La distributivité de la somme de deux scalaire multipliés avec un vecteur $\vec s_1$ pour $\alpha_1=2$ et $\alpha_2=3$.](figs/produit_vecteur_distr.pdf){#fig:vecteur_produit_distr width=70%}
 
 Le produit avec un scalaire ainsi définit nous permet de définir le *vecteur unitaire*. Le vecteur unitaire d'un vecteur $\vec s$ se définit par
 $$\vec{n}=\frac{\vec s}{||\vec s||}.$$
@@ -1933,7 +1933,7 @@ Depuis le début de ce chapitre nous avons vu des règles très générales pour
 
 Le moyen le plus commun de se représenter un vecteur dans le plan est de passer par les coordonnées *cartésiennes* (voir la @fig:cartesiennes).
 
-![Le vecteur $\vec s$ est décomposé en deux parties $\vec s_x$, et $\vec s_y$.](../figs/composantes.pdf){#fig:cartesiennes width=70%}
+![Le vecteur $\vec s$ est décomposé en deux parties $\vec s_x$, et $\vec s_y$.](figs/composantes.pdf){#fig:cartesiennes width=70%}
 
 Le vecteur est $\vec s$ est donné par
 $$\vec s=\vec s_x+\vec s_y.$$ 
@@ -1941,7 +1941,7 @@ En définissant deux vecteurs unitaires particuliers qui sont alignés avec
 l'axe horizontal et vertical respectivement (voir @fig:vec_e)
 $$\vec e_x=\vectwo{1}{0},\quad \vec e_y=\vectwo{0}{1}.$${#eq:vec_e}
 
-![Les vecteurs unitaires $\vec e_x$ et $\vec e_y$.](../figs/vec_e.pdf){#fig:vec_e width=40%}
+![Les vecteurs unitaires $\vec e_x$ et $\vec e_y$.](figs/vec_e.pdf){#fig:vec_e width=40%}
 
 En utilisant les vecteurs unitaires, $\vec e_x$ et $\vec e_y$, les vecteurs $\vec s_x$ et $\vec s_y$ peuvent s'écrire $\vec s_x=\vec e_x\cdot s_x$ et $\vec s_y=\vec e_y\cdot s_y$, où $\vec e_x$ et $\vec e_y$ sont les vecteurs unitaires dans la direction horizontale et verticale respectivement (voir @eq:vec_e).
 
@@ -1967,7 +1967,7 @@ u_x&=\alpha\cdot v_x,\\
 u_y&=\alpha\cdot v_y.
 \end{aligned}$$
 
-![La somme de deux vecteurs $\vec{u}$ et $\vec{v}$ en composantes.](../figs/somme_composantes.pdf){#fig:composantes_add width=70%}
+![La somme de deux vecteurs $\vec{u}$ et $\vec{v}$ en composantes.](figs/somme_composantes.pdf){#fig:composantes_add width=70%}
 
 La notation pour la plus compact pour noter les composantes d'un vecteur 
 $$\vec s=\vectwo{s_x}{s_y}.$$
@@ -1991,7 +1991,7 @@ avec $\alpha=2$ et $\beta=-1/2$.
 
 De l'@eq:coord_pol, on voit qu'on pourrait aussi utiliser un autre système de coordonnées. En utilisant le couple formé par l'angle $\theta$ et la longueur $s$. On appelle cette représentation les coordonnée polaires (voir la @fig:composantes_pol). 
 
-![Le vecteur $\vec s$ peut être représenté selon ses composantes cartésiennes, $s_x$ et $s_y$ ou selon ses coordonnées polaires, $s$ et $\theta$.](../figs/composantes_pol.pdf){#fig:composantes_pol width=40%}
+![Le vecteur $\vec s$ peut être représenté selon ses composantes cartésiennes, $s_x$ et $s_y$ ou selon ses coordonnées polaires, $s$ et $\theta$.](figs/composantes_pol.pdf){#fig:composantes_pol width=40%}
 
 ---
 
@@ -2011,7 +2011,7 @@ $$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos(\theta).$$
 Le produit scalaire s'interprète donc comme le produit entre la norme de $\vec{u}$ 
 et la projection de $\vec{v}$ sur $\vec{u}$ et vice versa (voir la @fig:produit_scalaire). 
 
-![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$.](../figs/scalar_prod.pdf){#fig:produit_scalaire width=40%}
+![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$.](figs/scalar_prod.pdf){#fig:produit_scalaire width=40%}
 
 Les propriétés du cosinus nous disent que 
 si les deux vecteurs forment un angle de $90^\circ$ entre eux (ou $\pi/2$ en radians) le produit scalaire est nul
@@ -2021,7 +2021,7 @@ Les vecteurs $\vec e_x$ et $\vec e_y$ sont orthogonaux
 $$\vec e_x\cdot\vec e_y=||(1,0)||\cdot||(0,1)||\cdot\cos(\pi/2)=1\cdot 1\cdot 0=0.$$ 
 
 ![Interprétation géométrique du produit scalaire entre $\vec{u}$ et $\vec{v}$
-pour des vecteurs orthogonaux.](../figs/scalaire_orthgonal.pdf){#fig:scalaire_orthogonal width=40%}
+pour des vecteurs orthogonaux.](figs/scalaire_orthgonal.pdf){#fig:scalaire_orthogonal width=40%}
 
 En revanche si $\vec{u}$ et $\vec{v}$ sont parallèles ou anti-parallèles le produit scalaire est le produit des normes de $\vec{u}$ et $\vec{v}$ (avec un signe négatif si les vecteurs sont anti-parallèles)
 $$\vec{u}\cdot\vec{v}=||\vec{u}||\cdot||\vec{v}||\cdot\cos{0}=||\vec u||\cdot||\vec v||\cdot1=||\vec u||\cdot||\vec v||.$$
@@ -2061,7 +2061,7 @@ De façon générale, lorsque vous devez mettre en mouvement un objet, vous fait
 En général il n'y a pas qu'une seule force qui peut s'appliquer sur un objet. 
 Sur la @fig:box_force on a une situation *statique*. Une boîte est posée sur le sol et ne bouge pas. Comme vous avez pu vous en rendre compte dans votre vie de tous les jours, soulever ou porter une boîte (même légère) vous demande un certain effort, car elle pèse un certain *poids* (une force l'attire vers le sol). Lorsque la boîte est posée sur le sol, elle n'a pas soudainement perdu son poids et la force l'attirant vers le sol existe toujours. Le fait qu'elle ne bouge pas est dû au fait que le sol exerce une force égale en norme et opposée en direction sur la boîte. La somme des deux forces étant nulle, la boîte ne subit aucune accélération.
 
-![Un système composé du sol et d'une boîte. La boîte exerce une force $\vec F$ sur le sol, le sol exerce la *même* force sur la boîte mais en direction opposée.](../figs/box_force.pdf){#fig:box_force width=40%}
+![Un système composé du sol et d'une boîte. La boîte exerce une force $\vec F$ sur le sol, le sol exerce la *même* force sur la boîte mais en direction opposée.](figs/box_force.pdf){#fig:box_force width=40%}
 
 Il y a deux concepts fondamentaux de ce que nous venons de discuter. Le premier est que plusieurs forces peuvent s'exercer sur un objet. La force *nette* s'appliquant ou force *résultante*, $\vec{F}_\mathrm{res}$ n'est autre que la somme de toutes ces forces. Si un objet subit l'action de $N$ forces, $\vec F_1$, $\vec F_2$, ..., $\vec F_N$, alors la force résultante s'écrira $$\vec F_\mathrm{res}=\vec F_1+\vec F_2+...+\vec F_N$$.
 
@@ -2097,17 +2097,17 @@ $$\vec F_\mathrm{ref}=\vec F_1+\vec F_2=0.$$
 On en déduit que 
 $$\vec F_1=-\vec F_2.$$
 
-![La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu la force $\vec F_1$.](../figs/corde.pdf){#fig:corde width=40%}
+![La personne en rouge applique une force $\vec F_2$ sur la corde et la personne en bleu la force $\vec F_1$.](figs/corde.pdf){#fig:corde width=40%}
 
 ---
 
 La situation d'équilibre ou non d'un système dépend évidemment des vecteurs de force qui y sont appliqués, mais également des *points d'action*: l'endroit où ces forces sont appliquées. Si nous considérons les deux situations de la @fig:point_action. Dans les deux cas nous avons une boîte qui ne bouge pas, puis nous appliquons les forces $\vec F_1$ et $\vec F_2$. Nous supposons que $\vec F_1=-\vec F_2$. Nous constatons que dans le premier cas, l'objet ne se met pas en mouvement (il reste dans un état d'équilibre car les forces s'annulent), alors que dans le deuxième, la boîte se met à tourner. La seule différence est le point d'application. En passant de l'application des forces des points $A$ et $B$, aux points d'application $C$ et $D$ nous avons changé l'état d'équilibre. L'équilibre dépend donc du point d'application des forces.
 
-![Les force $\vec F_1$ et $\vec F_2$ ($\vec F_1=-\vec F_2$) sont appliquées sur la même boîte rectangulaire. La le cas du haut rien ne se passe, car les forces s'annulent. Dans le deuxième cas, la boîte va se mettre à tourner sur elle même (même si elle n'aura pas de mouvement de translation).](../figs/point_action.pdf){#fig:point_action width=60%}
+![Les force $\vec F_1$ et $\vec F_2$ ($\vec F_1=-\vec F_2$) sont appliquées sur la même boîte rectangulaire. La le cas du haut rien ne se passe, car les forces s'annulent. Dans le deuxième cas, la boîte va se mettre à tourner sur elle même (même si elle n'aura pas de mouvement de translation).](figs/point_action.pdf){#fig:point_action width=60%}
 
 Afin de déterminer si nous avons une situation d'équilibre il est utile définir la *ligne d'action* d'une force. La ligne d'action d'une force est la droite qui a la même direction que le vecteur de la force et qui passe par le point d'application de la force. Une illustration se trouve sur la @fig:ligne_action, où on voit les lignes d'actions pour les forces $\vec F_1$ et $\vec F_2$ (traitillés rouges et vers respectivement) dans le cas où elles sont alignées (haut) et où elles ne le sont pas (bas). Comme discuté précédemment lorsque les lignes d'action sont alignées, l'état d'équilibre est atteint et la boîte ne bougera pas. Dans le cas où les lignes d'action ne sont pas alignées, la boîte se mettra à tourner.
 
-![Les force $\vec F_1$ et $\vec F_2$ et leurs lignes d'action respectivement en traitillés rouge et en vert.](../figs/ligne_daction.pdf){#fig:ligne_action width=60%}
+![Les force $\vec F_1$ et $\vec F_2$ et leurs lignes d'action respectivement en traitillés rouge et en vert.](figs/ligne_daction.pdf){#fig:ligne_action width=60%}
 
 On constate donc que pour se trouver dans un état d'équilibre, un système doit avoir non seulement des vecteurs de forces opposés, mais également agissant sur la même ligne d'action.
 
@@ -2122,7 +2122,7 @@ Exemple (Tirer sur la corde: Plus on est de fous plus on rit) #
 
 Soit la situation comme dans la @fig:corde_3. La norme des trois forces vaut respectivement $F_1=500\ \N$, $F_1=707\ \N$, et $F_3=966\ \N$. La situation est-elle en équilibre?
 
-![Trois personnes tirent sur trois cordes qui sont attachées entre elles.](../figs/corde_3.pdf){#fig:corde_3 width=40%}
+![Trois personnes tirent sur trois cordes qui sont attachées entre elles.](figs/corde_3.pdf){#fig:corde_3 width=40%}
 
 Solution #
 
@@ -2142,11 +2142,11 @@ On a donc que le système est en équilibre car la force résultante est nulle.
 
 Un exercice comme le précédent, est en général une simplification d'un situation bien plus complexe. On peut imaginer la situation comme sur la @fig:caisse, où il s'agit de calculer la force que doivent appliquer les deux masses sur les côtés sur leur corde respective pour que la caisse soit à l'équilibre, sachant que la caisse exercice une force de $800\ \N$.
 
-![Deux poids sont attachés à deux cordes, qui sont reliées à une troisième portant une boîte.](../figs/caisse.pdf){#fig:caisse width=40%}
+![Deux poids sont attachés à deux cordes, qui sont reliées à une troisième portant une boîte.](figs/caisse.pdf){#fig:caisse width=40%}
 
 Pour résoudre cette exercice il faut se rendre compte que la force se transmet le long des cordes. On a donc que le système peut se mettre dans une situation équivalente à celle de la @fig:corde_3. On a les trois forces qui s'appliquent à l'endroit où se rencontrent les trois cordes: au point $C$. On peut se ramener à la situation de la @fig:caisse_2.
 
-![On peut ignorer tous les détails de notre problème et simplement ramener toutes les forces au points $C$.](../figs/caisse_2.pdf){#fig:caisse_2 width=40%}
+![On peut ignorer tous les détails de notre problème et simplement ramener toutes les forces au points $C$.](figs/caisse_2.pdf){#fig:caisse_2 width=40%}
 
 Notre système est à l'équilibre si 
 $$\vec F_{CA}+\vec F_{CB}+\vec F_{CD}=0.$$
@@ -2204,7 +2204,7 @@ Il est très important de réaliser qu'une accélération, notée $\vec a$, est 
 $$\vec a=\frac{\Delta \vec v}{\Delta t},$$
 où $\Delta \vec v=\vec v(t+\Delta t)-\vec(t)$ et $\Delta t$ est un intervalle de temps (voir la @fig:acc).
 
-![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Elle est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et deux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](../figs/acceleration_vect.pdf){#fig:acc width=60%}
+![L'accélération  $\vec a$ (en rouge) est une quantité vectorielle. Elle est la variation de la vitesse (qui est également une quantité vectorielle) au cours du temps. Sur cette figure la trajectoire (en bleu) d'un objet et deux vecteurs vitesse à des temps $t$ et $t+\Delta t$.](figs/acceleration_vect.pdf){#fig:acc width=60%}
 
 Comme on peut le voir sur la @fig:acc, bien que la vitesse ait la même norme (je vous le promets), il y a une accélération non nulle, car la vitesse a changé de direction au cours du temps. On peut en déduire qu'une force est appliquée sur l'objet.
 
@@ -2216,11 +2216,11 @@ $$
 $$
 On répète l'expérience en appliquant une force $\vec F_2=2\cdot \vec F_1$, $\vec F_3=3\cdot \vec F_1$, etc.
 
-![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](../figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
+![On applique une force $\vec F_1$ (mesurée à l'aide d'un dynamomètre) sur le chariot et on mesure le temps qu'il faut au chariot pour atteindre une vitesse $\vec v$.](figs/acceleration_exp.pdf){#fig:acc_exp width=40%}
 
 Les résultats qu'on obtiendrait sont schématisés sur la @fig:acc_res. On voit que l'accélération est proportionnelle à la force: quand on double la force, on double l'accélération, quand on triple la force, on triple l'accélération, ... 
 
-![L'accélération en fonction de la force. On voit qu'il y a une relation de proportionnalité entre les deux.](../figs/acceleration_res.pdf){#fig:acc_res width=40%}
+![L'accélération en fonction de la force. On voit qu'il y a une relation de proportionnalité entre les deux.](figs/acceleration_res.pdf){#fig:acc_res width=40%}
 
 Il nous manque encore la constante de proportionnalité. Comme nous l'avons discuté tout à l'heure la masse entre également en jeu. Quand on applique la même force sur deux objets, le plus léger accélérera plus que le plus lourd. Newton énonça sa deuxième loi comme suit:
 
@@ -2333,11 +2333,11 @@ Il existe beaucoup d'exemple où ce principe "d'action-réaction" est très util
 
 Une application très spectaculaire est la propulsion des fusées. Lors de son décollage les moteurs de la fusée éjectent une grande quantité de gaz: ils leur appliquent une force verticale dirigée vers l'arrière de la fusée (voir la @fig:rocket). Les gaz en contre-partie exercent une force dirigée vers l'avant fusée. C'est cette force qui est responsable de la propulsion de la fusée, et non une éventuelle force que la fusée exercerait sur le sol ou sur l’atmosphère (via les gaz éjectés). Ce processus est tout à fait similaire à ce qui se passe quand un ballon se dégonfle.
 
-![Illustration de l'éjection de gaz d'une fusée qui est propulsée par la force de réaction des gaz sur la fusée. La force de la fusée sur les gaz $\vec F_{FG}$ vers l'arrière et la force de réaction des gaz sur la fusée $\vec F_{GF}$.](../figs/rocket.pdf){#fig:rocket width=40%}
+![Illustration de l'éjection de gaz d'une fusée qui est propulsée par la force de réaction des gaz sur la fusée. La force de la fusée sur les gaz $\vec F_{FG}$ vers l'arrière et la force de réaction des gaz sur la fusée $\vec F_{GF}$.](figs/rocket.pdf){#fig:rocket width=40%}
 
 Lorsque nous nous déplaçons à pieds c'est également la troisième loi de Newton qui fait que nous avançons. Avec nos pieds nous poussons sur le sol vers l'arrière. En réaction le sol pousse vers l'avant sur nos pieds, causant une accélération nette vers l'avant (voir la@fig:marche).
 
-![Illustration de la marche à pieds. Nos pieds exercent une force vers sur le sol dirigée vers l'arrière (en bleu), $\vec F_{PS}$. Le sol exerce, lui une force vers l'avant sur nos pieds (en rouge), $\vec F_{SP}$ ce qui fait que nous sommes propulsés vers l'avant.](../figs/marche.pdf){#fig:marche width=30%}
+![Illustration de la marche à pieds. Nos pieds exercent une force vers sur le sol dirigée vers l'arrière (en bleu), $\vec F_{PS}$. Le sol exerce, lui une force vers l'avant sur nos pieds (en rouge), $\vec F_{SP}$ ce qui fait que nous sommes propulsés vers l'avant.](figs/marche.pdf){#fig:marche width=30%}
 
 Le même principe s'applique à plus ou moins tous les modes de propulsion: le patin à glaces, la voiture, etc. Il est donc très important de se souvenir de quel objet est originaire la force et à quel objet elle s'applique. Comme noté précédemment une force s'appliquant d'un objet $A$ sur un objet $B$ sera noté $F_{AB}$.
 
@@ -2358,7 +2358,7 @@ Soit un tonneau posé sur le sol. On aimerait savoir quelle force une personne d
 2. Calculer le bilan des forces agissant sur chaque objet.
 3. Déterminer la force minimale à appliquer pour mettre en mouvement le tonneau.
 
-![Schéma d'une personne poussant un tonneau.](../figs/tonneau.pdf){#fig:tonneau width=30%}
+![Schéma d'une personne poussant un tonneau.](figs/tonneau.pdf){#fig:tonneau width=30%}
 
 ---
 
@@ -2395,7 +2395,7 @@ Solution (La boite) #
 
 Sur la @fig:boite_exo on voit un schéma pour les parties 1 à 4. 
 
-![Schéma des quatre situation de l'@exemple:boite.](../figs/boite_exo.pdf){#fig:boite_exo width=30%}
+![Schéma des quatre situation de l'@exemple:boite.](figs/boite_exo.pdf){#fig:boite_exo width=30%}
 
 1. La masse de la boîte étant de $1\ \kg$, on a que son poids est de 
 $$F_g=1\cdot (-9.8)=- 9.8\ \N.$$
