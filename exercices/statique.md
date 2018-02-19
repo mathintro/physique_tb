@@ -29,7 +29,7 @@ Calculer les tensions dans les cordes $AC$ et $BC$ si le poids de la masse $m$ e
 
 ![Calculer les tensions dans les cordes $CA$ et $BC$.](../figs/tension_comb.pdf){#fig:tension width=100%}
 
-Solution #
+<!-- Solution #
 
 1. Au point $C$ à l'équilibre on a 
 $$\begin{aligned}
@@ -89,7 +89,7 @@ $$
 F_{CA}&=100\ \N,\\
 F_{BC}&=141.4\ \N.
 \end{aligned}
-$$
+$$ -->
 
 Exercice #
 
@@ -97,7 +97,7 @@ Calculer la valeur de la tension dans la corde $AB$ et l'angle $\theta$ si $\vec
 
 ![Calculer la valeur de la tension dans la corde $AB$ et l'angle $\theta$.](../figs/poids_theta.pdf){#fig:poids_theta width=40%}
 
-Solution #
+<!-- Solution #
 
 Nous pouvons ramener toutes les forces sur le point $B$. Nous avons donc
 $$\vec F_{BA}+\vec F_1 + \vec F_{BC}=0,$$
@@ -120,5 +120,5 @@ $$
 En divisant la première équation par la seconde, on a
 $$\tan \theta = \frac{F_2}{F_1}.$$
 Et donc $$\theta=\arctan(F_2/F_1)=53.1^\circ,$$
-et $$F_{AB}=\frac{F_2}{\sin(\theta)}=500\ \N.$$
+et $$F_{AB}=\frac{F_2}{\sin(\theta)}=500\ \N.$$ -->
 
