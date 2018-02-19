@@ -27,7 +27,7 @@ Exercice #
 
 Calculer les tensions dans les cordes $AC$ et $BC$ si le poids de la masse $m$ est de norme $F_m=100\ \N$ dans les trois situations ci-dessous.
 
-![Calculer les tensions dans les cordes $AB$ et $BC$.](../figs/tension_comb.pdf){#fig:tension width=100%}
+![Calculer les tensions dans les cordes $CA$ et $BC$.](../figs/tension_comb.pdf){#fig:tension width=100%}
 
 Solution #
 

@@ -2455,9 +2455,12 @@ L'ascenseur démarre et commence à monter avec une accélération constante de 
 ---
 
 Jusqu'ici, nous ne nous sommes intéressés principalement qu'à des problèmes unidimensionnels impliquant 
-les lois de Newton. 
+les lois de Newton ce qui simplifie beaucoup leur traitement mathématique. 
 
+Exemple #
 
+Considérons une boîte de masse $m=10\ \kg$ posée sur le sol sur laquelle une corde est attachée. On essaie de tirer la boîte avec une force $\vec F$ à l'aide de la corde 
+qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique). De plus, il existe une force de frottement de 
 
 
 
