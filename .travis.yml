@@ -21,7 +21,6 @@ cache:
   - pip
 script:
   - make
-  - cd ..
 deploy:
   provider: releases
   api_key:
