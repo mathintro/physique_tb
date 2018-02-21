@@ -29,6 +29,7 @@ deploy:
   skip_cleanup: true
   on:
     repo: mathintro/physique_tb
+    tags: true
 branches:
     only: 
     - master
