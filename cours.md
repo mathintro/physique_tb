@@ -2335,7 +2335,7 @@ Une application très spectaculaire est la propulsion des fusées. Lors de son d
 
 ![Illustration de l'éjection de gaz d'une fusée qui est propulsée par la force de réaction des gaz sur la fusée. La force de la fusée sur les gaz $\vec F_{FG}$ vers l'arrière et la force de réaction des gaz sur la fusée $\vec F_{GF}$.](figs/rocket.pdf){#fig:rocket width=40%}
 
-Lorsque nous nous déplaçons à pieds c'est également la troisième loi de Newton qui fait que nous avançons. Avec nos pieds nous poussons sur le sol vers l'arrière. En réaction le sol pousse vers l'avant sur nos pieds, causant une accélération nette vers l'avant (voir la@fig:marche).
+Lorsque nous nous déplaçons à pieds c'est également la troisième loi de Newton qui fait que nous avançons. Avec nos pieds nous poussons sur le sol vers l'arrière. En réaction le sol pousse vers l'avant sur nos pieds, causant une accélération nette vers l'avant (voir la @fig:marche).
 
 ![Illustration de la marche à pieds. Nos pieds exercent une force vers sur le sol dirigée vers l'arrière (en bleu), $\vec F_{PS}$. Le sol exerce, lui une force vers l'avant sur nos pieds (en rouge), $\vec F_{SP}$ ce qui fait que nous sommes propulsés vers l'avant.](figs/marche.pdf){#fig:marche width=30%}
 
@@ -2470,8 +2470,10 @@ qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique).
 Solution #
 
 
+Forces de frottement
+--------------------
 
-
+Dans l'exemple précédent, nous avons considéré une force de frottement pour la 
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
