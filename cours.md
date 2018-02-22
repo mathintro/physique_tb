@@ -2460,7 +2460,16 @@ les lois de Newton ce qui simplifie beaucoup leur traitement mathématique.
 Exemple #
 
 Considérons une boîte de masse $m=10\ \kg$ posée sur le sol sur laquelle une corde est attachée. On essaie de tirer la boîte avec une force $\vec F$ à l'aide de la corde 
-qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique). De plus, il existe une force de frottement de 
+qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique). De plus, il existe une force de frottement horizontale qui s'oppose au mouvement de la boîte, $\vec F_\mathrm{frot}$. 
+
+1. Calculer la force minimale qu'on doit fournir pour faire bouger la boite si la force de frottement est de $10\ N$. 
+2. Quelle est la force minimale à fournir pour décoller la boite du sol?
+
+![Une boite oblique avec une force de frottement.](figs/boite_oblique.pdf){#fig:boite_oblique width=30%}
+
+Solution #
+
+
 
 
 
