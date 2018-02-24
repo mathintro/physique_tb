@@ -2469,11 +2469,26 @@ qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique).
 
 Solution #
 
+Le bilan des force présentes peut s'écrire
+$$\vec F_\mathrm{res}=\vec F+\vec F_\mathrm{frot}+\vec F_g.$$
+Les composantes de la force $\vec F$ peuvent s'écrire
+$$\vec F=\vectwo{F\cos(\theta)}{F\sin(\theta)}.$$
+
+1. La force minimale telle que la boite commence à bouger horizontalement est le $F$, tel que
+$$F_{\mathrm{res},x}=0,$$
+autrement soit dit il faut résoudre l'équation
+$$
+\begin{aligned}
+&F\cos(\theta)-F_{\mathrm{frot},x}=0,\\
+&F=F\frac{F_{\mathrm{frot},x}}{\cos(\theta)}=.
+\end{aligned}
+$$
+
 
 Forces de frottement
 --------------------
 
-Dans l'exemple précédent, nous avons considéré une force de frottement pour la 
+Dans l'exemple précédent, nous avons considéré une force de frottement agissant sur la boîte, et considéré.  
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
