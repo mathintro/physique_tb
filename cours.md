@@ -2557,7 +2557,9 @@ de la surface de contact entre un objet et une surface.
 
 Lorsqu'un objet glisse sur une surface, la force de frottement cinétique agit dans la direction opposée au mouvement. 
 La norme de la force dépend de la nature de la surface et de l'objet. Elle dépend de la force normale de la surface sur
-l'objet (voir la @fig:frot_cin) et dans le modèle que nous considérons ici elle ne dépendra pas de la surface de contact.
+l'objet (également appelé poids apparent de l'objet). Lorsqu'on glisse un objet sur une surface il y a donc 4 forces en jeu (voir la @fig:frot_cin).
+Le poids de l'objet, $\vec F_g$, la force avec laquelle on glisse l'objet, $\vec F$, le poids apparent, $\vec F_N$, et la force de frottement $\vec F_\mathrm{frot}$. 
+Dans le modèle que nous considérons ici la force de frottement ne dépend pas de la surface de contact entre l'objet et le sol.
 
 ![Une boite glissant sur une surface tirée par une force $\vec F$, qui a une force de gravité $\vec F_g$ et une force normale $\vec F_N$, 
 et une force de frottement $\vec F_\mathrm{frot}$. Même si les surfaces ont l'air complètement lisses au niveau microscopique elles ne le sont pas.](figs/frot_cin.pdf){#fig:frot_cin width=40%}
@@ -2594,6 +2596,18 @@ $$F_\mathrm{frot}\leq\mu_s\cdot F_N.$$
 Vous avez sans doute remarqué qu'une fois que nous avons réussi à mettre en mouvement la fameuse grosse armoire, 
 il est plus simple de continuer à la faire glisser. 
 Ceci est dû en général au fait que le coefficient de frottement statique est plus grand que le coefficient de frottement cinétique.
+
+Si on se place dans la situation de la @fig:frot_stat et qu'on fait varier la force $\vec F$ avec laquelle on essaie de déplacer la boîte
+et qu'on mesure la force de frottement, il y a 2 comportement différents (voir la @fig:frot_force_appliquee). Dans un premier temps quand 
+$\vec F<\vec F_\mathrm{frot,max}$, on a que $\vec F=-\vec F_\mathrm{frot}$. Puis une fois le seuil de la force de frottement statique maximale 
+dépassé, l'objet se met en mouvement, et la force la force de frottement statique est remplacée par la force de frottement cinétique, 
+ce qui a souvent comme effet de diminuer la force de frottement.
+
+![Une boite surface tirée par une force $\vec F$, qui a une force de gravité $\vec F_g$ et une force normale $\vec F_N$, 
+et une force de frottement $\vec F_\mathrm{frot}$.](figs/frot_stat.pdf){#fig:frot_stat width=40%}
+
+![La force de frottement, $\vec F_\mathrm{frot}$, en fonction de la force appliquée pour mettre en mouvement la boîte, $\vec F$.](figs/frot_force_appliquee.pdf){#fig:frot_force_appliquee width=40%}
+
 
 
 
