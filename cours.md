@@ -2730,7 +2730,7 @@ $$
 
 ## Questions
 
-1. Si une personne se tient sur un skate board à l'arrêt. Pourquoi tombe-t-elle vers l'arrière si on pousse soudainement le skate vers l'avant?
+1. Si une personne se tient sur un skateboard à l'arrêt. Pourquoi tombe-t-elle vers l'arrière si on pousse soudainement le skate vers l'avant?
 2. Si un objet est en mouvement, est-il possible que la force résultante sur l'objet soit nulle?
 3. Si l'accélération d'un objet est nulle, est-ce que cela veut dire qu'il n'y a aucune force qui agit sur l'bjet?
 4. Si une seule force agit sur un objet. Peut-il avoir une accélération nulle? Une vitesse nulle?
