@@ -2457,7 +2457,9 @@ L'ascenseur démarre et commence à monter avec une accélération constante de 
 Jusqu'ici, nous ne nous sommes intéressés principalement qu'à des problèmes unidimensionnels impliquant 
 les lois de Newton ce qui simplifie beaucoup leur traitement mathématique. 
 
-Exemple #
+---
+
+Exemple #exemple:oblique
 
 Considérons une boîte de masse $m=10\ \kg$ posée sur le sol sur laquelle une corde est attachée. On essaie de tirer la boîte avec une force $\vec F$ à l'aide de la corde 
 qui formera un angle $\theta=30^\circ$ avec le sol (voir la @fig:boite_oblique). De plus, il existe une force de frottement horizontale qui s'oppose au mouvement de la boîte, $\vec F_\mathrm{frot}$. 
@@ -2474,21 +2476,125 @@ $$\vec F_\mathrm{res}=\vec F+\vec F_\mathrm{frot}+\vec F_g.$$
 Les composantes de la force $\vec F$ peuvent s'écrire
 $$\vec F=\vectwo{F\cos(\theta)}{F\sin(\theta)}.$$
 
-1. La force minimale telle que la boite commence à bouger horizontalement est le $F$, tel que
+1. La force minimale pour que la boite commence à bouger horizontalement est le $F$, tel que
 $$F_{\mathrm{res},x}=0,$$
 autrement soit dit il faut résoudre l'équation
 $$
 \begin{aligned}
 &F\cos(\theta)-F_{\mathrm{frot},x}=0,\\
-&F=F\frac{F_{\mathrm{frot},x}}{\cos(\theta)}=.
+&F=\frac{F_{\mathrm{frot},x}}{\cos(\theta)}=11.5\ \N.
 \end{aligned}
 $$
+
+2. Afin de de soulever la boite il est nécessaire que la composante $y$ de la force résultante soit nulle.
+En d'autre termes que la composante vertical de $\vec F$ contrebalance exactement la force de gravité $F_g$
+$$
+\begin{aligned}
+&F\sin(\theta)-F_g=0,\\
+&F=\frac{F_g}{\sin(\theta)}=196\ \N.
+\end{aligned}
+$$
+
+---
+
+Problèmes couplés
+-----------------
+
+Lorsque plus d'un corps est présent dans un problème, on a à faire à un *système couplé*. 
+Il s'agira alors en général de résoudre un système d'équations. 
+Nous allons illustrer ce genre de situations
+avec l'exemple suivant
+
+Exemple (Deux boites) #
+
+Soient deux boites, notées $A$ et $B$, reliées par une corde, comme dans la situation 
+de la @fig_deux_boites. Les boites ont des masses respectives de $m_A=10\ \kg$ et $m_B=20\ \kg$.
+Une force horizontale est appliquée sur la boite $A$, $F_h=50\ \N$. 
+
+![Deux boites reliées par une corde.](figs/deux_boites.pdf){#fig:deux_boites width=40%}
+
+1. Calculer l'accélération de chaque boite.
+2. La tension dans la corde qui relie les boites.
+
+Solution (Deux boites) #
+
+Lorsque nous tirons sur la boite $A$ une force de tension, $\vec F_t$, se crée dans la corde reliant les deux boites. 
+Cette force sera dirigée vers la droite pour la boite $B$ et vers la gauche pour la boite $A$. Selon le principe 
+d'action-réaction, ces deux forces sont égales en norme et opposée en direction. Le mouvement étant uniquement horizontal, 
+les forces normales (les force de gravité et les réactions de la table: $\vec F_{g,A}, \vec F_{NA}, \vec F_{g,B}, \vec F_{NB}$) 
+n'entrent pas en ligne de compte pour cet exercice.
+
+1. Nous pouvons à présent faire le bilan des forces horizontales. Sur la boite $A$, nous avons 
+$$F_h-F_t=m_A\cdot a_A,$$
+alors que pour la boite $B$, nous avons
+$$F_t=m_B\cdot a_B.$${#eq:sec_force}
+Comme les boites sont connectée et que nous négligeons tout effet élastique dans la corde, les deux accélérations seront égales
+$a_A=a_B=a$. On a donc deux équations à deux inconnues à résoudre (nous ne connaissons pas $a$ et $F_t$. 
+En additionnant les deux équations ci-dessus on a
+$$
+\begin{aligned}
+F_h=m_A\cdot a+m_B\cdot a=(m_A+m_B)\cdot a,\\
+50=30\cdot a,\\
+a=5/3\ \N.
+\end{aligned}
+$$
+2. En substituant à présent ce résultat dans l'@eq:sec_force, on obtient la tension
+$$F_t=m_B\cdot a=20\cdot \frac{5}{3}=\frac{100}{3}\ \N.$$
 
 
 Forces de frottement
 --------------------
 
-Dans l'exemple précédent, nous avons considéré une force de frottement agissant sur la boîte, et considéré.  
+Dans l'@exemple:oblique, nous avons considéré une force de frottement agissant sur une boîte alors que nous l'avons négligé 
+dans tous autres exemples. Dans la plupart des situation les corps sont soumis à des forces de frottement.
+Il existe beaucoup de forces de frottement de nature différentes. 
+
+### Force de frottement cinétique
+
+Ici, nous allons nous concentrer d'abord sur les forces 
+de frottement *cinétiques* qui s'applique sur les objets glissant sur une surface. Elles sont dues à la nature rugueuses
+de la surface de contact entre un objet et une surface.
+
+Lorsqu'un objet glisse sur une surface, la force de frottement cinétique agit dans la direction opposée au mouvement. 
+La norme de la force dépend de la nature de la surface et de l'objet. Elle dépend de la force normale de la surface sur
+l'objet (voir la @fig:frot_cin) et dans le modèle que nous considérons ici elle ne dépendra pas de la surface de contact.
+
+![Une boite glissant sur une surface tirée par une force $\vec F$, qui a une force de gravité $\vec F_g$ et une force normale $\vec F_N$, 
+et une force de frottement $\vec F_\mathrm{frot}$. Même si les surfaces ont l'air complètement lisses au niveau microscopique elles ne le sont pas.](figs/frot_cin.pdf){#fig:frot_cin width=40%}
+
+Une relation phénoménologique relie la norme de $F_N$ et $F_\mathrm{frot}$
+$$F_\mathrm{frot}=\mu_k F_N,$$
+où $\mu_k$ est le coefficient de frottement cinétique[^17]. 
+
+---
+
+Remarque #
+
+Il est important de noter que cette équation n'est *pas* vectorielle, car la force de frottement et la force normale sont perpendiculaire l'une avec l'autre.
+
+---
+
+Le coefficient de frottement dépend évidemment des deux surfaces qui sont en contact, si elles sont mouillées, si elles ont été polies ou non, etc.
+Mais dans ce contexte $\mu_k$ ne dépend pas de la vitesse de l'objet, ni de la surface de contact.
+
+
+### Force de frottement statique
+
+Nous avons d'abord considéré la force de frottement cinétique entre un objet *en mouvement* et une surface. Lorsque l'objet n'est pas en mouvement
+cette force est différente et s'appelle la force de *frottement statique*. Comme l'objet n'est pas en mouvement il ne peut y avoir de force de frottement 
+cinétique. Lorsque vous essayez de déplacer une grosse armoire mais quelle refuse de bouger alors que vous poussez dessus, cela signifie qu'une autre force doit être présente qui empêche le mouvement. Lorsque finalement, vous 
+appliquez une force suffisante, vous arrivez à débloquer 
+la situation: à vaincre la force de frottement statique maximale et l'armoire se met à glisser. 
+
+La force de frottement statique maximale s'exprime de façon similaire à la force de frottement cinétique
+$$F_\mathrm{frot,max}=\mu_s\cdot F_N,$$
+où $\mu_s$ est le coefficient de frottement statique[^18]. On a donc que la force de frottement statique est 
+$$F_\mathrm{frot}\leq\mu_s\cdot F_N.$$
+
+Vous avez sans doute remarqué qu'une fois que nous avons réussi à mettre en mouvement la fameuse grosse armoire, 
+il est plus simple de continuer à la faire glisser. 
+Ceci est dû en général au fait que le coefficient de frottement statique est plus grand que le coefficient de frottement cinétique.
+
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
@@ -2534,3 +2640,9 @@ Dans l'exemple précédent, nous avons considéré une force de frottement agiss
 [^15]: Dans l'hémisphère nord la terre est plus proche du soleil en hiver qu'en été.
 
 [^16]: La norme est l'équivalent de la valeur absolue pour les scalaires. 
+
+[^17]: A titre d'exemple, pour un contact bois sur bois, on a $\mu_k=0.2$, pour du caoutchouc sur du béton $\mu_k=0.8$, et pour 
+les jointures des articulation $\mu_k=0.01$.
+
+[^18]: A titre d'exemple, pour un contact bois sur bois, on a $\mu_s=0.4$, pour du caoutchouc sur du béton $\mu_s=1$, et pour 
+les jointures des articulation $\mu_s=0.01$.
