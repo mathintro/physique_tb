@@ -30,7 +30,4 @@ deploy:
   on:
     repo: mathintro/physique_tb
     tags: true
-branches:
-    only: 
-    - master
 
