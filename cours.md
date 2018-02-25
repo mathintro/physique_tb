@@ -2547,7 +2547,7 @@ Forces de frottement
 
 Dans l'@exemple:oblique, nous avons considéré une force de frottement agissant sur une boîte alors que nous l'avons négligé 
 dans tous autres exemples. Dans la plupart des situation les corps sont soumis à des forces de frottement.
-Il existe beaucoup de forces de frottement de nature différentes. 
+Il existe beaucoup de forces de frottement de nature différentes et nous allons en discuter quelques une ici. 
 
 ### Force de frottement cinétique
 
@@ -2608,6 +2608,138 @@ et une force de frottement $\vec F_\mathrm{frot}$.](figs/frot_stat.pdf){#fig:fro
 
 ![La force de frottement, $\vec F_\mathrm{frot}$, en fonction de la force appliquée pour mettre en mouvement la boîte, $\vec F$.](figs/frot_force_appliquee.pdf){#fig:frot_force_appliquee width=40%}
 
+---
+
+Exemple (Frottement statique/cinétique) #
+
+Soit le cas dessiné à la @fig:frot_stat. On pose une boite de $m=10\ \kg$ sur un sol horizontal. 
+Les coefficients de frottement cinématiques et statiques sont donnés par $\mu_k=0.3$ et $\mu_s=0.4$.
+Déterminer la force de frottement et l'accélération de la boîte si la force $\vec F$ est égale à $0\ \N$, $10\ \N$, $20\ \N$, $38\ \N$, et $40\ \N$.
+
+Solution (Frottement statique/cinétique) #
+
+La force statique maximale est donnée par
+$$F_\mathrm{frot,max}=\mu_s\cdot F_N=0.4\cdot 10\cdot 9.8=39.2\ \N.$$
+Les 4 premières force ci-dessus seront donc inférieures à ce seuil et la force de frottement sera 
+$-\vec F$ grâce à la deuxième loi de Newton. Lorsque $\vec F$ dépasse $39.2\ \N$, la force de frottement devient la force de frottement cinétique.
+On a donc 
+$$F_\mathrm{frot}=\mu_k\cdot F_N=0.3\cdot 10\cdot 9.8=29.4\ \N.$$
+On a donc qu'on a une force résultante non-nulle sur la boite 
+$$F_\mathrm{res}=F-F_\mathrm{frot}=40-29.4=10.6\ \N.$$
+Et donc la boite va accélérer avec un accélération
+$$a=F_\mathrm{res}/m=10.6/10=1.06\ \m/\s^2.$$
+
+---
+
+---
+
+Question #
+
+Est-il plus facile de pousser ou de tirer une luge? Pourquoi?
+
+---
+
+Exemple (Plan incliné) #
+
+Afin de complexifier un peu plus encore les cas d'application de la force de frottement considérons le cas
+du plan incliné (voir la @fig:plan_incline). Soit une boite de masse $m$ posée sur un plan incliné qui forme un angle 
+$\theta$ avec l'horizontale. La force de gravité agit toujours dans la direction verticale, alors qu'ici la force normale du plan sur la boite n'est pas 
+verticale mais est perpendiculaire au plan incliné. On aura donc que le frottement sera plus faible que lorsque le plan est horizontal, 
+car la composante verticale de la force normale sera plus faible. Calculer l'accélération de la boite si le coefficient de frottement cinétique
+est de $\mu_k=0.1$.
+
+![Une boite de masse $m$ posée sur un plan incliné. Les axes sont alignés sur la tangente et la normale du plan.](figs/plan_incline.pdf){#fig:plan_incline width=40%}
+
+Solution (Plan incliné) #
+
+Il est plus simple de placer les axes parallèle et normal au plan. Ainsi la force de gravité sera la seule qui ne sera pas alignée sur un des axes.
+Nous avons donc que la force de gravité est donnée par
+$$
+\vec F_g=\vectwo{mg\sin\theta}{-mg\cos\theta}.
+$$
+Dans la direction $x$, le bilan de force est donné par
+$$
+\begin{aligned}
+&F_{g,x}-F_{\mathrm{frot},x}=ma_x,\\
+&mg\sin\theta-F_N\mu_k=ma_x,\\
+&mg\sin\theta-F_N\mu_k=ma_x.
+\end{aligned}
+$${#eq:first_incline}
+Afin de résoudre cette équation, il nous manque $F_N$. Regardons la composante $x$ de la force
+$$
+\begin{aligned}
+&F_{g,y}+F_N=ma_y=0,\\
+&-m g\cos\theta+F_N=0,\\
+&F_N=mg\cos\theta.
+\end{aligned}
+$$
+En remplaçant cette relation dans l'@eq:first_incline on obtient
+$$
+\begin{aligned}
+&mg\sin\theta-mg\cos\theta\mu_k=ma_x,\\
+&g(\sin\theta-\cos\theta\mu_k)=a_x,\\
+&a_x=9.8\cdot(\sin(30)-0.1\cdot \cos(30))=4.05\ \m/\s^2.
+\end{aligned}
+$$
+
+Il existe beaucoup d'autres types de forces de frottement. Elles sont pour la plupart responsables
+du mauvais rendement de la plupart de nos appareils d'utilisation quotidienne ou de nos moyens de transports.
+Néanmoins les forces de frottement sont également nécessaires pour nos déplacements. Sans la force de frottement
+nous ne pourrions pas marcher. Il suffit de voir la difficulté à se déplacer quand nous nous trouvons sur une surface très glissante 
+(où la force de frottement est très faible).
+
+### Frottement visqueux
+
+L'autre frottement auquel nous avons à faire au quotidien est le frottement visqueux. Il apparaît 
+lorsque deux solides sont mis en contact via un lubrifiant ou qu'un corps est en mouvement dans un fluide.
+
+Si nous considérons le mouvement d'un objet dans un fluide. En première approximation, la force de frottement 
+est proportionnelle à la vitesse de l'objet et dans le sens opposé du mouvement
+$$
+\vec F_\mathrm{frot}=-k\cdot \vec v,
+$$
+où $k$ est coefficient de résistance de l'objet dans le fluide. Il dépend de la forme de l'objet, 
+de la viscosité du fluide, ainsi que de la facilité de l'objet à pénétrer dans le fluide.
+
+Lorsqu'un objet tombe en chute libre dans l'air, il ne va pas accélérer indéfiniment. 
+Au fur et à mesure que sa vitesse augmente la force de frottement va augmenter jusqu'à
+être égale en norme à la force de gravité. La force résultante sur l'objet devenant nulle, 
+il n'y aura plus d'accélération et la vitesse restera constante. On appelle cette vitesse la vitesse limite.
+
+On peut la calculer à l'aide de la deuxième loi de Newton
+$$
+\begin{aligned}
+F_\mathrm{frot}-F_g=0,\\
+k v_\mathrm{lim}-m g=0,\\
+v_\mathrm{lim}=\frac{m g}{k}.
+\end{aligned}
+$$
+
+Exemple (Le parachutiste) #
+
+Calculer la vitesse limite d'un parachutiste de masse de $m=80\ \kg$ si son coefficient de résistance est de
+$k=10 \kg/\s.$
+
+Solution (Le parachutiste) #
+
+La vitesse limite se calcule à l'aide de la formule précédente
+$$
+v_\mathrm{lim}=\frac{80\cdot 9.8}{10}=78.4\ \m/\s=282\ \km/\h.
+$$
+
+
+## Questions
+
+1. Si une personne se tient sur un skate board à l'arrêt. Pourquoi tombe-t-elle vers l'arrière si on pousse soudainement le skate vers l'avant?
+2. Si un objet est en mouvement, est-il possible que la force résultante sur l'objet soit nulle?
+3. Si l'accélération d'un objet est nulle, est-ce que cela veut dire qu'il n'y a aucune force qui agit sur l'bjet?
+4. Si une seule force agit sur un objet. Peut-il avoir une accélération nulle? Une vitesse nulle?
+5. Si un objet est suspendu à une petite cordelette et on attache une seconde cordelette à ce même objet et on la laisse pendre. Si on tire d'un coup sec
+sur la seconde cordelette une des deux va se rompre. Laquelle a le plus de chance de se casser?
+6. La force de gravité sur un caillou de $2\ \kg$ est supérieure à celle d'un caillou de$1\ \kg$. Pourquoi alors les deux tombent-ils à la même vitesse?
+7. On tire une boite posée sur un plan horizontal avec une force parallèle au plan et on néglige les frottements. Si maintenant on tire la boite avec un certain angle est-ce que l'accélération 
+sera plus élevée, plus faible, la même? Que se passe-t-il s'il y a une force de frottement?
+8. Pourquoi est-ce que la distance de freinage d'un train est plus longue que celle d'une voiture allant à la même vitesse?
 
 
 
