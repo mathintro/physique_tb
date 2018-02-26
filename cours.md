@@ -2727,6 +2727,70 @@ $$
 v_\mathrm{lim}=\frac{80\cdot 9.8}{10}=78.4\ \m/\s=282\ \km/\h.
 $$
 
+## Le moment de force
+
+Jusqu'ici, nous avons considéré que les objets subissant ou exerçant une force comme ponctuels et les lignes d'actions 
+toujours confondues. Or dans beaucoup de situations des forces sont en jeu où cela n'est pas le cas. 
+
+Un exemple classique est la clé anglaise qu'on utilise pour visser un boulon (voir un schéma très schématique sur la @fig:momen_force). La clé peut tourner autour d'un axe passant par l'origine, $O$, qui est également le centre du boulon. 
+Lorsqu'une force, $\vec F$, est appliquée sur la clé à une position décrite par le vecteur distance, noté $\vec r$, une rotation peut se produire. Lorsque la ligne d'action de la force passe par $O$, aucun mouvement ne se produit, en revanche dès que la ligne d'action de la force ne passe plus par $O$, la clé peut tourner.
+
+![La force $\vec F$ est appliquée sur le point représenté par $\vec r$.](figs/moment_force.pdf){#fig:moment_force width=40%}
+
+On appelle *moment de force*, noté $\vec \tau$ ou $\vec M$, la capacité à produire un mouvement de rotation. Ses unités sont des newtons mètres $[\N\cdot\m]$. On appelle le *bras de levier*, noté $r_\perp$, la distance reliant l'origine $O$ à la ligne d'action de la force et la coupant à angle droit (voir @fig:moment_force)
+$$
+\tau_O = r_\perp F,
+$$
+où l'indice $O$ fait référence à l'axe de rotation.
+En fait $r_\perp$ peut se calculer comme la projection de $\vec r$ sur la droite passant par $O$ et coupant la ligne d'action de la force $\vec F$ perpendiculairement, soit
+$$r_\perp=r\sin\theta.$$
+On peut donc réécrire le moment de force comme
+$$
+\tau_O = r F\sin\theta.
+$$
+Avec un peu de trigonométrie, on peut également voir que l'angle $\theta$ est l'angle entre $\vec F$ et sa projection sur la droite perpendiculaire à $\vec r$ (voir @fig:moment_force). Le moment de force peut donc également s'écrire
+$$
+\tau_O = r F_\perp.
+$$
+On voit donc de ces équations que le moment de force est maximal, lorsque la force est perpendiculaire à $\vec r$, car la partie $F_\parallel$ ne contribue pas. 
+
+En fait le moment de force est une quantité vectorielle et peut s'écrire comme
+$$
+\vec tau_0=\vec r\times \vec F,
+$$
+où $\times$ est le produit vectoriel entre $\vec r$ et $\vec F$. La direction de $\vec \tau$ s'obtient avec la *règle de la main droite* également appelée la *règle du tire-bouchon*. La direction est perpendiculaire au plan de la @fig:moment_force et sa direction "sort" su papier.
+
+---
+
+Exemple (Biceps) #
+
+Le biceps exerce une force verticale sur l'avant bras (voir le schéma de la @fig:biceps). Il s'attache à une distance de $r$ du coude qui est l'axe de rotation de l'avant bras.
+
+![Schéma du moment de force du biceps sur l'avant bras autour du coude.](figs/biceps.pdf){#fig:biceps width=40%}
+
+1. Exprimer le moment de force par rapport au coude en fonction de l'angle $\theta$, de la distance $r$ et la force $F$ du biceps.
+2. Que vaut le moment de force si la force du biceps est de $700\ \N$, $r=5\ \cm$ et $\theta_1=90^\circ$ ou $\theta_2=60^\circ$?
+
+Solution (Biceps) #
+
+1. Le moment de force s'exprime comme
+$$
+\tau_O=r F\sin\theta.
+$$
+2. Pour les deux cas différents nous aurons
+$$
+\tau_O=r F\sin\theta=0.05 \cdot 700\cdot \sin(90)=35\ \N\cdot \m.
+$$
+Puis
+$$
+\tau_O=r F\sin\theta=0.05 \cdot 700\cdot \sin(60)=30\ \N\cdot \m.
+$$
+On constate donc que le moment de force maximal est bien atteint lorsque $\theta=90^\circ$.
+
+---
+
+Considérons à présent l'exemple d'une balance *romaine*
+
 
 ## Questions
 
