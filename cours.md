@@ -2787,9 +2787,59 @@ $$
 $$
 On constate donc que le moment de force maximal est bien atteint lorsque $\theta=90^\circ$.
 
+---	
+
+Illustration (La balance romaine) #
+
+Considérons à présent l'exemple d'une balance *romaine*. Ce type de balance sert à peser des objets lourds à partir d'un poids plus petit. Elle est composée d'un axe immobile $O$ et de deux "bras". Un bras a un crochet fixe situé à une distance $r_1$ de $O$ sur lequel on fixe l'objet lourd de masse $m_1$ à peser et un crochet mobile situé à distance $r_2$ où on fixe le poids plus léger de masse connue $m_2$. 
+
+Les moments de force des deux masses s'écrit respectivement
+$$
+\begin{aligned}
+\tau_{O,1}&=r_1 F_{g,1}\sin(90)=r_1 m_1 g,\\
+\tau_{O,1}&=r_2 F_{g,2}\sin(-90)=-r_2 m_2 g.
+\end{aligned}
+$$
+
+Nous avons discuté précédemment que le moment de force est la capacité à faire tourner un objet autour d'un axe. On en déduit que l'absence de moment de force n'entraîne aucune rotation. Si les deux moments ci-dessus se compensent exactement, alors la balance sera en *équilibre*. Cette condition peut s'écrire
+$$
+\tau_{O,1}+\tau_{O,2}=0.
+$$
+On peut donc écrire
+$$
+\begin{aligned}
+&r_1m_1g-r_2m_2g=0,\\
+&m_1=\frac{r_2m_2}{r_1}.
+\end{aligned}
+$$
+En déplaçant (en modifiant $r_2$) donc $m_2$ jusqu'à ce que la balance soit à l'équilibre (et donc le bilan des moments de force soit nul), on peut déterminer $m_1$.
+
 ---
 
-Considérons à présent l'exemple d'une balance *romaine*
+La balance romaine a mis en évidence une autre condition d'équilibre. Nous avions déjà vu que la *première condition d'équilibre* (découlant de la deuxième loi de Newton) est que la force résultante s'appliquant sur un objet doit être nulle
+$$
+\vec F_\mathrm{res}=\sum_{i=1}^N\vec F_i=0.
+$$
+Néanmoins, si on applique un *couple* sur un objet, deux forces de norme égale, anti-parallèles et non-colinéaires (voir la @fig:couple), la force résultante sera nulle, mais l'objet se mettra en rotation autour d'un axe $O$, car le moment de force total sera non-nul
+$$
+\tau_{O,1}+\tau_{O,2}\neq 0,
+$$
+où $\tau_{O,1}$ et $\tau_{0,2}$ sont les moments des deux forces.
+On a donc besoin d'une *seconde condition d'équilibre* qui est que le moment de force total appliqué sur un objet doit être nul
+$$
+\sum_{i=1}^N \vec \tau_{O,i}=0,
+$$
+où l'ensemble $\{\vec \tau_{O,i}\}_{i=1}^N$ est l'ensemble des moment de forces autour de l'axe $O$ agissant sur un objet. En fait le moment de force *résultant* ($\sum_i\vec\tau_{O,i}$) va entraîner une accélération *angulaire*, ce qui est l'équivalent de l'accélération due à la force résultante pour les cas rectilignes. 
+
+![Un couple de force de norme $F$ est appliqué sur une boîte. Elle se mettra à tourner autour de l'axe $O$.](figs/couple.pdf){#fig:couple width=40%}
+
+Exemple (Levier) #
+
+Une personne essaie de soulever un rocher très lourd de masse $m$ à l'aide d'un axe et d'un levier. Soit la distance la taille totale du levier $R$ et la distance entre l'axe et le rocher de $r$ (la distance entre l'axe et la personne sera donc de $r'=R-r$). Déterminer la position de l'axe sur le levier afin de pouvoir soulever le rocher si la force de la personne est de $\vec F_p$.
+
+Solution (Levier) #
+
+
 
 
 ## Questions
