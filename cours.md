@@ -2183,7 +2183,7 @@ est donc beaucoup plus élevée que celle de la balle.
 Il est très important de ne pas confondre les concepts de *masse* et de *poids*. 
 Comme nous venons de le discuter la masse est la quantité d'inertie d'un objet. Le poids est 
 la *force* exercée par la gravité sur l'objet. Afin d'illustrer la différence, prenons l'exemple des astronaute qui
-ont marché sur la lune. Vous avez sans doute tou·te·s vu·e·s la vidéo où ils font des sauts de plusieurs mètres de long
+ont marché sur la lune. Vous avez sans doute tou·te·s vu·e·s la vidéo où ils font des sauts avec une grande facilité 
 en portant une combinaison dont la masse est de près de $100\ \kg$ apparemment sans effort. Cela serait totalement impossible
 sur terre. Leur masse est pourtant la même sur terre ou sur la lune. La différence se situe au niveau de la force qu'exercent 
 la lune ou la terre sur un astronaute. En fait sur la lune la force gravitationnelle exercée sur un objet (son poids) est environ
@@ -2839,6 +2839,35 @@ Une personne essaie de soulever un rocher très lourd de masse $m$ à l'aide d'u
 
 Solution (Levier) #
 
+On peut représenter cette situation sur la @fig:axe. La deuxième condition d'équilibre, nous dit que pour soulever le rocher on doit avoir que la somme des moments de force doivent être nuls. Le moment de force de l'homme sur le levier autour de l'axe $O$ est de
+$$\tau_{O,h}=r' F_p\sin(-\theta)=-(R-r) F_p\sin(\theta).$$
+Le moment de force du rocher sera lui donné par 
+$$\tau_{O,r}=r F_g\sin(\theta)=r m g\sin(\theta).$$
+La deuxième condition d'équilibre s'écrit donc
+$$
+\begin{aligned}
+&\tau_{O,h}+\tau_{O,r}=0,\\
+&-(R-r) F_p\sin(\theta)+r m g\sin(\theta)=0,\\
+&r \sin(\theta)(F_p+ m g)=RF_p\sin(\theta),\\
+&r =R\frac{F_p}{F_p+ m g}.
+\end{aligned}
+$$
+
+## Centre de masse
+
+### Le centre de gravité
+
+Lorsqu'un corps est soumis à la gravité terrestre, chacune de ses molécules est attirée vers le centre de la terre. La somme de toutes ces forces microscopiques donne lieu à la force de gravité qui agit sur l'ensemble du corps, $\vec F_g$. Comme nous l'avons vu lors de la section précédente, il est nécessaire de connaître
+le point d'application d'une force sur un objet pour pouvoir déterminer s'il subit un moment de force (afin de déterminer s'il se met à tourner par exemple). 
+
+On définit le centre de gravité, comme le point d'application de la force $\vec F_g$ qui a un effet 
+équivalent à la somme de toutes les forces microscopiques agissant sur toutes les molécules d'un corps.
+Afin de le déterminer, il existe une méthode expérimentale assez intuitive. 
+
+Si nous prenons un corps et que nous y attachons une corde sur un point. Si nous le suspendons en l'air à l'aide de la corde, il va tendre à se mettre dans son état d'équilibre: non seulement la force résultante agissant sur lui sera nulle, mais également le moment de force total sera nul. Cela signifie que le point d'application de la force se trouve sur la droite alignée avec la corde. Si à présent nous attachons la corde sur une autre partie du corps et que nous attendons à nouveau qu'il se remette dans une situation d'équilibre. Nous aurons une autre droite par laquelle passe la force de gravité. Le point de croisement de ces deux droites est simplement 
+le centre de gravité de l'objet.
+
+### Le centre de masse: cas particulier du centre de gravité
 
 
 
@@ -2846,7 +2875,7 @@ Solution (Levier) #
 
 1. Si une personne se tient sur un skateboard à l'arrêt. Pourquoi tombe-t-elle vers l'arrière si on pousse soudainement le skate vers l'avant?
 2. Si un objet est en mouvement, est-il possible que la force résultante sur l'objet soit nulle?
-3. Si l'accélération d'un objet est nulle, est-ce que cela veut dire qu'il n'y a aucune force qui agit sur l'bjet?
+3. Si l'accélération d'un objet est nulle, est-ce que cela veut dire qu'il n'y a aucune force qui agit sur l'objet?
 4. Si une seule force agit sur un objet. Peut-il avoir une accélération nulle? Une vitesse nulle?
 5. Si un objet est suspendu à une petite cordelette et on attache une seconde cordelette à ce même objet et on la laisse pendre. Si on tire d'un coup sec
 sur la seconde cordelette une des deux va se rompre. Laquelle a le plus de chance de se casser?
