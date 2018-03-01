@@ -22,6 +22,53 @@ urlcolor: blue
 corrige: false
 ---
 
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\integer}{\mathbb{Z}}
+\renewcommand{\natural}{\mathbb{N}}
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\zbar}{\bar{z}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\perm}{\mathrm{perm}}
+\newcommand{\card}{\mathrm{card}}
+\newcommand{\fh}{\hat{f}}
+\newcommand{\gh}{\hat{g}}
+\newcommand{\hh}{\hat{h}}
+\renewcommand{\Re}{\mathrm{Re}}
+\renewcommand{\Im}{\mathrm{Im}}
+\newcommand{\pDeriv}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pDerivTwo}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\dDeriv}[2]{\frac{\dd #1}{\dd #2}}
+\newcommand{\dDerivTwo}[2]{\frac{\dd^2 #1}{\dd #2^2}}
+\newcommand{\cm}{\mathrm{cm}}
+\newcommand{\km}{\mathrm{km}}
+\newcommand{\mm}{\mathrm{mm}}
+\newcommand{\cd}{\mathrm{cd}}
+\newcommand{\mol}{\mathrm{mol}}
+\newcommand{\m}{\mathrm{m}}
+\renewcommand{\l}{\mathrm{l}}
+\newcommand{\s}{\mathrm{s}}
+\newcommand{\kg}{\mathrm{kg}}
+\newcommand{\g}{\mathrm{g}}
+\newcommand{\K}{\mathrm{K}}
+\newcommand{\J}{\mathrm{J}}
+\renewcommand{\C}{\mathrm{C}}
+\newcommand{\oC}{^\circ\mathrm{C}}
+\newcommand{\oK}{^\circ\mathrm{K}}
+\newcommand{\A}{\mathrm{A}}
+\newcommand{\N}{\mathrm{N}}
+\newcommand{\atm}{\mathrm{atm}}
+\renewcommand{\bar}{\mathrm{bar}}
+\newcommand{\V}{\mathrm{V}}
+\newcommand{\W}{\mathrm{W}}
+\newcommand{\kW}{\mathrm{kW}}
+\newcommand{\dl}{\mathrm{dl}}
+\newcommand{\dm}{\mathrm{dm}}
+\newcommand{\kcal}{\mathrm{kcal}}
+\newcommand{\h}{\mathrm{h}}
+\newcommand{\Pa}{\mathrm{Pa}}
+\newcommand{\vectwo}[2]{\begin{pmatrix}#1 \\ #2 \end{pmatrix}}
+\newcommand{\mat}[1]{{\underline{\underline{#1}}}}
+
 Avertissement {#avertissement .unnumbered}
 =============
 
@@ -1910,7 +1957,8 @@ Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec
 1. Lorsque $\alpha=1$, le vecteur $\vec s_2=1\cdot\vec s_1=\vec s_1$, et donc le vecteur $\vec s_1$ est inchangé.
 2. Lorsque $\alpha=-1$, le vecteur $\vec s_2=-1\cdot\vec s_1=-\vec s_1$, t donc le vecteur $\vec s_2$ est le vecteur *opposé* à $\vec s_1$.
 
-![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
+![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf)
+{#fig:vecteur_produit width=50%}
 
 Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec s_1$, $\vec s_2$ deux vecteurs 
 $$\begin{aligned}
@@ -2732,7 +2780,7 @@ $$
 Jusqu'ici, nous avons considéré que les objets subissant ou exerçant une force comme ponctuels et les lignes d'actions 
 toujours confondues. Or dans beaucoup de situations des forces sont en jeu où cela n'est pas le cas. 
 
-Un exemple classique est la clé anglaise qu'on utilise pour visser un boulon (voir un schéma très schématique sur la @fig:momen_force). La clé peut tourner autour d'un axe passant par l'origine, $O$, qui est également le centre du boulon. 
+Un exemple classique est la clé anglaise qu'on utilise pour visser un boulon (voir un schéma très schématique sur la @fig:moment_force). La clé peut tourner autour d'un axe passant par l'origine, $O$, qui est également le centre du boulon. 
 Lorsqu'une force, $\vec F$, est appliquée sur la clé à une position décrite par le vecteur distance, noté $\vec r$, une rotation peut se produire. Lorsque la ligne d'action de la force passe par $O$, aucun mouvement ne se produit, en revanche dès que la ligne d'action de la force ne passe plus par $O$, la clé peut tourner.
 
 ![La force $\vec F$ est appliquée sur le point représenté par $\vec r$.](figs/moment_force.pdf){#fig:moment_force width=40%}
@@ -2869,6 +2917,49 @@ le centre de gravité de l'objet.
 
 ### Le centre de masse: cas particulier du centre de gravité
 
+Le concept de centre de gravité peut s'étendre à n'importe quel corps subissant des forces. On appelle *centre de masse* le point d'un corps de masse totale $M$
+qui subit la somme de toutes les forces extérieures au corps. Si on a un corps composé de $N$ "particules" de masses $m_i$ ($i=1..N$) et qui sont repérées par les vecteurs $\vec r_i$ ($i=1..N$), la position du centre de masse, $\vec r_\mathrm{cm}$
+se calcule comme
+$$
+\vec r_\mathrm{cm}=\frac{1}{M}\sum_{i=1}^Nm_i \vec r_i.
+$$
+En fait la position du centre de masse est une moyenne, pondérée par leur masse, de la position de toutes les particules qui le compose.
+
+---
+
+Illustration (Centre de masse) #
+
+Essayons d'illustrer ce propos avec deux exemples. Soient deux billes de masses, $m_1$ et $m_2$ aux positions $\vec r_1$ et $\vec r_2$. La position du centre de masse
+des billes se calcule comme
+$$
+\vec r_\mathrm{cm}=\frac{1}{m_1+m_2}\left(m_1\vec r_1+m_2\vec r_2\right).
+$${#eq:cm2}
+Si à présent nous supposons que $m_1=m_2=m$, il vient
+$$
+\vec r_\mathrm{cm}=\frac{1}{2m}\left(m\vec r_1+m\vec r_2\right)=\frac{1}{2}\left(\vec r_1+\vec r_2\right),
+$$
+soit exactement le point du milieu entre les deux masses. 
+Si les masses sont différentes ce point sera toujours situé sur le segment de droite qui relie la masse $m_1$ à la masse $m_2$
+mais sera plus proche de la masse la plus lourde. On peut voir cela géométriquement sur la @fig:cm. Mathématiquement,
+en définissant $M=m_1+m_2$, on peut réécrire l'@eq:cm2 comme
+$$
+\vec r_\mathrm{cm}=\frac{m_1}{M}\vec r_1+\frac{M-m_1}{M}\vec r_2=\vec r_2+\frac{m_1}{M}(\vec r_1-\vec r_2).
+$$
+
+![Les deux masses $m_1$ et $m_2$ avec les vecteurs positions $\vec r_1$ et $\vec r_2$, ont comme centre de masse $\vec r_\mathrm{cm}$.](figs/cm.pdf){#fig:cm width=40%}
+
+---
+
+Le centre de masse est donc le point où on applique la force résultante s'appliquant sur un objet. Par ailleurs, tout mouvement peut se décomposer de deux (ou plus)
+mouvements:
+
+1. Un mouvement de translation du centre de masse.
+2. Un mouvement de rotation (ou de vibration ou ...) autour du centre de masse.
+
+Une illustration de ce phénomène peut être observée sur la @fig:cle_cm, où une clé à molette est lancée en l'air. On constate qu'elle tourne autour de son centre de masse,
+et que celui-ci suit une simple trajectoire parabolique.
+
+![La trajectoire parabolique du centre de masse (point rouge) d'une clé à molette lancée en l'air.](figs/cle_cm.pdf){#fig:cle_cm width=60%}
 
 
 ## Questions
