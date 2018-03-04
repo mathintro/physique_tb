@@ -2986,14 +2986,14 @@ Lorsque nous tirons avec une certaine force sur un ressort, celui-ci va se l'all
 C'est ce principe qui permet de construire les dynamomètres
 où nous faisons correspondre un allongement à une force.
 
-Cette relation est en fait vraie pour tout solide. Lorsqu'on 
-applique une force $F$ sur un objet, il va s'allonger (ou se contracter) d'une longueur $\Delta l$ proportionnelle (voir la @fig:hooke)
+Cette relation est en fait vraie pour tout solide lorsque l'allongement est petit par rapport à la longueur d'origine du solide. Lorsqu'on 
+applique une force $F$ sur un objet, il va s'allonger (ou se contracter) d'une longueur $\Delta L$ proportionnelle (voir la @fig:hooke)
 $$
-F=k\cdot\Delta l,
-$$
+F=k\cdot\Delta L,
+$${#eq:hooke}
 où $k$ est la constante d’élasticité dont les unité sont les $[\N/\m]$. Cette loi est appelée la *loi de Hooke*. 
 
-![L'allongement de $\Delta l=L-L_0$ d'une barre sous l'action d'une force $F$.](figs/hook.pdf){#fig:hooke width=60%}
+![L'allongement de $\Delta L=L-L_0$ d'une barre sous l'action d'une force $F$.](figs/hook.pdf){#fig:hooke width=60%}
 
 ---
 
@@ -3009,8 +3009,8 @@ Solution (Dynamomètre) #
 1. De l'énoncé, nous savons que le ressort s'allonge de $0.1\ \m$ lorsqu'on y suspend une masse de $0.1\ \kg$. On a donc avec la loi de Hooke
 $$
 \begin{aligned}
-F&=k\Delta l,\\
-mg&=k\Delta l,\\
+F&=k\Delta L,\\
+mg&=k\Delta L,\\
 0.5\cdot 9.8&=k\cdot 0.1,\\
 k&=\frac{0.1\cdot 9.8}{0.1}=9.8\ \N/\m.
 \end{aligned}
@@ -3018,9 +3018,9 @@ $$
 2. Maintenant que nous connaissons $k$, il suffit d'écrire
 $$
 \begin{aligned}
-F&=k\Delta l,\\
-1&=9.8\cdot \Delta l,\\
-\Delta l&=0.102\ \m.
+F&=k\Delta L,\\
+1&=9.8\cdot \Delta L,\\
+\Delta L&=0.102\ \m.
 \end{aligned}
 $$
 La masse suspendue se calcule directement avec 
@@ -3032,7 +3032,7 @@ $$F=m\cdot g\Leftrightarrow m=F/g=1/9.8=0.102\ \kg.$$
 
 Remarque # 
 
-Si la force est "négative" l'objet va se contracter et donc $\Delta l$ sera négatif également.
+Si la force est "négative" l'objet va se contracter et donc $\Delta L$ sera négatif également.
 
 ---
 
@@ -3040,9 +3040,52 @@ La loi de Hooke est valable pour de faibles forces/allongements. Lorsque la forc
 
 ![La force nécessaire à l'allongement d'un objet en fonction de l'allongement.](figs/allongement_force.pdf){#fig:allongement_force width=60%}
 
-Dans la région où la relation entre force et allongement est linéaire, le solide revient à sa longueur d'origine lorsque la force n'est plus appliquée jusqu'à un point appelé *limite élastique*. Au delà de la limite élastique, la déformation est permanente: les liaisons interatomiques commencent à se rompre. 
+Dans la région où la relation entre force et allongement est linéaire, le solide revient à sa longueur d'origine lorsque la force n'est plus appliquée jusqu'à un point appelé *limite élastique*. Au delà de la limite élastique, la déformation est permanente: les liaisons interatomiques commencent à se rompre. Dans cette région la relation entre élongation et force devient très complexe.
 
+### Élasticité: le module de Young
 
+En fait, de façon plus générale, la constante d'élasticité, $k$,
+d'un objet va dépendre de plusieurs facteurs. D'une part du matériau dont il est fait, et d'autre part de sa longueur initiale, $L_0$ et de sa section $A$. En fait,
+plus un objet est long, plus il s'allongera facilement, plus il sera épais plus il sera difficile de l'allonger. Pour un allongement faible, par rapport à la longueur initiale d'un objet, nous avons déduisons de l'équation @eq:hooke
+$$
+\Delta L = \frac{1}{E}\frac{F}{A} L_0,
+$$
+où $E$ est le module d'élasticité ou module de Young[^19] qui ne dépend que du matériau dans lequel est fait l'objet et dont les unités sont $[\N/\m^2]$.
+
+Nous pouvons également réécrire cette équation sous une forme un peu plus conventionnelle, comme
+$$
+F=E\cdot A\cdot \frac{\Delta L}{L_0}.
+$$
+
+---
+
+Remarque #
+
+Cette équation ressemble assez à l'équation de dilatation linéique qui relie augmentation de température avec élongation (voir @eq:dl_dt)
+$$\Delta T=\frac{1}{\alpha}\frac{\Delta L}{L_0}.\nonumber$$
+
+---
+
+---
+
+Exemple (Corde d'acier/de nylon) #
+
+Essayons de calculer la tension dans une corde de guitare électrique en acier ($E=200\cdot 10^9\ \N/\m^2$) d'épaisseur de $0.10\ \mm$ de diamètre et d'une longueur de $65\ \cm$. Si l'allongement de la corde est de $2.5\ \cm$ quand on l’accorde quelle est la tension dans la corde? Même question si la corde est en nylon ($3\cdot 10^9$) mais d'un diamètre de $0.4\ \mm$.
+
+Solution (Corde d'acier/de nylon) #
+
+La tension dans la corde est la force à appliquer pour la tendre. On a donc que la tension vaut
+$$F=E\cdot A\cdot \frac{\Delta L}{L_0}.$$
+On a que la surface $A$ de chacun des deux cordes est de
+$$A_\mathrm{acier}=\pi\cdot r_\mathrm{acier}^2\cong 7.9\cdot10^{-9}\ \m^2,\quad
+A_\mathrm{nylon}=\pi\cdot r_\mathrm{nylon}^2\cong 1.3\cdot10^{-7}\ \m^2.
+$$
+On a donc que la force pour l'acier et le nylon est de
+$$
+F_\mathrm{acier}\cong 60\ \N, \ F_\mathrm{nylon}\cong 15\ \N.
+$$
+
+---
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
@@ -3093,3 +3136,5 @@ les jointures des articulation $\mu_k=0.01$.
 
 [^18]: A titre d'exemple, pour un contact bois sur bois, on a $\mu_s=0.4$, pour du caoutchouc sur du béton $\mu_s=1$, et pour 
 les jointures des articulation $\mu_s=0.01$.
+
+[^19]: A titre d'exemple, pour l'acier on a $E=200\cdot 10^9\ \N/\m^2$, pour l'aluminium $E=70\cdot 10^9\ \N/\m^2$, et pour du nylon $E=3\cdot 10^9\ \N/\m^2$.
