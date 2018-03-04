@@ -1957,8 +1957,7 @@ Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec
 1. Lorsque $\alpha=1$, le vecteur $\vec s_2=1\cdot\vec s_1=\vec s_1$, et donc le vecteur $\vec s_1$ est inchangé.
 2. Lorsque $\alpha=-1$, le vecteur $\vec s_2=-1\cdot\vec s_1=-\vec s_1$, t donc le vecteur $\vec s_2$ est le vecteur *opposé* à $\vec s_1$.
 
-![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf)
-{#fig:vecteur_produit width=50%}
+![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
 
 Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec s_1$, $\vec s_2$ deux vecteurs 
 $$\begin{aligned}
@@ -2885,6 +2884,8 @@ Exemple (Levier) #
 
 Une personne essaie de soulever un rocher très lourd de masse $m$ à l'aide d'un axe et d'un levier. Soit la distance la taille totale du levier $R$ et la distance entre l'axe et le rocher de $r$ (la distance entre l'axe et la personne sera donc de $r'=R-r$). Déterminer la position de l'axe sur le levier afin de pouvoir soulever le rocher si la force de la personne est de $\vec F_p$.
 
+![La force $\vec F_p$ exercée sur le levier de taille $R=r+r'$ autour de l'axe $\triangle$.](figs/axe.pdf){#fig:axe width=40%}
+
 Solution (Levier) #
 
 On peut représenter cette situation sur la @fig:axe. La deuxième condition d'équilibre, nous dit que pour soulever le rocher on doit avoir que la somme des moments de force doivent être nuls. Le moment de force de l'homme sur le levier autour de l'axe $O$ est de
@@ -2996,6 +2997,39 @@ où $k$ est la constante d’élasticité dont les unité sont les $[\N/\m]$. Ce
 
 ---
 
+Exemple (Dynamomètre) #
+
+Soit un dynamomètre dont la constante d'élasticité, $k$, du ressort est inconnue. En revanche, on sait que la règle graduée de $10\ \cm$ de long permet de peser des masses jusqu'à $0.1\ \kg$. 
+
+1. Calculer la constante $k$ du ressort.
+2. Si la valeur affichée sur le dynamomètre est de $1\ \N$. Quel est l'allongement du dynamomètre? Et quelle est la masse suspendue?
+
+Solution (Dynamomètre) #
+
+1. De l'énoncé, nous savons que le ressort s'allonge de $0.1\ \m$ lorsqu'on y suspend une masse de $0.1\ \kg$. On a donc avec la loi de Hooke
+$$
+\begin{aligned}
+F&=k\Delta l,\\
+mg&=k\Delta l,\\
+0.5\cdot 9.8&=k\cdot 0.1,\\
+k&=\frac{0.1\cdot 9.8}{0.1}=9.8\ \N/\m.
+\end{aligned}
+$$
+2. Maintenant que nous connaissons $k$, il suffit d'écrire
+$$
+\begin{aligned}
+F&=k\Delta l,\\
+1&=9.8\cdot \Delta l,\\
+\Delta l&=0.102\ \m.
+\end{aligned}
+$$
+La masse suspendue se calcule directement avec 
+$$F=m\cdot g\Leftrightarrow m=F/g=1/9.8=0.102\ \kg.$$
+
+---
+
+---
+
 Remarque # 
 
 Si la force est "négative" l'objet va se contracter et donc $\Delta l$ sera négatif également.
@@ -3004,9 +3038,10 @@ Si la force est "négative" l'objet va se contracter et donc $\Delta l$ sera né
 
 La loi de Hooke est valable pour de faibles forces/allongements. Lorsque la force ou l'allongement devient trop grande la relation de proportionnalité n'est plus valable et on entre dans la région où la déformation devient *plastique*. En général dans cette région, la force nécessaire pour continuer à allonger un objet reste presque constante. Au delà de la déformation plastique, le solide finit par se casser (voir la @fig:allongement_force).
 
-![La force nécessaire à l'allongement d'un objet en fonction de l'allongement.](figs/allongement_force.pdf){#fig:hooke width=60%}
+![La force nécessaire à l'allongement d'un objet en fonction de l'allongement.](figs/allongement_force.pdf){#fig:allongement_force width=60%}
 
 Dans la région où la relation entre force et allongement est linéaire, le solide revient à sa longueur d'origine lorsque la force n'est plus appliquée jusqu'à un point appelé *limite élastique*. Au delà de la limite élastique, la déformation est permanente: les liaisons interatomiques commencent à se rompre. 
+
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
