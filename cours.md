@@ -3042,7 +3042,7 @@ La loi de Hooke est valable pour de faibles forces/allongements. Lorsque la forc
 
 Dans la région où la relation entre force et allongement est linéaire, le solide revient à sa longueur d'origine lorsque la force n'est plus appliquée jusqu'à un point appelé *limite élastique*. Au delà de la limite élastique, la déformation est permanente: les liaisons interatomiques commencent à se rompre. Dans cette région la relation entre élongation et force devient très complexe.
 
-### Élasticité: le module de Young
+## Élasticité: le module de Young
 
 En fait, de façon plus générale, la constante d'élasticité, $k$,
 d'un objet va dépendre de plusieurs facteurs. D'une part du matériau dont il est fait, et d'autre part de sa longueur initiale, $L_0$ et de sa section $A$. En fait,
