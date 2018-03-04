@@ -2975,6 +2975,38 @@ sur la seconde cordelette une des deux va se rompre. Laquelle a le plus de chanc
 sera plus élevée, plus faible, la même? Que se passe-t-il s'il y a une force de frottement?
 8. Pourquoi est-ce que la distance de freinage d'un train est plus longue que celle d'une voiture allant à la même vitesse?
 
+# Élasticité, contrainte et déformation
+
+Dans le chapitre précédent, nous avons vu comment calculer les forces qui agissent sur des objet, mais nous n'avons pas étudié l'effet qu'on ces forces sur la forme des objets en question.
+
+## Élasticité: la loi de Hooke
+
+Lorsque nous tirons avec une certaine force sur un ressort, celui-ci va se l'allonger d'une longueur proportionnelle à la force appliquée.
+C'est ce principe qui permet de construire les dynamomètres
+où nous faisons correspondre un allongement à une force.
+
+Cette relation est en fait vraie pour tout solide. Lorsqu'on 
+applique une force $F$ sur un objet, il va s'allonger (ou se contracter) d'une longueur $\Delta l$ proportionnelle (voir la @fig:hooke)
+$$
+F=k\cdot\Delta l,
+$$
+où $k$ est la constante d’élasticité dont les unité sont les $[\N/\m]$. Cette loi est appelée la *loi de Hooke*. 
+
+![L'allongement de $\Delta l=L-L_0$ d'une barre sous l'action d'une force $F$.](figs/hook.pdf){#fig:hooke width=60%}
+
+---
+
+Remarque # 
+
+Si la force est "négative" l'objet va se contracter et donc $\Delta l$ sera négatif également.
+
+---
+
+La loi de Hooke est valable pour de faibles forces/allongements. Lorsque la force ou l'allongement devient trop grande la relation de proportionnalité n'est plus valable et on entre dans la région où la déformation devient *plastique*. En général dans cette région, la force nécessaire pour continuer à allonger un objet reste presque constante. Au delà de la déformation plastique, le solide finit par se casser (voir la @fig:allongement_force).
+
+![La force nécessaire à l'allongement d'un objet en fonction de l'allongement.](figs/allongement_force.pdf){#fig:hooke width=60%}
+
+Dans la région où la relation entre force et allongement est linéaire, le solide revient à sa longueur d'origine lorsque la force n'est plus appliquée jusqu'à un point appelé *limite élastique*. Au delà de la limite élastique, la déformation est permanente: les liaisons interatomiques commencent à se rompre. 
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
