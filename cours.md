@@ -1957,7 +1957,7 @@ Si $\alpha>0$, l'effet de cette multiplication est de modifier la norme de $\vec
 1. Lorsque $\alpha=1$, le vecteur $\vec s_2=1\cdot\vec s_1=\vec s_1$, et donc le vecteur $\vec s_1$ est inchangé.
 2. Lorsque $\alpha=-1$, le vecteur $\vec s_2=-1\cdot\vec s_1=-\vec s_1$, t donc le vecteur $\vec s_2$ est le vecteur *opposé* à $\vec s_1$.
 
-![Le produit d'un vecteur avec un scalaire $\alpha$ pour 4 cas: $\alpha>1$ (haut gauche), $0<\alpha<1$ (haut droite), $0>\alpha>-1$ (bas gauche), $\alpha<-1$ (bas droite).](figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
+![Produit d'un vecteur avec un scalaire $\alpha$ pour les 4 cas possibles.](figs/produit_vecteur.pdf){#fig:vecteur_produit width=50%}
 
 Une propriété du produit d'un vecteur avec un scalaire est qu'elle est définie de telle façon à ce que le résultat soit toujours un vecteur. On peut à présent comme pour le produit entre scalaire voir les propriétés de *distributivité*. Soient $\alpha_1$, $\alpha_2$ deux scalaires, et $\vec s_1$, $\vec s_2$ deux vecteurs 
 $$\begin{aligned}
