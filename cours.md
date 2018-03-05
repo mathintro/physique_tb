@@ -2963,6 +2963,25 @@ et que celui-ci suit une simple trajectoire parabolique.
 ![La trajectoire parabolique du centre de masse (point rouge) d'une clé à molette lancée en l'air.](figs/cle_cm.pdf){#fig:cle_cm width=60%}
 
 
+## Stabilité et équilibre
+
+Lorsqu'un objet est en équilibre statique il ne changera pas d'état s'il n'est pas perturbé (si on ne lui applique aucune force). Il y a trois comportements possibles lorsque la situation d'équilibre est modifiée:
+
+1. L'objet retourne à sa situation d'équilibre. L'objet est dit en *équilibre stable*.
+2. L'objet s'éloigne définitivement de sa position d'équilibre. L'objet est dit en *équilibre instable*.
+3. L'objet reste en équilibre dans son nouvel état. L'objet est en *équilibre neutre*.
+
+Ces trois situations sont schématisées dans la @fig:equilibre. Lorsque la bille est dans une vallée, si on la déplace un peu elle aura tendance à revenir au fond de la vallée. A l'inverse, si la bille se trouve en haut de la montagne, si elle est déplacée à gauche ou à droite, elle s'éloignera très rapidement du sommet. Finalement, lorsque la bille est sur le plateau, un déplacement n'entraînera aucun mouvement supplémentaire.
+
+![Une bille en équilibre instable (gauche),  stable (milieu) et neutre (droite).](figs/equilibre.pdf){#fig:equilibre width=60%}
+
+En général, lorsqu'on conçoit un système, nous sommes intéressé à le garder dans une configuration aussi stable que possible. Dans certains cas, cela est trivial: par exemple lorsqu'un objet est suspendu au plafond par une ficelle, dans d'autres impossible: un crayon posé sur la pointe verticalement. Dans ces deux cas, la différence majeure est la position du centre de gravité par rapport au support de l'objet. Si le support est au dessus du centre de gravité l'objet sera en équilibre stable, sinon il sera en équilibre instable. 
+
+Une situation un peu plus intéressante est celle de la @fig:equilibre_caisse. Nous y considérons une caisse que nous allons pencher. Si nous la penchons un tout petit peu elle reviendra à sa position d'équilibre, si en revanche nous penchons trop la caisse et se tournera sur une de ses autres faces. La différence de comportement est due au fait que dans le premier cas, le centre de gravité se trouve au dessus du support de la caisse alors que dans le second ce n'est plus le cas. En d'autres termes, la force de gravité (qui s'applique au centre de gravité) passe au travers sa base dans le cas du retour à l'équilibre, alors que dans le cas où la caisse se retourne la force de gravité ne passe plus au travers de la base, mais au dehors.
+
+![Une caisse (gauche( penchée en deçà (milieu) et au delà (droite) de sa position d'équilibre stable.](figs/equilibre_caisse.pdf){#fig:equilibre_caisse width=60%}
+
+
 ## Questions
 
 1. Si une personne se tient sur un skateboard à l'arrêt. Pourquoi tombe-t-elle vers l'arrière si on pousse soudainement le skate vers l'avant?
