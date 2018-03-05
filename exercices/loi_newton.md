@@ -157,3 +157,43 @@ L'accélération est donc donnée par
 $$
 a=\frac{F_{g,x}}{m}=\frac{49}{10}=4.9\ \m/\s^2.
 $$
+
+Exercice #
+
+Supposons que nous avons deux masses, $m_1=1\ \kg$ et $m_2=2\ \kg$, reliées par une corde. La corde passe dans une poulie suspendue à un plafond. Déterminer la tension dans la corde quand on lâche les masses.
+
+Solution #
+
+![Les masses $m_1$ et $m_2$ suspendues à la poulie.](../figs/poulie.pdf){#fig:poulie width=30%}
+
+Comme on le voit sur la @fig:poulie, la même tension est présente dans la corde pour chacune des deux masses. Le bilan des forces sera donc
+$$
+\vec F_t+\vec F_{g,1}=m_1 \vec a_1,\quad\vec F_t+\vec F_{g,2}=m_2 \vec a_2.
+$$
+De plus l'accélération des deux masses est de même norme mais de direction opposée, on a donc 
+$$
+\vec a_1=-\vec a_2.
+$$
+On a donc le système suivant à résoudre
+$$
+\begin{aligned}
+\vec F_t+\vec F_{g,1}&=m_1 \vec a_1\\
+\vec F_t+\vec F_{g,2}&=-m_2 \vec a_1.
+\end{aligned}
+$$
+Comme tout est aligné dans la direction $y$, on peut enlever simplement considérer les composantes $y$ de chacune des équation. Il vient
+$$
+\begin{aligned}
+F_t-m_1g&=m_1 a_1\\
+F_t-m_2g&=-m_2 a_1.
+\end{aligned}
+$$
+En divisant la première équation par $m_1$ et la deuxième par $m_2$ et en sommant le résultat, on obtient
+$$
+\begin{aligned}
+\frac{F_t}{m_1}+\frac{F_t}{m_2}-2g&=0,\\
+\frac{(m_2+m_1)F_t}{m_1m_2}&=2g,\\
+F_t&=2g\frac{m_1m_2}{m_1+m_2},\\
+F_t&=2\cdot 9.8\frac{1\cdot 2}{1+2}=13.1\ \N.
+\end{aligned}
+$$
