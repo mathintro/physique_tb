@@ -3068,7 +3068,7 @@ d'un objet va dépendre de plusieurs facteurs. D'une part du matériau dont il e
 plus un objet est long, plus il s'allongera facilement, plus il sera épais plus il sera difficile de l'allonger. Pour un allongement faible, par rapport à la longueur initiale d'un objet, nous avons déduisons de l'équation @eq:hooke
 $$
 \Delta L = \frac{1}{E}\frac{F}{A} L_0,
-$$
+$${#eq:dl_f}
 où $E$ est le module d'élasticité ou module de Young[^19] qui ne dépend que du matériau dans lequel est fait l'objet et dont les unités sont $[\N/\m^2]$.
 
 Nous pouvons également réécrire cette équation sous une forme un peu plus conventionnelle, comme
@@ -3105,6 +3105,46 @@ F_\mathrm{acier}\cong 60\ \N, \ F_\mathrm{nylon}\cong 15\ \N.
 $$
 
 ---
+
+## Élasticité: la contrainte et la déformation
+
+L'@eq:dl_f peut être réécrite comme
+$$
+\frac{F}{A}=E\cdot \frac{\Delta L}{L_0}.
+$${#eq:stress_strain}
+On constate que la force par unité de surface est proportionnelle au taux d'allongement de notre objet et que la constante de proportionnalité est la constante de Young. 
+
+La force par unité de surface est appelée la *contrainte*, $\sigma$, et a les unités de $\N/\m^2$
+$$
+\sigma=\frac{F}{A}.
+$$
+
+---
+
+Remarque #
+
+La contrainte a les mêmes unités que la pression. En fait ces deux concepts sont reliés.
+
+---
+
+Le taux d'élongation est appelé la *déformation* et est sans unités. L'@eq:stress_strain nous dit que la déformation est proportionnelle à la contrainte.
+
+
+## Élasticité: la traction, la compression et le cisaillement
+
+Nous définissons trois types de contraintes élémentaires (voir @fig:contraintes_elem): la *traction*, la *compression* et le *cisaillement*. 
+
+![Les trois types de contraintes: la traction (gauche), la compression (milieu), et le cisaillement (droite).](figs/contraintes_elem.pdf){#fig:contraintes_elem width=100%}
+
+Nous avons déjà vu la contrainte de traction qui a pour effet d'allonger un objet auquel on applique une force. La compression est l'opposé de la traction. Au lieu d'allonger l'objet, celui-ci va être raccourci (ou comprimé). Le module de Young reste le même pour la compression et pour la traction en général. 
+
+Le cisaillement est très différent. Pour la compression ou la traction la force exercée sur l'objet est perpendiculaire à une de ses surfaces. Dans le cas du cisaillement la force est parallèle à une (ou des) faces de l'objet. L'équation reliant la déformation à la contrainte de cisaillement a la même structure que l'a loi de Hook, mais il faut réinterpréter les grandeurs
+qui y apparaissent
+$$
+\Delta L = \frac{1}{G}\frac{F}{A} L_0,
+$$
+où $G$ est le module de cisaillement, qui en règle général vaut $G\cong E/3$. Comme on peut le constater sur la @fig:contraintes_elem, la longueur $L_0$ au repos est perpendiculaire à la déformation $\Delta L$.
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.

@@ -1,4 +1,4 @@
-default:
+default: cours.md default.latex
 	pandoc -s -o cours.pdf cours.md --filter=pandoc-numbering --filter=$(PANDOC_CROSSREF)pandoc-crossref --template=./default.latex --pdf-engine pdflatex
 
 latex:
