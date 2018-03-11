@@ -3145,6 +3145,13 @@ $$
 $$
 où $G$ est le module de cisaillement, qui en règle général vaut $G\cong E/3$. Comme on peut le constater sur la @fig:contraintes_elem, la longueur $L_0$ au repos est perpendiculaire à la déformation $\Delta L$.
 
+## Élasticité: Changement de volume
+
+Jusqu'ici, nous avons considéré des corps qui subissaient des forces ou des couples de force sur certaines de leurs faces. Si à présent un objet est soumis à des forces pointant vers son centre, son volume va diminuer. Une situation où ce genre de choses peut se produire est lorsqu'un corps est immergé dans un fluide. Dans ce cas là, la pression, qui joue le rôle de la contrainte, va déformer l'objet (faire varier son volume) d'une quantité $\Delta V$ qui sera proportionnelle à son volume $V_0$ au repos, à la pression $P$ et inversement proportionnelle au *module d'élasticité isostatique* $B$
+$$
+\Delta V=-\frac{1}{B}V_0 P.
+$$
+Le signe négatif dans cet équation provient du fait que lorsque la pression augmente, le volume diminue. Au signe près cette équation a exactement la même structure que la loi de Hook.
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
