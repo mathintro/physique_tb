@@ -2555,7 +2555,7 @@ avec l'exemple suivant
 Exemple (Deux boites) #
 
 Soient deux boites, notées $A$ et $B$, reliées par une corde, comme dans la situation 
-de la @fig_deux_boites. Les boites ont des masses respectives de $m_A=10\ \kg$ et $m_B=20\ \kg$.
+de la @fig:deux_boites. Les boites ont des masses respectives de $m_A=10\ \kg$ et $m_B=20\ \kg$.
 Une force horizontale est appliquée sur la boite $A$, $F_h=50\ \N$. 
 
 ![Deux boites reliées par une corde.](figs/deux_boites.pdf){#fig:deux_boites width=40%}
@@ -3127,7 +3127,11 @@ La contrainte a les mêmes unités que la pression. En fait ces deux concepts so
 
 ---
 
-Le taux d'élongation est appelé la *déformation* et est sans unités. L'@eq:stress_strain nous dit que la déformation est proportionnelle à la contrainte.
+Le taux d'élongation est appelé la *déformation*, $\varepsilon$, et est sans unités
+$$
+\varepsilon=\frac{\Delta L}{L_0}.
+$$
+L'@eq:stress_strain nous dit que la déformation est proportionnelle à la contrainte.
 
 
 ## Élasticité: la traction, la compression et le cisaillement
@@ -3138,7 +3142,9 @@ Nous définissons trois types de contraintes élémentaires (voir @fig:contraint
 
 Nous avons déjà vu la contrainte de traction qui a pour effet d'allonger un objet auquel on applique une force. La compression est l'opposé de la traction. Au lieu d'allonger l'objet, celui-ci va être raccourci (ou comprimé). Le module de Young reste le même pour la compression et pour la traction en général. 
 
-Le cisaillement est très différent. Pour la compression ou la traction la force exercée sur l'objet est perpendiculaire à une de ses surfaces. Dans le cas du cisaillement la force est parallèle à une (ou des) faces de l'objet. L'équation reliant la déformation à la contrainte de cisaillement a la même structure que l'a loi de Hook, mais il faut réinterpréter les grandeurs
+Le cisaillement est très différent. Pour la compression ou la traction la force exercée sur l'objet est perpendiculaire à une de ses surfaces. 
+Dans le cas du cisaillement la force est parallèle à une (ou des) faces de l'objet: Il est le résultat de l'application d'un couple sur l'objet. 
+L'équation reliant la déformation à la contrainte de cisaillement a la même structure que l'a loi de Hook, mais il faut réinterpréter les grandeurs
 qui y apparaissent
 $$
 \Delta L = \frac{1}{G}\frac{F}{A} L_0,
@@ -3147,11 +3153,21 @@ où $G$ est le module de cisaillement, qui en règle général vaut $G\cong E/3$
 
 ## Élasticité: Changement de volume
 
-Jusqu'ici, nous avons considéré des corps qui subissaient des forces ou des couples de force sur certaines de leurs faces. Si à présent un objet est soumis à des forces pointant vers son centre, son volume va diminuer. Une situation où ce genre de choses peut se produire est lorsqu'un corps est immergé dans un fluide. Dans ce cas là, la pression, qui joue le rôle de la contrainte, va déformer l'objet (faire varier son volume) d'une quantité $\Delta V$ qui sera proportionnelle à son volume $V_0$ au repos, à la pression $P$ et inversement proportionnelle au *module d'élasticité isostatique* $B$
+Jusqu'ici, nous avons considéré des corps qui subissaient des forces ou des couples de force sur certaines de leurs faces. Si à présent un objet est soumis à des forces pointant vers son centre, son volume va diminuer (voir la @fig:bulk). Une situation où ce genre de choses peut se produire est lorsqu'un corps est immergé dans un fluide. Dans ce cas là, la pression, qui joue le rôle de la contrainte, va déformer l'objet (faire varier son volume) d'une quantité $\Delta V$ qui sera proportionnelle à son volume $V_0$ au repos, à la pression $P$ et inversement proportionnelle au *module d'élasticité isostatique*, $B$
 $$
 \Delta V=-\frac{1}{B}V_0 P.
 $$
 Le signe négatif dans cet équation provient du fait que lorsque la pression augmente, le volume diminue. Au signe près cette équation a exactement la même structure que la loi de Hook.
+
+![Illustration du changement de volume $\Delta V$ sous l'effet de la pression $P$.](figs/bulk_modulus.pdf){#fig:bulk width=50%}
+
+
+## Élasticité: la fracture
+
+Lorsqu'une contrainte devient trop élevée sur un objet, il ne peut plus l'absorber en se déformant. Les liaisons entre ses molécules vont se rompre et 
+l'objet va se casser. La contrainte maximale qu'un objet peut subir est la *résistance ultime*. La résistance ultime dépend non seulement 
+du matériau mais également du type de contrainte appliquée (compression, traction ou cisaillement). 
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
