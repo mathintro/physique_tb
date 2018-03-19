@@ -32,7 +32,7 @@ Une personne essaie de soulever un rocher très lourd de masse $m$ à l'aide d'u
 
 ![La force $\vec F_p$ exercée sur le levier de taille $R=r+r'$ autour de l'axe $\triangle$.](../figs/axe.pdf){#fig:axe width=40%}
 
-<!-- Solution (Levier) #
+Solution #
 
 On peut représenter cette situation sur la @fig:axe. La deuxième condition d'équilibre, nous dit que pour soulever le rocher on doit avoir que la somme des moments de force doivent être nuls. Le moment de force de l'homme sur le levier autour de l'axe $O$ est de
 $$\tau_{O,h}=r' F_p\sin(-\theta)=-(R-r) F_p\sin(\theta).$$
@@ -46,7 +46,7 @@ $$
 &r \sin(\theta)(F_p+ m g)=RF_p\sin(\theta),\\
 &r =R\frac{F_p}{F_p+ m g}.
 \end{aligned}
-$$ -->
+$$
 
 Exercice #
 
@@ -57,6 +57,20 @@ Trois enfants jouent sur une balançoire à bascule dont les bras ont une longue
 3. Même question, mais la balançoire est à l'horizontale lorsque l'enfant de masse $m_3$ s'assied.
 
 ![Trois enfant de masse $m_1$, $m_2$ et $m_3$ jouent sur une balançoire de longueur $2R$.](../figs/balancoire.pdf){#fig:balancoire width=100%}
+
+Solution #
+
+1. Le moment de force total $\tau_\mathrm{tot}$ est donné par
+\begin{equation}
+\tau_\mathrm{tot}=\tau_1-\tau_2=m_1 g R\sin(\pi/2)-m_2gR\sin(\pi/2)=R(m_1-m_2).
+\end{equation}
+2. Le système étant à l'équilibre on a que
+\begin{align}
+\tau_1-\tau_2-\tau_3&=0,\\
+m_1 g R \frac{h}{R}-m_2 g r\frac{h}{R}-m_3 g R\frac{h}{R}&=0,\\
+r&=R\frac{m_1-m_2}{m_3}.
+\end{align}
+3. On voit de l'exercice précédent qu'il n'y a aucune dépendance de l'angle de la balançoire. On a donc que la réponse est la même.
 
 Exercice #
 
