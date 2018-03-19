@@ -76,11 +76,26 @@ Exercice #
 
 Soit une masse de poids $\vec P$ accrochée à une corde. Cette corde s'enroule autour d'un tambour d'un treuil de rayon $r$. Le treuil est activé par une manivelle dont la longueur est $l$ (voir la @fig:treuil). 
 
-1. Quelle est la force tangentielle qu'il faut appliquer à la manivelle pour soulever la masse en fonction de $L$, $r$ et $\vec P$?
-2. Que vaut la force tangentielle si $||\vec P||=100\ \N$, $L=10\ \cm$, et $r=5\ \cm$?
+1. Quelle est la force tangentielle qu'il faut appliquer à la manivelle pour soulever la masse en fonction de $l$, $r$ et $\vec P$?
+2. Que vaut la force tangentielle si $||\vec P||=100\ \N$, $l=10\ \cm$, et $r=5\ \cm$?
 3. Que se passe-t-il si on augmente $L$ est on garde toutes les autres quantité constantes?
 
 ![On essaie de soulever une masse de poids $\vec P$ accrochée sur un tambour de rayon $r$ à l'aide d'un treuil dont la manivelle a une longueur $l$.](../figs/treuil.pdf){#fig:treuil width=30%}
+
+Solution #
+
+1. La condition d'équilibre est que $\tau_P=\tau_F$. On a donc que
+\begin{align}
+\tau_P&=\tau_F,\\
+P r&=F l,\\
+F=\frac{P r}{l}.
+\end{align}
+2. En remplaçant dans l'équation ci-dessus, on a
+\begin{equation}
+F=\frac{100\cdot 0.05}{0.1}=50\ \N.
+\end{equation}
+3. Comme $F$ est inversément proportionnel à $l$, plus on augmente $l$ plus la force nécessaire pour soulever le poids $\vec P$ diminue.
+
 
 Exercice #
 
