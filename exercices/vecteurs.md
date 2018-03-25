@@ -20,6 +20,8 @@ pandoc-numbering:
 urlcolor: blue
 ---
 
+\newcommand{\vectwo}[2]{\begin{pmatrix}#1 \\ #2 \end{pmatrix}}
+
 Série d'exercices {#vecteurs .unnumbered}
 =================
 
@@ -38,7 +40,22 @@ $$\begin{aligned}
 puis les calculer numériquement.
 3. Projeter ces vecteurs sur les axes horizontaux et verticaux ($x$ et $y$).
 
-<!-- Solution # -->
+Solution #
+
+1. J'ai entière confiance dans le fait que vous arrivez à dessiner ces vecteurs. On fera que les calculs donc.
+2. 
+$$\begin{aligned}                                                                                         
+\overrightarrow{OD}=\vectwo{1}{1}+\vectwo{2}{3}=\vectwo{3}{4},\\
+\overrightarrow{OE}=\vectwo{1}{1}-\vectwo{2}{3}=\vectwo{-1}{-2},\\                                        \overrightarrow{OF}=\vectwo{3}{4}-\vectwo{-1}{2}=\vectwo{4}{2},\\                                        
+\overrightarrow{OG}=\vectwo{4}{2}+\vectwo{2}{3}=\vectwo{6}{5}.                                            
+\end{aligned}$$ 
+3. 
+\begin{align}
+\overrightarrow{OD}_x=3,\quad \overrightarrow{OD}_y=4,\\
+\overrightarrow{OE}_x=-1,\quad \overrightarrow{OE}_y=-2,\\
+\overrightarrow{OF}_x=4,\quad \overrightarrow{OF}_y=2,\\
+\overrightarrow{OG}_x=6,\quad\overrightarrow{OG}_y=5.
+\end{align}
 
 Exercice #
 
