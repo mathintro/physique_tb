@@ -3030,7 +3030,7 @@ $$
 \begin{aligned}
 F&=k\Delta L,\\
 mg&=k\Delta L,\\
-0.5\cdot 9.8&=k\cdot 0.1,\\
+0.1\cdot 9.8&=k\cdot 0.1,\\
 k&=\frac{0.1\cdot 9.8}{0.1}=9.8\ \N/\m.
 \end{aligned}
 $$
@@ -3089,7 +3089,7 @@ $$\Delta T=\frac{1}{\alpha}\frac{\Delta L}{L_0}.\nonumber$$
 
 Exemple (Corde d'acier/de nylon) #
 
-Essayons de calculer la tension dans une corde de guitare électrique en acier ($E=200\cdot 10^9\ \N/\m^2$) d'épaisseur de $0.10\ \mm$ de diamètre et d'une longueur de $65\ \cm$. Si l'allongement de la corde est de $2.5\ \cm$ quand on l’accorde quelle est la tension dans la corde? Même question si la corde est en nylon ($3\cdot 10^9$) mais d'un diamètre de $0.4\ \mm$.
+Essayons de calculer la tension dans une corde de guitare électrique en acier ($E=200\cdot 10^9\ \N/\m^2$) d'épaisseur de $0.10\ \mm$ de diamètre et d'une longueur de $65\ \cm$. Si l'allongement de la corde est de $2.5\ \cm$ quand on l’accorde quelle est la tension dans la corde? Même question si la corde est en nylon ($E=3\cdot 10^9\N/\m^2$) mais d'un diamètre de $0.4\ \mm$.
 
 Solution (Corde d'acier/de nylon) #
 
@@ -3161,12 +3161,27 @@ Le signe négatif dans cet équation provient du fait que lorsque la pression au
 
 ![Illustration du changement de volume $\Delta V$ sous l'effet de la pression $P$.](figs/bulk_modulus.pdf){#fig:bulk width=50%}
 
+A titre d'exemple, pour l'eau, $B=2.2\cdot 10^9 \N/\m^2$. La pression dans l'eau augmente d'environ $1\atm$ par 10 mètres ($1\atm\cong 1\Pa$). Si on va donc 
+à une profondeur de $11000\m$ (la profondeur de la fosse des Mariannes), la pression est d'environ $1100\atm=1.1\cdot 10^8\Pa$, le taux de variation d'un volume d'eau $\Delta V/V_0\cong 5\%$. Pour l'air, $B=1\cdot 10^5\N/\m^2$, dans des conditions équivalentes, on aurait une diminution du volume de $\Delta V/V_0\cong 110000\%$! 
+On constate donc que l'eau essentiellement *incompressible*, contrairement à l'air.
+
 
 ## Élasticité: la fracture
 
 Lorsqu'une contrainte devient trop élevée sur un objet, il ne peut plus l'absorber en se déformant. Les liaisons entre ses molécules vont se rompre et 
-l'objet va se casser. La contrainte maximale qu'un objet peut subir est la *résistance ultime*. La résistance ultime dépend non seulement 
-du matériau mais également du type de contrainte appliquée (compression, traction ou cisaillement). 
+l'objet va se casser. La contrainte maximale qu'un objet peut subir est la *résistance ultime*, $\sigma_\mathrm{ult}$. La résistance ultime dépend non seulement 
+du matériau mais également du type de contrainte appliquée (compression, traction ou cisaillement). Typiquement pour des raisons de sécurité, on prévoit que la contrainte maximale sur les composants d'un bâtiment seront entre $3$ et $10$ fois inférieures à la résistance ultime des matériaux.
+
+A titre d'exemple, le béton a une résistance ultime de 
+$$
+\sigma_\mathrm{ult,comp}=20\cdot10^6\N/\m^2,\quad\sigma_\mathrm{ult,trac}=2\cdot10^6\N/\m^2,\quad\sigma_\mathrm{ult,cis}=2\cdot10^6\N/\m^2.
+$$
+Pour l'acier, nous avons
+$$
+\sigma_\mathrm{ult,comp}=500\cdot10^6\N/\m^2,\quad\sigma_\mathrm{ult,trac}=500\cdot10^6\N/\m^2,\quad\sigma_\mathrm{ult,cis}=250\cdot10^6\N/\m^2.
+$$
+
+On constate donc que le béton a une résistance ultime beaucoup moins élevée à la traction qu'à la compression. Afin de palier à ce problème, on a créé le béton armé, où des barres en acier sont incorporées dans le béton. Cela ne résolvant pas complètement le problème de la contrainte ultime sous tension, on a inventé le béton précontraint. Dans ce cas là, les barres en acier sont soumise à une traction lorsqu'elles sont incorporées au béton. De cette façon le béton se retrouve dans un état de compression lorsqu'il est à l'équilibre. Toute traction aura donc pour effet de d'abord relâcher cette contrainte et ainsi on pourra appliquer une plus grande traction sur ce genre de béton.
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir

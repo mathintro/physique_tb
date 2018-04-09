@@ -101,7 +101,7 @@ $$F=m\cdot g\Leftrightarrow m=F/g=1/9.8=0.102\ \kg.$$ -->
 
 Exercice (Corde d'acier/de nylon) #
 
-Essayons de calculer la tension dans une corde de guitare électrique en acier ($E=200\cdot 10^9\ \N/\m^2$) d'épaisseur de $0.10\ \mm$ de diamètre et d'une longueur de $65\ \cm$. Si l'allongement de la corde est de $2.5\ \cm$ quand on l’accorde quelle est la tension dans la corde? Même question si la corde est en nylon ($3\cdot 10^9$) mais d'un diamètre de $0.4\ \mm$.
+Essayons de calculer la tension dans une corde de guitare électrique en acier ($E=200\cdot 10^9\ \N/\m^2$) d'épaisseur de $0.10\ \mm$ de diamètre et d'une longueur de $65\ \cm$. Si l'allongement de la corde est de $2.5\ \cm$ quand on l’accorde quelle est la tension dans la corde? Même question si la corde est en nylon ($E=3\cdot 10^9\N/\m^2$) mais d'un diamètre de $0.4\ \mm$.
 
 <!-- Solution (Corde d'acier/de nylon) #
 
