@@ -99,9 +99,28 @@ F=\frac{100\cdot 0.05}{0.1}=50\ \N.
 
 Exercice #
 
-On empile des blocs identiques de masse $m$ les uns sur les autres comme sur la @fig:blocs. On désire placer le bloc du haut tel qu'il soit le plus à droite possible sans que le tout s'écroule.
+On empile des blocs identiques, de longueur $l$ et de masse $m$, les uns sur les autres comme sur la @fig:blocs. On désire placer le bloc du haut tel qu'il soit le plus à droite possible sans que le tout s'écroule.
 
 1. Comment placer les deux blocs (calculer $x_1$ et $x_2$)?
 2. Généraliser à $N$ blocs.
 
 ![Trois blocs identiques de masse $m$ et de longueur $l$ sont empilés.](../figs/blocs.pdf){#fig:blocs width=50%}
+
+Solution #
+
+Si on ne considère que deux blocs, le bloc du dessus est en équilibre tant que son centre de masse est *à gauche* du bord de droite du bloc du dessous. On a donc que tant que $x_1\leq \frac{l}{2}$ le bloc du dessus est stable. Il vient
+$$
+x_1=\frac{l}{2}.
+$$
+Si à présent nous avons trois blocs. pour que les deux blocs du dessus soient à l'équilibre, on doit avoir $x_1=l/2$. A présent, il faut considéré trouver la position du centre de masses des deux blocs du dessus. On voit facilement que le centre de masse se trouve à la position $d$
+$$
+d=\frac{1}{2m}\left(m\frac{l}{2}+ml\right)=\frac{3l}{4}.
+$$
+On en déduit immédiatement que tant que $x_2\leq \frac{l}{4}$ le système sera en équilibre. La limite de stabilité du système est donc de 
+$$
+x_1=\frac{l}{2},\quad x_2=\frac{l}{4}.
+$$
+En continuant le raisonnement exactement de la même manière, on a que  
+$$
+x_3=\frac{l}{6},\quad x_3=\frac{l}{8},\quad \dots\quad x_n=\frac{l}{2n}.
+$$

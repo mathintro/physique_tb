@@ -71,7 +71,31 @@ $$\begin{aligned}
 3. Calculer la longueur de $\overrightarrow{OB}$.
 4. Calculer l'angle entre $\overrightarrow{OB}$ et l'axe horizontal. Quelles sont les coordonnées polaires de $\overrightarrow{OB}$?
 
-<!-- Solution # -->
+Solution #
+
+1. 
+$$\begin{aligned}
+\overrightarrow{OD}=\vectwo{1}{1}-\vectwo{2}{3}-\vectwo{-1}{2}=\vectwo{0}{-4},\\
+\overrightarrow{OE}=3\cdot(\vectwo{0}{-4}+\vectwo{1}{1})=\vectwo{3}{-9},\\
+\overrightarrow{AC}=\vectwo{-1}{-1}+\vectwo{-1}{2}=\vectwo{-2}{1}.
+\end{aligned}$$
+2. 
+$$
+\overrightarrow{OB}_x=\vectwo{2}{0}.
+$$
+3. 
+$$
+||\overrightarrow{OB}||=\sqrt{4+9}=\sqrt{13}.
+$$
+
+4. L'angle, $\theta$, entre $\overrightarrow{OB}$ et l'axe horizontal est donné par
+$$
+\theta=\arctan\left(\frac{3}{2}\right)\cong 0.98\ \mathrm{rad}. 
+$$
+Les coordonnées polaires sont donc
+$$
+\vectwo{\sqrt{13}}{0.98}_{r,\theta}.
+$$
 
 Exercice #
 
@@ -82,4 +106,28 @@ Soient les vecteurs $\vec{a}=(1,1)$, $\vec{b}=(2,3)$, et $\vec c=(-1,2)$.
 3. Calculer le produit scalaire de $\vec{d}$ avec lui même et prendre la racine carrée du résultat.
 4. Soient les vecteur $\vec{f}$ et $\vec{g}$ dont les normes sont respectivement $1$ et $2$ formant un angle de $45^\circ$ entre eux. Quel est leur produit scalaire?
 
-<!-- Solution # -->
+Solution #
+
+1. Les normes valent
+\begin{align}
+||\vec a||&=\sqrt{2},\\
+||\vec b||&=\sqrt{13},\\
+||\vec c||&=\sqrt{5}.
+\end{align}
+2. Commençons par calculer $\vec d$
+$$
+\vec{d}=\vectwo{2}{6}.
+$$
+Et on a donc
+$$
+||\vec{d}||=\sqrt{40}.
+$$
+3. 
+$$
+\sqrt{\vec{d}\cdot\vec{d}}=\sqrt{40}.
+$$
+4. 
+$$
+\vec f\cdot \vec g=||\vec f||\cdot ||\vec g||\cos(45)=1\cdot 2\sqrt{2}/2=\sqrt{2}.
+$$
+
