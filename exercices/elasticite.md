@@ -135,7 +135,7 @@ F=\frac{\Delta L}{L_0}A E,
 $$
 il vient avec ce qu'on a vu plus haut
 $$
-mg=\frac{\Delta L}{L_0}A E\Leftrightarrow m=\frac{\Delta L}{L_0g}A E=3\cdot 10^{-4}\cdot 7.9\cdot10^{-9}\cdot 2\cdot 10^{11}=0.47\kg.
+mg=\frac{\Delta L}{L_0}A E\Leftrightarrow m=\frac{\Delta L}{L_0g}A E=\frac{3\cdot 10^{-4}\cdot 7.9\cdot10^{-9}\cdot 2\cdot 10^{11}}{9.8}=0.048\kg.
 $$ -->
 
 
