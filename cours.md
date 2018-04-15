@@ -3183,6 +3183,113 @@ $$
 
 On constate donc que le béton a une résistance ultime beaucoup moins élevée à la traction qu'à la compression. Afin de palier à ce problème, on a créé le béton armé, où des barres en acier sont incorporées dans le béton. Cela ne résolvant pas complètement le problème de la contrainte ultime sous tension, on a inventé le béton précontraint. Dans ce cas là, les barres en acier sont soumise à une traction lorsqu'elles sont incorporées au béton. De cette façon le béton se retrouve dans un état de compression lorsqu'il est à l'équilibre. Toute traction aura donc pour effet de d'abord relâcher cette contrainte et ainsi on pourra appliquer une plus grande traction sur ce genre de béton.
 
+# Hydrostatique
+
+Nous commençons ce chapitre par rappeler deux concepts que nous avons déjà vus dans les chapitres précédents, mais qui seront très important ici: ce qu'est un fluide et la densité.
+
+## Rappel: les états de la matière et la densité
+
+### Les fluides
+
+Comme nous l'avons déjà vu, la matière se présente sous la forme de principalement trois états: solide, liquide, et gazeux. Les liquides n'ont pas une forme prédéterminée, ils prennent la forme du contenant dans lesquels ils sont, mais comme le solide ils sont très faiblement compressibles: il est très difficile de changer leur volume en appliquant. Le gaz, comme le fluide, ne possède pas de forme fixe, de plus il est compressible: c'est cette propriété qui fait qu'il occupe toute la place disponible dans le récipient dans lequel il est contenu. 
+
+Dans ce chapitre nous nous intéressons à la phase liquide et gazeuse, qu'on peut regrouper sous la catégorie des fluides. Les fluides ont la particularité de se déformer peu importe la contrainte qu'on leur applique: ils "coulent". 
+
+### La densité
+
+La densité d'une substance (ou masse volumique), notée $\rho$, est le rapport de sa masse, $m$, sur son volume, $V$,
+$$
+\rho=\frac{m}{V}.
+$$
+Les unités de la densité sont les $\kg/\m^3$. Ce sont les différences de densité qui sont responsables des effets de flottabilité (comme nous le verrons plus en détail dans ce qui suit): un fluide plus dense à tendance à couler dans un fluide moins dense.
+
+Nous pouvons exprimer la force de gravité d'un objet en fonction de sa densité
+\begin{equation}
+m\cdot g=\rho\cdot V\cdot g.
+\end{equation}
+
+## La pression dans les fluides
+
+Comme nous l'avons vu dans le chapitre précédent, la pression, $P$, est définie comme le rapport entre la composante perpendiculaire d'une force, $F_\perp$, agissant sur une surface $A$ (voir la @fig:pressure)
+\begin{equation}
+P=\frac{F_\perp}{A},
+\end{equation}
+
+![La pression exercée par la force $\vec F$ sur la surface $A$.](figs/pressure.pdf){#fig:pressure width=50%}
+
+Les unités de la pression sont les pascals $[\mathrm{Pa}]=[\N/\m^2]$. 
+
+---
+
+Exemple (Calcul de pression) #
+
+Calculer la pression exercée sur le sol par un éléphant de $5$ tonnes (une patte d'éléphant a un rayon d'environ $15\ \cm$) et une femme de $60\ \kg$ portant des talon-aiguilles (la surface d'un talon est d'environ $1\ \cm^2$).
+
+Solution (Calcul de pression) #
+
+La force sous une patte d'éléphant est de
+\begin{equation}
+F_\mathrm{patte}=\frac{F_g}{4}=\frac{m_e\cdot g}{4}=12250\ \N.
+\end{equation}
+La surface de la patte est de $A_e=\pi 0.15^2=0.071\ \m^2$. On a donc que la pression sous une patte d'éléphant est de 
+\begin{equation}
+p_e=\frac{F_\mathrm{patte}}{A_e}=\frac{12250}{0.071}\cong 173000\mathrm{Pa}.
+\end{equation}
+La force de gravité sous le talon est de
+\begin{equation}
+F_\mathrm{talon}=\frac{m_f\cdot g}{2}=294\ \N.
+\end{equation}
+On a donc que la pression sous un talon est de 
+\begin{equation}
+p_t=\frac{F_\mathrm{talon}}{A_t}=\frac{294}{0.0001}\cong 2940000\mathrm{Pa}.
+\end{equation}
+On a donc que la pression sous un talon est environ 10 fois  plus élevé que sous une patte d'éléphant...
+
+---
+
+Un fluide exerce de la pression dans toutes les directions. Dans un fluide au repos, la pression à un endroit donné est la même dans *toutes* les directions. Si cela n'était pas le cas, le fluide se mettrait en mouvement, car une force résultante serait appliquée sur cet endroit. Comme un fluide se met en mouvement (coule) dès qu'on lui applique une contrainte il se mettrait en mouvement et ne serait donc plus au repos.
+
+De plus, lorsqu'un fluide au repos exerce une pression sur une surface, celle-ci agit toujours uniquement *perpendiculairement* à la surface. 
+Si ce n'était pas le cas, le fluide se mettrait en mouvement dans la direction parallèle à la surface à cause du principe d'action-réaction: la surface exercerait elle-même une force sur le fluide et le mettrait en mouvement (et ne serait donc plus au repose).
+
+Afin de calculer la variation de pression dans un liquide de densité uniforme (la densité d'un fluide peut toujours être considérée comme constante, car il est très difficile de changer son volume, il est incompressible) en fonction de la profondeur, nous devons considérer $h$, la distance entre la surface du fluide et la profondeur à laquelle nous voulons calculer la pression (voir la @fig:pression_profondeur). La colonne d'eau au dessus d'une surface $A$ ayant une masse, $m=\rho A h$, on a que 
+\begin{equation}
+P=\frac{F_g}{A}={\rho g h A}{A}=\rho g h.
+\end{equation}
+On constate que la pression est *indépendante* de $A$, et qu'elle ne dépend que de la profondeur.
+
+![La pression dans un fluide en fonction de la profondeur $h$ est indépendante de la surace $A$ si $\rho$ est constant.](figs/pression_profondeur.pdf){#fig:pression_profondeur width=50%}
+
+De cette formule, nous pouvons déduire la variation de pression, $\Delta P$, dans un liquide comme étant donnée par
+\begin{equation}
+\Delta P=P_2-P_1=\rho g (h_2-h_1)=\rho g \Delta h.
+\end{equation}
+
+---
+
+Exemple (Le tonneau) #
+
+Soit un tonneau d'une hauteur de $1\ \m$ rempli aux $3/4$ de vin ($\rho=1100\kg/\m^3$ à $20\oC$ pour $14\%$ d'alcool). Quelle est la pression au robinet situé à $5\ \cm$ au dessus du bas du tonneau?
+
+Solution (Le tonneau) # 
+
+La hauteur d'eau est donc de $\Delta h=0.75-0.05=0.7\m$. La pression est donc de
+\begin{equation}
+P=\rho g \Delta h=1100\cdot 9.8\cdot 0.7\cong 7500 \Pa.
+\end{equation}
+
+---
+
+--- 
+
+Exercice (Pression atmosphérique) #
+
+Soit la pression atmosphérique au niveau de la mer d'une atmosphère, ($1\ \mathrm{atm}\cong10^5\ \Pa$). Évaluer la masse d'air au dessus de la tête d'un humain (le périmètre crânien d'un adulte est d'environ $56\ \cm$). 
+
+---
+
+
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
