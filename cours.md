@@ -3261,9 +3261,9 @@ On constate que la pression est *indépendante* de $A$, et qu'elle ne dépend qu
 ![La pression dans un fluide en fonction de la profondeur $h$ est indépendante de la surace $A$ si $\rho$ est constant.](figs/pression_profondeur.pdf){#fig:pression_profondeur width=50%}
 
 De cette formule, nous pouvons déduire la variation de pression, $\Delta P$, dans un liquide comme étant donnée par
-\begin{equation}
+$$
 \Delta P=P_2-P_1=\rho g (h_2-h_1)=\rho g \Delta h.
-\end{equation}
+$${#eq:deltap}
 
 ---
 
@@ -3279,6 +3279,18 @@ P=\rho g \Delta h=1100\cdot 9.8\cdot 0.7\cong 7500 \Pa.
 \end{equation}
 
 ---
+
+L'@eq:deltap nous permet de fabriquer des manomètres qui servent à mesurer la pression. Le plus simple d'entre eux est le manomètre à *colonne de liquide* (voir la @fig:manometre). Il est formé un tube en "U" partiellement rempli de liquide. Un coté du tube est à une pression $P_0$ connue et l'autre à une pression $P_1$. On a donc avec l'@eq:deltap que la hauteur nous donne immédiatement la différence de pression entre les deux côté du tube
+\begin{equation*}
+\Delta P=P_1-P_0=\rho g (h_2-h_1)=\rho g \Delta h.
+\end{equation*}
+Puis si nous connaissons, nous pouvons déterminer $P_1$ avec 
+\begin{equation}
+P_1=P_0+\rho g (h_2-h_1)=\rho g \Delta h.
+\end{equation}
+On parle souvent de la longueur $\Delta h$ directement plutôt que de pression absolue ($\mm$ de mercure ou d'eau) comme unités pour la pression.
+
+![Le manomètre à colonne de liquide.](figs/manometre.pdf){#fig:manometre width=50%}
 
 --- 
 
@@ -3335,6 +3347,72 @@ Avec un piston d'environ $20\ \cm$ de rayon, un homme peut donc soulever un él�
 
 Ce principe est également utilisé pour les systèmes de freinage hydrauliques par exemple.
 
+## La flottabilité et le principe d'Archimède
+
+Vous avez certainement déjà fait l'expérience qu'un objet lorsqu'il est mis dans l'eau semble moins lourd. Dans les cas les plus extrêmes les objets flottent même à la surface (ils ne pèsent plus rien). Cet effet est dû à la *flottabilité* qui est une force s'exerçant sur tout objet plongé dans un fluide (si si même dans l'air) et qui est opposée à la force de gravité. La flottabilité est due à la différence de pression s'exerçant entre le haut et le bas d'un objet (voir la @fig:flottabilite),
+et donc la force s'appliquant sa surface supérieure est plus faible que celle s'appliquant sur sa surface inférieure, créant ainsi une force non-nulle orientée dans le sens opposé à la gravité. 
+
+![Illustration des forces responsables de la flottabilité.](figs/flottabilite.pdf){#fig:flottabilite width=50%}
+
+Considérons à présent le cas de la @fig:flottabilite. La différence de pression entre le haut et le bas du cylindre plongé dans un fluide de densité $\rho$ est donnée par
+\begin{equation}
+\Delta P=\rho g \Delta h.
+\end{equation}
+On a donc que la force de flottabilité, $F_f$, est donnée par
+\begin{equation}
+F_f=A\Delta P.
+\end{equation}
+Finalement, la force de flottabilité est donnée par
+\begin{equation}
+F_f=\rho g \Delta h A=\rho g V=g m_f,
+\end{equation}
+où on a utilisé que $V=A\Delta h$ et $m_f=\rho V$.
+On a donc que la force de flottabilité  est proportionnelle à la masse de liquide qui remplit le volume du cylindre. Et donc la flottabilité est égale au poids de *liquide déplacé* par le cylindre (où liquide déplacé veut dire le poids équivalent au volume du cylindre rempli de liquide).
+
+Nous avons raisonné ici avec un cylindre, mais le cette relation est vraie peu importe la forme de l'objet immergé. On peut énoncer le principe d'Archimède comme suit:
+
+*Tout corps plongé dans l'eau ressort mouillé*. 
+
+Et plus sérieusement:
+
+*Tout objet immergé dans un fluide subit une force de flottabilité égale au poids de fluide qu'il déplace.*
+
+---
+
+Question #
+
+Pourquoi un ballon d'air flotte-t-il dans l'eau? Et par extension, pourquoi tout objet avec une densité inférieur à celle du fluide dans lequel il est plongé flotte-t-il?
+
+---
+
+---
+
+Exemple (Flottabilité humaine) #
+
+Une femme de $60\ \kg$ fait la planche sur le lac. Lorsque ses poumons sont complètement rempli elle flotte, alors qu'elle coule à pic lorsque qu'elle expire. 
+
+1. Calculer son volume lorsqu'elle a les poumons remplis d'air (on néglige la masse d'air dans les poumons).
+2. Calculer son accélération lorsqu'elle a expiré tout l'air de ses poumons, sachant que leur volume final est de $1.5\ \l$ après expiration (on néglige les frottements).
+
+Solution (Flottabilité humaine) #
+
+1. Lorsque les poumons sont remplis d'air elle flotte tout juste. La force résultante qu'elle subit est donc nulle. On a donc que
+\begin{align}
+0&=F_g-F_f,\\
+0&=m g-m_e g,\\
+\rho_e V_f=m,\\
+V_f=\frac{m}{\rho_e}=\frac{60}{1000}=0.06 \m^3.
+\end{align} 
+2. Après expiration son volume a baissé de $1.5\ \l=0.0015\ \m^3$.
+Il vaut donc $V=0.06-0.0015=0.0585\ \m^3$.
+Comme elle coule, la force de flottabilité ne compense plus la force de gravité. On a donc que la force résultante vaut
+\begin{align}
+F_\mathrm{res}&=F_g-F_f,\\
+m a&=m g-m_e g,\\
+a&=\frac{m g-V\rho g}{m}=\frac{60\cdot 9.8-0.0585\cdot 1000\cdot 9.8}{60}=0.245\ \m/\s^2.
+\end{align} 
+
+---
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
