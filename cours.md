@@ -3288,7 +3288,52 @@ Soit la pression atmosphérique au niveau de la mer d'une atmosphère, ($1\ \mat
 
 ---
 
+## Le principe de Pascal
 
+Soit un humain plongé dans dans la mer à une profondeur de $10\ \m$. La pression qu'il subit à cause de l'eau est de
+\begin{equation}
+P_e=\rho g h=1000\cdot 9.8\cdot 10 \cong 10^5\ \Pa.
+\end{equation}
+Mais à cette pression, il faut ajouter la pression atmosphérique au niveau de la mer, qui vaut elle aussi $P_a=10^5\ \Pa$. La pression totale qui s'exerce sur lui est donc de 
+\begin{equation}
+P=P_e+P_a=2\cdot 10^5\ \Pa=2\ \mathrm{atm}.
+\end{equation}
+Ce résultat est dû au *principe de Pascal* qui nous dit que *si une pression extérieure, $P_e$, est appliquée sur un fluide, confiné dans un récipient, la pression en tout point du fluide est augmentée d'une quantité $P_e$*.
+
+Ce principe est à l'origine de beaucoup d'application très pratiques au quotidien, telle que la presse hydraulique (voir cette excellente chaine youtube: <https://bit.ly/1S46FB1>). Imaginons que nous ayons deux pistons de surfaces différentes, $A_1$ et $A_2$, qui sont reliés par un fluide. Si on applique une force $F_1$ sur le premier piston, le principe de Pascal nous dit que la pression sur les deux pistons sera égale. On peut donc écrire
+$$
+P_1=P_2.
+$$
+Cette équation peut se réécrire sous la forme
+$$
+\frac{F_1}{A_1}=\frac{F_2}{A_2},
+$$
+et finalement la force sur le piston $2$ peut se calculer comme
+$$
+F_2=F_1\frac{A_2}{A_1}.
+$$
+On voit donc que la force est démultipliée par un facteur $A_2/A_1$, soit le rapport des surfaces des pistons. 
+
+---
+
+Exemple (Éléphant le retour) #
+
+Si nous posons un éléphant de $5$ tonnes sur un piston d'une surface de $12\ \m^2$. Quelle doit être la surface du second piston pour qu'un homme de $70\ \kg$ puisse soulever l'éléphant en se tenant sur le piston?
+
+Solution (Éléphant le retour) #
+
+Nous avons que la pression sur les deux piston doit être égale, et donc
+\begin{align}
+P_h&=P_e,\\
+\frac{m_h g}{A_h}&=\frac{m_e g}{A_e},\\
+A_h&=\frac{m_h A_e}{m_e},\\
+A_h&=\frac{70\cdot 12}{5000}\cong 0.17\ \m^2,\\
+\end{align}
+Avec un piston d'environ $20\ \cm$ de rayon, un homme peut donc soulever un éléphant.
+
+---
+
+Ce principe est également utilisé pour les systèmes de freinage hydrauliques par exemple.
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
