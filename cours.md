@@ -3385,6 +3385,37 @@ Pourquoi un ballon d'air flotte-t-il dans l'eau? Et par extension, pourquoi tout
 
 ---
 
+En fait, on peut dire que tout objet, de densité $\rho_o$, va flotter s'il est immergé dans dans un fluide, de densité $\rho_f$, avec $\rho_o<\rho_f$.
+
+Si l'objet a un volume $V_o$, on peut dire que
+\begin{equation}
+F_f=\rho_f V g>\rho_o V_o g=F_g.
+\end{equation}
+L'objet va donc subir une force verticale vers la surface du fluide. 
+
+Lorsque l'objet se trouve en équilibre à la surface, cela signifie que la force de flottaison, $F_f$, est égale à la force de gravité de l'objet, $F_g$. On a donc que 
+\begin{align}
+F_f&=F_g,\ \mbox{à l'équilibre},\nonumber\\
+\rho_f V_{\mathrm{depl}}g&=\rho_o V_o g,\nonumber\\
+\frac{V_{\mathrm{depl}}}{V_o}g=\frac{\rho_o}{\rho_f},
+\end{align}
+où $V_\mathrm{depl}$ est le volume d'eau déplacé par l'objet.
+
+
+---
+
+Application (L'hydromètre) #
+
+Un hydromètre est un ustensile constitué d'un cylindre creux gradué dont un bout est lesté qui est utilisé pour mesurer la densité d'un fluide relativement à celle d'un fluide dont la densité est connue, en général de l'eau. 
+
+![Schéma d'un hydromètre.](figs/hydrometre.pdf){#fig:hydrometre width=50%}
+
+On peut s'en servir par exemple pour mesurer la densité du moût de raisin ou d'orge, du sirop de sucre, on peut évaluer le taux d'alcool du vin.
+
+Lorsque l'hydromètre constitué d'un cylindre en verre, d'un lest et du fluide dont on désire mesurer la densité (voir la @fig:hydrometre) est à l'équilibre, on peut lire sa densité relativement à celle de l'eau. Si nous supposons que la masse du lest $m_l$ est connue, que le diamètre du cylindre $d$ est connue et que la masse du verre, $m_v$, l'est également, déterminer la hauteur de la graduation en fonction de la densité du fluide inconnu, $\rho_o$, de la densité du fluide de référence, $\rho_f$.
+
+---
+
 ---
 
 Exemple (Flottabilité humaine) #
@@ -3413,6 +3444,40 @@ a&=\frac{m g-V\rho g}{m}=\frac{60\cdot 9.8-0.0585\cdot 1000\cdot 9.8}{60}=0.245\
 \end{align} 
 
 ---
+
+---
+
+Question #
+
+Quel objet ressent la plus grande force de flottabilité lorsqu'il est plongé dans l'eau?
+
+1. $1\ \kg$ d'hélium.
+2. $1\ \kg$ de bois.
+3. $1\ \kg$ d'aluminium.
+
+---
+
+---
+
+Question #
+
+Quel objet ressent la plus grande force de flottabilité lorsqu'il est plongé dans l'eau?
+
+1. $1\ \m^3$ d'hélium.
+2. $1\ \m^3$ de bois.
+3. $1\ \m^3$ d'aluminium.
+
+---
+
+---
+
+Question #
+
+Sachant que la densité de l'acier est beaucoup plus élevée que celle de l'eau, comment expliquez-vous qu'un bateau en acier puisse flotter?
+
+---
+
+
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
