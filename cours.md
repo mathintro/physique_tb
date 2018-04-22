@@ -3469,14 +3469,50 @@ Quel objet ressent la plus grande force de flottabilité lorsqu'il est plongé d
 
 ---
 
----
-
 Question #
 
 Sachant que la densité de l'acier est beaucoup plus élevée que celle de l'eau, comment expliquez-vous qu'un bateau en acier puisse flotter?
 
 ---
 
+# Hydrodynamique
+
+Dans ce chapitre nous allons nous intéresser aux fluides en mouvement. 
+Phénoménologiquement il y a deux états assez différents lorsqu'on observe l'écoulement d'un fluide. Dans un cas l'écoulement varie peu dans l'espace et dans le temps: chaque "couche" de fluide glisse de façon gentille l'une sur l'autre. Dans ce cas, on dit que l'écoulement est *laminaire*. A l'inverse dans le cas d'un écoulement *turbulent*, on constate de rapides variations dans l'écoulement et la production de *tourbillons* de toutes tailles. Une façon de visualiser l'état de l'écoulement est d'utiliser les *lignes de courant*, qui représentent le trajet emprunté par les particules de fluides (typiquement on met en évidence les lignes de courant à l'aide d'un colorant ou à de la fumée). 
+
+Dans les deux cas, les couches de fluide interagissent entre-elles grâce à la *viscosité*. Dans le cas d'un écoulement laminaire, c'est cette quantité qui est la principale responsable de la la dissipation d'énergie dans un fluide. Dans le cas laminaire, c'est d'abord les tourbillons qui dissipent l'énergie, puis dans une plus petite mesure la viscosité. Ainsi, dans le cas d'un écoulement laminaire, la viscosité a tendance à être plus élevée que dans le cas turbulent.
+
+Lorsque nous décrivons le déplacement d'un fluide, nous commençons toujours pas décrire son débit massique, $D$ (unités $\kg/\s$), soit la quantité de masse, $\Delta m$ qui passe par un point, $\vec x$, donné durant un temps donné, $\Delta t$,
+\begin{equation}
+D=\frac{\Delta m(\vec x)}{\Delta t}=\frac{\rho \Delta V}{\Delta t},
+\end{equation}
+où $\rho$ est la densité du fluide, et $V$ représente un volume autour du point $\vec x$. Si à présent, nous considérons que le fluide pendant le temps $\Delta t$ traverse une surface $A$ tout en parcourant une distance $\Delta s$, nous pouvons réécrire cette équation comme
+\begin{equation}
+D=\frac{\rho A \Delta s}{\Delta t}=\rho A v,
+\end{equation}
+où $v=\Delta s/\Delta t$ est la vitesse du fluide.
+
+Si à présent, nous considérons l'écoulement d'un fluide dans un tube imperméable et que nous étudions le débit dans le tube à deux endroits différents, $D_1$ et $D_2$. Nous pouvons déduire, que comme le tube est imperméable les deux débits doivent être égaux (sinon on créerait de la masse à partir de rien ce qui est impossible). On aurait donc que
+\begin{align}
+D_1&=D_2,\\
+\rho_1 A_1 v_1&=\rho_2 A_2 v_2,
+\end{align}
+où $\rho_i$, $A_i$, et $v_i$ ($i=1,2$) sont respectivement les densités, surfaces et vitesses du fluide aux deux points que nous étudions.
+Cette équation représente la *conservation de la masse* ou s'appelle également *équation de continuité*. 
+
+---
+
+Question #
+
+Que devient cette équation si le fluide est incompressible?
+
+---
+
+Si le fluide est incompressible, nous avons que sa densité est constante, et donc $\rho_1=\rho_2$, il vient
+\begin{equation}
+A_1 v_1=A_2 v_2.
+\end{equation}
+La quantité $A\cdot v=A\Delta l/\Delta t=\Delta V/\Delta t$ représente le débit (mesuré en $\m^3/s$). On a donc que pour un fluide incompressible le débit est constant. Cela explique les grands variations de vitesses dans les fleuves ou rivières, ou également dans les tuyaux lorsqu'ils rétrécissent. En effet comme le débit est constant, lorsque la section diminue la vitesse doit augmenter. A l'inverse, lorsque la section augmente la vitesse doit diminuer.
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
