@@ -3475,6 +3475,36 @@ Sachant que la densité de l'acier est beaucoup plus élevée que celle de l'eau
 
 ---
 
+## Tension de surface et capillarité
+
+La surface d'un liquide se comporte de façon très similaire à une membrane qui serait sous tension. Par exemple, les gouttes de rosée ont une forme sphérique (un peu comme si elles étaient enfermées dans un petit ballon transparent), la surface du vin dans un verre n'est pas parfaitement horizontale mais forme un *ménisque*, comme si c'était un bout de tissu tendu entre les parois du verre. Certains insectes, comme le gerris, utilisent cette propriété pour "marcher" sur l'eau.
+
+Cette propriété est due aux forces d'attraction entre les molécules du liquide. Ces forces sont en revanche absente avec l'environnement du liquide. On appelle la *tension de surface*, $\gamma$, la force par unité de longueur, $l$, qui agit perpendiculairement à la surface du liquide
+\begin{equation}
+\gamma=\frac{F}{l}.
+\end{equation}
+Cette force a tendance à garder la surface du fluide fermée. Les unités de la tension de surface sont des $[\N/\m]$. La tension de surface dépend non seulement de la nature du liquide, mais également de la température.
+
+Considérons la situation de la @fig:surf_tens. On a une fine couche de fluide qui est étirée vers la droite par la force $\vec F$, et on augmente ainsi la surface du fluide. 
+
+![Schéma d'un hydromètre.](figs/surf_tension.pdf){#fig:surf_tens width=50%}
+
+Le fluide a deux surfaces en contact avec l'air, une "au-dessus" et une "au-dessous" (voir la @fig:surf_tens), la tension de surface totale sera donnée grâce à la relation ci-dessus par
+\begin{equation}
+\gamma=\frac{F}{2 l}.
+\end{equation}
+Avec cette appareil, on peut donc mesurer la tension de surface de n'importe quel liquide. A titre d'exemple la tension de surface de l'esu est donnée par $\gamma_\mathrm{eau}=0.072\ \N/\m$ (à $20\oC$).
+
+### La capillarité
+
+La tension de surface est également responsable de l'effet de *capillarité*. Vous avez certainement tous déjà remarqué que le vin a tendance à "remonter" le long des parois d'un verre. On dit que le vin *mouille* le verre. A l'inverse le mercure par exemple forme des petites billes lorsqu'il tombe sur le sol. On dit qu'il est *non-mouillant*. 
+
+Les propriétés de mouillages sont le résultat de la compétition entre les forces attractives entre les molécules de liquide entre-elles d'une part et les molécules du liquide et du solide d'autre part. On parle de cohésion pour les forces inter-moléculaire du même type, et d'adhésion pour les force inter-moléculaires de deux types différents. Dans le cas du vin et du verre les force d'adhésions sont plus fortes entre les molécules du vin et du verre qu'entre les molécules de vin entre-elles. C'est l'inverse qui se produit pour les forces entre molécules de mercure et de verre, où la cohésion est plus force.
+
+Un des effets les plus spectaculaire de la capillarité, se produit dans des tubes très fins. Dans ces cas-là, le liquide peut "monter" ou "descendre" dans le tube selon qu'il est mouillant ou non-mouillant. Vous avez certainement tou·te·s déjà fait l'expérience avec le sucre dans le thé ou le café.
+
+
+
 # Hydrodynamique
 
 Dans ce chapitre nous allons nous intéresser aux fluides en mouvement. 
@@ -3513,6 +3543,8 @@ Si le fluide est incompressible, nous avons que sa densité est constante, et do
 A_1 v_1=A_2 v_2.
 \end{equation}
 La quantité $A\cdot v=A\Delta l/\Delta t=\Delta V/\Delta t$ représente le débit (mesuré en $\m^3/s$). On a donc que pour un fluide incompressible le débit est constant. Cela explique les grands variations de vitesses dans les fleuves ou rivières, ou également dans les tuyaux lorsqu'ils rétrécissent. En effet comme le débit est constant, lorsque la section diminue la vitesse doit augmenter. A l'inverse, lorsque la section augmente la vitesse doit diminuer.
+
+
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
