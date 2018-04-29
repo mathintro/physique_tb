@@ -3499,11 +3499,58 @@ Avec cette appareil, on peut donc mesurer la tension de surface de n'importe que
 
 La tension de surface est également responsable de l'effet de *capillarité*. Vous avez certainement tous déjà remarqué que le vin a tendance à "remonter" le long des parois d'un verre. On dit que le vin *mouille* le verre. A l'inverse le mercure par exemple forme des petites billes lorsqu'il tombe sur le sol. On dit qu'il est *non-mouillant*. 
 
+La mouillabilité se caractérise par *l'angle de contact*, $\phi$ (voir la @fig:angle_contact). Un liquide mouillant se caractérise par un angle de contact $\
+
+![A gauche un fluide mouillant, $\phi<90^\circ$. A droite un fluide non-mouillant, $\phi>90^\circ$.](figs/angle_contact.pdf){#fig:angle_contact width=100%}
+
 Les propriétés de mouillages sont le résultat de la compétition entre les forces attractives entre les molécules de liquide entre-elles d'une part et les molécules du liquide et du solide d'autre part. On parle de cohésion pour les forces inter-moléculaire du même type, et d'adhésion pour les force inter-moléculaires de deux types différents. Dans le cas du vin et du verre les force d'adhésions sont plus fortes entre les molécules du vin et du verre qu'entre les molécules de vin entre-elles. C'est l'inverse qui se produit pour les forces entre molécules de mercure et de verre, où la cohésion est plus force.
 
-Un des effets les plus spectaculaire de la capillarité, se produit dans des tubes très fins. Dans ces cas-là, le liquide peut "monter" ou "descendre" dans le tube selon qu'il est mouillant ou non-mouillant. Vous avez certainement tou·te·s déjà fait l'expérience avec le sucre dans le thé ou le café.
+Un des effets le plus spectaculaire de la capillarité (voir la @fig:capillarite), se produit dans des tubes très fins. Dans ces cas-là, le liquide peut "monter" ou "descendre" dans le tube selon qu'il est mouillant ou non-mouillant. 
+
+![A gauche un fluide mouillant, à droite un fluide non-mouillant.](figs/capillarite.pdf){#fig:capillarite width=50%}
+
+L'effet se voit également lorsqu'on plonge un carré de sucre dans le thé ou le café.
 
 
+# Travail et énergie
+
+## Force et travail
+
+Nous avons déjà brièvement discuté la force et le travail dans le chapitre sur l'énergie thermique. Ici, nous allons voir ce concept un peu plus en détail.
+
+Soit une force constante, $\vec F$ agissant sur un objet qui effectue un déplacement $\vec d$ sous l'action de la force. Le travail effectué par la force $\vec F$ est défini par
+\begin{equation}
+W=F d\cos\theta,
+\end{equation}
+où $\theta$ est l'angle entre la force $\vec F$ et le déplacement $\vec d$. On peut également exprimer cette équation comme le produit entre le déplacement $d$ et la composante parallèle au déplacement de la force, $F_\parallel$. On a donc que si la force et le déplacement sont parallèles, alors l'équation ci-dessus devient
+\begin{equation}
+W=F d.
+\end{equation}
+A l'inverse si la force agit perpendiculairement au déplacement, le travail est nul, car $\cos(\pi/2)=0$. 
+Les unités du travail sont des joules $[\J]=[\N\cdot \s]$.
+
+---
+
+Exemple (Travail sur une caisse) #
+
+Soir une caisse posée de masse $m=10\ \kg$ posée sur le sol et attachée à une corde formant un angle de $\theta=30^\circ$ avec l'horizontale. On exerce une force de $F_t=100\ \N$ le long de la corde ce qui permet de déplacer la caisse sur une distance de $10\ \m$. La caisse subit une force de frottement de $F_\mathrm{fr}=20\ \N$. Calculer le travail effectué par chacune des forces, puis le travail appliqué sur la caisse.
+
+Solution (Travail sur une caisse) #
+
+1. La force de gravité agissant sur la caisse est de $F_g=98\ \N$, mais celle-ci agit perpendiculairement au déplacement, le travail est donc $W_g=0$. De même la force normale du sol sur la boîte est nul $W_N=0$. Il reste donc la force de frottement, qui effectue un travail de 
+\begin{equation}
+W_\mathrm{fr}=F_\mathrm{fr}d\cos(180)=-20\cdot 10=-200\ \J.
+\end{equation}
+La force de traction, elle effectue un travail de 
+\begin{equation}
+W_t=F_td\cos(30)=100\cdot \frac{\sqrt{3}}{2}\cdot 10\cong 866\ \J.
+\end{equation}
+2. Le travail total effectué sur la caisse n'est autre que la somme du travail de toutes les forces agissant sur la caisse. On obtient donc
+\begin{equation}
+W=W_g+W_N+W_\mathrm{fr}+W_t=866-200=666\ \J.
+\end{equation}
+
+---
 
 # Hydrodynamique
 
