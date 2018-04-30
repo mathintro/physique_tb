@@ -3587,9 +3587,9 @@ d&=\frac{1}{2}a\Delta t^2+v_1\Delta t,\\
 a&=\frac{v_2-v_1}{\Delta t},
 \end{align}
 nous pouvons déduire que 
-\begin{equation}
+$$
 a=\frac{v_2^2-v_1^2}{2d}.
-\end{equation}
+$${#eq:a_v2}
 On peut donc calculer le travail total en fonction de de la variation des vitesses de l'objet comme
 $$
 W=F_\mathrm{res} d=m a=m\cdot a\cdot \left(\frac{v_2^2-v_1^2}{2ad}\right)=\frac{1}{2}m\left(v_2^2-v_1^2\right)=\frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2.
@@ -3659,6 +3659,45 @@ La distance de freinage a plus que doublé! (Presque triplé en fait.)
 
 ---
 
+## Énergie potentielle
+
+A présent, nous allons discuter une autre sorte d'énergie qui est dépendante de des forces liées  l'état d'un objet et non de son mouvement. Ce type d'énergie présent dans la plupart des systèmes est *l'énergie potentielle*, $E_p$. Un exemple d'énergie potentielle est l'énergie contenue dans un ressort comprimé. Lorsque le ressort est relâché, il pourra effectuer un travail en se détendant.
+
+### L'énergie potentielle de gravitation
+
+L'exemple le plus commun d'énergie potentielle est celle liée au champs gravitationnel. Lorsqu'on éloigne un objet du centre de la terre il emmagasine de l'énergie. En effet, lorsqu'on relâche l'objet il va tomber sur le sol sous l'effet de la gravitation. 
+
+Dans ce cas, si un objet de masse $m$, se trouve à une hauteur $h$. Le travail qu'il va effectuer en tombant sur le sol sera
+$$
+W_p=F_g \cdot h=m\cdot g\cdot h.
+$$
+En fait en toute généralité $h=y_2-y_1$, une différence de hauteur. Si l'objet est monté entre les hauteurs $y_1$ et $y_2$ il va emmagasiner une quantité $m\cdot g\cdot h$ d'énergie. Nous pouvons le constater en calculant l'énergie cinétique que cet objet aura en touchant le sol. 
+
+Si nous lâchons l'objet de masse $m$ d'une hauteur $h$, on peut déduire de l'@eq:a_v2 que 
+\begin{equation}
+v^2=2 g h.
+\end{equation}
+On a donc que l'énergie cinétique lorsque l'objet touche le sol est égale à l'énergie potentielle à une hauteur $h$. En effet,
+\begin{align}
+\frac{1}{2}mv^2&=\frac{1}{2} m (2 g h),\nonumber\\
+\frac{1}{2}mv^2&=m g h,\\
+E_c&=E_p.
+\end{align}
+On a donc de façon similaire à ce que nous avons vu pour l'énergie cinétique, que l'énergie potentielle est liée au travail que peut faire la force gravitationnelle sur l'objet. On a que la variation d'énergie potentielle est égale à l'inverse du travail en fait. On peut dire que l'énergie potentielle est "emmagasinée"
+\begin{equation}
+\Delta E_p=-W_g,
+\end{equation}
+avec 
+$$
+\Delta E_p=m\cdot g\cdot (y_2-y_1).
+$${#eq:mgh}
+Il est important de réaliser que l'énergie potentielle ne dépend que de la hauteur $h$, et non du chemin pris pour arriver à $h$ (c'est égal de monter en ligne droite où le long d'un plan incliné). 
+
+De plus, on voit dans l'@eq:mgh que seule la différence de hauteur compte. En fait l'énergie potentielle ne se mesure que relativement à une hauteur de référence quelconque. On mesure alors que sa variation par rapport à notre référence.
+
+---
+
+Exemple (Énergie potentielle sur des montagnes russes) #
 
 
 
