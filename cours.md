@@ -3514,7 +3514,7 @@ L'effet se voit également lorsqu'on plonge un carré de sucre dans le thé ou l
 
 # Travail et énergie
 
-## Force et travail
+## Le travail d'une force constante
 
 Nous avons déjà brièvement discuté la force et le travail dans le chapitre sur l'énergie thermique. Ici, nous allons voir ce concept un peu plus en détail.
 
@@ -3522,9 +3522,9 @@ Soit une force constante, $\vec F$ agissant sur un objet qui effectue un déplac
 \begin{equation}
 W=F d\cos\theta,
 \end{equation}
-où $\theta$ est l'angle entre la force $\vec F$ et le déplacement $\vec d$. On peut également exprimer cette équation comme le produit entre le déplacement $d$ et la composante parallèle au déplacement de la force, $F_\parallel$. On a donc que si la force et le déplacement sont parallèles, alors l'équation ci-dessus devient
+où $\theta$ est l'angle entre la force $\vec F$ et le déplacement $\vec d$. On peut également exprimer cette équation comme le produit entre le déplacement $d$ et la composante parallèle au déplacement de la force, $F_\parallel=F \cos\theta$. On a donc que si la force et le déplacement sont parallèles, alors l'équation ci-dessus devient
 \begin{equation}
-W=F d.
+W=F_\parallel d.
 \end{equation}
 A l'inverse si la force agit perpendiculairement au déplacement, le travail est nul, car $\cos(\pi/2)=0$. 
 Les unités du travail sont des joules $[\J]=[\N\cdot \s]$.
@@ -3551,6 +3551,27 @@ W=W_g+W_N+W_\mathrm{fr}+W_t=866-200=666\ \J.
 \end{equation}
 
 ---
+
+## Le travail d'une force variable
+
+Lorsqu'un objet subit une force qui varie (en direction ou en norme) lors du déplacement de l'objet, le travail de cette force va également changer. 
+C'est le cas le plus général. Par exemple, lorsque vous êtes sur votre vélo, la force que vous devez exercer au fur et à mesure que vous allez plus vite va varier grandement.
+
+Pour calculer ce travail on va donc décomposer l'action de la force lors du déplacement en plusieurs parties. Sur la @fig:f_d on voit un graphique de la force en fonction du déplacement. On va découper le déplacement entre deux points $d_a$ et $d_b$ en $N$ petits bouts $\Delta d=(d_b-d_a)/N$. La distance parcourue après $i$ petits déplacements $\Delta d$ est donc donnée par
+\begin{equation}
+d_i=d_a+i\cdot \Delta,
+\end{equation}
+où $d_b=d_N$. A chaque déplacement $d_i$ correspond une force parallèle au mouvement $F_{\parallel,i}=F_\parallel(d_i)$. Le travail total sera donc donné par la somme du travail de la force sur chaque intervalle $\Delta d$
+\begin{equation}
+W=\sum_{i=0}^{N-1}F_{\parallel,i}\Delta d.
+\end{equation}
+
+![La composante parallèle de force, $F_\parallel$, appliquée sur un objet en fonction de la distance parcourue $d$, ainsi que le découpage en $N$ parties afin de calculer le travail total de la force.](figs/f_d.pdf){#fig:f_d width=50%}
+
+Comme on peut le voir le travail ainsi calculé n'est autre que la surface sous la courbe de la force parallèle en fonction de la distance parcourue.
+Lorsque le nombre de subdivisions $N\rightarrow\infty$ ($\Delta d\rightarrow 0$) cette surface n'est autre que l'intégrale de $F$ le long du chemin $d$.
+
+
 
 # Hydrodynamique
 
