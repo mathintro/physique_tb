@@ -3571,6 +3571,97 @@ W=\sum_{i=0}^{N-1}F_{\parallel,i}\Delta d.
 Comme on peut le voir le travail ainsi calculé n'est autre que la surface sous la courbe de la force parallèle en fonction de la distance parcourue.
 Lorsque le nombre de subdivisions $N\rightarrow\infty$ ($\Delta d\rightarrow 0$) cette surface n'est autre que l'intégrale de $F$ le long du chemin $d$.
 
+## L'énergie cinétique et le principe de travail-énergie
+
+Il existe différentes sortes d'énergies dans la nature (nous avons déjà rencontré la chaleur). Le concept d'énergie est central pour toutes les lois physique, en particulier sa *conservation*. La somme de toutes les sortes d'énergie reste constante, mais elle peut changer de forme. Ainsi l'énergie contenue dans les aliments est transformée en énergie électrique et en chaleur, ce qui nous permet de chauffer le corps humain et de se déplacer.
+
+Dans ce chapitre, nous définissons *l'énergie* comme la *capacité à effectuer un travail* (ce qui n'est pas toujours complètement vrai). Dans cette section, nous allons discuter d'une forme particulière d'énergie: *l'énergie cinétique* (l'énergie liée au mouvement). Elle permet de décrire l'énergie (et donc la capacité à effectuer un travail) contenue dans des objets en mouvement. Par exemple, le vent effectue un travail sur les pales d'une éolienne.
+
+L'énergie cinétique se définit de la façon suivante. Soit un objet de masse $m$ qui se déplace en ligne droite avec une vitesse $v_1$. Pour accélérer jusqu'à une vitesse $v_2$ sur une distance $d$, nous savons qu'il doit subir une force parallèle au mouvement $F_\mathrm{res}$. Le travail que cette force effectue est donc de 
+$$
+W=F_\mathrm{res}\cdot d.
+$$
+Nous savons que $F_\mathrm{res}=m\cdot a$ (deuxième loi de Newton). Des deux équations
+\begin{align}
+d&=\frac{1}{2}a\Delta t^2+v_1\Delta t,\\
+a&=\frac{v_2-v_1}{\Delta t},
+\end{align}
+nous pouvons déduire que 
+\begin{equation}
+a=\frac{v_2^2-v_1^2}{2d}.
+\end{equation}
+On peut donc calculer le travail total en fonction de de la variation des vitesses de l'objet comme
+$$
+W=F_\mathrm{res} d=m a=m\cdot a\cdot \left(\frac{v_2^2-v_1^2}{2ad}\right)=\frac{1}{2}m\left(v_2^2-v_1^2\right)=\frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2.
+$$
+On définit à présent *l'énergie cinétique translationnelle* (il en existe une pour le mouvement rotationnel également) comme 
+$$
+E_c=\frac{1}{2}mv^2.
+$$
+On a donc avec cette définition que le travail $W$ n'est autre que la différence de l'énergie cinétique à vitesse $v_2$ moins celle à vitesse $v_1$
+\begin{equation}
+W=\Delta E_c.
+\end{equation}
+Cette relation est le principe de *travail-énergie* qui peut aussi s'écrire
+
+*Le travail effectué sur un objet est égal à sa variation d'énergie cinétique.*
+
+---
+
+Remarque #
+
+Il est important de noter que le principe travail-énergie s'applique sur la force résultante sur l'objet et non sur chacune des forces prises individuellement.
+
+---
+
+Le signe de $W$ va nous dire si l'énergie cinétique est *gagnée* ($W>0$) ou *perdue* ($W<0$). Si la force s'applique dans la direction du mouvement l'énergie cinétique augmentera, alors qu'à l'inverse elle diminuera si la force s'applique dans la direction opposée au mouvement.
+
+--- 
+
+Question #
+
+Quelles sont les unités de l'énergie cinétique?[^20]
+
+---
+
+Il est important de réaliser que l'énergie cinétique est proportionnelle à la masse (si la masse double l'énergie cinétique double), alors qu'elle est proportionnelle à la vitesse *au carré* (si la vitesse double l'énergie est multipliée par 4).
+
+---
+
+Exemple (L'énergie cinétique d'une voiture) #
+
+Calculer l'énergie cinétique d'une voiture d'une tonne roulant à $v_1=30\ \km/\h$. Quelle est la différence d'énergie cinétique si la voiture roule à $v_2=50\ \km/\h$? Finalement quelle sera la différence de distance de freinage dans les deux cas, si on suppose que la force de freinage est indépendante de la vitesse et qu'il faut $20\ \m$ pour arrêter la voiture quand elle roule à vitesse $v_1$?
+
+Solution (L'énergie cinétique d'une voiture) #
+
+1. En convertissant les unités, nous avons que la voiture a une masse de $m=1000\ \kg$ et une vitesse de $v_1=30\ \km/\h=8.3\ \m/\s$. On a donc que l'énergie cinétique de la voiture est de
+\begin{equation}
+E_c(v_1)=\frac{1}{2}mv_1^2=\frac{1}{2}\cdot 8.3^2\cdot 1000=34000\ \J.
+\end{equation}
+2. La vitesse $v_2=50\ \km/\h=13.9\ \m/\s$. La différence d'énergie cinétique est de 
+\begin{equation}
+\Delta E_c = E_c(v_2)-E_c(v_1)=\frac{1}{2}mv_2^2-\frac{1}{2}mv_1^2=\frac{1}{2}\cdot 13.9^2\cdot 1000-34000=62000 \J.
+\end{equation}
+La variation d'énergie cinétique est donc de presque du simple au double.
+3. Par le principe de travail-énergie on peut écrire que 
+\begin{align}
+W_1&=\Delta E_c(0,v_1)=-34000,\\
+-d_1\cdot F&=-34000,\\
+F=\frac{34000}{20}=1700\ \N.
+\end{align}
+On a donc de même que 
+\begin{align}
+W_2&=\Delta E_c(0,v_2)=-96000,\\
+-d_2\cdot F&=-96000,\\
+d_2=\frac{96000}{1700}=56\ \m.
+\end{align}
+La distance de freinage a plus que doublé! (Presque triplé en fait.)
+
+---
+
+
+
+
 
 
 # Hydrodynamique
@@ -3666,3 +3757,5 @@ les jointures des articulation $\mu_k=0.01$.
 les jointures des articulation $\mu_s=0.01$.
 
 [^19]: A titre d'exemple, pour l'acier on a $E=200\cdot 10^9\ \N/\m^2$, pour l'aluminium $E=70\cdot 10^9\ \N/\m^2$, et pour du nylon $E=3\cdot 10^9\ \N/\m^2$.
+
+[^20]: Comme la différence d'énergie cinétique mesure un travail, les unités sont les mêmes que celle du travail, donc des joules.
