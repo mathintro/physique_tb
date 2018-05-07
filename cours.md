@@ -3684,9 +3684,9 @@ On a donc que l'énergie cinétique lorsque l'objet touche le sol est égale à 
 E_c&=E_p.
 \end{align}
 On a donc de façon similaire à ce que nous avons vu pour l'énergie cinétique, que l'énergie potentielle est liée au travail que peut faire la force gravitationnelle sur l'objet. On a que la variation d'énergie potentielle est égale à l'inverse du travail en fait. On peut dire que l'énergie potentielle est "emmagasinée"
-\begin{equation}
+$$
 \Delta E_p=-W_g,
-\end{equation}
+$${#eq:pot_gen}
 avec 
 $$
 \Delta E_p=m\cdot g\cdot (y_2-y_1).
@@ -3699,15 +3699,42 @@ De plus, on voit dans l'@eq:mgh que seule la différence de hauteur compte. En f
 
 Exemple (Énergie potentielle sur des montagnes russes) #
 
-Un petit train de montagne russes de masse $m=1000\ \kg$ (voir la @fig:montagnes_russes) effectue un trajet passant par les points $A$, $B$, et $C$. Calculer l'énergie potentielle du petit train sur chacun de ces points, si la hauteur de référence est le point le plus bas du trajet.
+Un petit train de montagne russes de masse $m=1000\ \kg$ (voir la @fig:montagnes_russes) effectue un trajet passant par les points $A$, $B$, et $C$. Calculer l'énergie potentielle du petit train sur chacun de ces points, si la hauteur de référence est le point le plus bas du trajet (la ligne traitillée horizontale). Même question si la hauteur de référence est est le point $C$. Dans ce cas-là quelle est la variation d'énergie potentielle entre les points $A$ et $B$.
 
 ![Un petit train de montagnes russes passe par les points $A$, $B$, et $C$.](figs/montagnes_russes.pdf){#fig:montagnes_russes width=100%}
 
 Solution (Énergie potentielle sur des montagnes russes) #
 
+1. Si nous définissons la hauteur de référence comme la ligne horizontale du bas, nous avons
+$$
+h_A=30\ \m, \quad h_B=5\ \m,\quad h_C=25\ \m.
+$$
+On a donc immédiatement que l'énergie potentielle est 
+\begin{align}
+E_A&=mgh_A=2.9\cdot 10^5\ \J,\\
+E_B&=mgh_B=4.9\cdot 10^4\ \J,\\
+E_C&=mgh_C=2.45\cdot 10^5\ \J.
+\end{align}
+2. De même, si la hauteur de référence est le point $C$, nous avons
+$$
+h_A=10\ \m, \quad h_B=-20\ \m,\quad h_C=0\ \m.
+$$
+Il vient 
+\begin{align}
+E_A&=mgh_A=9.8\cdot 10^4\ \J,\\ 
+E_B&=mgh_B=-1.96\cdot 10^5\ \J,\\
+E_C&=mgh_C=0\ \J.
+\end{align}
+3. La variation d'énergie potentielle est donnée par la différence d'énergie au point $A$ et celle au point $B$
+$$
+\Delta E_{AB}=E_B-E_A=9.8\cdot 10^4+1.96\cdot 10^5=2.94\cdot 10^5\ \J.
+$$
+
 ---
 
+L'énergie potentielle n'existe pas que pour la force gravitationnelle. Chaque type de force peut avoir une énergie potentielle associée. De façon générale cette énergie potentielle est donnée par l'inverse du travail effectué par cette force (voir l'@eq:pot_gen).
 
+### L'énergie potentielle élastique
 
 # Hydrodynamique
 
