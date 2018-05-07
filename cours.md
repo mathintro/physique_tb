@@ -3736,6 +3736,168 @@ L'énergie potentielle n'existe pas que pour la force gravitationnelle. Chaque t
 
 ### L'énergie potentielle élastique
 
+Un autre exemple d'énergie potentielle est l'énergie potentielle élastique associée à la force nécessaire pour comprimer (ou détendre) un matériau élastique. Une fois comprimé (ou détendu) le ressort emmagasine de l'énergie potentielle qu'il pourra restituer lorsqu'il sera relâché. Un exemple du travail qu'il peut effectuer peut se voir dans les montres mécaniques, où lorsqu'on remonte la montre on comprime un ressort qui pourra petit à petit rendre son énergie potentielle au mécanisme de la montre pour faire avancer les aiguilles.
+
+La force extérieure nécessaire pour comprimer (ou étirer) un ressort est donnée par
+$$
+F_\mathrm{ext}=k\Delta x,
+$$
+où $k$ est la constante du ressort et mesure la résistance du ressort à une variation de longueur et $x$ est la différence de longueur du ressort entre son état comprimé (ou étiré) et sa longueur au repos.
+
+Lorsqu'il est comprimé (ou étiré), le ressort pourra exercer une force 
+$$
+F_r=-k\Delta x,
+$$
+qui est opposée en direction à la force nécessaire pour le comprimer. Le travail que pourra donc fournir un ressort comprimé (ou allongé) d'une longueur $\Delta x$ sera donné par
+$$
+W=F\Delta x,
+$$
+où $F$ est la force nécessaire pour comprimer (ou allonger) le ressort. Cette force dépend elle même de $\Delta x$. En fait elle passe de $0$ à $k\Delta x$ au fur et à mesure que le ressort change de longueur. La force variant linéairement, on peut évaluer la force moyenne, $\bar{F}$, comme la moyenne entre l'état de repos et l'état final du ressort. On a donc
+$$
+\bar{F}=\frac{1}{2}k\Delta x.
+$$
+Finalement, le travail est donné par
+$$
+W=\bar F\Delta x=\frac{1}{2}k \Delta x^2.
+$$
+Qui est également l'énergie potentielle du ressort
+$$
+E_{p,el}=\frac{1}{2}k \Delta x^2.
+$$
+
+### Stockage d'énergie
+
+Suite à ces deux exemples, on constate que nous pouvons stocker de l'énergie pour l'utiliser plus tard. Que cela soit en utilisant l'énergie potentielle de gravitation (les barrages), l'énergie potentielle élastique (les montres) ou tout autre forme d'énergie (l'énergie chimique dans les piles ou accumulateurs par exemple). 
+
+Il est important de noter qu'il n'existe pas de formule générale pour déterminer l'énergie potentielle (contrairement à l'énergie cinétique) car elle va à chaque fois dépendre de la nature de l'interaction (de la force en jeu) qui va nous permettre de stocker l'énergie.
+
+## Forces (non-)conservatives
+
+Comme nous l'avons mentionné dans la section précédente, l'énergie potentielle de gravitation accumulée lorsqu'un objet est déplacé verticalement dans un champs gravitationnel, ne dépend pas du détail du chemin parcouru, mais uniquement de la hauteur de l'objet. Ceci est également le cas pour l'énergie élastique d'un ressort. Ce type de force est appelée *force conservative*. 
+
+A l'inverse, les forces *non-conservatives*, sont des forces dont le travail va dépendre du détail du chemin pris sous l'action de ces forces. Un exemple typique est la force de frottement. En effet, pour relier deux points sur un plan horizontal l'énergie à fournir si on va en ligne droite sera plus faible que n'importe quel chemin plus sinueux. Cela est dû au fait que la distance à parcourir dans le cas sinueux est plus longue et que la force de frottement s'oppose *toujours* à la direction du mouvement (contrairement à la force gravitationnelle par exemple). 
+
+Il est très important de noter que comme l'énergie potentielle ne dépend que de la configuration ou de la position d'un objet, elle ne peut être définie que *relativement* à un état de référence unique. Cela est impossible à faire pour une force non-conservative. Une énergie potentielle n'est donc définie que pour des forces conservatives.
+
+---
+
+Question (Force conservative ou non?) #
+
+Soit un objet se déplaçant entre un point $A$ et un point $B$ et revenant ensuite au point $A$ sous l'effet d'une force constante $F$. 
+Le travail effectué par la force $F$ pendant ce trajet est de $100\ \J$. Cette force est-elle conservative, non-conservative ou est-ce qu'il est impossible de le savoir?
+
+---
+
+### Principe du travail énergie revisité
+
+Nous pouvons étendre le principe du travail-énergie pour y inclure l'énergie potentielle. Supposons qu'un objet est soumis à des forces conservatives et non-conservatives. Le travail total, $W_\mathrm{tot}$ peut s'écrire
+$$
+W_\mathrm{tot}=W_c+W_{nc},
+$$
+où $W_c$ et $W_{nc}$ sont le travail des forces cconervatives et non-conservatives.
+
+Du principe travail-énergie, nos pouvons déduire que 
+\begin{align}
+W_\mathrm{tot}&=\Delta E_c,\nonumber\\
+W_c+W_{nc}&=\Delta E_c.
+\end{align}
+En outre, la variation de l'énergie potentielle n'est autre que l'opposée du travail des forces conservatives, $\Delta E_p=-W_c$. On obtient alors
+$$
+\begin{aligned}
+-\Delta E_p+W_{nc}&=\Delta E_c,\\
+W_{nc}&=\Delta E_c+\Delta E_p.
+\end{aligned}
+$${#eq:wnc}
+Le travail des forces non-conservatives agissant sur un objet est donc obtenu comme la somme de l'énergie potentielle et de l'énergie cinétique de l'objet.
+
+## L'énergie mécanique
+
+Si nous pouvons ignorer l'effet des forces non-conservatives (le frottement par exemple) nous obtenons une relation très élégante concernant l'énergie.
+
+En effet, le travail des forces non-conservatives de l'@eq:wnc étant nul, on obtient
+$$
+\Delta E_c+\Delta E_p=0.
+$$
+Les variations d'énergie potentielle entre les état $1$ et $2$ peuvent s'écrire
+\begin{align}
+\Delta E_c&=E_{c2}-E_{c1},\\
+\Delta E_p&=E_{p2}-E_{p1}.
+\end{align}
+Il vient alors que
+\begin{align}
+\Delta E_c+\Delta E_p&=0,\nonumber\\
+E_{c2}-E_{c1}+E_{p2}-E_{p1}&=0,\nonumber,\\
+E_{p2}+E_{c2}&=E_{c1}+E_{p1}.
+\end{align}
+En définissant l'énergie mécanique comme la somme de l'énergie cinétique et de l'énergie potentielle
+$$
+E_m=E_c+E_p,
+$$
+on peut réécrire l'équation ci-dessus comme
+$$
+E_{m1}=E_{m2}=\mathrm{cte}.
+$$
+On voit alors que l'énergie mécanique est *conservée* aussi longtemps qu'aucune force non-conservative n'entre en jeu (ce qui arrive jamais dans la vraie vie...).
+
+Le principe de conservation de l'énergie mécanique peut s'énoncer comme suit
+
+*Si seulement des forces conservatives produisent un travail, l'énergie mécanique totale d'un système restera constante (elle n'augmentera pas ou ne décroîtra pas). On dit qu'elle est conservée.*
+
+En termes plus mathématiques pour le cas où un objet ne subit qu'une force gravitationnelle, si un objet a une vitesse $v_1$ et se trouve à une hauteur $h_1$ à un moment donné, puis plus tard se trouve à une hauteur $h_2$ et a une vitesse $v_2$. En l'absence d'action de forces non-conservatives, on peut écrire
+$$
+\frac{1}{2}mv_1^2+mgh_1=\frac{1}{2}mv_2^2+mgh_2.
+$$
+
+---
+
+Exemple (Chute d'un objet) #
+
+Lors d'une soirée arrosée, un invité (un peu ivre) laisse échapper une bouteille de vin pleine qui lui tombe sur le pied d'une hauteur $h_1=1\m$. En supposant que la masse de la bouteille est de $m=2\ \kg$ et que sa vitesse de départ est nulle, $v_1=0$. Déterminer sa vitesse lorsqu'elle touche le pied de l'invité (et lui brise un orteil).
+
+Solution (Chute d'un objet) #
+
+L'énergie mécanique totale de la bouteille lorsqu'elle quitte les mains de l'invité est de 
+\begin{align}
+E_{m1}&=E_{c1}+E_{p1},\nonumber\\
+&=\underbrace{\frac{1}{2}mv_1^2}_{=0,\ v_1=0}+mgh_1=mgh_1.
+\end{align}
+Lorsque la bouteille touche le pied de l'invité (à $h_2=0$), on a 
+\begin{align}
+E_{m2}&=E_{c2}+E_{p2},\nonumber\\
+&=\frac{1}{2}mv_2^2+\underbrace{mgh_2}_{=0,\ h_2=0}=\frac{1}{2}mv_2^2.
+\end{align}
+Par la grâce de la conservation de l'énergie cinétique, $E_{m1}=E_{m2}$, nous avons que 
+$$
+mgh_1=\frac{1}{2}mv_2^2.
+$$
+Nous pouvons résoudre cette équation pour $v_2$ et obtenons
+$$
+v_2=\sqrt{2 g h_1}\cong 4.4\ \m/\s.
+$$
+Il est important de noter que la vitesse de la bouteille ne dépend pas de sa masse, mais uniquement de sa hauteur de départ.
+
+---
+
+--- 
+
+Question #
+
+Soient deux personnes dévalant deux toboggans dont la forme est différente (voir la @fig:toboggan). Si nous négligeons les frottements, laquelle des deux aura la plus grande vitesse à l'arrivée? Laquelle arrivera le plus vite en bas?
+
+![Les deux toboggans $A$ et $B$.](figs/toboggan.pdf){#fig:toboggan width=50%}
+
+---
+
+## Loi de la conservation de l'énergie
+
+Il existe une multitude de formes d'énergie autres que l'énergie potentielle et cinétique: l'énergie électrique, thermique, chimique, ...
+
+Néanmoins, toutes ces formes d'énergie sont considérée comme n'étant que de l'énergie cinétique ou potentielle au niveau atomique. En effet, comme nous l'avons discuté au début de ce cours, l'énergie thermique n'est qu'une manifestation de l'agitation des molécules d'un objet (en d'autres termes la somme de l'énergie cinétique de tous les atomes qui composent l'objet).
+
+Nous avons également discuté que l'énergie pouvait être transformée d'une forme d'énergie à l'autre. L'énergie potentielle de l'eau dans un barrage est transformée en énergie électrique en faisant tourner des turbines. Dans cet exemple, l'eau effectue un travail sur les pales de la turbine. De façon générale, chaque fois que de l'énergie est transférée d'un objet à un autre un certain travail est effectué. Nous pouvons même aller plus loin en fait. Nous pouvons affirmer que lorsque de l'énergie est transférée ou transformée aucune énergie n'est perdue (ou gagnée) au cours du processus. Ce constat est connu sous le nom de la *loi de la conservation de l'énergie*
+
+*L'énergie total est constante lors de n'importe quel processus. L'énergie peut se transformer d'une forme à une autre et/ou être transféré d'un objet à un autre, mais sa quantité totale reste constante.*
+
 # Hydrodynamique
 
 Dans ce chapitre nous allons nous intéresser aux fluides en mouvement. 
