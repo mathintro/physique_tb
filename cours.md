@@ -3699,7 +3699,13 @@ De plus, on voit dans l'@eq:mgh que seule la différence de hauteur compte. En f
 
 Exemple (Énergie potentielle sur des montagnes russes) #
 
+Un petit train de montagne russes de masse $m=1000\ \kg$ (voir la @fig:montagnes_russes) effectue un trajet passant par les points $A$, $B$, et $C$. Calculer l'énergie potentielle du petit train sur chacun de ces points, si la hauteur de référence est le point le plus bas du trajet.
 
+![Un petit train de montagnes russes passe par les points $A$, $B$, et $C$.](figs/montagnes_russes.pdf){#fig:montagnes_russes width=100%}
+
+Solution (Énergie potentielle sur des montagnes russes) #
+
+---
 
 
 
