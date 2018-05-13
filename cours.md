@@ -3898,6 +3898,26 @@ Nous avons également discuté que l'énergie pouvait être transformée d'une f
 
 *L'énergie total est constante lors de n'importe quel processus. L'énergie peut se transformer d'une forme à une autre et/ou être transféré d'un objet à un autre, mais sa quantité totale reste constante.*
 
+## Résolution de problèmes
+
+### Forces conservatives
+
+Soit une sphère de masse $m=1\ \kg$ qui tombe d'une hauteur $h=50\ \cm$ sur un ressort qui se comprime de $\Delta y=10\ \cm$. On ignore la masse du ressort, ainsi que le frottement de l'air. Calculer la constante $k$ du ressort.
+
+1. Faire un dessin de la situation en dessinant les différentes longueurs importantes dans ce problème.
+2. Calculer la vitesse de la sphère au moment où elle touche le ressort.
+3. En déduire la constante du ressort.
+4. Calculer directement la constante du ressort sans passer par le calcul de la vitesse.
+
+### Avec dissipation
+
+Soit un chariot de montagnes russes, se trouvant à une hauteur de $40\ \m$ lors de son démarrage. Après avoir atteint une hauteur de $0\ \m$, le chariot ne peut remonter qu'à une hauteur de $25\ \m$ avant de s'arrêter. Calculer l'énergie totale produite par le système. Calculer l'énergie thermique dissipée et la force de frottement (supposer qu'elle est constante) si le trajet total du chariot est de $500\ \m$.
+
+1. Dessiner le système.
+2. Écrire l'énergie du système au point de départ et à l'arrivée.
+3. En déduire l'énergie thermique dissipée.
+4. De l'énergie thermique dissipée déduire la force de frottement.
+
 # Hydrodynamique
 
 Dans ce chapitre nous allons nous intéresser aux fluides en mouvement. 
