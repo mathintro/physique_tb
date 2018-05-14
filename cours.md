@@ -3970,6 +3970,8 @@ A_1 v_1=A_2 v_2.
 On en déduit que comme $A_1>A_2$, on doit avoir $v_2>v_1$. 
 De cette observation, nous devons conclure que la pression en $1$ doit être plus élevée qu'en $2$, sinon le fluide ralentirait.
 
+![Un conduit de section $A_1$ qui se rétrécit et devient de section $A_2$ tout en passant d'une altitude $y_1$ à une altitude $y_2$.](figs/conduit.pdf){#fig:conduit width=70%}
+
 Ceci peut sembler contre-intuitif, car un fluide avec une vitesse élevée exercera une plus grande force sur un obstacle qu'un fluide avec une vitesse faible. Mais dans le cas précédent, il n'y a aucun obstacle. On considère un fluide laminaire dans un conduit.
 
 Au delà du principe de Bernouilli qui s'énonce de façon qualitative, nous pouvons également dériver l'équation de Bernouilli à l'aide du principe de conservation de l'énergie. Considérons le travail effectué par le fluide dans la région $1$, $W_1$
@@ -3980,7 +3982,7 @@ où $\Delta l_1$ est une distance dans la région $1$, $A_1$ est la section du c
 
 Dans la région $2$, nous aurons 
 $$
-W_2=-P_2A_2\Delta l_2$.
+W_2=-P_2A_2\Delta l_2.
 $$
 Il est important de noter le signe négatif du travail dans la région $2$, car la force est dirigée dans la direction inverse au déplacement.
 Comme le conduit varie de hauteur, la gravité également effectue un travail, $W_3$
@@ -4002,8 +4004,40 @@ où on a utilisé que la masse de fluide est donnée par
 $$
 m=\rho A_1 \Delta l_1=\rho A_2\Delta l_2.
 $$
-Finalement, on peut réarranger les termes de cette équation et
+Finalement, on peut réarranger les termes de cette équation et on obtient
+$$
+P_2+\frac{1}{2}\rho v_2^2+\rho gy_2=\frac{1}{2}\rho v_1^2+P_1+\rho gy_1.
+$${#eq:bern_deux}
+La forme de la partie de gauche et de celle de droite étant la même, on constate donc que 
+\begin{equation}
+P+\frac{1}{2}\rho v^2+\rho gy=\mathrm{cte}.
+\end{equation}
+Cette équation est *l'équation de Bernouilli* qui est vraie en tout point d'un fluide à viscosité nulle.
+Pour $v_1=v_2=0$ l'@eq:bern_deux se réduit à l'équation pour l'hydrostatique, à savoir
+$$
+P_2-P_1=\rho g(y_1-y_2).
+$$
 
+---
+
+Illustration (Système de pompes) #
+
+L'eau circule dans un système de chauffage circule dans un circuit fermé. L'eau est propulsée dans le sous-sol à une vitesse de $0.5\ \m/\s$ l'aide d'une pompe dans un conduit de $5\ \cm$ de diamètre et à une pression de $3\ \atm$. Quelle sera la pression du fluide dans les étages, à une hauteur de $5\ \m$, dans un conduit de $2.5\ \cm$ de diamètre (on suppose qu'il n'y a toujours qu'un seul conduit).
+
+Solution (Système de pompes) #
+
+La section du conduit est de $A_1=\pi r_1^2\cong 0.002\ \m^2$ et 
+$A_2=\pi r_2^2\cong 0.0005\ \m^2$. Le début étant constant et l'eau un fluide incompressible, on a que la vitesse du fluide dans les étages est donnée par $v_2=\frac{v_1 A_1}{A_2}=2\ \m/\s$.
+
+La pression est donc donnée par
+\begin{align}
+P_2&=-\frac{1}{2}\rho v_2^2-\rho gy_2+\frac{1}{2}\rho v_1^2+P_1+\rho gy_1,\nonumber\\
+&=-\frac{1}{2}1000 2^2-1000 \cdot 9.8 5+\frac{1}{2}\cdot 1000\cdot 0.5^2+3\cdot 10^5,\nonumber\\
+&=-\frac{1}{2}1000 2^2-1000 \cdot 9.8 5+\frac{1}{2}\cdot 1000\cdot 0.5^2+3\cdot 10^5,\nonumber\\
+&=250000\ \Pa=2.5\ \atm.
+\end{align}
+
+---
 
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
