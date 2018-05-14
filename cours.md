@@ -3957,6 +3957,52 @@ A_1 v_1=A_2 v_2.
 \end{equation}
 La quantité $A\cdot v=A\Delta l/\Delta t=\Delta V/\Delta t$ représente le débit (mesuré en $\m^3/s$). On a donc que pour un fluide incompressible le débit est constant. Cela explique les grands variations de vitesses dans les fleuves ou rivières, ou également dans les tuyaux lorsqu'ils rétrécissent. En effet comme le débit est constant, lorsque la section diminue la vitesse doit augmenter. A l'inverse, lorsque la section augmente la vitesse doit diminuer.
 
+## Équation de Bernouilli
+
+Le principe de Bernouilli peut se résumer en une phrase:
+
+*Dans un fluide, lorsque la vitesse est élevée la pression est faible. A l'inverse lorsque la vitesse est faible la pression est élevée.*
+
+On peut schématiser ce résultat dans le cas d'un conduit qui se rétrécit (voir la @fig:conduit). Dans la région $1$, la vitesse est plus faible que dans la région $2$. Cela peut se déduire de la constance de la masse de la section précédente. La masse de fluide dans les régions $1$ et $2$ étant donnée par (supposons le fluide incompressible pour simplifier ici)
+\begin{equation*}
+A_1 v_1=A_2 v_2.
+\end{equation*}
+On en déduit que comme $A_1>A_2$, on doit avoir $v_2>v_1$. 
+De cette observation, nous devons conclure que la pression en $1$ doit être plus élevée qu'en $2$, sinon le fluide ralentirait.
+
+Ceci peut sembler contre-intuitif, car un fluide avec une vitesse élevée exercera une plus grande force sur un obstacle qu'un fluide avec une vitesse faible. Mais dans le cas précédent, il n'y a aucun obstacle. On considère un fluide laminaire dans un conduit.
+
+Au delà du principe de Bernouilli qui s'énonce de façon qualitative, nous pouvons également dériver l'équation de Bernouilli à l'aide du principe de conservation de l'énergie. Considérons le travail effectué par le fluide dans la région $1$, $W_1$
+$$
+W_1=F_1\Delta l_1=P_1A_1\Delta l_1,
+$$
+où $\Delta l_1$ est une distance dans la région $1$, $A_1$ est la section du conduit dans la région $1$, et $P_1$ la pression du fluide dans cette région ($P_1=F_1/A_1$).
+
+Dans la région $2$, nous aurons 
+$$
+W_2=-P_2A_2\Delta l_2$.
+$$
+Il est important de noter le signe négatif du travail dans la région $2$, car la force est dirigée dans la direction inverse au déplacement.
+Comme le conduit varie de hauteur, la gravité également effectue un travail, $W_3$
+$$
+W_3=-mg(y_2-y_1),
+$$
+où $y_1$ est la hauteur moyenne du  fluide dans la région $1$, et $y_2$ est la hauteur moyenne du fluide dans la région $2$, et $m$ la masse de fluide dans chacune des régions, $m=\rho A_1 \Delta l_1=\rho A_2\Delta l_2$ (on suppose que le fluide est incompressible).
+
+Le travail total est donc donné par
+\begin{align}
+W&=W_1+W_2+W_3,\nonumber\\
+&=P_1A_1\Delta l_1-P_2A_2\Delta l_2-mgy_2+mgy_1.
+\end{align}
+Le travail total est également donné par la variation d'énergie cinétique du fluide, en raison du principe de travail-énergie. Il vient
+\begin{equation}
+\frac{1}{2}\rho v_2^2-\frac{1}{2}\rho v_1^2=P_1-P_2-\rho gy_2+\rho gy_1,
+\end{equation}
+où on a utilisé que la masse de fluide est donnée par 
+$$
+m=\rho A_1 \Delta l_1=\rho A_2\Delta l_2.
+$$
+Finalement, on peut réarranger les termes de cette équation et
 
 
 
