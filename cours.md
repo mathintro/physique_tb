@@ -4039,6 +4039,27 @@ P_2&=-\frac{1}{2}\rho v_2^2-\rho gy_2+\frac{1}{2}\rho v_1^2+P_1+\rho gy_1,\nonum
 
 ---
 
+L'équation de Bernouilli peut être utilisée dans un grand nombre d'applications. Un des cas classiques est le calcul de la vitesse d'un fluide à la sortie d'un robinet. Soit un réservoir de hauteur $h$ (par rapport à la hauteur du robinet). Si le haut du réservoir est à l'air libre (ou à un pression équivalente) tout comme le robinet, on a que la pression sur le fluide en haut du réservoir ou à la sortie du robinet est la même. On a donc que $P_1=P_2$. On déduit de l'équation de Bernouilli que
+$$
+\frac{1}{2}\rho v_1^2=\rho g h,\Leftrightarrow v_1=\sqrt{2gh}.
+$$
+Ce résultat s'appelle également *théorème de Toricelli*. 
+
+La règle quantitative que nous avons vue au début de la section (une faible pression correspond à une vitesse élevée et vice-versa) se déduit si on considère un fluide qui ne subit aucune élévation significative. En effet, dans ce cas-là, on a que $y_1=y_2$. Il vient de l'équation de Bernouilli que 
+$$
+\frac{1}{2}\rho v_1^2+P_1=P_2+\frac{1}{2}\rho v_2^2=\mathrm{cte}.
+$$
+Donc sur chacun des points, si $P$ est grand la vitesse sera petite et vice-versa.
+
+L'équation de Bernouilli explique (en tout cas qualitativement) un grand nombre de phénomènes quotidiens comme la portance d'un avion, les bateaux à voile qui remontent le vent, le "lift" des balles de tennis, ...
+
+## La viscosité
+
+La plupart des fluides auxquels nous avons à faire au quotidien: l'air, l'eau, ... ont une très faible viscosité et sont souvent considérés en première approximation comme étant parfaits (ayant une viscosité nulle). La viscosité représente la *friction interne* des fluides qui est essentiellement la friction entre des "couches" de fluide adjacentes. Dans les liquides, la viscosité est due aux forces attractives électriques entre les molécules, alors que dans les gaz elle est due aux collisions entre les molécules. Les effets de la viscosité peuvent se mesurer avec le dispositif suivant. Soient deux plaques parallèles horizontales de surface $A$ et séparée par une distance $L$. Les deux plaque sont séparées par un fluide de viscosité $\eta$Donc en chacun des point ($1$ ou deux $2$) . La plaque du haut bouge avec une vitesse horizontale $v$, alors que celle du bas est immobile. La force nécessaire pour déplacer la plaque du haut est proportionnelle à la variation de vitesse entre la plaque du bas et celle du haut ($v/L$), à la surface de la plaque, $A$, ainsi qu'à la viscosité du fluide qui se trouve entre deux, $\eta$
+$$
+F=\eta A \frac{v}{L}.
+$$ 
+Les unités de la viscosité sont les $[\N\cdot \s/\m^2]=[\Pa\cdot \s]$. Elle dépend en général de la température du fluide.
 
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
