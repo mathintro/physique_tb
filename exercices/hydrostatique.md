@@ -82,7 +82,7 @@ Solution (Éléphant le retour) #
 
 Le poids de l'éléphant et de l'humain sont respectivement de 
 $$
-F_\mathrm{el}=5000\cdot 9.8=49000\ \N,\quadF_\mathrm{hu}=70\cdot 9.8=686\ \N.$$
+F_\mathrm{el}=5000\cdot 9.8=49000\ \N,\quad F_\mathrm{hu}=70\cdot 9.8=686\ \N.$$
 On a par le principe de Pascal que la pression exercée par l'éléphant sur la surface du piston de $12\ \m^2$ doit être la même que celle de l'humain sur son piston. On a donc
 $$
 \frac{F_\mathrm{el}}{12}=\frac{F_\mathrm{hu}}{A},
