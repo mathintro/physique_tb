@@ -78,6 +78,20 @@ Exercice (Éléphant le retour) #
 
 Si nous posons un éléphant de $5$ tonnes sur un piston d'une surface de $12\ \m^2$. Quelle doit être la surface du second piston pour qu'un homme de $70\ \kg$ puisse soulever l'éléphant en se tenant sur le piston?
 
+Solution (Éléphant le retour) #
+
+Le poids de l'éléphant et de l'humain sont respectivement de 
+$$
+F_\mathrm{el}=5000\cdot 9.8=49000\ \N,\quadF_\mathrm{hu}=70\cdot 9.8=686\ \N.$$
+On a par le principe de Pascal que la pression exercée par l'éléphant sur la surface du piston de $12\ \m^2$ doit être la même que celle de l'humain sur son piston. On a donc
+$$
+\frac{F_\mathrm{el}}{12}=\frac{F_\mathrm{hu}}{A},
+$$
+soit 
+$$
+A=\frac{12}{F_\mathrm{el}}\cdot F_\mathrm{hu}=0.168\ \m^2.
+$$
+
 Exercice (Flottabilité humaine) #
 
 Une femme de $60\ \kg$ fait la planche sur le lac. Lorsque ses poumons sont complètement rempli elle flotte, alors qu'elle coule à pic lorsque qu'elle expire. 
@@ -85,7 +99,7 @@ Une femme de $60\ \kg$ fait la planche sur le lac. Lorsque ses poumons sont comp
 1. Calculer son volume lorsqu'elle a les poumons remplis d'air (on néglige la masse d'air dans les poumons).
 2. Calculer son accélération lorsqu'elle a expiré tout l'air de ses poumons, sachant que leur volume final est de $1.5\ \l$ après expiration (on néglige les frottements).
 
-<!-- Solution (Flottabilité humaine) #
+Solution (Flottabilité humaine) #
 
 1. Lorsque les poumons sont remplis d'air elle flotte tout juste. La force résultante qu'elle subit est donc nulle. On a donc que
 \begin{align}
@@ -101,13 +115,13 @@ Comme elle coule, la force de flottabilité ne compense plus la force de gravit�
 F_\mathrm{res}&=F_g-F_f,\\
 m a&=m g-m_e g,\\
 a&=\frac{m g-V\rho g}{m}=\frac{60\cdot 9.8-0.0585\cdot 1000\cdot 9.8}{60}=0.245\ \m/\s^2.
-\end{align}  -->
+\end{align} 
 
 Exercice (Ballon d'Hélium) #
 
 Sachant que la densité de l'hélium est de $\rho_h=0.18\ \kg/\m^3$ et celle de l'air de $\rho_a=1.3\ \kg/\m^3$. Quel est le volume d'hélium nécessaire pour soulever une charge de $200\ \kg$ (le poids du ballon à vide est inclus)?
 
-<!-- Solution (Ballon d'Hélium) #
+Solution (Ballon d'Hélium) #
 
 La force de flottabilité est de 
 $$
@@ -119,7 +133,7 @@ Pour que le ballon puisse soulever la charge de $200\ \kg$, on doit avoir que $F
 \rho_a V_h &=\rho_h V_h+200,\nonumber\\
 V_h (\rho_a -\rho_h)&=200,\nonumber\\
 V_h &=\frac{200}{\rho_a -\rho_h}=\frac{200}{1.3 -0.18}\cong 178\ \m^3.
-\end{align} -->
+\end{align}
 
 Exercice (Calibration d'un hydromètre) #
 
@@ -129,7 +143,7 @@ Un hydromètre est un instrument comme sur la @fig:hydrometre.
 
 Il est composé d'un cylindre en verre lesté plongé dans de l'eau. Ici la longueur totale de l'hydromètre est de $30\ \cm$ et a une section de $2\ \cm^2$. Sa masse est de $50\ \g$. A quelle distance faut-il placer la marque correspondant à une densité équivalente à celle de l'eau?
 
-<!-- Solution (Calibration d'un hydromètre) #
+Solution (Calibration d'un hydromètre) #
 
 La densité de l'hydromètre "à vide" est donnée par
 $$
@@ -142,4 +156,3 @@ F_f&=F_g,\nonumber\\
 \frac{V_\mathrm{depl}}{V_h} &=\frac{\rho_h}{\rho_e}=0.833.
 \end{align}
 On a donc que la marque d'équilibre doit se situer à $0.833\cdot 0.3=0.25\ \cm$.
- -->
