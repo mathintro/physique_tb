@@ -2433,7 +2433,7 @@ Exemple (La boite) #exemple:boite
 Soit une boîte de masse $m=1\ \kg$ posée sur une table et ne bougeant pas. 
 
 1. Déterminer son poids et calculer la force exercée sur la boîte par la table.
-2. On appuie sur la table avec une force de $10\ \N$. Quelle est la force exercée par la table sur la boîte?
+2. On appuie sur la boîte avec une force de $10\ \N$. Quelle est la force exercée par la table sur la boîte?
 3. On tire avec une force de $5\ \N$ en direction verticale sur la boîte. Quelle est la force exercée par la table sur la boîte?
 4. On tire avec une force de $20\ \N$ en direction verticale sur la boîte. Quelle est la force exercée par la table sur la boîte?
 5. Quelle est l'accélération de la boîte dans la situation 4?
