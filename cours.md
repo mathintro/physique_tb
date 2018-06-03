@@ -3512,6 +3512,18 @@ Un des effets le plus spectaculaire de la capillarité (voir la @fig:capillarite
 L'effet se voit également lorsqu'on plonge un carré de sucre dans le thé ou le café.
 
 
+### Les larmes du vin
+
+Les larmes du vin, ou jambes, se manifestent sur le dessus des verres de vin (ou de boissons alcoolisées avec un haut taux d'alcool). Ce phénomène est formé à partir d'un anneau su sommet du verre d'où des gouttelettes qui redescendent le long des parois du verre (voir la @fig:larmes). 
+
+![Les larmes de vin dans un verre. Source:
+<https://upload.wikimedia.org/wikipedia/commons/5/53/Verre_de_vin.jpg>](figs/Verre_de_vin.jpg){#fig:larmes width=50%}
+
+Les larmes sont dues à la tension de surface de l'alcool qui est plus faible que celle de l'eau. Lorsque l'alcool et l'eau ne sont pas mélangés de façon homogène, les régions avec un taux d'alcool plus faible vont avoir tendance à attirer plus fortement les fluide qui l'entoure, qu'une région avec un taux d'alcool plus élevé. Cela a pour effet de voir le liquide couler des régions avec une plus forte concentration d'alcool vers les régions avec une concentration plus faible. 
+
+Lorsqu'une fine couche de vin se trouve sur les parois du verre, l'alcool aura tendance à s'évaporer plus rapidement, car sa pression d'évaporation est plus faible que celle de l'eau. La baisse de concentration d'alcool va augmenter la tension de surface du mélange et donc attirer plus de de liquide dans cette région et ainsi former des gouttes. Lorsque les gouttes atteignent une masse suffisamment élevée elles vont redescendre sous l'action de leur propre poids.
+
+
 # Travail et énergie
 
 ## Le travail d'une force constante
