@@ -4073,6 +4073,11 @@ F=\eta A \frac{v}{L}.
 $$ 
 Les unités de la viscosité sont les $[\N\cdot \s/\m^2]=[\Pa\cdot \s]$. Elle dépend en général de la température du fluide.
 
+
+### La viscimétrie
+
+Le mélange de fluides de différentes viscosités entraîne la formation de tourbillons. Un exemple de ces tourbillons peut se voir dans le whisky lorsqu'on y ajoute une goutte d'eau (appelé "tourbillons viscimétriques" ou jambes). Ces tourbillons améliorent grandement l'efficacité du mélange et aide à a la réalisation d'une réaction chimique exothermique qui augmentera la température du whisky, libérant ainsi certains arômes par évaporation.
+
 [^1]: Cela peut être très pratique quand on fait ses courses pour savoir
     s’il y a une erreur grossière sur le montant qu’on paie.
 
