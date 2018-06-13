@@ -1,7 +1,7 @@
-FILE=oenos_ctrl4
+FILE=tb_ctrl4_en
 #FILE=tb_ctrl2
 
-oenos_ctrl4.pdf: oenos_ctrl4.md
+$(FILE).pdf: $(FILE).md
 	pandoc -s -o $(FILE).pdf $(FILE).md --filter=pandoc-numbering --filter=pandoc-crossref --template=../default.latex --pdf-engine pdflatex
 
 encrypt:
